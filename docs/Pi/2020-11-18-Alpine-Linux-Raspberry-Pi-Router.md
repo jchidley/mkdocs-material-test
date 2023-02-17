@@ -290,7 +290,7 @@ rc-service nftables list # should be as entered above/etc/network/interfaces
 reboot
 ```
 
-Once the above works, then see [Traffic Manager for a better "firewall"](2020-01-07-Traffic-Manager-Not-Firewall.html).
+Once the above works, then see [Traffic Manager for a better "firewall"](../Linux/2020-01-07-Traffic-Manager-Not-Firewall.md).
 
 ## Wireless Access Point
 
