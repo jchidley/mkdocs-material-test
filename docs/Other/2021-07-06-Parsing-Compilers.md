@@ -2,7 +2,6 @@
 date: "2021-07-06"
 title: "Parsing Compilers"
 ---
-
 <!-- markdownlint-disable MD025 -->
 # Parsing Compilers
 <!-- markdownlint-enable MD025 -->

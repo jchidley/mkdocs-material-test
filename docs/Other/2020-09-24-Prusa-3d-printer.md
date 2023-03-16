@@ -2,17 +2,11 @@
 date: "2020-09-24"
 title: "Prusa 3d Printer"
 ---
-<!-- 2020-09-24-Prusa-3d-printer -->
-
 <!-- markdownlint-disable MD025 -->
-# URL Dump
+### Prusa Mk3S
 <!-- markdownlint-enable MD025 -->
 
-## Introduction
-
 <!-- markdownlint-disable MD034 -->
-
-### Prusa Mk3S
 
 ### OctoPi
 

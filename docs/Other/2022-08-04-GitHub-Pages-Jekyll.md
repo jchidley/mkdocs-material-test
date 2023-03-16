@@ -5,9 +5,10 @@
 <!-- markdownlint-enable MD025 -->
 
 ## GitHub Pages
-(Static pages)[https://jekyllrb.com/docs/pages/] are the basic building block of any website. These can be [Markdown](https://daringfireball.net/projects/markdown/) `.md` or html `.html` and can be arranged into subfolders. 
 
-(Posts)[https://jekyllrb.com/docs/posts/] are for blogs. These are kept in a `_posts` directory, the name of which is in the following format `YEAR-MONTH-DAY-title.MARKUP`. The top of the post must include [front matter](https://jekyllrb.com/docs/front-matter/).
+Static pages [https://jekyllrb.com/docs/pages/] are the basic building block of any website. These can be [Markdown](https://daringfireball.net/projects/markdown/) `.md` or html `.html` and can be arranged into subfolders.
+
+Posts [https://jekyllrb.com/docs/posts/] are for blogs. These are kept in a `_posts` directory, the name of which is in the following format `YEAR-MONTH-DAY-title.MARKUP`. The top of the post must include [front matter](https://jekyllrb.com/docs/front-matter/).
 
 [Front matter](https://jekyllrb.com/docs/front-matter/) looks like this:
 
@@ -65,9 +66,10 @@ Yet another argument for a seperate linux box, like a Raspberry Pi, in addition 
 
 ## Process
 
-Write a draft document, using the filename for correct date and document title. Push to github. 
+Write a draft document, using the filename for correct date and document title. Push to github.
 
 Pull from github on a linux box to:
+
 * spell check
 * move to _posts
 * push to github

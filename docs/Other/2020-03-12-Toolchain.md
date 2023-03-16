@@ -77,9 +77,6 @@ Graphviz Interactive Preview - run "Graphviz Interactive:... " in the *Command P
 
 ## Alpine WSL
 
-
-
-
 [Alpine WSL GitHub](https://github.com/agowa338/WSL-DistroLauncher-Alpine)
 
 To allow installation of packages
@@ -104,8 +101,7 @@ pkg-config | pkgconfig
 libftdi-dev | libftdi1-dev
 qt5-default | qt5-qtbase
 
-
-## nextpnr
+## nextpnr stuff
 
 ubuntu: sudo apt get install libeigen3-dev
 cmake -DICEBOX_ROOT=/usr/local/share/icebox  -DARCH=ice40 .
@@ -114,8 +110,6 @@ apk add eigen
 
 python-dev  
  doxygen swig
-
-
 
 eigen
 

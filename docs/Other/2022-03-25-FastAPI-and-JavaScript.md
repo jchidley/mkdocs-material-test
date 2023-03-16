@@ -2,8 +2,6 @@
 date: "2022-03-25"
 title: "FastAPI and JavaScript"
 ---
-<!-- filename "2022-03-25-FastAPI-and-JavaScript.md" -->
-
 <!-- markdownlint-disable MD025 -->
 # FastAPI JavaScript
 <!-- markdownlint-enable MD025 -->

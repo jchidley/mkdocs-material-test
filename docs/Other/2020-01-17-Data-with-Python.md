@@ -7,8 +7,6 @@ title: "Data With Python"
 # Data With Python
 <!-- markdownlint-enable MD025 -->
 
-Factorio related stuff
-
 ## Links
 
 * [Pandas](https://pandas.pydata.org/)
