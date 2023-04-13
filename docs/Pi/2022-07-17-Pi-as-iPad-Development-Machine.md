@@ -5,10 +5,6 @@
 # Pi as iPad Development Machine
 <!-- markdownlint-enable MD025 -->
 
-## Introduction
-
-A sentance
-
 ## Build
 
 Disk image
@@ -23,6 +19,11 @@ ssh
 ```bash
 sudo touch /mnt/sdb1/ssh
 ```
+
+ssh key
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDrLCnKQYcbioQxzCKVH8PW6QmA1BceErjNXT3wWqC+Z macbook
+
+
 
 WiFi
 "Wi-Fi is currently blocked by rfkill.
