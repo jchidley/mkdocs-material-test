@@ -16,14 +16,14 @@ sudo mount /dev/sdb2 /mnt/sdb2
 ```
 
 ssh
+
 ```bash
 sudo touch /mnt/sdb1/ssh
-```
-
-ssh key
+cat <<'EOF' >> .ssh/authorized_keys
+ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFfwuj1qjlmAbsw4PjCeZrYxtYlXzH1KZi+dMIsB7QjI7wD3pB56aJebgYBC0HlnEqupKucrK5NkhFD6n5i668I= ecdsa ShellFish@Jack-iPad
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDrLCnKQYcbioQxzCKVH8PW6QmA1BceErjNXT3wWqC+Z macbook
-
-
+EOF
+```
 
 WiFi
 "Wi-Fi is currently blocked by rfkill.
