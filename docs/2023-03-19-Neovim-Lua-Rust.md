@@ -6,7 +6,7 @@ title: "Neovim-Lua-Rust"
 # Neovim-Lua-Rust
 <!-- markdownlint-enable MD025 -->
 
-## Rust 
+## Rust
 
 * [Rust Programming Language](https://www.rust-lang.org)
 * [GitHub - rust-lang/rustlings: Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings/)
@@ -26,7 +26,74 @@ title: "Neovim-Lua-Rust"
 * [Neovim and Rust · sharksforarms](https://sharksforarms.dev/posts/neovim-rust/)
 * [GitHub - Integralist/nvim: Neovim configuration](https://github.com/integralist/nvim)
 
-## Vim and Related
+## Vim, Neovim and Related
+
+* [unicode.vim](https://github.com/chrisbra/unicode.vim)
+* [Your problem with Vim is that you don't grok vi](https://stackoverflow.com/a/1220118/3617057)
+
+Probably the most important command
+
+```vim
+:h quickref
+```
+* [Building Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim)
+* [Neovim from Scratch playlist - YouTube](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
+* [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim#file-explorer)
+* [julia-vim](https://github.com/JuliaEditorSupport/julia-vim/blob/master/INSTALL.md)
+* [LunarVimConfig for Julia](https://github.com/davibarreira/LunarVimConfig)
+
+"nikvdp/neomux" needs the terminal number
+
+```vim
+:lua print(vim.api.nvim_eval("tabpagewinnr(tabpagenr())"))
+-- or
+:lua print(vim.api.nvim_eval("winnr()"))
+-- or
+:lua print(vim.fn.winnr())
+```
+
+run
+
+git clone the target nvim into a subdirectory of .config 
+need the latest (9+) version of nvim
+
+* [A Basic Stable IDE config for Neovim](https://github.com/LunarVim/nvim-basic-ide)
+* [Neovim Config Switcher - Gist](https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b) and [Neovim Config Switcher - YouTube](https://youtu.be/LkHjJlSgKZY)
+
+```sh
+alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim-kick="NVIM_APPNAME=kickstart nvim"
+alias nvim-chad="NVIM_APPNAME=LunarVim nvim"
+alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
+
+function nvims() {
+  items=("default" "kickstart" "LazyVim" "LunarVim" "AstroNvim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+bindkey -s ^a "nvims\n"
+```
+
+```bash
+nvim --listen ~/.cache/nvim/server.pipe
+```
+(the pipe name is arbitary)
+in one instatance, can be used interactively. Then
+
+```bash
+nvim --server ~/.cache/nvim/server.pipe --remote-expr "winnr()"
+```
+
+* [Example init.lua etc](https://github.com/cpow/cpow-dotfiles)
+* [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
+* https://www.jackfranklin.co.uk/blog/executing-tasks-in-neovim/
 
 * [Tmux Cheat Sheet & Quick Reference](https://tmuxcheatsheet.com)
 
@@ -44,16 +111,32 @@ title: "Neovim-Lua-Rust"
 
 ## Vim, Neovim, nvim
 
+Reset nvim
+
+```sh
+rm -rf ~/.cache/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ./.config/nvim
+```
+
+[Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
+
 * [Why Neovim is the best code editor / IDE for developers](https://console.dev/articles/neovim-best-code-editor-ide-for-developers/)
 * [Neovim and Rust · sharksforarms](https://sharksforarms.dev/posts/neovim-rust/)
 * [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug)
 * [GitHub - hrsh7th/nvim-cmp: A completion plugin for neovim coded in Lua.](https://github.com/hrsh7th/nvim-cmp)
 
+* [How to Configure Neovim to make it Amazing -- complete tutorial](https://youtu.be/J9yqSdvAKXY) with the [Github files here](https://github.com/cpow/cpow-dotfiles)
 * [neovim configuration](https://youtu.be/J9yqSdvAKXY)
 * [nvim-cmp](https://youtu.be/_DnmphIwnjo)
 * [Intro to LuaSnips](https://youtu.be/Dn800rlPIho)
 * [LuaSnips](https://youtu.be/KtQZRAkgLqo)
 * [Automate with Lua in Neovim](https://youtu.be/9gUatBHuXE0)
+
+## LaTeX
+
+* [Compiling LaTeX Documents in a Vim-Based Workflow](https://www.ejmastnak.com/tutorials/vim-latex/compilation/)
+* [VimTeX](https://github.com/lervag/vimtex)
 
 ## Lua
 
@@ -68,4 +151,4 @@ title: "Neovim-Lua-Rust"
 <!-- markdownlint-disable MD034 -->
 * https://example.com
 <!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)
+
