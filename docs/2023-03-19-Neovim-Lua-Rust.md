@@ -36,6 +36,7 @@ Probably the most important command
 ```vim
 :h quickref
 ```
+
 * [Building Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim)
 * [Neovim from Scratch playlist - YouTube](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 * [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim#file-explorer)
@@ -66,7 +67,7 @@ alias nvim-kick="NVIM_APPNAME=kickstart nvim"
 alias nvim-chad="NVIM_APPNAME=LunarVim nvim"
 alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
 
-function nvims() {
+funtcion nvims() {
   items=("default" "kickstart" "LazyVim" "LunarVim" "AstroNvim")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
@@ -84,6 +85,7 @@ bindkey -s ^a "nvims\n"
 ```bash
 nvim --listen ~/.cache/nvim/server.pipe
 ```
+
 (the pipe name is arbitary)
 in one instatance, can be used interactively. Then
 
@@ -119,13 +121,11 @@ rm -rf ~/.local/share/nvim
 rm -rf ./.config/nvim
 ```
 
-[Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
-
+* [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
 * [Why Neovim is the best code editor / IDE for developers](https://console.dev/articles/neovim-best-code-editor-ide-for-developers/)
 * [Neovim and Rust · sharksforarms](https://sharksforarms.dev/posts/neovim-rust/)
 * [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug)
 * [GitHub - hrsh7th/nvim-cmp: A completion plugin for neovim coded in Lua.](https://github.com/hrsh7th/nvim-cmp)
-
 * [How to Configure Neovim to make it Amazing -- complete tutorial](https://youtu.be/J9yqSdvAKXY) with the [Github files here](https://github.com/cpow/cpow-dotfiles)
 * [neovim configuration](https://youtu.be/J9yqSdvAKXY)
 * [nvim-cmp](https://youtu.be/_DnmphIwnjo)
@@ -147,8 +147,4 @@ rm -rf ./.config/nvim
 * [GitHub - amethyst/rlua: High level Lua bindings to Rust](https://github.com/amethyst/rlua)
 * [Learn Lua in Y Minutes](https://learnxinyminutes.com/docs/lua/)
 * [Lua Unofficial FAQ (uFAQ)](https://www.luafaq.org)
-
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
 
