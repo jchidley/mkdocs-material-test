@@ -47,7 +47,7 @@ title: "Links-iPad"
 * [PixelStick - Mac App To Measure Pixel, Angle, Color Onscreen](https://plumamazing.com/product/pixelstick/)
 * [The best Netflix sci-fi movies and TV shows 2023 | Stuff](https://www.stuff.tv/features/27-best-sci-fi-movies-and-tv-shows-netflix/)
 * [The Night Watchman Theory for ADHD Symptoms](https://www.additudemag.com/watchman-theory-adhd/)
-* [Everbuild Tecnic Hybriflex 480 - Joints & Perimeters | Sika UK | Expansion Joints & Perimeter Seals](https://gbr.sika.com/en/construction/joint-sealing/expansion-jointsperimeterseals/everbuild-tecnichybriflex480.html)
+* [Everbuild Technique Hybriflex 480 - Joints & Perimeters | Sika UK | Expansion Joints & Perimeter Seals](https://gbr.sika.com/en/construction/joint-sealing/expansion-jointsperimeterseals/everbuild-tecnichybriflex480.html)
 * [Parts for my LifeCycle](https://www.gympart.com)
 * [6 Channel Energy Monitoring: emonTx V4 - Shop | OpenEnergyMonitor](https://shop.openenergymonitor.com/6-channel-energy-monitoring-emontx-v4/)
 * [GitHub - bernhard-42/jupyter-cadquery: An extension to render cadquery objects in JupyterLab via pythreejs](https://github.com/bernhard-42/jupyter-cadquery)

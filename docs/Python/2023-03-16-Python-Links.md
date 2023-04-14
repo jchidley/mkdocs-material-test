@@ -6,7 +6,7 @@ title: "Python-Links"
 # Python Links
 <!-- markdownlint-enable MD025 -->
 
-## Data Visulisation
+## Data Visualisation
 
 [Effectively Using Matplotlib](https://pbpython.com/effective-matplotlib.html)
 <!-- markdownlint-disable MD034 -->

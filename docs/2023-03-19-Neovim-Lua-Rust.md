@@ -86,8 +86,8 @@ bindkey -s ^a "nvims\n"
 nvim --listen ~/.cache/nvim/server.pipe
 ```
 
-(the pipe name is arbitary)
-in one instatance, can be used interactively. Then
+(the pipe name is arbitrary)
+in one instance, can be used interactively. Then
 
 ```bash
 nvim --server ~/.cache/nvim/server.pipe --remote-expr "winnr()"

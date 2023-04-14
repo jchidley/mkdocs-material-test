@@ -23,7 +23,7 @@ Just output the geo files to the correct format with the right extensino.
 
 ## FEM
 
-* [SymFEL.jl contains several functions usefull for the implementation of the finite elements method (FEM), uses SymPy, Gmsh](https://lmbp.uca.fr/~cindea/software/SymFEL.jl/)
+* [SymFEL.jl contains several functions useful for the implementation of the finite elements method (FEM), uses SymPy, Gmsh](https://lmbp.uca.fr/~cindea/software/SymFEL.jl/)
 * [FEM MeshGmshFromShape](https://wiki.freecad.org/FEM_MeshGmshFromShape)
 
 ## Links

@@ -8,7 +8,7 @@ title: "Python-Fake-Data-and-Testing"
 
 ## Introduction
 
-A sentance
+A sentence
 
 ## Testing
 

@@ -30,7 +30,7 @@ curl -LO ${mirror}/latest-stable/main/${arch}/apk-tools-static-${version}.apk
 [Install Alpine on a Raspberry Pi](https://wiki.alpinelinux.org/wiki/Raspberry_Pi)
 
 We're going to install Alpine in "diskless" mode and use overlay files. Prepare an SD card with 500MB DOS bootable partition with the remainder as ext4
-[Create suitable partitions programatically](https://superuser.com/questions/332252/how-to-create-and-format-a-partition-using-a-bash-script)
+[Create suitable partitions programmatically](https://superuser.com/questions/332252/how-to-create-and-format-a-partition-using-a-bash-script)
 
 ```bash
 apk add e2fsprogs lsblk dosfstools
@@ -44,7 +44,7 @@ wipefs -a ${PIDEVICE} #  -a, --all wipe all magic strings (BE CAREFUL!)
 # letters and digits after optional spaces, 
 # This, in efffect, strips the comments, allowing for in-line comments.
 # Note that sending nothing (or spaces) will send a newline
-# usually selecting the defaul value.
+# usually selecting the default value.
 sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk ${PIDEVICE}
   o # create a new empty DOS partition table
   n # new partition
@@ -56,7 +56,7 @@ sed -e 's/\s*\([\+0-9a-zA-Z]*\).*/\1/' << EOF | fdisk ${PIDEVICE}
   c # change type of partition to 'W95 FAT32 (LBA)'
   n # add a new partition
   p # primary partition
-  2 # partion number 2
+  2 # partition number 2
     # default: start immediately after preceding partition
     # default: extend partition to end of disk
   p # print the partition table
@@ -231,7 +231,7 @@ rngd -l
 
 ```bash
 apk -U upgrade
-apk add mkinitfs # update to inital ramfs
+apk add mkinitfs # update to initial ramfs
 apk -vv info|sort # list of installed packages, look for dropbear
 apk cache -v sync # download and clean out cache
 lbu ci -d
