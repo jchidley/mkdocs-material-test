@@ -1,30 +1,10 @@
 ---
-date: "2023-03-19"
-title: "Neovim-Lua-Rust"
+date: "2023-04-14"
+title: "Neovim-Lua"
 ---
 <!-- markdownlint-disable MD025 -->
-# Neovim-Lua-Rust
+# Neovim Lua
 <!-- markdownlint-enable MD025 -->
-
-## Rust
-
-* [Rust Programming Language](https://www.rust-lang.org)
-* [GitHub - rust-lang/rustlings: Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings/)
-* [Introduction - Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
-* [The Rust Programming Language - The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
-* [A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
-* [Frustrated? It's not you, it's Rust](https://fasterthanli.me/articles/frustrated-its-not-you-its-rust)
-* [How to Mix Rust and Python in Your Project](https://medium.com/@MatthieuL49/a-mixed-rust-python-project-24491e2af424)
-* [GitHub - PyO3/pyo3: Rust bindings for the Python interpreter](https://github.com/PyO3/pyo3)
-* [Introduction - PyO3 user guide](https://pyo3.rs/)
-* [Experiment Introduction - The Rust Programming Language](https://rust-book.cs.brown.edu)
-
-## Rust and Neovim
- 
-* [rust - NeoVim shows diagnostic for `std` and other crates outside my current workspace - Stack Overflow](https://stackoverflow.com/questions/75544704/neovim-shows-diagnostic-for-std-and-other-crates-outside-my-current-workspace)
-* [Rust and Neovim - A Thorough Guide and Walkthrough | the trait](https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/)
-* [Neovim and Rust · sharksforarms](https://sharksforarms.dev/posts/neovim-rust/)
-* [GitHub - Integralist/nvim: Neovim configuration](https://github.com/integralist/nvim)
 
 ## Vim, Neovim and Related
 
@@ -68,6 +48,14 @@ return {
 }
 EOF
 ```
+You can "send lines" to the toggled terminals with the following commands:
+
+* :ToggleTermSendCurrentLine <T_ID>: sends the whole line where you are standing with your cursor
+* :ToggleTermSendVisualLines <T_ID>: sends all the (whole) lines in your visual selection
+* :ToggleTermSendVisualSelection <T_ID>: sends only the visually selected text (this can be a block of text or a selection in a single line)
+
+(<T_ID is an optional terminal ID parameter, which defines where should we send the lines. If the parameter is not provided, then the default is the first terminal)
+
 
 * [Building Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim)
 * [Neovim from Scratch playlist - YouTube](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
@@ -153,7 +141,6 @@ rm -rf ./.config/nvim
 
 * [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
 * [Why Neovim is the best code editor / IDE for developers](https://console.dev/articles/neovim-best-code-editor-ide-for-developers/)
-* [Neovim and Rust · sharksforarms](https://sharksforarms.dev/posts/neovim-rust/)
 * [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug)
 * [GitHub - hrsh7th/nvim-cmp: A completion plugin for neovim coded in Lua.](https://github.com/hrsh7th/nvim-cmp)
 * [How to Configure Neovim to make it Amazing -- complete tutorial](https://youtu.be/J9yqSdvAKXY) with the [Github files here](https://github.com/cpow/cpow-dotfiles)
@@ -173,8 +160,6 @@ rm -rf ./.config/nvim
 * [Learning Lua - resources](http://lua-users.org/wiki/LearningLua)
 * [Programming in Lua : 1](http://www.lua.org/pil/1.html)
 * [Lua for Programmers Part 1: Language Essentials](https://ebens.me/post/lua-for-programmers-part-1/)
-* [lua - Rust](https://docs.rs/lua/latest/lua/)
-* [GitHub - amethyst/rlua: High level Lua bindings to Rust](https://github.com/amethyst/rlua)
 * [Learn Lua in Y Minutes](https://learnxinyminutes.com/docs/lua/)
 * [Lua Unofficial FAQ (uFAQ)](https://www.luafaq.org)
 
