@@ -37,13 +37,43 @@ Probably the most important command
 :h quickref
 ```
 
+### Toggleterm 
+
+for LazyVim 
+
+
+print the full path 
+```sh
+find "$(pwd -P)" -name "filename"
+```
+```sh
+cat << EOF >.config/LazyVim/lua/plugins/toggleterm.lua
+return {
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    opts = {--[[ things you want to change go here]]
+      open_mapping = [[<c-\><c-\>]],
+      hide_numbers = false,
+      direction = "vertical",
+      size = function(term)
+        if term.direction == "horizontal" then
+          return 15
+        elseif term.direction == "vertical" then
+          return vim.o.columns * 0.4
+        end
+      end,
+    },
+  },
+}
+EOF
+```
+
 * [Building Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim)
 * [Neovim from Scratch playlist - YouTube](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 * [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim#file-explorer)
 * [julia-vim](https://github.com/JuliaEditorSupport/julia-vim/blob/master/INSTALL.md)
 * [LunarVimConfig for Julia](https://github.com/davibarreira/LunarVimConfig)
-
-"nikvdp/neomux" needs the terminal number
 
 ```vim
 :lua print(vim.api.nvim_eval("tabpagewinnr(tabpagenr())"))
