@@ -184,6 +184,8 @@ dhcp-option=option:domain-name,chidley.home
 EOF
 sed -i s/chidley.home/example.com/ /etc/dnsmasq.conf # change example.com
 sed -i s/10.2/10.10/g /etc/dnsmasq.conf # change 10.10
+# allow chronyd to accept ntp requests from LAN
+echo "allow" >> /etc/chrony/chrony.conf
 lbu ci -d
 ```
 
