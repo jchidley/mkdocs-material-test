@@ -27,6 +27,11 @@ and `vi` go hand-in-hand.
 So dive into `neovim`. Learn the experts tool. It'll help make you an expert. Learning to 
 be an expert requires you to solve loads of problems. Have fun with them.
 
+## Moving to a new machine
+
+You can definetly copy your configuration to a new machine but you still need to install 
+all the prerequisites for your various plugins.
+On windows I used `scoop install gcc` and `scoop install llvm`. llvm might not have been necessary.
 
 ## Vim, Neovim and Related
 
@@ -53,6 +58,19 @@ vim.opt.shiftwidth = 4
 -- set tabs to 4 spaces
 ```
 ### Toggleterm 
+
+This is used to set the program for `:!` commands. It's also used for the terminal.
+
+```vim
+set shell=powershell
+set shellcmdflag=-command
+set shellquote=\"
+set shellxquote=
+```
+
+[Change the default shell](https://superuser.com/questions/1759700/change-default-shell-to-powershell-in-neovim)
+[Some vimrc options, including spell check](https://robindouglas.uk/powershell/vim/2018/04/05/PowerShell-with-Vim.html) `set spell spelllang=en_gb`
+
 
 for LazyVim 
 
