@@ -2,7 +2,7 @@
 date: "2020-03-02"
 title: "j-core links"
 ---
-<!-- 2020-02-11-QEMU-Raspberry-Pi.md -->
+<!-- 2020-03-02-j-core-links.md -->
 
 <!-- markdownlint-disable MD025 -->
 # j-core
