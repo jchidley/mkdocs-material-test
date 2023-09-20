@@ -49,6 +49,19 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Catherine @whitequark - developer of Amaranth HDL](https://cohost.org/whitequark)
 * [#nmigen on 2020-07-31 — irc logs at freenode.irclog.whitequark.org](https://freenode.irclog.whitequark.org/nmigen/2020-07-31)
 
+
+### Amaranth HDL Installation, Setup
+
+* [pip install amaranth-yosys](https://pypi.org/project/amaranth-yosys/) The Amaranth HDL Yosys wheels provide a specialized WebAssembly based build of Yosys that runs via wasmtime-py if there is no system-wide Yosys installation, or if that installation is too old.
+[ImportError: cannot import name 'soft_unicode' from 'markupsafe'](https://stackoverflow.com/questions/72191560/importerror-cannot-import-name-soft-unicode-from-markupsafe)
+
+### WSL
+
+* [How to add second WSL2 Ubuntu distro](https://superuser.com/questions/1515246/how-to-add-second-wsl2-ubuntu-distro-fresh-install)
+* [ubuntu images](https://cloud-images.ubuntu.com/wsl/)
+* [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
+* [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
+* [usbipd-win](https://github.com/dorssel/usbipd-win)
 ### HDLs
 
 * [Silice is an open source language that simplifies prototyping and writing algorithms on FPGA architectures.](https://github.com/sylefeb/Silice/tree/master)
@@ -91,6 +104,8 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [🎲 A Tiny and Platform-Independent True Random Number Generator for any FPGA.](https://github.com/stnolting/neoTRNG)
 * [learn-fpga: Learning FPGA, yosys, nextpnr, and RISC-V](https://github.com/BrunoLevy/learn-fpga)
 * [Building risc on FPGA](http://www.fpgacpu.org/papers/xsoc-series-drafts.pdf)
+* [Icestudio Documentation](https://github.com/FPGAwars/icestudio/wiki)
+* [Learning FPGA Design with nMigen](https://vivonomicon.com/2020/04/14/learning-fpga-design-with-nmigen/)
 
 #### old but useful
 
@@ -104,8 +119,10 @@ probably worth looking up Migen documentation
 ### Hardware
 
 * [UPduino Documentation — UPduino 0.1 documentation](https://upduino.readthedocs.io/en/latest/index.html)
-* [ULX3S | Crowd Supply](https://www.crowdsupply.com/radiona/ulx3s)
-* [GitHub - devantech/iceFUN](https://github.com/devantech/iceFUN)
+* [ULX3S | Crowd Supply](https://www.crowdsupply.com/radiona/ulx3s) and [ulx3s](https://ulx3s.github.io/)
+* [GitHub - devantech/iceFUN](https://github.com/devantech/iceFUN) and [Datasheet pdf](https://www.robot-electronics.co.uk/files/iceFUNdoc.pdf) and [programmer](https://github.com/dorssel/usbipd-win)
+* [First steps with openFPGALoader](https://trabucayre.github.io/openFPGALoader/guide/first-steps.html)
+* [deprecated in favor of openFPGALoader](https://github.com/kost/fujprog)
 
 ### Risc-V
 

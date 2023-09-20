@@ -78,6 +78,5 @@ Install Visual Studio Code from its usual page. Open up the project folder that 
 ## Links
 
 <!-- markdownlint-disable MD034 -->
-* https://example.com
+
 <!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)

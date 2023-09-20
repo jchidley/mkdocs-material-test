@@ -110,6 +110,8 @@ Keyboard is a bit weird: Tab key acts as the CTRL key on the C64, and the left C
 * [virtual 6502 Emulator](https://www.masswerk.at/6502/)
 * YouTube [Emulating a CPU in C++ (6502)](https://www.youtube.com/watch?v=qJgsuQoy9bc) and GitHub [Learning how a CPU works by emulating one](https://github.com/davepoo/6502Emulator)
 * [8bitworkshop IDE](https://8bitworkshop.com/v3.10.1/?platform=c64&file=hello.dasm#)
+* [](https://8bitworkshop.com/v3.10.1/?platform=c64&file=hello.dasm)
+* [dasm](https://dasm-assembler.github.io/)
 * [Writing a 6502 emulator in Python](https://dailystuff.nl/projects/writing-a-6502-emulator-in-python) and [6502 emulator in Python](https://github.com/hspaans/python-6502-emulator#introduction)
 * [A fast & simple MOS 6502 CPU emulator written in C++](https://github.com/gianlucag/mos6502)
 * [Easy 6502 by skilldrick](https://skilldrick.github.io/easy6502/)
