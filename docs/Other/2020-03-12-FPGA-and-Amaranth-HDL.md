@@ -88,6 +88,7 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Silice is an open source language that simplifies prototyping and writing algorithms on FPGA architectures.](https://github.com/sylefeb/Silice/tree/master)
 * [SpinalHDL · GitHub](https://github.com/SpinalHDL)
 * [Demo - Litex Development Enviroment - Public Docs - Trenz Electronic Wiki](https://wiki.trenz-electronic.de/display/PD/Demo+-+Litex+Development+Enviroment)
+* [Chisel/FIRRTL: Home](https://www.chisel-lang.org)
 
 ### Tutorials, Examples
 
