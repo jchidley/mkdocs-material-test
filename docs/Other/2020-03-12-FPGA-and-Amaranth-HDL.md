@@ -10,6 +10,25 @@ title: "FPGA-and-Amaranth-HDL"
 
 ## Introduction
 
+For a whole stack of reasons, mostly gleaned from [this playlist](https://youtube.com/playlist?list=PL3by7evD3F52On-ws9pcdQuEL-rYbNNFB&si=8EmvqcqfRbyXapf0) and earlier reading (prior to 2023) it seems like this is the way to go:
+
+* Verilog
+* Simulation, not physical hardware
+* ICE40 HX 4K
+* Icestorm 
+* Risc-V
+* 6502 
+
+John uses Z80 as it was his first computer, 6502 is, arguably, easier to understand and implement. There will also be a number of soft-cores of the 6502 and a lot of assembly examples - this is what people programmed in.
+
+## stuff
+
+ICE40 HX 4k appears to be an 8K with different packaging, [under £8 each](https://www.mouser.co.uk/ProductDetail/Lattice/iCE40HX4K-TQ144?qs=F9A14TELRMvGNTZXkNDuOw%3D%3D)
+
+[GitHub - johnwinans/Verilog-Examples](https://github.com/johnwinans/Verilog-Examples)
+
+[2057-ICE40HX4K-TQ144-breakout: Minimal Raspberry PI breakout board for ICE40HX4K FPGA](https://github.com/johnwinans/2057-ICE40HX4K-TQ144-breakout/tree/master)
+
 https://web.mit.edu/6.111/www/f2017/handouts/TheDigitalWorld.pdf
 
 * [GitHub - amaranth-lang/amaranth: A modern hardware definition language and toolchain based on Python](https://github.com/amaranth-lang/amaranth)
@@ -57,11 +76,13 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 
 ### WSL
 
+* [Awesome-WSL: Awesome list dedicated to Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#10-gui-apps)
 * [How to add second WSL2 Ubuntu distro](https://superuser.com/questions/1515246/how-to-add-second-wsl2-ubuntu-distro-fresh-install)
 * [ubuntu images](https://cloud-images.ubuntu.com/wsl/)
 * [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
 * [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
 * [usbipd-win](https://github.com/dorssel/usbipd-win)
+ 
 ### HDLs
 
 * [Silice is an open source language that simplifies prototyping and writing algorithms on FPGA architectures.](https://github.com/sylefeb/Silice/tree/master)
@@ -70,6 +91,7 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 
 ### Tutorials, Examples
 
+* [FPGA Introduction](https://youtube.com/playlist?list=PL3by7evD3F52On-ws9pcdQuEL-rYbNNFB&si=dVFTdoYEmnfezTvN)
 * [FPGA-101: Introduction to FPGAs, Learn the Basics](https://nandland.com/fpga-101/)
 * [Getting Started with FPGAs | No Starch Press](https://nostarch.com/gettingstartedwithfpgas)
 * [How I went from blinker to RSIC-V in 3 months](https://blog.yosyshq.com/p/blinker-to-risc-v/)
@@ -88,7 +110,7 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Implementing a simple SoC in Migen — whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-19/implementing-a-simple-soc-in-migen/)
 * [Circuit Simulator Applet](http://falstad.com/circuit/)
 * [FPGA Bootcamp #0 | Hackaday.io](https://hackaday.io/project/159720-fpga-bootcamp-0)
-*  [Implementing a UART in Verilog and Migen — whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-18/implementing-an-uart-in-verilog-and-migen/)
+* [Implementing a UART in Verilog and Migen — whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-18/implementing-an-uart-in-verilog-and-migen/)
 * [GitHub - kbob/nmigen-examples: I want to learn nMigen](https://github.com/kbob/nmigen-examples/tree/master)
 * [GitHub - RobertBaruch/nmigen-tutorial: A tutorial for using nmigen](https://github.com/RobertBaruch/nmigen-tutorial)
 * [Designing a RISC-V CPU, Part 1: Learning hardware design as a software engineer](https://mcla.ug/blog/risc-v-cpu-part-1.html)
@@ -123,54 +145,6 @@ probably worth looking up Migen documentation
 * [GitHub - devantech/iceFUN](https://github.com/devantech/iceFUN) and [Datasheet pdf](https://www.robot-electronics.co.uk/files/iceFUNdoc.pdf) and [programmer](https://github.com/dorssel/usbipd-win)
 * [First steps with openFPGALoader](https://trabucayre.github.io/openFPGALoader/guide/first-steps.html)
 * [deprecated in favor of openFPGALoader](https://github.com/kost/fujprog)
-
-### Risc-V
-
-* [The NEORV32 RISC-V Processor](https://stnolting.github.io/neorv32/)
-* [GitHub - SpinalHDL/VexRiscv: A FPGA friendly 32 bit RISC-V CPU implementation](https://github.com/SpinalHDL/VexRiscv)
-* [Ice-V projects: exploring RISC-V implementations in Silice](https://github.com/sylefeb/Silice/blob/master/projects/ice-v/README.md)
-* [FEMTORV32 / FEMTOSOC: a minimalistic RISC-V CPU](https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV)
-* [SERV - The SErial RISC-V CPU](https://github.com/olofk/serv)
-* [🖥️ A tiny, customizable and highly extensible MCU-class 32-bit RISC-V soft-core CPU and microcontroller-like SoC written in platform-independent VHDL.](https://github.com/stnolting/neorv32)
-* [✔️Port of RISCOF to verify the NEORV32 Processor's RISC-V ISA compatibility.](https://github.com/stnolting/neorv32-riscof)
-* [📁 NEORV32 projects and exemplary setups for various FPGAs, boards and (open-source) toolchains.](https://github.com/stnolting/neorv32-setups)
-* [User Guide The NEORV32 RISC-V Processor](https://stnolting.github.io/neorv32/ug/)
-* [GitHub - litex-hub/linux-on-litex-vexriscv: Linux on LiteX-VexRiscv](https://github.com/litex-hub/linux-on-litex-vexriscv)
-
----
-
-* [RISC-V SoftCPU Contest Highlights – RISC-V International](https://riscv.org/blog/2018/12/risc-v-softcpu-contest-highlights/)
-* [SpinalHDL/VexRiscvSoftcoreContest2018](https://github.com/SpinalHDL/VexRiscvSoftcoreContest2018)
-* [SoftCPU/SoC engine-V](https://github.com/micro-FPGA/engine-V)
-* [PulseRain Reindeer - RISCV RV32IM Soft CPU](https://github.com/PulseRain/Reindeer)
-* [SERV - The SErial RISC-V CPU](https://github.com/olofk/serv)
-* [RudolV: RISC-V processor](https://github.com/bobbl/rudolv)
-* [JiVe: Small micro-coded RISC-V softcore](https://github.com/fredrequin/JiVe)
-* [Featherweight RISC-V implementation](https://github.com/Featherweight-IP/fwrisc)
-
----
-
-* [riscv-non-isa/riscv-arch-test](https://github.com/riscv-non-isa/riscv-arch-test)
-* [Risc-V Assembly](https://youtu.be/GWiAQs4-UQ0?si=RvFJqRN5h1U0tYY6)
-* [mini-rv32ima: A tiny C header-only risc-v emulator.](https://github.com/cnlohr/mini-rv32ima)
-* [pico-rv32ima: Running Linux on RP2040 with the help of RISC-V emulation](https://github.com/tvlad1234/pico-rv32ima)
-* [rv RV32IMC in ~600 lines of C89](https://github.com/mnurzia/rv)
-* [TinyEMU is a system emulator for the RISC-V](https://bellard.org/tinyemu/)
-* [rvemu: RISC-V emulator for CLI and Web written in Rust with WebAssembly. It supports xv6 and Linux (ongoing).](https://github.com/d0iasm/rvemu)
-* [Writing a RISC-V Emulator in Rust - Writing a RISC-V Emulator in Rust](https://book.rvemu.app)
-* [rvemu-for-book: Reference implementation for the book "Writing a RISC-V Emulator in Rust".](https://github.com/d0iasm/rvemu-for-book)
-* [Writing a simple RISC-V emulator in plain C (Base integer, multiplication and csr instructions) — fmash16's blog](https://fmash16.github.io/content/posts/riscv-emulator-in-c.html)
- 
----
-
-* [The Zephyr Project – A proven RTOS ecosystem, by developers, for developers.](https://www.zephyrproject.org)
-* [RISC-V International – RISC-V: The Open Standard RISC Instruction Set Architecture](https://riscv.org)
-* [RISC-V Boards — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/riscv/index.html)
-* [NEORV32 — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/riscv/neorv32/doc/index.html)
-* [LiteX VexRiscv — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/riscv/litex_vexriscv/doc/index.html)
-* [RISCV32 Emulation (QEMU) — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/riscv/qemu_riscv32/doc/index.html)
-* [Introduction — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/introduction/index.html)
-* [Raspberry Pi Pico — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/arm/rpi_pico/doc/index.html#)
 
 ### Other
 
