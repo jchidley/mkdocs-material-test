@@ -75,29 +75,21 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Catherine @whitequark - developer of Amaranth HDL](https://cohost.org/whitequark)
 * [#nmigen on 2020-07-31 — irc logs at freenode.irclog.whitequark.org](https://freenode.irclog.whitequark.org/nmigen/2020-07-31)
 
-
 ### Amaranth HDL Installation, Setup
 
 * [pip install amaranth-yosys](https://pypi.org/project/amaranth-yosys/) The Amaranth HDL Yosys wheels provide a specialized WebAssembly based build of Yosys that runs via wasmtime-py if there is no system-wide Yosys installation, or if that installation is too old.
 [ImportError: cannot import name 'soft_unicode' from 'markupsafe'](https://stackoverflow.com/questions/72191560/importerror-cannot-import-name-soft-unicode-from-markupsafe)
 
-### WSL
-
-* [Awesome-WSL: Awesome list dedicated to Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#10-gui-apps)
-* [How to add second WSL2 Ubuntu distro](https://superuser.com/questions/1515246/how-to-add-second-wsl2-ubuntu-distro-fresh-install)
-* [ubuntu images](https://cloud-images.ubuntu.com/wsl/)
-* [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
-* [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
-* [usbipd-win](https://github.com/dorssel/usbipd-win)
- 
 ### HDLs
 
-* [](https://en.wikipedia.org/wiki/Hardware_description_language)
+* [HDLs](https://en.wikipedia.org/wiki/Hardware_description_language)
 * [Amaranth](https://amaranth-lang.org/docs/amaranth/latest/) - Python - a few hours ago
 * [Silice is an open source language that simplifies prototyping and writing algorithms on FPGA architectures.](https://github.com/sylefeb/Silice/tree/master)
 * [SpinalHDL · GitHub](https://github.com/SpinalHDL) - Scala - updated 2 days ago
+* Check for Spinal HDL [here](https://tomverbeure.github.io/)
 * [Demo - Litex Development Enviroment - Public Docs - Trenz Electronic Wiki](https://wiki.trenz-electronic.de/display/PD/Demo+-+Litex+Development+Enviroment)
 * [Chisel/FIRRTL: Home](https://www.chisel-lang.org) - Scala - updated yesterday
+* [Chisel pdf book](http://www.imm.dtu.dk/~masca/chisel-book.html)
 * [Migen](https://m-labs.hk/migen/manual/index.html#https://m-labs.hk/migen/manual/index.html#) - still getting updates
 * [nMigen](https://github.com/m-labs/nmigen) - last update 2022
 * [MyHDL](https://myhdl.org/) - 31-May-2019 MyHDL 0.11.0 released
@@ -165,7 +157,6 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Monitor signals MyHDL/nMigen simulation and display as waveforms in a Jupyter notebook](https://github.com/devbisme/myhdlpeek)
 * [serialcommander is a small nmigen tool that executes various 'tasks' when sent various characters over a serial port/UART](https://github.com/newhouseb/serialcommander)
 
-
 search for Amaranth / nMigen / Migen with language Python at GitHub
 
 ### Tutorials, Examples
@@ -205,7 +196,6 @@ search for Amaranth / nMigen / Migen with language Python at GitHub
 * [Migen | M-Labs](https://m-labs.hk/gateware/migen/)
 
 probably worth looking up Migen documentation
-
 ### Hardware
 
 * [UPduino Documentation — UPduino 0.1 documentation](https://upduino.readthedocs.io/en/latest/index.html)
@@ -213,6 +203,7 @@ probably worth looking up Migen documentation
 * [GitHub - devantech/iceFUN](https://github.com/devantech/iceFUN) and [Datasheet pdf](https://www.robot-electronics.co.uk/files/iceFUNdoc.pdf) and [programmer](https://github.com/dorssel/usbipd-win)
 * [First steps with openFPGALoader](https://trabucayre.github.io/openFPGALoader/guide/first-steps.html)
 * [deprecated in favor of openFPGALoader](https://github.com/kost/fujprog)
+* [Apio (pronounced [ˈa.pjo]) is a multiplatform toolbox](https://github.com/FPGAwars/apio)
 
 ### Other
 
@@ -342,5 +333,4 @@ Move the extracted files to P:\Tools\graphviz-2.38\release\bin adjust PATH
 Run `dot show.dot -Tjpg -O` to convert to jpg with the name `show.dot.jpg`
 
 <!-- markdownlint-disable MD034 -->
-
 <!-- markdownlint-enable MD034 -->
