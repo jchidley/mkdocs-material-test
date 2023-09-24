@@ -75,6 +75,7 @@ This is enough to get a normal desktop in under 2G of disk space.
 
 ## Links
 
+* [Running glibc programs](https://wiki.alpinelinux.org/wiki/Running_glibc_programs)
 * [XFCE Setup](https://wiki.alpinelinux.org/wiki/XFCE_Setup)
 * [Enable Community Repository](https://wiki.alpinelinux.org/wiki/Enable_Community_Repository)
 <!-- markdownlint-disable MD034 -->
