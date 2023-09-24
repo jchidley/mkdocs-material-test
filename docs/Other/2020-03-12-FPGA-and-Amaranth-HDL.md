@@ -198,12 +198,23 @@ search for Amaranth / nMigen / Migen with language Python at GitHub
 probably worth looking up Migen documentation
 ### Hardware
 
+Boards that I own:
+* TinyFPGA BX ICE40LP8K 128 KBit RAM, 6000 KBit flash
+* TinyFPGA A2 XO2-1200 64 KBit RAM 64 KBit flash
+* iceFUN iCE40-HX8K 
+* XLX3S Lattice ECP5 LFE5U-85F-6BG381C 32MB SDRAM, 4-16 MB Quad-SPI Flash 
+* upduino 2.1 Lattice UltraPlus ICE40UP5K FPGA with 5.3K LUTs, 1Mb SPRAM, 120Kb DPRAM, 8 Multipliers
+
+All supported by [Apio (pronounced [ˈa.pjo]) is a multiplatform toolbox](https://github.com/FPGAwars/apio)
+ULX3S, TinyFPGA BX supported by [Litex](https://github.com/litex-hub/litex-boards)
+ULX3S, Upduino
+
 * [UPduino Documentation — UPduino 0.1 documentation](https://upduino.readthedocs.io/en/latest/index.html)
-* [ULX3S | Crowd Supply](https://www.crowdsupply.com/radiona/ulx3s) and [ulx3s](https://ulx3s.github.io/)
+* [TinyFPGA](https://tinyfpga.com/)
+* [ULX3S](https://www.crowdsupply.com/radiona/ulx3s) and [ulx3s](https://ulx3s.github.io/)
 * [GitHub - devantech/iceFUN](https://github.com/devantech/iceFUN) and [Datasheet pdf](https://www.robot-electronics.co.uk/files/iceFUNdoc.pdf) and [programmer](https://github.com/dorssel/usbipd-win)
 * [First steps with openFPGALoader](https://trabucayre.github.io/openFPGALoader/guide/first-steps.html)
 * [deprecated in favor of openFPGALoader](https://github.com/kost/fujprog)
-* [Apio (pronounced [ˈa.pjo]) is a multiplatform toolbox](https://github.com/FPGAwars/apio)
 
 ### Other
 
