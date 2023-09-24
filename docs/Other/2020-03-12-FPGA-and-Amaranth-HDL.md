@@ -21,6 +21,16 @@ For a whole stack of reasons, mostly gleaned from [this playlist](https://youtub
 
 John uses Z80 as it was his first computer, 6502 is, arguably, easier to understand and implement. There will also be a number of soft-cores of the 6502 and a lot of assembly examples - this is what people programmed in.
 
+## Projects
+
+* [BUILDING AN 8-BIT CPU ON AN FPGA](https://austinmorlan.com/posts/8bit_breadboard_fpga/)
+* [BUILDING AN FPGA COMPUTER: SAP-1](https://austinmorlan.com/posts/fpga_computer_sap1/)
+* [BUILDING AN FPGA COMPUTER: SAP-2](https://austinmorlan.com/posts/fpga_computer_sap2/)
+* [BUILDING AN FPGA COMPUTER: SAP-3](https://austinmorlan.com/posts/fpga_computer_sap3/)
+* [BUILDING AN FPGA COMPUTER: VGA](https://austinmorlan.com/posts/fpga_computer_vga/)
+* [BUILDING AN 8-BIT CPU ON A GAME BOY](https://austinmorlan.com/posts/8bit_breadboard_gameboy/)
+* [BUILDING AN 8-BIT CPU ON A BREADBOARD](https://austinmorlan.com/posts/8bit_breadboard/)
+
 ## stuff
 
 ICE40 HX 4k appears to be an 8K with different packaging, [under £8 each](https://www.mouser.co.uk/ProductDetail/Lattice/iCE40HX4K-TQ144?qs=F9A14TELRMvGNTZXkNDuOw%3D%3D)
