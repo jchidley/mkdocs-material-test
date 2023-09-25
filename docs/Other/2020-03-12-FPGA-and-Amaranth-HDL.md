@@ -33,45 +33,20 @@ John uses Z80 as it was his first computer, 6502 is, arguably, easier to underst
 
 ## stuff
 
-ICE40 HX 4k appears to be an 8K with different packaging, [under £8 each](https://www.mouser.co.uk/ProductDetail/Lattice/iCE40HX4K-TQ144?qs=F9A14TELRMvGNTZXkNDuOw%3D%3D)
-
 [GitHub - johnwinans/Verilog-Examples](https://github.com/johnwinans/Verilog-Examples)
-
-[2057-ICE40HX4K-TQ144-breakout: Minimal Raspberry PI breakout board for ICE40HX4K FPGA](https://github.com/johnwinans/2057-ICE40HX4K-TQ144-breakout/tree/master)
 
 https://web.mit.edu/6.111/www/f2017/handouts/TheDigitalWorld.pdf
 
-* [GitHub - amaranth-lang/amaranth: A modern hardware definition language and toolchain based on Python](https://github.com/amaranth-lang/amaranth)
-* [Snippet from a talk about LUNA](https://talks.toorcon.net/media/toorcon-2021/question_uploads/Unauthorized_Guide_to_LUNA_xK3u1SN.pptx)
-Basic building block extends elaboratable
-•elaborate method returns a Module to synthesize
-•Elaboratables have ports (public attributes)
-•Modules have submodules
-•Modules have multiple domains:
-•comb: simple combinatorial logic (asynchronous)
-•Clock-synchronous domains
-Default is called sync and is automatically connected to the primary platform clock
-
-* [amaranth | Open Research Institute](https://www.openresearch.institute/tag/amaranth/) with https://github.com/maia-sdr/maia-sdr/tree/main/maia-hdl
-* [Amaranth-HDL built movement engine](https://github.com/hstarmans/hexastorm/blob/master/src/hexastorm/movement.py)
-* [hexastorm](https://github.com/hstarmans/hexastorm/tree/master) [based on this paper](http://www.roboticsproceedings.org/rss10/p42.pdf)
-* [More Amaranth HDL stuff with `*.v` files too](https://github.com/sensille/conan_fpga/blob/master/movequeue.py)
 * [fpga4fun.com - where FPGAs are fun](https://www.fpga4fun.com)
-* [Language & toolchain — Amaranth HDL toolchain 0.4.dev197 documentation](https://amaranth-lang.org/docs/amaranth/latest/index.html)
 * [Learning how to FPGA with ‘Neopixel’ LEDs – Vivonomicon's Blog](https://vivonomicon.com/2018/12/24/learning-how-to-fpga-with-neopixel-leds/)
-* [GitHub - jonnew/learn-migen: migen tutorials, etc](https://github.com/jonnew/learn-migen/tree/master)
-* [nMigen for 6800 CPU development](https://www.youtube.com/watch?v=AQOXoKQhG3I&list=PL2Bqmy_B2P9t8sFYz39OC9eWEAke7E3nt&index=30)
-* [Introduction — LUNA documentation](https://luna.readthedocs.io/en/latest/intro.html)
+
+* [Introduction -- LUNA documentation](https://luna.readthedocs.io/en/latest/intro.html)
 * [Including non-Amaranth Instances in Amaranth - kate's lab notebook](https://lab.ktemkin.com/post/amaranth-instance/)
 * [GitHub - greatscottgadgets/luna: a USB multitool + Amaranth HDL framework for monitoring, hacking, and developing USB devices](https://github.com/greatscottgadgets/luna)
-* [Exploring Open-Toolchain FPGA HW, part 1](https://www.ktemkin.com/exploring-open-fpga-hardware/)
 * [Cynthion - Great Scott Gadgets](https://greatscottgadgets.com/cynthion/)
-* [SymbiFlow Getting Started](https://symbiflow.readthedocs.io/en/latest/symbiflow-arch-defs/docs/source/getting-started.html)
 
-Get yosys from [here](http://www.clifford.at/yosys/download.html)
-Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH environment variable
+* [nextpnr](https://www.youtube.com/watch?v=LiCQzQsLFqA)
 
-* [Open Source FPGA tool flow part 1: yosys](https://www.youtube.com/watch?v=A5AHglpfdtQ&list=PL2Bqmy_B2P9t8sFYz39OC9eWEAke7E3nt&index=12)
 * [Catherine @whitequark - developer of Amaranth HDL](https://cohost.org/whitequark)
 * [#nmigen on 2020-07-31 — irc logs at freenode.irclog.whitequark.org](https://freenode.irclog.whitequark.org/nmigen/2020-07-31)
 
@@ -93,9 +68,13 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Migen](https://m-labs.hk/migen/manual/index.html#https://m-labs.hk/migen/manual/index.html#) - still getting updates
 * [nMigen](https://github.com/m-labs/nmigen) - last update 2022
 * [MyHDL](https://myhdl.org/) - 31-May-2019 MyHDL 0.11.0 released
+* [FOSS Flows For FPGA — F4PGA documentation](https://f4pga.readthedocs.io/en/latest/index.html)
 
 ### Amaranth, Migen, nMigen
 
+* [ChipFlow alpha documentation](https://docs.chipflow.io/en/latest/index.html)
+* [amaranth: A modern hardware definition language and toolchain based on Python](https://github.com/amaranth-lang/amaranth) see [the documentation for Amaranth's Language & toolchain](https://amaranth-lang.org/docs/amaranth/latest/index.html)
+* [Implementing a UART in Verilog and Migen — whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-18/implementing-an-uart-in-verilog-and-migen/) and [Implementing a simple SoC in Migen -- whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-19/implementing-a-simple-soc-in-migen/)
 * [A (Very) Quick Tour of nMigen as of May 25th, 2021](https://github.com/JosephBushagour/tour-of-nmigen/blob/main/tour_of_nmigen.md)
 * [FPGA Pong!](https://github.com/railnova/workshop-FPGA-Pong) with some useful explanations
 * [amaranth-template-fpga](https://github.com/amaranth-lang/template-fpga)
@@ -107,13 +86,16 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Let’s Write a Minimal RISC-V CPU in nMigen – Vivonomicon's Blog](https://vivonomicon.com/2020/06/13/lets-write-a-minimal-risc-v-cpu-in-nmigen/) and [github](https://github.com/WRansohoff/rv32i_nmigen_blog)
 * [How I went from blinker to RSIC-V in 3 months](https://blog.yosyshq.com/p/blinker-to-risc-v/)
 * [bl0x/learn-fpga-amaranth: Code for Bruno Levy's learn-fpga tutorial written in Amaranth HDL](https://github.com/bl0x/learn-fpga-amaranth/tree/main)
+* [amaranth | Open Research Institute](https://www.openresearch.institute/tag/amaranth/) with [source code for maia sdr](https://github.com/maia-sdr/maia-sdr/tree/main/maia-hdl)
+* [Python to HDL: full Amaranth walkthrough to FPGA and ASIC GDS](https://youtu.be/yJxAX7gCpvQ?si=lVHfpUBPbFDDCRz3) with [neptune: Flexible digital logic hardware frequency discriminator used as an extreeeeeme guitar tuner.](https://github.com/psychogenic/neptune) and asic [Tiny Tapeout :: Documentation in English](https://tinytapeout.com)
 * [learning nmigen](https://libre-soc.org/docs/learning_nmigen/)
 * [Stuff about luna and nmigen / amaranth](https://talks.toorcon.net/media/toorcon-2021/question_uploads/Unauthorized_Guide_to_LUNA_xK3u1SN.pptx)
-* [GitHub - kbob/nmigen-examples: I want to learn nMigen](https://github.com/kbob/nmigen-examples/tree/master)
-* [GitHub - RobertBaruch/nmigen-tutorial: A tutorial for using nmigen](https://github.com/RobertBaruch/nmigen-tutorial)
+* [nmigen-examples: I want to learn nMigen](https://github.com/kbob/nmigen-examples/tree/master)
+* [Graded exercises for Amaranth HDL](https://github.com/RobertBaruch/amaranth-exercises) and [Tutorial](https://github.com/RobertBaruch/amaranth-tutorial)
 * [learning nmigen](https://libre-soc.org/docs/learning_nmigen/)
 * [Libre-soc-dev nmigen tutorials etc.](http://lists.libre-soc.org/pipermail/libre-soc-dev/2021-October/003858.html)
 * [ULX3S nMigen examples](https://github.com/GuzTech/ulx3s-nmigen-examples/blob/master/README.md)
+* [Amaranth HDL examples for the Ulx4m FPGA board](https://github.com/lawrie/ulx4m_amaranth_examples) 
 * [blackicemx_nmigen_examples](https://github.com/lawrie/blackicemx_nmigen_examples)
 * [hdl_ldpc_encoder](https://github.com/PaulBryden/hdl_ldpc_encoder)
 * [A simple RISC V CPU built with nMigen](https://github.com/lochsh/riscy-boi/tree/master)
@@ -133,10 +115,8 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [Altair is a CPU core that implements the RISC-V RV32I Instruction Set.](https://github.com/AngelTerrones/Altair/tree/master)
 * [nmigen-beginner](https://github.com/DonaldKellett/nmigen-beginner) from [ZipCPU's site](http://zipcpu.com/tutorial/)
 * [Misato RISC-V RV32I CPU](https://github.com/GuzTech/misato)
-* [Graded exercises for Amaranth HDL](https://github.com/RobertBaruch/amaranth-exercises) and [Tutorial](https://github.com/RobertBaruch/amaranth-tutorial)
 * [amaranth-farm ... where users of amaranth HDL share cores and code with each other](https://github.com/amaranth-farm)
-* [Use amaranth-to-litex to simply import Amaranth code into a Litex project.](https://github.com/lambdaconcept/amaranth-to-litex)
-* [Amaranth HDL examples for the Ulx4m FPGA board](https://github.com/lawrie/ulx4m_amaranth_examples)
+* [Use amaranth-to-litex to simply import Amaranth code into a Litex project](https://github.com/lambdaconcept/amaranth-to-litex)
 * [An Amaranth implementation of Voja Antonic's 4bit CPU](https://github.com/ylm/nibblecpu) and [BADGE FOR SUPERCON.6 / November 2022](https://hackaday.io/project/182568/files)
 * [RISC-V processor implemented in Amaranth](https://github.com/msvisser/riscv-tilelink)
 * [A simple fixed-point FFT module with amaranth](https://github.com/kazkojima/tinyfft-fpga#-updates)
@@ -149,13 +129,17 @@ Install in P:\Tools\yosys-win32-mxebin-0.9 and add that to the user's PATH envir
 * [A curated collection of code written using the amaranth hdl](https://github.com/sporniket/amaranth-stuff)
 * [simple risc-v cpu and soc in amaranth-lang](https://github.com/vdbhatt/nutty)
 * [An implementation of "the cradle" for the ECP5-based colorlight i9 written with the Amaranth HDL](https://github.com/sporniket/the-cradle-colorlight-i9-ecp5-amaranth-hdl)
-* [Small, FPGA soft-cores for multiplication, division (eventually), and other arithmetic. Written in Amaranth](https://github.com/cr1901/smolarith)
-* [An FPGA project that implements the memory map of the computer known as Atari STe, using amaranth-hdl](https://github.com/sporniket/the-pretender-atari-ste)
-* [Standard HyperRAM core for ECP5 written in Litex/Migen](https://github.com/gregdavill/litex-hyperram/tree/master)
+* [Small, FPGA soft-cores for multiplication, division (eventually), and other arithmetic](https://github.com/cr1901/smolarith)
+* [An FPGA project that implements the memory map of the computer known as Atari STe](https://github.com/sporniket/the-pretender-atari-ste)
+* [Standard HyperRAM core for ECP5](https://github.com/gregdavill/litex-hyperram/tree/master)
 * [Fiddling with FPGAs, Migen, LiteX and stuffs](https://github.com/titouanc/fpga-scratchpad) including ULX3S
+* [learn-migen: migen tutorials, etc](https://github.com/jonnew/learn-migen/tree/master)
 * [(WIP) FSM generator for Migen based on Python generators](https://github.com/cactorium/fsm-gen-migen)
-* [Monitor signals MyHDL/nMigen simulation and display as waveforms in a Jupyter notebook](https://github.com/devbisme/myhdlpeek)
+* [nMigen for 6800 CPU](https://www.youtube.com/watch?v=AQOXoKQhG3I&list=PL2Bqmy_B2P9t8sFYz39OC9eWEAke7E3nt&index=30) with [source code](https://github.com/RobertBaruch/n6800)
+* [Monitor signals MyHDL/nMigen simulation and display as waveforms in a Jupyter notebook](https://github.com/devbisme/myhdlpeek) 
 * [serialcommander is a small nmigen tool that executes various 'tasks' when sent various characters over a serial port/UART](https://github.com/newhouseb/serialcommander)
+* [Amaranth-HDL built movement engine](https://github.com/hstarmans/hexastorm/blob/master/src/hexastorm/movement.py) [hexastorm](https://github.com/hstarmans/hexastorm/tree/master) uses amaranth elsewhere and the movement is [based on this paper](http://www.roboticsproceedings.org/rss10/p42.pdf) 
+* [More Amaranth HDL stuff with `*.v` files, Klipper too](https://github.com/sensille/conan_fpga/blob/master/movequeue.py)
 
 search for Amaranth / nMigen / Migen with language Python at GitHub
 
@@ -172,7 +156,7 @@ search for Amaranth / nMigen / Migen with language Python at GitHub
 * [Yosys Headquarters · GitHub](https://github.com/YosysHQ)
 * [YosysHQ Documentation Library](https://yosyshq.readthedocs.io/en/latest/index.html#yosyshq-documentation-library)
 * [oss-cad-suite-build: Multi-platform nightly builds of open source digital design and verification tools](https://github.com/YosysHQ/oss-cad-suite-build)
-* [Implementing a simple SoC in Migen — whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-19/implementing-a-simple-soc-in-migen/)
+
 * [Circuit Simulator Applet](http://falstad.com/circuit/)
 * [FPGA Bootcamp #0 | Hackaday.io](https://hackaday.io/project/159720-fpga-bootcamp-0)
 * [Implementing a UART in Verilog and Migen — whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-18/implementing-an-uart-in-verilog-and-migen/)
@@ -196,7 +180,13 @@ search for Amaranth / nMigen / Migen with language Python at GitHub
 * [Migen | M-Labs](https://m-labs.hk/gateware/migen/)
 
 probably worth looking up Migen documentation
+
 ### Hardware
+
+[Exploring Open-Toolchain FPGA HW, part 1](https://www.ktemkin.com/exploring-open-fpga-hardware/)
+
+[Zero to ASIC Course | Zero to ASIC Course](https://www.zerotoasiccourse.com)
+[ChipFlow alpha documentation](https://docs.chipflow.io/en/latest/index.html)
 
 Boards that I own:
 * TinyFPGA BX ICE40LP8K 128 KBit RAM, 6000 KBit flash
@@ -215,6 +205,10 @@ ULX3S, Upduino
 * [GitHub - devantech/iceFUN](https://github.com/devantech/iceFUN) and [Datasheet pdf](https://www.robot-electronics.co.uk/files/iceFUNdoc.pdf) and [programmer](https://github.com/dorssel/usbipd-win)
 * [First steps with openFPGALoader](https://trabucayre.github.io/openFPGALoader/guide/first-steps.html)
 * [deprecated in favor of openFPGALoader](https://github.com/kost/fujprog)
+
+[2057-ICE40HX4K-TQ144-breakout: Minimal Raspberry PI breakout board for ICE40HX4K FPGA](https://github.com/johnwinans/2057-ICE40HX4K-TQ144-breakout/tree/master) and [this video](https://youtu.be/yWLgxug_TMk?si=k8TgFi94GnOfyN03)
+ICE40 HX 4k appears to be an 8K with different packaging, [under £8 each](https://www.mouser.co.uk/ProductDetail/Lattice/iCE40HX4K-TQ144?qs=F9A14TELRMvGNTZXkNDuOw%3D%3D)
+
 
 ### Other
 
