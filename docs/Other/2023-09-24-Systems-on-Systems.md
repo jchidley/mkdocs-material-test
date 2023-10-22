@@ -10,7 +10,119 @@ title: "Systems-on-Systems"
 
 ## Custom Linux for WSL
 
-[Creating a Custom Linux Distribution for WSL](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro)
+[Import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro)
+
+
+### Here Stings, Environment
+
+Pass a command to WSL without PowerShell expanding it first
+
+```PS
+@'
+echo $SHELL
+'@ | wsl -d U3 --
+```
+
+Expand the string in Powershell then send it to WSL 
+
+```PS
+@"
+echo $ENV:OS
+"@ | wsl -d U3 --
+```
+
+Boom!
+
+```PS
+@"
+echo $ENV:OS `$SHELL
+"@ | wsl -d U3 --
+```
+
+wsl is started in the current (windows) directory, and windows files appear in Linux with 777 permissions, so this works
+
+```PS
+ @'
+echo this system is $(uname)
+'@ | out-file -filepath .\new.sh ; wsl -d U3 ./new.sh
+```
+or this:
+
+```PS
+$tmp = New-TemporaryFile
+@"
+echo $env:os wrote it, `$(uname) is executing it
+"@ | out-file -filepath $tmp ; type $tmp | wsl -d U3 sh --
+```
+
+```PS
+$tmpfile = New-TemporaryFile
+@"
+wslpath '$tmpfile'
+"@ | wsl -d U3
+```
+
+also can access WSL from \\wsl$\distribution
+
+[about_Quoting_Rules](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules?view=powershell-7.3)
+
+[about_Environment_Variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3)
+
+### Ubuntu
+
+```PS
+# wsl --unregister Gentoo
+# download the file to <FileName>
+mkdir -p <InstallLocation>
+wsl --import <Distro> <InstallLocation> <FileName>
+wsl -d <Distro>
+```
+
+```bash
+cat << EOF > /etc/wsl.conf
+[boot]
+systemd=true
+[user]
+default=jackc
+EOF
+useradd -G sudo -m -s /bin/bash jackc
+passwd jackc
+sed -E -i 's|^\s*(%sudo.*\s+)(ALL)\s*$|\1NOPASSWD:\2|' /etc/sudoers
+# EDITOR=vi visudo
+# NOPASSWD:ALL
+sudo apt update && sudo apt -y full-upgrade
+```
+
+```PS
+wsl -t U3
+wsl -d U3
+```
+
+## USB on WSL
+
+Now it's time to deal with the WSL side of things.
+
+https://github.com/dorssel/usbipd-win
+
+```cmd
+winget install usbipd
+```
+
+https://github.com/dorssel/usbipd-win/wiki/WSL-support
+
+```bash
+sudo usermod -a -G plugdev jackc # or other groups users
+sudo apt install linux-tools-virtual hwdata
+sudo update-alternatives --install /usr/local/bin/usbip usbip `ls /usr/lib/linux-tools/*/usbip | tail -n1` 20
+```
+
+```cmd
+usbipd wsl list
+# look for Picoprobe entry, like this:
+# 1-2    2e8a:0004  USB Serial Device (COM5), Picoprobe
+# you might not need the "--distribution ubuntu" part if you only have one WSL distribution installed
+usbipd wsl attach --busid 1-2 --distribution ubuntu
+```
 
 ```PS
 Get-ChildItem "HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss" -Recurse | findstr BasePath
@@ -44,31 +156,6 @@ I suggest that you [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 On Windows run the "Device Manager" and expand the Ports (COM & LPT) section. Note the COM port number for the Pico; on my system it's labelled "USB Serial Device (COM7)".
 
 Open PuTTY, select the Serial connection type and enter the COM7 (see above) in the Serial line box. Set the Speed to 115200 and click on the Open button. A window should open that repetively prints "Hello, World!".
-
-## USB on WSL
-
-Now it's time to deal with the WSL side of things.
-
-https://github.com/dorssel/usbipd-win
-
-```cmd
-winget install usbipd
-```
-
-https://github.com/dorssel/usbipd-win/wiki/WSL-support
-
-```ubuntu
-sudo apt install linux-tools-virtual hwdata
-sudo update-alternatives --install /usr/local/bin/usbip usbip `ls /usr/lib/linux-tools/*/usbip | tail -n1` 20
-```
-
-```cmd
-usbipd wsl list
-# look for Picoprobe entry, like this:
-# 1-2    2e8a:0004  USB Serial Device (COM5), Picoprobe
-# you might not need the "--distribution ubuntu" part if you only have one WSL distribution installed
-usbipd wsl attach --busid 1-2 --distribution ubuntu
-```
 
 ## Links
 
