@@ -33,9 +33,30 @@ John uses Z80 as it was his first computer, 6502 is, arguably, easier to underst
 
 ## stuff
 
-
 * Catherine @whitequark - developer of Amaranth HDL](https://cohost.org/whitequark)
 * [#nmigen on 2020-07-31 — irc logs at freenode.irclog.whitequark.org](https://freenode.irclog.whitequark.org/nmigen/2020-07-31)
+
+## TODO
+
+* [Simple-As-Possible computer - Wikipedia](https://en.wikipedia.org/wiki/Simple-As-Possible_computer)
+* [SAP-1-FPGA: Implementation of the SAP-1 processor (Simple As Possible) in Icestudio](https://github.com/Obijuan/SAP-1-FPGA)
+* [Designing and Implementing a SAP-1 Computer](https://karenok.github.io/SAP-1-Computer/)
+* [Implementation of simple microprocessor using verilog](https://stackoverflow.com/a/51621153)
+* [About the ZipCPU](https://zipcpu.com/about/zipcpu.html)
+* [Verilog, Formal Verification and Verilator Beginner's Tutorial](http://zipcpu.com/tutorial/)
+* [The 100 MHz 6502 · e-basteln](http://www.e-basteln.de/computing/65f02/65f02/)
+* [fpga_101: FPGA 101 lessons/labs](https://github.com/litex-hub/fpga_101)
+* [migen_litex_tutorials](https://github.com/fjullien/migen_litex_tutorials/tree/main)
+* [VHDL Article - Hardware Design for Software Engineers](https://nandland.com/lesson-7-what-every-software-programmer-needs-to-understand-about-hardware-design/)
+* [FPGA Tutorial - LED Blinker for Beginners, VHDL and Verilog](https://nandland.com/your-first-verilog-program-an-led-blinker/)
+* [Designing a CPU in VHDL, Part 4: The ALU, Comparisons and Branching](https://domipheus.com/blog/designing-a-cpu-in-vhdl-part-4-alu-comparisons-branching/)
+
+### Amaranth - TODO
+
+* [GitHub - amaranth-lang/amaranth: A modern hardware definition language and toolchain based on Python](https://github.com/amaranth-lang/amaranth)
+* [GitHub - psychogenic/neptune: Flexible digital logic hardware frequency discriminator used as an extreeeeeme guitar tuner.](https://github.com/psychogenic/neptune)
+* [Implementing a UART in Verilog and Migen -- whitequark's lab notebook](https://lab.whitequark.org/notes/2016-10-18/implementing-an-uart-in-verilog-and-migen/)
+* [Amaranth HDL toolchain](https://amaranth-lang.org/docs/amaranth/latest/intro.html)
 
 ### Amaranth HDL Installation, Setup
 
