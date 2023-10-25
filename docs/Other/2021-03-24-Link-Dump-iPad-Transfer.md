@@ -23,7 +23,7 @@ title: "Link-Dump-iPad-Transfer"
 * [Raspberry Pi zero w to high quality camera ( hq camera ) mount by ed7coyne - * Thingiverse](https://www.thingiverse.com/thing:4445767)
 * [A close look at ALSA](https://www.volkerschatz.com/noise/alsa.html)
 * [A Raspberry Pi Zero W and HQ camera case](https://www.dans-hobbies.com/2020/12/31/a-raspberry-pi-zero-w-and-hq-camera-case/)
-* [getconnected.honeywell.comensupport](https://ensupport.getconnected.* honeywellhome.com/s/article/* How-many-HR92UK-TRV-can-be-connected-to-the-CM67z-Room-Unit-in-one-zone?* language=en_US)
+* [getconnected.honeywell.comensupport](https://ensupport.getconnected.honeywellhome.com/s/article/How-many-HR92UK-TRV-can-be-connected-to-the-CM67z-Room-Unit-in-one-zone?* language=en_US)
 * [A Python application designed to stream hardware encoded h.264 from a Raspberry Pi directly to a browser.](https://github.com/dans98/pi-h264-to-browser)
 * [File:Damp proof course and membrane.jpg - Designing Buildings Wiki](https://www.designingbuildings.co.uk/wiki/File:Damp_proof_course_and_membrane.jpg)
 * [wago 221 - Search Results | CPC](https://cpc.farnell.com/search?st=wago%20221)
@@ -106,7 +106,7 @@ title: "Link-Dump-iPad-Transfer"
 * [Alba Orbital](http://www.albaorbital.com/launch)
 * [Technical Resources - Download Nanoracks IDD & ICD Documents](https://nanoracks.* com/resources/)
 * [PCB Art](http://www.andrewsowa.com/sir-james-condi)
-* [10 Tonne Galvanised Manhole Covers | Drainage Superstore®](https://www.* drainagesuperstore.co.uk/browse/underground-drainage/manholes-and-grates/* 10-tonne-galvanised-manhole-covers.html)
+* [10 Tonne Galvanised Manhole Covers | Drainage Superstore®](https://www.drainagesuperstore.co.uk/browse/underground-drainage/manholes-and-grates/10-tonne-galvanised-manhole-covers.html)
 * [The British Interplanetary Society](https://www.bis-space.com)
 
 * [Mechanics & Materials I](https://ocw.mit.edu/courses/mechanical-engineering/2-001-mechanics-materials-i-fall-2006/lecture-notes/)

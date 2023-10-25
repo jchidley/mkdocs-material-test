@@ -12,7 +12,6 @@ title: "Systems-on-Systems"
 
 [Import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro)
 
-
 ### Here Stings, Environment
 
 Pass a command to WSL without PowerShell expanding it first
@@ -23,7 +22,7 @@ echo $SHELL
 '@ | wsl -d U3 --
 ```
 
-Expand the string in Powershell then send it to WSL 
+Expand the string in Powershell then send it to WSL
 
 ```PS
 @"
@@ -46,6 +45,7 @@ wsl is started in the current (windows) directory, and windows files appear in L
 echo this system is $(uname)
 '@ | out-file -filepath .\new.sh ; wsl -d U3 ./new.sh
 ```
+
 or this:
 
 ```PS
@@ -102,13 +102,17 @@ wsl -d U3
 
 Now it's time to deal with the WSL side of things.
 
+<!-- markdownlint-disable MD034 -->
 https://github.com/dorssel/usbipd-win
+<!-- markdownlint-enable MD034 -->
 
 ```cmd
 winget install usbipd
 ```
 
+<!-- markdownlint-disable MD034 -->
 https://github.com/dorssel/usbipd-win/wiki/WSL-support
+<!-- markdownlint-enable MD034 -->
 
 ```bash
 sudo usermod -a -G plugdev jackc # or other groups users
@@ -141,7 +145,7 @@ dir \\wsl$\distribution-name
 * [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
 * [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
 * [usbipd-win](https://github.com/dorssel/usbipd-win)
- 
+
 ## Alpine WSL
 
 [Alpine WSL GitHub](https://github.com/agowa338/WSL-DistroLauncher-Alpine)

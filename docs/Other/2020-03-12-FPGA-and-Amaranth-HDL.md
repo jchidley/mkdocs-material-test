@@ -15,9 +15,9 @@ For a whole stack of reasons, mostly gleaned from [this playlist](https://youtub
 * Verilog
 * Simulation, not physical hardware
 * ICE40 HX 4K
-* Icestorm 
+* Icestorm
 * Risc-V
-* 6502 
+* 6502
 
 John uses Z80 as it was his first computer, 6502 is, arguably, easier to understand and implement. There will also be a number of soft-cores of the 6502 and a lot of assembly examples - this is what people programmed in.
 
@@ -33,7 +33,7 @@ John uses Z80 as it was his first computer, 6502 is, arguably, easier to underst
 
 ## stuff
 
-* Catherine @whitequark - developer of Amaranth HDL](https://cohost.org/whitequark)
+* [Catherine @whitequark - developer of Amaranth HDL](https://cohost.org/whitequark)
 * [#nmigen on 2020-07-31 — irc logs at freenode.irclog.whitequark.org](https://freenode.irclog.whitequark.org/nmigen/2020-07-31)
 
 ## TODO
@@ -104,7 +104,7 @@ John uses Z80 as it was his first computer, 6502 is, arguably, easier to underst
 * [learning nmigen](https://libre-soc.org/docs/learning_nmigen/)
 * [Libre-soc-dev nmigen tutorials etc.](http://lists.libre-soc.org/pipermail/libre-soc-dev/2021-October/003858.html)
 * [ULX3S nMigen examples](https://github.com/GuzTech/ulx3s-nmigen-examples.git)
-* [Amaranth HDL examples for the Ulx4m FPGA board](https://github.com/lawrie/ulx4m_amaranth_examples.git) 
+* [Amaranth HDL examples for the Ulx4m FPGA board](https://github.com/lawrie/ulx4m_amaranth_examples.git)
 * [blackicemx_nmigen_examples](https://github.com/lawrie/blackicemx_nmigen_examples.git)
 * [hdl_ldpc_encoder](https://github.com/PaulBryden/hdl_ldpc_encoder.git)
 * [A simple RISC V CPU built with nMigen](https://github.com/lochsh/riscy-boi.git)
@@ -130,7 +130,7 @@ John uses Z80 as it was his first computer, 6502 is, arguably, easier to underst
 * [RISC-V processor implemented in Amaranth](https://github.com/msvisser/riscv-tilelink.git)
 * [A simple fixed-point FFT module with amaranth](https://github.com/kazkojima/tinyfft-fpga.git)
 * [Streams library for Amaranth](https://github.com/DaveBerkeley/streams.git)
-* [Implementation of CORDIC (COordinate Rotation DIgital Computer)in Amaranth ](https://github.com/DaveBerkeley/cordic.git)
+* [Implementation of CORDIC (COordinate Rotation DIgital Computer)in Amaranth](https://github.com/DaveBerkeley/cordic.git)
 * [based on icebreaker-amaranth-examples](https://github.com/cyber-murmel/amaranth-examples.git)
 * [It's a UART... written in Amaranth!](https://github.com/cr1901/amaranth_uart.git)
 * [MCH2022 badge amaranth examples](https://github.com/cyber-murmel/mch2022-amaranth-examples.git)
@@ -145,9 +145,9 @@ John uses Z80 as it was his first computer, 6502 is, arguably, easier to underst
 * [learn-migen: migen tutorials, etc](https://github.com/jonnew/learn-migen.git)
 * [(WIP) FSM generator for Migen based on Python generators](https://github.com/cactorium/fsm-gen-migen.git)
 * [nMigen for 6800 CPU](https://www.youtube.com/watch?v=AQOXoKQhG3I&list=PL2Bqmy_B2P9t8sFYz39OC9eWEAke7E3nt&index=30) with [source code](https://github.com/RobertBaruch/n6800.git)
-* [Monitor signals MyHDL/nMigen simulation and display as waveforms in a Jupyter notebook](https://github.com/devbisme/myhdlpeek.git) 
+* [Monitor signals MyHDL/nMigen simulation and display as waveforms in a Jupyter notebook](https://github.com/devbisme/myhdlpeek.git)
 * [serialcommander is a small nmigen tool that executes various 'tasks' when sent various characters over a serial port/UART](https://github.com/newhouseb/serialcommander.git)
-* [Amaranth-HDL built movement engine](https://github.com/hstarmans/hexastorm/blob/master/src/hexastorm/movement.py) [hexastorm](https://github.com/hstarmans/hexastorm.git) uses amaranth elsewhere and the movement is [based on this paper](http://www.roboticsproceedings.org/rss10/p42.pdf) 
+* [Amaranth-HDL built movement engine](https://github.com/hstarmans/hexastorm/blob/master/src/hexastorm/movement.py) [hexastorm](https://github.com/hstarmans/hexastorm.git) uses amaranth elsewhere and the movement is [based on this paper](http://www.roboticsproceedings.org/rss10/p42.pdf)
 * [More Amaranth HDL stuff with `*.v` files, Klipper too](https://github.com/sensille/conan_fpga.git)
 
 ---
@@ -211,10 +211,11 @@ probably worth looking up Migen documentation
 [ChipFlow alpha documentation](https://docs.chipflow.io/en/latest/index.html)
 
 Boards that I own:
+
 * TinyFPGA BX ICE40LP8K 128 KBit RAM, 6000 KBit flash
 * TinyFPGA A2 XO2-1200 64 KBit RAM 64 KBit flash
-* iceFUN iCE40-HX8K 
-* XLX3S Lattice ECP5 LFE5U-85F-6BG381C 32MB SDRAM, 4-16 MB Quad-SPI Flash 
+* iceFUN iCE40-HX8K
+* XLX3S Lattice ECP5 LFE5U-85F-6BG381C 32MB SDRAM, 4-16 MB Quad-SPI Flash
 * upduino 2.1 Lattice UltraPlus ICE40UP5K FPGA with 5.3K LUTs, 1Mb SPRAM, 120Kb DPRAM, 8 Multipliers
 
 All supported by [Apio (pronounced [ˈa.pjo]) is a multiplatform toolbox](https://github.com/FPGAwars/apio.git)
@@ -230,7 +231,6 @@ ULX3S, Upduino
 
 [2057-ICE40HX4K-TQ144-breakout: Minimal Raspberry PI breakout board for ICE40HX4K FPGA](https://github.com/johnwinans/2057-ICE40HX4K-TQ144-breakout.git) and [this video](https://youtu.be/yWLgxug_TMk?si=k8TgFi94GnOfyN03)
 ICE40 HX 4k appears to be an 8K with different packaging, [under £8 each](https://www.mouser.co.uk/ProductDetail/Lattice/iCE40HX4K-TQ144?qs=F9A14TELRMvGNTZXkNDuOw%3D%3D)
-
 
 ### Other
 

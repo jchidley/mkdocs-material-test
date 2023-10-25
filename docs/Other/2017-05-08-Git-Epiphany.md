@@ -2,9 +2,9 @@
 date: "2017-05-08"
 title: Git Epiphany
 ---
-
-Git Epiphany
-============
+<!-- markdownlint-disable MD025 -->
+# Git Epiphany
+<!-- markdownlint-enable MD025 -->
 
 I only started to use [Git](https://git-scm.com/) because I was using
 [GitHub](https://github.com/). My journey started with GitHub’s Windows software
@@ -18,8 +18,7 @@ Today I understand things better. I don’t think that I will ever understand it
 completely but I can use it effectively. Below you’ll see how I learned to love
 git and stop worrying.
 
-Git Started: Don’t Worry, Use Git
----------------------------------
+## Git Started: Don’t Worry, Use Git
 
 The best thing I can tell you is this: git doesn’t lose stuff and you can
 recover from almost anything. Just follow the [everyday
@@ -28,8 +27,7 @@ advice](https://git-scm.com/docs/everyday) and you’ll be fine.
 This sounds wrong but you are far safer using git without understanding it than
 not using git because you don’t understand.
 
-Losing Photographs
-------------------
+## Losing Photographs
 
 My attempts to manage my photographs led me to build a system that is based on
 the same principles as Git. That experience, combined with [this
@@ -48,11 +46,11 @@ Memorably one took about a year fix.
 
 My losses have fallen into 2 categories:
 
-1.  Hardware. Either disk failure or loss of a disk.
+1. Hardware. Either disk failure or loss of a disk.
 
-2.  User error.
+2. User error.
 
-3.  Both of the above.
+3. Both of the above.
 
 I have tried several systems to cope with this. Multiple disks,
 [RAID](https://en.wikipedia.org/wiki/RAID)s, batch files, various little
@@ -60,8 +58,7 @@ utilities, procedures, specialized applications etc. Over the years I grew a
 system that would protect my images and, as an interesting by product, helped me
 understand git.
 
-Core Design
------------
+## Core Design
 
 Hardware failures are the easiest to solve. I use multiple disks and keep copies
 of those disks in separate locations. Each disk has a complete snapshot of my
@@ -74,11 +71,11 @@ will eventually wear out and fail. If you’re not using it, switch it off).
 
 User and software errors are harder to fix. What I needed was:
 
-1.  Uniquely identify files
+1. Uniquely identify files
 
-2.  Ensure that files remained uncorrupted
+2. Ensure that files remained uncorrupted
 
-3.  Track changes over time, so that when I discovered that I’d done something
+3. Track changes over time, so that when I discovered that I’d done something
     stupid, I could revert things.
 
 Eventually I realised that a [hash](https://en.wikipedia.org/wiki/Hash_function)
@@ -99,8 +96,7 @@ With this in place, I knew that I would never lose a file again. What I needed
 to develop was a bunch of utilities to manage the process. This is hard. This is
 where Git comes in.
 
-Git to the Rescue
------------------
+## Git to the Rescue
 
 It turns out, my core design [is exactly how Git
 works](http://nfarina.com/post/9868516270/git-is-simpler). When I realized that,
@@ -109,17 +105,17 @@ utilities to help you manage your files.
 
 So, this is how I manage my photography sources today:
 
-1.  Create a top level directory for all of my images.
+1. Create a top level directory for all of my images.
 
-2.  Run git init on this directory.
+2. Run git init on this directory.
 
-3.  Copy my files into the directory.
+3. Copy my files into the directory.
 
-4.  Use git to manage it.
+4. Use git to manage it.
 
-5.  Copy the whole repository to additional disks.
+5. Copy the whole repository to additional disks.
 
-6.  No longer worry.
+6. No longer worry.
 
 The joy and curse of [git](https://git-scm.com/docs/everyday) is that its
 utilities have grown organically over time. They can, and do, have bizarre
@@ -130,8 +126,7 @@ The main differences with a programming source control vs a photographic source
 control are that you need to track changes within text files and manage multiple
 authors. Git has a lot of functionality for those things.
 
-Selected Links
---------------
+## Selected Links
 
 [Git Is Simpler Than You
 Think](http://nfarina.com/post/9868516270/git-is-simpler) is the source of my
