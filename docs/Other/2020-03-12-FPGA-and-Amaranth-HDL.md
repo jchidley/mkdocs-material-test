@@ -38,6 +38,8 @@ John uses Z80 as it was his first computer, 6502 is, arguably, easier to underst
 
 ## TODO
 
+* [FPGA Verilog – Chu, Pong](https://academic.csuohio.edu/chu-pong/fpga-verilog/)
+* [Web Resources Relevant to FPGA Oberon System](https://riskfive.com/Web_resources.htm) see [Oberon](http://www.projectoberon.net)
 * [Simple-As-Possible computer - Wikipedia](https://en.wikipedia.org/wiki/Simple-As-Possible_computer)
 * [SAP-1-FPGA: Implementation of the SAP-1 processor (Simple As Possible) in Icestudio](https://github.com/Obijuan/SAP-1-FPGA)
 * [Designing and Implementing a SAP-1 Computer](https://karenok.github.io/SAP-1-Computer/)

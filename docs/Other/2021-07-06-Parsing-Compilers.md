@@ -16,19 +16,29 @@ Faster programs:
 
 ## Compiler Information
 
+Some books are:
+* [Crafting Interpreters reference books](https://twitter.com/munificentbob/status/901543375945388032)
+* Lisp in small pieces by Christian Queinnec 978-0521545662
+* Crafting a compiler by Charles N Fischer 978-0805332018
+* A retargetable C compiler by Christopher W. Fraser 978-0805316704
+* Build Your Own Lisp by Daniel Holden 978-1501006623
+
 * This is easily the best reference: [CSE 401 Spring 2023 Lectures](https://courses.cs.washington.edu/courses/cse401/23sp/calendar/lecturelist.html)
 * Best YouTube: [compiler_series: Material for the Creating a Compiler video lesson series.](https://github.com/bisqwit/compiler_series)
 * Practical, step-by-step, compiler [chibicc: A small C compiler](https://github.com/rui314/chibicc) and [chibicc documentation, in Japanese](https://www.sigbus.info/compilerbook)
+* [Crafting Interpreters](https://craftinginterpreters.com) and [Crafting "Crafting Interpreters"](https://journal.stuffwithstuff.com/2020/04/05/crafting-crafting-interpreters/)
+* System, compiler, RISC, FPGA, the whole lot [Niklaus Wirth](https://people.inf.ethz.ch/wirth/) and [Project Oberon](http://www.projectoberon.net) with an [Open Core](https://opencores.org/projects/oberon_sdram) and a [risc-v version](https://github.com/solbjorg/oberon-riscv)
+* [minilisp: A readable lisp in less than 1k lines of C](https://github.com/rui314/minilisp/tree/master) and a version for ULX3S [GitHub - emard/oberon](https://github.com/emard/oberon)
 * Make a Lisp [mal - Make a Lisp](https://github.com/kanaka/mal)
 * [Show HN: How to write a tiny compiler | Hacker News](https://news.ycombinator.com/item?id=13608810)
-* [Crafting Interpreters](https://craftinginterpreters.com) and [Crafting “Crafting Interpreters”](https://journal.stuffwithstuff.com/2020/04/05/crafting-crafting-interpreters/)
 * [Recommendations](https://belkadan.com/blog/2015/11/Recommendations/) and [So You Want to Be a (Compiler) Wizard?](https://belkadan.com/blog/2016/05/So-You-Want-To-Be-A-Compiler-Wizard/)
 * [Compiler Construction](https://people.inf.ethz.ch/wirth/CompilerConstruction/index.html) with [Chapters 1-8](https://people.inf.ethz.ch/wirth/CompilerConstruction/CompilerConstruction1.pdf) and [Chapters 9-16](https://people.inf.ethz.ch/wirth/CompilerConstruction/CompilerConstruction2.pdf)
+* [Let's write a compiler, part 1: Introduction, selecting a language, and doing some planning](https://briancallahan.net/blog/20210814.html)
 * [GitHub - rswier/c4: C in four functions](https://github.com/rswier/c4)
 * [1 What is a Compiler?](https://www.cs.umd.edu/class/fall2020/cmsc430/Intro.html)
 * [An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf)
-
 * [cproc is a C11 compiler using QBE as a backend](https://git.sr.ht/~mcf/cproc)
+* [Let's get hands-on with QBE](https://briancallahan.net/blog/20210829.html)
 * [The ppci (pure python compiler infrastructure) project is a compiler written entirely in python](https://ppci.readthedocs.io/en/latest/index.html) with [Creating a toy language -- ppci 0.5.9 documentation](https://ppci.readthedocs.io/en/latest/howto/toy.html)
 * [C to Assembly Translation](https://www.eventhelix.com/embedded/c-to-assembly-translation/)
 * [A Guide to Code Generation - Strumenta](https://tomassetti.me/code-generation/)
