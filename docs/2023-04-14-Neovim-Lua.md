@@ -6,30 +6,30 @@ title: "Neovim-Lua"
 # Neovim Lua
 <!-- markdownlint-enable MD025 -->
 
-`vi` isn't easy to learn. It's keyboard driven and there is next to no visual help. Even 
+`vi` isn't easy to learn. It's keyboard driven and there is next to no visual help. Even
 modern variants, like `neovim`, don't give you on-screen clues. It is easier
 to pick up things are are visual - Atom, VS Code, etc, but those
 tools make the easy things easier and the hard things harder. In the end, if you are
-serious about editing effectively, you will have to be an expert in the tools for 
-job. There are no substitutes. 
+serious about editing effectively, you will have to be an expert in the tools for
+job. There are no substitutes.
 
-So, sure, if you are a beginner and want to get started, pick the easiest tool because 
-everything is hard to begin with. But as soon as you are at the intermediate level, it's 
+So, sure, if you are a beginner and want to get started, pick the easiest tool because
+everything is hard to begin with. But as soon as you are at the intermediate level, it's
 time to pick up the expert's tools. It's time to put in the hard work. You'll be better for it.
 
-Neovim is text editing equivalent of touch typing. It seems impossible at the start. But soon enough, much sooner 
-than you think, you'll be typing at over 60 words-per-minute just looking at the screen, thinking 
-about what you are writing. You will not be looking at the keyboard typing at 30 words-per-minute 
-and making loads of semantic and syntactic mistakes. It's the same for `vi` (and especially true for `neovim`) 
-you'll be editing text quickly and effectively from the keyboard. A mouse is a bonus. This is why touch-typing 
+Neovim is text editing equivalent of touch typing. It seems impossible at the start. But soon enough, much sooner
+than you think, you'll be typing at over 60 words-per-minute just looking at the screen, thinking
+about what you are writing. You will not be looking at the keyboard typing at 30 words-per-minute
+and making loads of semantic and syntactic mistakes. It's the same for `vi` (and especially true for `neovim`)
+you'll be editing text quickly and effectively from the keyboard. A mouse is a bonus. This is why touch-typing
 and `vi` go hand-in-hand.
 
-So dive into `neovim`. Learn the experts tool. It'll help make you an expert. Learning to 
+So dive into `neovim`. Learn the experts tool. It'll help make you an expert. Learning to
 be an expert requires you to solve loads of problems. Have fun with them.
 
 ## Moving to a new machine
 
-You can definetly copy your configuration to a new machine but you still need to install 
+You can definetly copy your configuration to a new machine but you still need to install
 all the prerequisites for your various plugins.
 On windows I used `scoop install gcc` and `scoop install llvm`. llvm might not have been necessary.
 
@@ -43,6 +43,7 @@ Probably the most important command
 ```vim
 :h quickref
 ```
+
 I added these to my `options.lua` file, see `:help option-list`
 
 ```lua
@@ -57,7 +58,8 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 -- set tabs to 4 spaces
 ```
-### Toggleterm 
+
+### Toggleterm
 
 This is used to set the program for `:!` commands. It's also used for the terminal.
 
@@ -71,14 +73,15 @@ set shellxquote=
 [Change the default shell](https://superuser.com/questions/1759700/change-default-shell-to-powershell-in-neovim)
 [Some vimrc options, including spell check](https://robindouglas.uk/powershell/vim/2018/04/05/PowerShell-with-Vim.html) `set spell spelllang=en_gb`
 
-
-for LazyVim 
+for LazyVim
 
 [Vim terminal: how powerful is it really?](https://www.reddit.com/r/vim/comments/goifnv/vim_terminal_how_powerful_is_it_really/)
 print the full path from the command prompt
+
 ```bash
 find "$(pwd -P)" -name "filename"
 ```
+
 (from within `vim` its `:echo expand('%:p')` )
 
 then use `gf` on that line (once you have switched to Normal mode) to open the file.
@@ -105,13 +108,14 @@ return {
 }
 EOF
 ```
+
 You can "send lines" to the toggled terminals with the following commands:
 
 * `:ToggleTermSendCurrentLine <T_ID>`: sends the whole line where you are standing with your cursor
 * `:ToggleTermSendVisualLines <T_ID>`: sends all the (whole) lines in your visual selection
 * `:ToggleTermSendVisualSelection <T_ID>`: sends only the visually selected text (this can be a block of text or a selection in a single line)
 
-(<T_ID is an optional terminal ID parameter, which defines where should we send the 
+(<T_ID is an optional terminal ID parameter, which defines where should we send the
 lines. If the parameter is not provided, then the default is the first terminal)
 
 Also, ^z (c-z), to exit vim temporarily and `fg` to go back
@@ -120,19 +124,19 @@ Also, ^z (c-z), to exit vim temporarily and `fg` to go back
 
 ### Saving session state
 
-LazyVim uses [persistence.nvim](https://github.com/folke/persistence.nvim) so 
+LazyVim uses [persistence.nvim](https://github.com/folke/persistence.nvim) so
 obsession.vim may not be needed but persistence.vim does not, by default, automatically open the last session.
 
-Use [obsession.vim](https://github.com/tpope/vim-obsession) (`:Obsess` to start/stop 
-recording) and then the state is retained, provided you use `-S` option on startup (otherwise 
-use `:source`) `:wa` to write all of your files and `ZZ` to quit. By default, this 
+Use [obsession.vim](https://github.com/tpope/vim-obsession) (`:Obsess` to start/stop
+recording) and then the state is retained, provided you use `-S` option on startup (otherwise
+use `:source`) `:wa` to write all of your files and `ZZ` to quit. By default, this
 will be saved in the directory where you started it.
 
-`1<C-g>` for full path or `:echo expand('%:p')`. `<C-r>` in insert mode to add things 
+`1<C-g>` for full path or `:echo expand('%:p')`. `<C-r>` in insert mode to add things
 (including filnames, `%`) at the current cursor position or `"%p` in normal mode.
 
-using `:Mason` to add `codespell` as a LSP and then `]s` to move between misspelled 
-words and `<leader>z=` to correct mistakes. Or install codespell (via pip) from the 
+using `:Mason` to add `codespell` as a LSP and then `]s` to move between misspelled
+words and `<leader>z=` to correct mistakes. Or install codespell (via pip) from the
 command line and do it that way.
 
 ```bash
@@ -160,7 +164,7 @@ EOF
 
 run
 
-git clone the target nvim into a subdirectory of .config 
+git clone the target nvim into a subdirectory of .config
 need the latest (9+) version of nvim
 
 * [A Basic Stable IDE config for Neovim](https://github.com/LunarVim/nvim-basic-ide)
@@ -200,7 +204,7 @@ nvim --server ~/.cache/nvim/server.pipe --remote-expr "winnr()"
 
 * [Example init.lua etc](https://github.com/cpow/cpow-dotfiles)
 * [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
-* [Running command line tasks in Neovim](https://www.jackfranklin.co.uk/blog/executing-tasks-in-neovim/
+* [Running command line tasks in Neovim](https://www.jackfranklin.co.uk/blog/executing-tasks-in-neovim/)
 
 * [Tmux Cheat Sheet & Quick Reference](https://tmuxcheatsheet.com)
 
@@ -239,8 +243,8 @@ rm -rf ./.config/nvim
 
 ## Julia
 
-It's worth metioning that Juila is buit around pacakges as *the* 
-coding/development unit. Best to start with a minimal Pkg (`generate`) and work 
+It's worth metioning that Juila is buit around pacakges as *the*
+coding/development unit. Best to start with a minimal Pkg (`generate`) and work
 from that. Testing will be easier too.
 
 From this [Neovim + LanguageServer.jl discourse](https://discourse.julialang.org/t/neovim-languageserver-jl/37286) and [Language server - missing references](https://discourse.julialang.org/t/language-server-missing-references/88936/19)
@@ -455,17 +459,16 @@ cd ~/.julia/environments/nvim-lspconfig
 make
 ```
 
-Wait until after `julials` has finished before exiting neovim. 
+Wait until after `julials` has finished before exiting neovim.
 
 [Julia Language Server Configuration](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#julials) - may, or may not, be necessary.
 
 [Julia VS Code Extension](https://github.com/julia-vscode/julia-vscode)
 
-
 May also want [julia-vim](https://github.com/JuliaEditorSupport/julia-vim)
 
-Might need to do this `julia -e 'using Pkg; Pkg.add("LanguageServer"); Pkg.add("SymbolServer")')` 
-if this hasn't been added to `nvim-lspconfig` already. 
+Might need to do this `julia -e 'using Pkg; Pkg.add("LanguageServer"); Pkg.add("SymbolServer")')`
+if this hasn't been added to `nvim-lspconfig` already.
 
 Need to add julia to treesitter too.
 
@@ -481,4 +484,3 @@ Need to add julia to treesitter too.
 * [Lua for Programmers Part 1: Language Essentials](https://ebens.me/post/lua-for-programmers-part-1/)
 * [Learn Lua in Y Minutes](https://learnxinyminutes.com/docs/lua/)
 * [Lua Unofficial FAQ (uFAQ)](https://www.luafaq.org)
-
