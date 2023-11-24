@@ -18,6 +18,7 @@ For the simplest system required to build itself, [there are 4 conceptual compon
 * C library - musl libc
 * Toolchain - compiler, linker, etc
 * Command-Line utilities - busybox, toybox
+* [The Buildroot user manual](https://buildroot.org/downloads/manual/manual.html)
 
 * [Aboringinal Linux, and the actual 7 packages required](https://www.youtube.com/watch?v=Sk9TatW9ino&feature=youtu.be&t=225) [GitHub source](https://github.com/landley/aboriginal)
 * [Linux print statements, from anywhere at any time](https://youtu.be/Sk9TatW9ino?t=857) Writing to a real serial device (pl011 console putchar) anytime, even during boot, from Linux

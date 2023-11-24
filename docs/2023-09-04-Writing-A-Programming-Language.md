@@ -6,6 +6,8 @@ title: "Writing-A-Programming-Language"
 # Writing A Programming Language
 <!-- markdownlint-enable MD025 -->
 
+[The idea behind single-header file libraries](https://github.com/nothings/stb)
+
 ## Introduction
 
 * [How to Design Programs, Second Edition](https://htdp.org/2023-8-14/Book/index.html)
@@ -24,6 +26,7 @@ title: "Writing-A-Programming-Language"
 * [Getting Started - MLIR](https://mlir.llvm.org/getting_started/)
 
 ### Parsing
+
 * [fparsec Tutorial](https://www.quanttec.com/fparsec/tutorial.html)
 * [Lerche (German for Lark) is a partial port of the Lark grammar processor from Python to Julia](https://github.com/jamesrhester/Lerche.jl)
 * [Lark - a parsing toolkit for Python](https://github.com/lark-parser/lark)
@@ -43,7 +46,7 @@ title: "Writing-A-Programming-Language"
 
 ### C
 
-* [cproc: Small C11 compiler based on QBE](https://sr.ht/~mcf/cproc/) 
+* [cproc: Small C11 compiler based on QBE](https://sr.ht/~mcf/cproc/)
 
 ### Lisp and Scheme
 
@@ -58,7 +61,7 @@ title: "Writing-A-Programming-Language"
 * [micro-lisp](https://github.com/carld/micro-lisp)
 * [femtolisp - a lightweight, robust, scheme-like lisp implementation used in julia](https://github.com/JeffBezanson/femtolisp)
 * [LISP on the BBC Microcomputer Remastered PDF](https://stardot.org.uk/forums/viewtopic.php?t=17811)
- 
+
 ## Middle
 
 * [Mapping Python to LLVM | Exaloop blog](https://blog.exaloop.io/python-llvm/)
@@ -88,7 +91,7 @@ title: "Writing-A-Programming-Language"
 * [Craig's 8-bit Commodore Page](http://csbruce.com/cbm/)
 * [Transactor article that discusses Lisp on C64 - suggests and additiona disk on Page 41 with a special MAE Assembler source to Micro-Lisp](http://csbruce.com/cbm/transactor/pdfs/trans_v8_i06.pdf)
 * [Just the Micro-Lisp article](https://www.lyonlabs.org/commodore/onrequest/micro-lisp.pdf)
-* ["Micro-Lisp" a lisp for the C64](https://groups.google.com/g/comp.lang.lisp/c/6pPNzzpVV9o) attach the image, `LOAD"MICRO-LISP",8,1` then `RUN` 
+* ["Micro-Lisp" a lisp for the C64](https://groups.google.com/g/comp.lang.lisp/c/6pPNzzpVV9o) attach the image, `LOAD"MICRO-LISP",8,1` then `RUN`
 * [Versatile Commodore Emulator](https://vice-emu.sourceforge.io/windows.html)
 Keyboard is a bit weird: Tab key acts as the CTRL key on the C64, and the left CTRL key acts as the C= key. Replacing `win_pos.vkm` file in the WinVICE/C64 directory with a new keymap. [forum link](https://www.lemon64.com/forum/viewtopic.php?t=40321)
 * [How do I run .T64 and .D64 files in an emulator](https://www.lemon64.com/forum/viewtopic.php?t=40321) For D64, you you need File -> Attach disk image -> Drive 8, and then most likely type LOAD"*",8,1 to load the first program on the disk.
@@ -119,9 +122,10 @@ Keyboard is a bit weird: Tab key acts as the CTRL key on the C64, and the left C
 * [RetroVGA - Raspbery Pico multi retro computer from Bobricius on Tindie](https://www.tindie.com/products/bobricius/retrovga-raspbery-pico-multi-retro-computer/)
 * This is a collection of emulators [M.CU.M.E = Multi CompUter Machine Emulator](https://github.com/Jean-MarcHarvengt/MCUME/tree/master/MCUME_pico/bin/PICOMPUTERMAX)
 * Lots of references and hardware [ZX Spectrum for Raspberry Pico Pi RP2040](https://github.com/fruit-bat/pico-zxspectrum)
-* 
- 
+
+<!-- markdownlint-disable MD034 -->
 http://telarity.com/~dan/cbm/languages.html
+<!-- markdownlint-enable MD034 -->
 Weird archive formats: possibly 16 bit operating systems.
 
 Nicholas Vrtis, Transactor Publishing Inc., Vol.8,Iss.6)

@@ -35,6 +35,16 @@ A sentence
 * [Arduino Lesson 13. DC Motors](https://learn.adafruit.com/adafruit-arduino-lesson-13-dc-motors/overview)
 * [ARDUINO MOTOR GUIDE - 6 ARDUINO PROJECTS WITH A SPIN](https://www.circuito.io/blog/arduino-motor-guide/)
 
+## Development for
+
+* used for validation in ESP [voluptuous](http://alecthomas.github.io/voluptuous/docs/_build/html/modules.html) and [functions](https://github.com/alecthomas/voluptuous#validation-functions)
+* based on [FormEncode Validation](https://www.formencode.org/en/latest/Validator.html)
+
+## Pi Pico
+
+* [Using ESPHome on the Raspberry Pi Pico W and other RP2040 microcontroller boards](https://koen.vervloesem.eu/blog/using-esphome-on-the-raspberry-pi-pico-w-and-other-rp2040-microcontroller-boards/)
+* [Rpi pico w onboard temperature sensor and onboard led](https://community.home-assistant.io/t/rpi-pico-w-onboard-temperature-sensor-and-onboard-led/564904/5)
+
 ## ZigBee
 
 * [How to Transform a RaspberryPi Into a Universal Zigbee and Z-Wave Bridge](https://hackernoon.com/how-to-transform-a-raspberrypi-into-a-universal-zigbee-and-z-wave-bridge-xy1ay3ymz) including information about z-wave vs zigbee

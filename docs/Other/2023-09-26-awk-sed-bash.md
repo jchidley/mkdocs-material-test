@@ -1,6 +1,6 @@
 ---
 date: "2023-09-26"
-title: "Awk Sed"
+title: "Awk Sed bash"
 ---
 <!-- markdownlint-disable MD025 -->
 # Awk Sed
@@ -15,6 +15,13 @@ Don't forget to use both `man` and `info` commands to learn more about the vairo
 * [Sed - grymoire - An Introduction and Tutorial by Bruce Barnett](https://www.grymoire.com/Unix/Sed.html)
 * [Sed Cheat Sheet](https://catonmat.net/ftp/sed.stream.editor.cheat.sheet.txt)
 * [sed . . . the stream editor](https://www.pement.org/sed/index.htm)
+* [sed single page manual](https://www.gnu.org/software/sed/manual/sed.html)
+
+## bash
+
+* [bash manual](https://www.gnu.org/software/bash/manual/bash.html)
+* [bash debugger](https://bashdb.sourceforge.net/bashdb.html)
+* [debugging bash scripts](https://linuxconfig.org/how-to-debug-bash-scripts)
 
 ## Here documents
 
@@ -168,6 +175,7 @@ next
 exit
 ```
 
+* [GAWK: Effective AWK Programming, single page manual](https://www.gnu.org/software/gawk/manual/gawk.html)
 * [Awk, Nawk and GNU Awk Cheat Sheet](https://catonmat.net/ftp/awk.cheat.sheet.txt)
 * [Awk One-Liners Explained, Part I: File Spacing, Numbering and Calculations](https://catonmat.net/awk-one-liners-explained-part-one)
 * [Awk One-Liners Explained, Part II: Text Conversion and Substitution](https://catonmat.net/awk-one-liners-explained-part-two)
