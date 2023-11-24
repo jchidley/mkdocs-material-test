@@ -2,8 +2,6 @@
 date: "2020-01-28"
 title: "File systems"
 ---
-<!-- 2020-01-27-Simplest-possible-Linux-boot -->
-
 <!-- markdownlint-disable MD025 -->
 # File systems
 <!-- markdownlint-enable MD025 -->
@@ -32,6 +30,12 @@ In `/etc/fstab`:
 # <file system>		<dir>		<type>	<options>	<dump>	<pass>
 /dev/NTFS-part		/mnt/windows	ntfs-3g	defaults	0	0
 ```
+
+### Raspberry Pi Overlay FS
+
+* [Overlay FS in Raspi-config](https://pigeoncomputers.com/documentation/tips-and-tricks/overlay-file-system/) under Advanced Options, Overlay FS
+* [Raspberry Pi Overlay Root Filesystem](https://yagrebu.net/unix/rpi-overlay.md) and [OverlayFS based reliable filesystem](https://github.com/ghollingworth/overlayfs) who is a [Raspberry Pi Engineer](https://forums.raspberrypi.com/viewtopic.php?f=63&t=253104&p=1549229#p1549229) apparently `sudo raspi-config nonint enable_overlayfs` or `sudo raspi-config nonint disable_overlayfs` does the trick or `enable_overlayfs()` `disable_overlayfs()` [according to](https://raspberrypi.stackexchange.com/questions/124628/raspbian-enable-disable-overlayfs-from-terminal)
+[Docker and Overlay FS](https://stackoverflow.com/questions/70295287/run-docker-on-raspberry-pi4-with-overlay-fs)
 
 ## Links
 
