@@ -15,6 +15,7 @@ title: "Links-iPad"
 * [Project Update: New Stepper Motor Driver - Lucky Resistor](https://luckyresistor.me/2021/03/27/project-update-new-stepper-motor-driver/)
 * [Support USB-ethernet Gadget on Pi Zero (#13520) · Issues · alpine / aports · GitLab](https://gitlab.alpinelinux.org/alpine/aports/-/issues/13520)
 * [Make a Good Dupont Pin-Crimp EVERY TIME! : 15 Steps (with Pictures) - Instructables](https://www.instructables.com/Make-a-Good-Dupont-Pin-Crimp-EVERY-TIME/)
+* [DuPont And “DuPont” Connectors, And How To Crimp Them Properly](https://www.mattmillman.com/info/crimpconnectors/dupont-and-dupont-connectors/)
 * [5.9: Monitoring your Raspberry Pi - Chemistry LibreTexts](https://chem.libretexts.org/Courses/Intercollegiate_Courses/Internet_of_Science_Things/5%3A_Appendix_3%3A_General_Tasks/5.9%3A_Monitoring_your_Raspberry_Pi)
 * [Overview — MicroPython latest documentation](https://docs.micropython.org/en/latest/index.html)
 * [GitHub - peterhinch/micropython-mqtt: A 'resilient' asynchronous MQTT driver. Plus a means of using an ESP8266 to bring MQTT to non-networked targets.](https://github.com/peterhinch/micropython-mqtt)

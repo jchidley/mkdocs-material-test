@@ -8,7 +8,7 @@ title: "Radio and Electronics"
 
 ## Free Information
 
-* [World Radio History](https://www.worldradiohistory.com/index.htm)
+* [World Radio History](https://www.worldradiohistory.com/index.htm) espeically the [Techinical Section](https://www.worldradiohistory.com/Home-Tech.htm) and [Elektor Magazine](https://archive.org/details/ElektorMagazine) and [Fun Way into Electronics](https://archive.org/details/funway_into_electronics)
 * [Free Electronics Books and Magazines Web Sites](https://youtu.be/eBKRat72TDU?si=PoEnyuolLwT7SHuH)
 
 ## Simulation Software
@@ -29,6 +29,11 @@ Limits of SPICE (and other simulation). Parastics need to be moddeled. Models of
 
 * Kyrocera AVX has various [design tools](https://www.kyocera-avx.com/design-tools/) which can be used and inspected online. There are also SPICE models for download.
 
+### General
+
+* [Unbricking a $2,000 Bike With a $10 Raspberry Pi](https://ptx2.net/posts/unbricking-a-bike-with-a-raspberry-pi/) Bluetooth Zwift Ant+ Raspberry Pi speed cadence heart rate sensor
+* [DIY Operational Amplifier schematic, explanation](https://www.electroschematics.com/diy-operational-amplifier/)
+
 ### YouTube
 
 [Electronics with Professor Fiore](https://www.youtube.com/@ElectronicswithProfessorFiore) with [free books](https://www2.mvcc.edu//users/faculty/jfiore/index.cfm)
@@ -38,6 +43,14 @@ Limits of SPICE (and other simulation). Parastics need to be moddeled. Models of
 * [Mike Engelhardt the Creator of LTspice and now QSPICE](https://www.youtube.com/watch?v=5gMVOmkXDVs)
 ctrl-enter to add lines to an exisiting text(spice directive). `qsch` are 8-bit encoded [Windows-1252 or CP-1252](https://en.wikipedia.org/wiki/Windows-1252), these can be read in `nvim` or `notepad`. The command reference is in the help informaiton under simulator.
 "The analog circuit simulation was originally based on a download of Berkeley SPICE from ptolemy.berkeley.edu. Specifically the version of 3F5 available in early 2020", [documentaiton appears to be at](http://bwrcs.eecs.berkeley.edu/Classes/IcBook/SPICE/) and there's [All about Circuits documentation too](https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/). Apparently it's normal for it to be cryptic and undocumented. I know that some syntax has been lifted from elsewhere.
+
+* Helpful [guides](https://github.com/KSKelvin-Github/Qspice/tree/main/Guideline)
+
+To get operating point data "File->Export Data" from the *Waveform Viewer*.
+
+* [PyQspice](https://github.com/Qorvo/PyQSPICE/tree/main)
+
+* [QSPICE: A New Simulator for Electronic Circuits (Part 1)](https://www.powerelectronicsnews.com/qspice-a-new-simulator-for-electronic-circuits-part-1/)
 
 See [Tools, components, symbols, code, etc., for Qorvo's free QSpice circuit simulator](https://github.com/robdunn4/QSpice), [QSpice Forum KSKelvin's Github repo](https://github.com/KSKelvin-Github/Qspice/) and [QSpice Forum Mgyger's GitLab repo](https://gitlab.com/mgyger/qspice-symbols/)
 
