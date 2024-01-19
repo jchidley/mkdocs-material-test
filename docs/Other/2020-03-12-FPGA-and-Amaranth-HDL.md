@@ -189,7 +189,8 @@ search for Amaranth / nMigen / Migen with language Python at GitHub
 
 ### Verilog
 
-* [GitHub - johnwinans/Verilog-Examples](https://github.com/johnwinans/Verilog-Examples.git)
+* [GitHub - johnwinans/Verilog-Examples](https://github.com/johnwinans/Verilog-Examples.git) [Github for the video](https://github.com/johnwinans/Verilog-Examples.git)
+* [FPGA #7 - FPGA Project Big Picture/Overview](https://youtu.be/kdCEc2-d3NI?si=hb7lpox2GipPZUYL)
 * [Learning how to FPGA with ‘Neopixel’ LEDs – Vivonomicon's Blog](https://vivonomicon.com/2018/12/24/learning-how-to-fpga-with-neopixel-leds/)
 
 #### old but useful
