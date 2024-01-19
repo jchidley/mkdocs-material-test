@@ -6,9 +6,15 @@ title: "Home-Assistant-ESPHome"
 # Template
 <!-- markdownlint-enable MD025 -->
 
-## Introduction
+## Home Assistant
 
-A sentence
+* [Understanding MQTT Topics](http://www.steves-internet-guide.com/understanding-mqtt-topics/)
+* [Scargill Tech Blog](https://tech.scargill.net/)
+* [A simple setup for your own smart home server (on a Raspberry Pi)](https://github.com/OliverHi/smarthomeserver)
+* [Home Assistant Container](https://sequr.be/blog/2021/08/home-assistant-container-part-1-install-debian-docker-and-portainer/)
+* [Random Light Schedule on Home Assistant](https://community.home-assistant.io/t/random-light-schedule/10134/16)
+* [Home Assistant Configuration Example](https://github.com/arsaboo/homeassistant-config)
+* [How much does it cost to run a smart home?](https://notenoughtech.com/home-automation/smart-lights-wont-save-you-money/#google_vignette)
 
 ## Links
 
@@ -52,4 +58,4 @@ search for `CC2531` on amazon. See [Sniff Zigbee](https://www.zigbee2mqtt.io/adv
 
 * [cc2530 information](https://www.ti.com/product/CC2530) TI recommends "the ZCP 3.0 compliant CC26x2/CC13x2 family" the cheaper development board is LAUNCHXL-CC26X2R1, about £45 the similar LAUNCHXL-CC2650 is a bit cheaper. Cheap modules from [EBYTE E18-MS1-PCB](https://zigbee.blakadder.com/assets/files/E18-MS1-PCB_Usermanual_EN_v1.1.pdf) [Firmware for these devices](https://ptvo.info/faq/) someone built a mini PCB for it [Z1-Mini](https://gio-dot.github.io/Z1-Mini/) with a cookbook. Someone else build [ZigUNO shield](https://www.tindie.com/products/mind/ziguno/) with the [design files here](https://github.com/xyzroe/ZigUNO/tree/main/2530_v1) a [set of projects using this including design files](https://github.com/diyruz) little development board [design files suitable for jlcpcb](https://github.com/nicolalandro/E-18_pcb_board/tree/main) needs [TI provided sw development kit](https://www.ti.com/tool/download/SIMPLELINK-CC13X2-26X2-SDK/5.10.00.48) with their own [IDE](https://www.ti.com/tool/CCSTUDIO?keyMatch=CODE%20COMPOSER%20STUDIO) seems like it gets complicated and expensive pretty quickly [Zigbee CC2530](https://community.home-assistant.io/t/zigbee-cc2530/425998/11)
 
-* [Flashing a CC2530 + CC2591 Zigbee Module with a Raspberry Pi](https://www.marrold.co.uk/2019/12/flashing-cc2530-cc2591-zigbee-module.html) using [zigbee2mqtt](https://github.com/Koenkk/zigbee2mqtt) 
+* [Flashing a CC2530 + CC2591 Zigbee Module with a Raspberry Pi](https://www.marrold.co.uk/2019/12/flashing-cc2530-cc2591-zigbee-module.html) using [zigbee2mqtt](https://github.com/Koenkk/zigbee2mqtt)
