@@ -6,6 +6,31 @@ title: "Systems-on-Systems"
 # Systems-on-Systems
 <!-- markdownlint-enable MD025 -->
 
+## WSL
+
+[How to locate the .vhdx file and disk path for your Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/disk-space#how-to-locate-the-vhdx-file-and-disk-path-for-your-linux-distribution)
+
+Finding
+
+```PowerShell
+Foreach ($i in Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss) {write-host $i.GetValue("BasePath")}
+# Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss | foreach-object {write-host $_.GetValue("BasePath")}
+```
+
+Exporting
+
+```PowerShell
+wsl --export --vhd Alpine D:\WindowsBackup\WSL2\Alpine.vhdx
+```
+
+## Virtual Machines
+
+[Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server)
+
+```PowerShell
+Get-VM | Export-VM -Path D:\WindowsBackup\
+```
+
 ## Import any Linux distribution to use with WSL
 
 ## Custom Linux for WSL
