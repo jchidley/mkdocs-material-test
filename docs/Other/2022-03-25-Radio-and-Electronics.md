@@ -40,6 +40,21 @@ Limits of SPICE (and other simulation). Parastics need to be moddeled. Models of
 
 ## QSPICE
 
+finding models
+
+Micro-Cap 12 from Spectrum software has a lot of models included.
+
+It's `mc12cd.zip_Spectrum_Software_Spice_Simulator_12.2.0.5.zip` on my OneDrive.
+
+```bash
+# assumes model begins with '.model' and continues with '\n+'
+# search for "2n222" in "filename"
+awk 'BEGIN{IGNORECASE=1} /\.model\s+*2n222/{f=1; print; next} /^\s*[^+]/{f=0} f' filename 
+# I think f is being used to do the default action (print) or nothing
+# for a one liner add 
+find -type f -print0 | xargs -0 # before awk and drop the "filename", use -r for recursive
+```
+
 * [Mike Engelhardt the Creator of LTspice and now QSPICE](https://www.youtube.com/watch?v=5gMVOmkXDVs)
 ctrl-enter to add lines to an exisiting text(spice directive). `qsch` are 8-bit encoded [Windows-1252 or CP-1252](https://en.wikipedia.org/wiki/Windows-1252), these can be read in `nvim` or `notepad`. The command reference is in the help informaiton under simulator.
 "The analog circuit simulation was originally based on a download of Berkeley SPICE from ptolemy.berkeley.edu. Specifically the version of 3F5 available in early 2020", [documentaiton appears to be at](http://bwrcs.eecs.berkeley.edu/Classes/IcBook/SPICE/) and there's [All about Circuits documentation too](https://www.allaboutcircuits.com/textbook/reference/chpt-7/fundamentals-spice-programming/). Apparently it's normal for it to be cryptic and undocumented. I know that some syntax has been lifted from elsewhere.
@@ -59,6 +74,19 @@ The first few chars in the file, according to Mike Engelhardt, "I put those char
 [Extra symbols for qspice](https://gitlab.com/mgyger/qspice-symbols) by Markus Gyger see [additional symbols post in forum](https://forum.qorvo.com/t/additional-symbols/14469)
 
 Apparently [netlists can be used in Kicad](https://electronics.stackexchange.com/questions/676175/can-i-import-a-netlist-into-kicad#:~:text=There%27s%20no%20need%20to%20%22import%22%20anything%20into%20KiCad%3A,you%20generate%20perfect%20schematics%20and%20layouts%20that%20way%21). [Kicad uses S-expressions](https://dev-docs.kicad.org/en/file-formats/sexpr-intro/index.html#:~:text=KiCad%20uses%20an%20s-expression%20file%20format%20for%20symbol,circuit%20boards%2C%20and%20title%20block%20and%20border%20worksheets.)
+
+* [Qspice tutorials, examples and guide](https://github.com/KSKelvin-Github/Qspice/tree/main)
+* [Tools, components, symbols, code, etc., for Qorvo's free QSpice circuit simulator.](https://github.com/robdunn3/QSpice/tree/main)
+* [QSpice Unleashed: Elevating the LTSpice Legacy in Electronic Simulation](https://www.electromaker.io/blog/article/qtspice-unleashed-elevating-the-ltspice-legacy-in-electronic-simulation)
+* Ctrl-Right-Button on waveform to get pp, max, min for a particular waveform - like double click gives crosshairs
+* Boost converter example and using a C++ with behavioural Voltage to work out efficiency and power loss. [QSpice Insight with Boost Converter](https://youtu.be/1pUUDxWJIKA?si=lIHKPm4MFvlZWr1F)
+* [Description of using C++ with it](https://www.youtube.com/watch?v=Rtt5PPsQGag&t=23s)
+* [LTSpice information - useful background to qspice](https://youtu.be/NZNerLq8tHc?si=GzlIQBV7u1B5ebAR)
+* [LTSpice by the creator](https://www.youtube.com/watch?v=5gKThjZIj-s)
+* [Adding models to QSpice](https://forum.qorvo.com/t/adding-model-files-to-qspice/14962)
+* [PyQspice - bindings for Python](https://github.com/Qorvo/PyQSPICE/tree/main)
+* [funway into electronics](https://archive.org/details/funway_into_electronics/funway_into_electronics_vol_0_22nd_printing/)
+* [World Radio History Techical](https://www.worldradiohistory.com/Home-Tech.htm)
 
 [qspice tutorial](https://www.powerelectronicsnews.com/qspice-a-new-simulator-for-electronic-circuits-part-1/)
 
