@@ -1,4 +1,6 @@
 ---
+date: "2022-08-07"
+title: "Alpine-Image-Build-Raspberry-Pi"
 ---
 
 <!-- markdownlint-disable MD025 -->
@@ -19,12 +21,13 @@ This is the Linux that I have been waiting for.
 
 This should probably be done in a `chroot` [Alpine Linux in a chroot - Alpine Linux](https://wiki.alpinelinux.org/wiki/Alpine_Linux_in_a_chroot#Install_the_alpine_base_installation_onto_the_chroot)
 
-```bash 
+```bash
 mirror='http://dl-cdn.alpinelinux.org/alpine/'
 arch='aarch64'
-version='2.12.9-r3'
+version='2.14.0-r5'
 curl -LO ${mirror}/latest-stable/main/${arch}/apk-tools-static-${version}.apk
 ```
+
 [GitHub - alpinelinux/alpine-chroot-install: Install Alpine Linux in chroot with a breeze. Build ARM on Travis CI or any other x86_64 CI.](https://github.com/alpinelinux/alpine-chroot-install/)
 
 [Install Alpine on a Raspberry Pi](https://wiki.alpinelinux.org/wiki/Raspberry_Pi)
@@ -251,6 +254,7 @@ Broadcom WiFi and Wireguard, information about ISO customisation[USB Linux - Alp
 [Kloster - Live CD image](https://eyedeekay.github.io/kloster/)
 
 An image build is really three things:
+
 1. Bake an image with everything included for offline use
 2. make an apkovl (overlay file) that includes all the required configuration
 3. make a script to run on first boot to complete setup (say doing the `apk add` commands)
@@ -296,6 +300,7 @@ tar tf iso/alpine-rpi-edge-armv7.tar.gz | sed -n -e '/config.txt/ p' -e '/cmdlin
 ```
 
 remove the various architecture options
+
 ```ash
 sed -i -r '/kernel_flavors="rpi"/,/easc/ {
 s/(kernel_flavors="rpi)(")/\12\"/
@@ -304,11 +309,13 @@ s/(kernel_flavors="rpi)(")/\12\"/
 ```
 
 combinged with above, limit the build to just rpi2
+
 ```ash
 sed -i -r 's/(kernel_flavors="rpi)(")/\12/' aports/scripts/mkimg.arm.sh
 ```
 
 add the broadcom firmware, for WiFi
+
 ```ash
 sed -i '/kernel_flavors="rpi2"/ a\
 \tapks="\$apks linux-firmware-brcm"' \
@@ -316,6 +323,7 @@ aports/scripts/mkimg.arm.sh
 ```
 
 add apkvol
+
 ```ash
 sed -i '/kernel_flavors="rpi2"/ a\
 \tapkovl="genapkovl-dhcp.sh"' \
@@ -323,6 +331,7 @@ aports/scripts/mkimg.arm.sh
 ```
 
 keep only the top, generic rpi, stuff. This also remove the uboot stuff
+
 ```bash
 cp aports/scripts/bak.mkimg.arm.sh aports/scripts/mkimg.arm.sh
 sed -i '/profile_rpi()/,$ d' aports/scripts/mkimg.arm.sh
@@ -330,6 +339,7 @@ sed -i '/profile_rpi()/,$ d' aports/scripts/mkimg.arm.sh
 
 Full replacement.
 genapkovl-chidley.sh needs to match path/filename for the apkovl overlay file, below
+
 ```ash
 tee -a aports/scripts/mkimg.arm.sh <<\EOF 
 profile_rpi() {
@@ -354,6 +364,7 @@ EOF
 ```
 
 example output
+
 ```ash
 OK: 0 MiB in 0 packages
 fetch http://dl-cdn.alpinelinux.org/alpine/edge/main/armv7/APKINDEX.tar.gz
@@ -370,6 +381,9 @@ Images generated in /home/build/iso
 ```
 
 ### Make an apkovl Overaly File
+
+<!-- markdownlint-disable MD010 -->
+<!-- Hard Tabs -->
 
 ```ash
 cat > genapkovl-chidley.sh <<\EOFgenapkovl
@@ -452,10 +466,6 @@ network={
         ssid="BT-MNAC3H"
         psk=042e3b47d60f94a45975dab132595ebe44bfca60fa61cb1ff5df3705e40000c7
 }
-network={
-        ssid="CDNMSTUDENTWIFI"
-        psk=4c0b9ba1ef7a611be087334df646fcf99edc1953b0c3a6398034545c6f623376
-}
 EOF
 
 rc_add devfs sysinit
@@ -481,6 +491,8 @@ rc_add savecache shutdown
 tar -c -C "$tmp" etc | gzip -9n > $HOSTNAME.apkovl.tar.gz
 EOFgenapkovl
 ```
+
+<!-- markdownlint-enable MD010 -->
 
 ### First Script
 
