@@ -48,6 +48,34 @@ Screen resolution: 2496 x 1664
 
 ### Windows
 
+### Windows Installation Media
+
+[Add keyboard drivers to the selection profile](https://learn.microsoft.com/en-us/surface/enable-surface-keyboard-for-windows-pe-deployment#add-keyboard-drivers-to-the-selection-profile) my drivers, Surface Laptop 4 with AMD Processor Drivers and Firmware, are [here](https://www.microsoft.com/en-us/download/details.aspx?id=102923)
+
+Use Windows Media Creation Tool to create a USB boot stick. Get the required surface driver file and then extract the files:
+
+```PowerShell
+Msiexec.exe /a SurfaceLaptop4_AMD_Win11_22000_23.120.1653.0.msi targetdir=c:\surface_laptop /qn
+```
+
+Then add these files to the `boot.wim` on the install disk:
+
+```PowerShell
+mkdir "c:\winboot"
+mkdir "c:\winboot\mount"
+$BootWimSource = "D:\sources\boot.wim" 
+$MountPath = "c:\winboot\mount" 
+$BootWim = "c:\winboot\boot.wim"
+$drivers = "C:\surface_laptop\SurfaceUpdate"
+copy $BootWimSource $BootWim
+Mount-WindowsImage -Path $MountPath -ImagePath $BootWim -Index 1 # service
+Add-WindowsDriver -Path $MountPath -Driver $drivers -Recurse
+Dismount-WindowsImage -Path $MountPath –Save
+copy $BootWim $BootWimSource
+```
+
+### ADK
+
 [Install the Windows ADK offline](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-offline-install)
 
 I put the files in my Downloads folder
@@ -93,6 +121,16 @@ copype amd64 C:\WinPE_amd64
 
 [Adding Surface drivers to Windows image](https://www.risual.com/2022/03/adding-surface-drivers-to-windows-image/)
 
+### Windows PE
+
+Use Windows Media Creation Tool to create a USB boot stick. Get the required surface driver file and then extract the files:
+
+```PowerShell
+Msiexec.exe /a SurfaceLaptop4_AMD_Win11_22000_23.120.1653.0.msi targetdir=c:\surface_laptop /qn
+```
+
+Then add these files to the `boot.wim` on the install disk:
+
 ```PowerShell
 $MountPath = "C:\WinPE_amd64\mount" 
 $WinPE = "C:\WinPE_amd64\media\sources\boot.wim"
@@ -101,7 +139,6 @@ Mount-WindowsImage -Path $MountPath -ImagePath $WinPE -Index 1 # service
 Add-WindowsDriver -Path $MountPath -Driver $drivers -Recurse
 Dismount-WindowsImage -Path $MountPath –Save
 ```
-
 The set of drivers for my "Surface Laptop 4 with AMD processor" can are listed in a table in [How to enable the Surface Laptop keyboard during MDT deployment](https://learn.microsoft.com/en-us/surface/enable-surface-keyboard-for-windows-pe-deployment#add-keyboard-drivers-to-the-selection-profile) link
 
 ```PowerShell
