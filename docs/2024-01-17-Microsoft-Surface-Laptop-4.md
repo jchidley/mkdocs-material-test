@@ -169,8 +169,10 @@ After booting WinPE you can run powershell with this command `X:\Windows\system3
 
 This is a very easy way to lose your sanity: I have lost too many systems and too much data using tools like this (lots of different types systems, starting with DOS)
 [Capture and apply a Windows image using a single .WIM file](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/capture-and-apply-windows-using-a-single-wim?view=windows-11)
-
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)
+[Linux running on the Microsoft Surface devices](https://github.com/linux-surface/linux-surface)
+[Install the Windows ADK offline](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-offline-install)
+[Adding Surface drivers to Windows image](https://www.risual.com/2022/03/adding-surface-drivers-to-windows-image/)
+[WinPE: Adding Windows PowerShell support to Windows PE](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-adding-powershell-support-to-windows-pe?view=windows-11)
+[Image Deployment Sample scripts](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-desktop-editions-sample-scripts?preserve-view=true&view=windows-10#-createpartitions-uefitxt)
+[diskpart](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart)
+[Capture and apply Windows Full Flash Update (FFU) images](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu?view=windows-11)
