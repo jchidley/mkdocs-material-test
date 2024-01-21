@@ -213,3 +213,87 @@ This is a very easy way to lose your sanity: I have lost too many systems and to
 [Image Deployment Sample scripts](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-desktop-editions-sample-scripts?preserve-view=true&view=windows-10#-createpartitions-uefitxt)
 [diskpart](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart)
 [Capture and apply Windows Full Flash Update (FFU) images](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu?view=windows-11)
+
+## Setup
+
+[Windows Setup Edition Configuration and Product ID Files (EI.cfg and PID.txt)](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-edition-configuration-and-product-id-files--eicfg-and-pidtxt?view=windows-11)
+
+ei.cfg
+
+```text
+[EditionID]
+Professional
+[Channel]
+Retail
+[VL]
+0
+```
+
+PID.txt
+
+```text
+[PID]
+Value=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+```
+
+```PowerShell
+#Admin
+dism /get-wiminfo /wimfile:"e:\sources\install.esd" # number 6 is Professional
+mkdir c:\temp
+# probably not use compress:max, perhaps compress:fast
+dism /export-image /sourceimagefile:"e:\sources\install.esd" /SourceIndex:6 /DestinationImageFile:c:\temp\install.wim /compress:max /checkintegrity
+Mount-WindowsImage -path c:\mnt -imagepath C:\temp\install.wim -index 1
+Add-WindowsDriver -Path c:\mnt -Driver C:\surface\ -Recurse
+Dismount-WindowsImage -Path c:\mnt -save
+dism /export-image /sourceimagefile:c:\temp\install.wim /sourceIndex:1 /destinationimagefile:c:\temp\install.esd /compress:recovery
+rename-item e:\install.esd e:\install.esd.old
+copy c:\temp\install.esd e:\sources\install.esd
+```
+
+[DISM Image Management Command-Line Options](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14?view=windows-11#export-image)
+
+"Use the recovery option to export push-button reset images. The resulting files are much smaller in size, which in turn, greatly reduce the amount of disk space needed for saving the push-button reset image on a recovery drive. The destination file must be specified with an .esd extension."
+
+This appears to be used with both [Windows Recovery Environment (Windows RE)](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference?view=windows-11) and [Push-button reset](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/push-button-reset-overview?view=windows-11)
+
+```cmd
+```
+
+djebkgichfodz
+Granada2.3
+
+[What is the most efficient, native way to image a Windows partition?](https://superuser.com/a/1581804)
+
+"ESDs (Electronic Software Distribution) can only capture a System partition and must use /Compress:Recovery (algorithm is ~33% more efficient than /Compress:Max)
+Windows ≥ 10: Can only be used for PBR [Push-Button Reset] exported image"
+
+[WIM - This paper defines the internal format of a Windows Imaging (WIM) file format](https://www.microsoft.com/en-us/download/details.aspx?id=13096)
+
+[Chocolatey vs. Scoop vs. Winget: Package Managers for Windows](https://www.bowmanjd.com/chocolatey-scoop-winget/)
+
+[Chocolatey and Winget Comparison](https://github.com/ScoopInstaller/Scoop/wiki/Chocolatey-and-Winget-Comparison)
+
+```PowerShell
+https://aka.ms/PSWindows # upgrade powershell
+# admin user
+Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+winget upgrade --all
+iwr -useb chocolatey.org/install.ps1 | iex
+# normal user
+iwr -useb get.scoop.sh | iex
+scoop install git
+C:\Users\jackc\scoop\apps\7zip\current\install-context.reg
+git config --global credential.helper manager
+C:\Users\jackc\scoop\apps\git\current\install-context.reg
+scoop install sudo
+cd $env:HOMEPATH
+mkdir git
+cd git
+git clone https://github.com/jchidley/mkdocs-material-test.git
+# run windows update
+winget install vscode
+
+scoop bucket add extras
+https://www.posten.no/landinformasjon?land=Storbritannia+og+Nord-Irland&id=GB
+```
