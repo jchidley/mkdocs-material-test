@@ -334,6 +334,16 @@ scoop bucket add extras
 https://www.posten.no/landinformasjon?land=Storbritannia+og+Nord-Irland&id=GB
 ```
 
+### Chezmoi and dotfiles
+
+* [Chezmoi](https://www.chezmoi.io/)
+* [Solving the Dotfiles Problem (And Learning Bash)](https://www.youtube.com/watch?v=mSXOYhfDFYo) is very well explained
+* [Chezmoi and Ansible](https://www.youtube.com/watch?v=-RkANM9FfTM)
+* [Easily moving Linux installs](https://www.youtube.com/watch?v=x6063EuxfEA)
+* [chezmoi: Organize your dotfiles across multiple computers | Let's Code](https://www.youtube.com/watch?v=L_Y3s0PS_Cg)
+* [Using Chezmoi to Automate dotfiles / Config Files (+ my bashrc)](https://www.youtube.com/watch?v=id5UKYuX4-A&list=WL)
+* [Dotfiles! Here's how I organize them](https://www.youtube.com/watch?v=5oXy6ktYs7I&t=449s)
+
 ## Fixing problems
 
 [Fix Your Windows PC Problems](https://www.youtube.com/watch?v=v0pFyWXp540)
@@ -367,3 +377,8 @@ Checkout surface backup
 * [Creating and using a USB recovery drive for Surface](https://support.microsoft.com/en-us/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)
 * [Restore or reset Surface for Windows](https://support.microsoft.com/en-us/surface/restore-or-reset-surface-for-windows-e1fd649a-6396-a7de-2e87-7ba3b45e0fb1)
 * [Linux running on the Microsoft Surface devices. Follow the instructions below to install the latest kernel.](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup)
+
+* [Install Windows the Arch Linux Way](https://christitus.com/install-windows-the-arch-linux-way/)
+* [Reagentc Windows Recovery Partition](https://christitus.com/reagentc-windows-recovery-partition/)
+* [Chris Titus Tech Utility](https://www.youtube.com/watch?v=XQAIYCT4f8Q) `iwr -useb https://christitus.com/win | iex`
+* [Windows 11 Perfect Install](https://christitus.com/windows-11-perfect-install/)
