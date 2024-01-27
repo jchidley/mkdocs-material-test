@@ -31,7 +31,34 @@ be an expert requires you to solve loads of problems. Have fun with them.
 
 You can definetly copy your configuration to a new machine but you still need to install
 all the prerequisites for your various plugins.
-On windows I used `scoop install gcc` and `scoop install llvm`. llvm might not have been necessary.
+
+### Windows
+
+```PowerhShell
+choco install mingw # or # scoop install gcc # or # scoop install llvm
+scoop bucket add nerd-fonts
+scoop install sourcecodepro-nf
+```
+
+### Windows terminal
+
+Powershell 7
+Settings → “Startup” → “Default profile”:  select "PowerShell"
+
+Nerd Font
+Settings → “Powershell” profile → “Appearance” → “Font face”: select Nerd Font
+
+### Alacritty
+
+Set "Start In" to %USERPROFILE% for the Alacritty shortcut on Windows
+
+[Alacritty - TOML configuration file](https://alacritty.org/config-alacritty.html)
+
+```PowerShell
+nvim $env:APPDATA\alacritty\alacritty.toml
+[font]
+normal = { family = "SauceCodePro Nerd Font", style = "Regular" }
+```
 
 ## Vim, Neovim and Related
 
