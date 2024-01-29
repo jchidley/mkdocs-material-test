@@ -280,11 +280,13 @@ From this [Neovim + LanguageServer.jl discourse](https://discourse.julialang.org
 [neovim/nvim-lspconfig#1153](https://github.com/neovim/nvim-lspconfig/pull/1153) is merged now so things should work out of the box if you:
 
 Install LanguageServer in the shared environment ~/.julia/environments/nvim-lspconfig:
+
 ```bash
 julia --project=~/.julia/environments/nvim-lspconfig -e 'using Pkg; Pkg.add("LanguageServer")'
 ```
 
 I put this at the bottom of `init.lua` but it might belong somewhere else:
+
 ```lua
 -- Julia LSP (LanguageServer.jl)
 require'lspconfig'.julials.setup({
@@ -312,12 +314,14 @@ curl https://raw.githubusercontent.com/fredrikekre/.dotfiles/master/.julia/envir
 cd ~/.julia/environments/nvim-lspconfig
 make
 ```
+
 Go into nvim, open a julia file, wait until the `julials` has loaded.
 
 if the above doesn't work, then ...
 
-I used [.julia/environments/nvim-lspconfig/Makefile](https://raw.githubusercontent.com/fredrikekre/.dotfiles/master/.julia/environments/nvim-lspconfig/Makefile) file which I imported into this document using `:read `
+I used [.julia/environments/nvim-lspconfig/Makefile](https://raw.githubusercontent.com/fredrikekre/.dotfiles/master/.julia/environments/nvim-lspconfig/Makefile) file which I imported into this document using `:read`
 
+<!-- markdownlint-disable MD010 -->
 ```bash
 cat << EOF > ~/.julia/environments/nvim-lspconfig/Makefile
 # MIT License. Copyright (c) 2021 Fredrik Ekre
@@ -480,6 +484,7 @@ end
 end # module
 endef
 ```
+<!-- markdownlint-enable MD010 -->
 
 ```bash
 cd ~/.julia/environments/nvim-lspconfig
@@ -498,6 +503,32 @@ Might need to do this `julia -e 'using Pkg; Pkg.add("LanguageServer"); Pkg.add("
 if this hasn't been added to `nvim-lspconfig` already.
 
 Need to add julia to treesitter too.
+
+## Fugative Vim
+
+`~/.config/nvim/lua/plugins/fugitive.lua`
+
+```lua
+return {
+  { "tpope/vim-fugitive" },
+}
+```
+
+As recommended on the Fugative Github.
+
+* [A complement to command line git](http://vimcasts.org/e/31)
+* [Working with the git index](http://vimcasts.org/e/32)
+* [Resolving merge conflicts with vimdiff](http://vimcasts.org/e/33)
+* [Browsing the git object database](http://vimcasts.org/e/34)
+* [Exploring the history of a git repository](http://vimcasts.org/e/35)
+
+Other useful links
+
+* [Git workflow using Neovim's Fugitive, Telescope & Git-Signs](https://www.youtube.com/watch?v=IyBAuDPzdFY)
+* [Resolve Git Merge Conflicts with Neovim and Fugitive!](https://www.youtube.com/watch?v=vpwJ7fqD1CE)
+* [Vim Plugin: Fugitive](https://www.youtube.com/watch?v=uUrKrYCAl1Y)
+* [Two keys -= to transform your Git workflow #vim-fugitive](https://www.youtube.com/watch?v=vtFXMni91Q4)
+* [Git rebase --interactive | Vim Fugitive](https://www.youtube.com/watch?v=6hude7CtBKg)
 
 ## LaTeX
 
