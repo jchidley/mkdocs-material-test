@@ -337,6 +337,7 @@ https://www.posten.no/landinformasjon?land=Storbritannia+og+Nord-Irland&id=GB
 ### Chezmoi and dotfiles
 
 * [Chezmoi](https://www.chezmoi.io/)
+* [chezmoi - Dotfiles Manager across multiple machines | Tom Payne (the creator of it)](https://www.youtube.com/watch?v=JrCMCdvoMAw)
 * [Solving the Dotfiles Problem (And Learning Bash)](https://www.youtube.com/watch?v=mSXOYhfDFYo) is very well explained
 * [Chezmoi and Ansible](https://www.youtube.com/watch?v=-RkANM9FfTM)
 * [Easily moving Linux installs](https://www.youtube.com/watch?v=x6063EuxfEA)
