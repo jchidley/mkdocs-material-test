@@ -514,6 +514,18 @@ return {
 }
 ```
 
+"You may execute :Gw! command in any of the opened windows. The window where you execute that command will be committed and marked as a merge resolution. It is very useful if you want to use just REMOTE or just LOCAL version without any further merge resolution steps.
+
+Want more? When in the central window use d2o or d3o to pull changes from LOCAL or REMOTE file."
+
+See also [Neovim As Git Mergetool](https://smittie.de/posts/git-mergetool/) for another version (although this doesn't seem to work for me)
+
+[details about vimdiff & nvim](https://jdhao.github.io/2021/10/24/diff_in_vim/)
+
+[Github integration for fugative.vim](https://github.com/tpope/vim-rhubarb)
+
+[vim-gitgutter](https://github.com/airblade/vim-gitgutter) for see changes.
+
 As recommended on the Fugative Github.
 
 * [A complement to command line git](http://vimcasts.org/e/31)
