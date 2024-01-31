@@ -45,6 +45,12 @@ scoop install sourcecodepro-nf
 Powershell 7
 Settings → “Startup” → “Default profile”:  select "PowerShell"
 
+see "2024-01-17-Microsoft-Surface-Laptop-4.md" for scoop install, including nerd fonts.
+
+```shell
+C:\Users\jackc\git\mkdocs-material-test\docs\2024-01-17-Microsoft-Surface-Laptop-4.md
+```
+
 Nerd Font
 Settings → “Powershell” profile → “Appearance” → “Font face”: select Nerd Font
 

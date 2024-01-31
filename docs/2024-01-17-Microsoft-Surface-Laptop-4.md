@@ -323,14 +323,21 @@ C:\Users\jackc\scoop\apps\7zip\current\install-context.reg
 git config --global credential.helper manager
 C:\Users\jackc\scoop\apps\git\current\install-context.reg
 scoop install sudo
+scoop bucket add extras
+scoop bucket add nerd-fonts
+scoop install sourcecodepro-nf
 cd $env:HOMEPATH
 mkdir git
 cd git
 git clone https://github.com/jchidley/mkdocs-material-test.git
 # run windows update
 winget install vscode
+choco install chezmoi
+chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
+chezmoi diff # check possible changes
+# chezmoi apply # optinally apply
+iwr -useb https://christitus.com/win | iex
 
-scoop bucket add extras
 https://www.posten.no/landinformasjon?land=Storbritannia+og+Nord-Irland&id=GB
 ```
 
