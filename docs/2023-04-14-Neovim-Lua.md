@@ -573,6 +573,12 @@ Other useful links
 * [Compiling LaTeX Documents in a Vim-Based Workflow](https://www.ejmastnak.com/tutorials/vim-latex/compilation/)
 * [VimTeX](https://github.com/lervag/vimtex)
 
+## Lua Plugin
+
+[nvim-lua-plugin-template](https://github.com/nvim-lua/nvim-lua-plugin-template)
+[How to write a neovim plugin in lua](https://miguelcrespo.co/posts/how-to-write-a-neovim-plugin-in-lua)
+[Getting started using Lua in Neovim](https://github.com/nanotee/nvim-lua-guide)
+
 ## Lua
 
 * [Learning Lua - resources](http://lua-users.org/wiki/LearningLua)
@@ -580,3 +586,5 @@ Other useful links
 * [Lua for Programmers Part 1: Language Essentials](https://ebens.me/post/lua-for-programmers-part-1/)
 * [Learn Lua in Y Minutes](https://learnxinyminutes.com/docs/lua/)
 * [Lua Unofficial FAQ (uFAQ)](https://www.luafaq.org)
+* [Learn To Code Space Invaders – learn lua by programming](https://bytesnbits.co.uk/space-invaders-coding-course-introduction/)
+* [External Editor for TIC-80](https://github.com/nesbox/TIC-80/wiki/External-Editor)
