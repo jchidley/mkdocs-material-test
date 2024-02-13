@@ -14,6 +14,19 @@ title: "Rust-Beginnings"
 rustup docs --book
 ```
 
+## Learning by Programming
+
+* convert this [Learn To Code Space Invaders – learn lua by programming](https://bytesnbits.co.uk/space-invaders-coding-course-introduction/) from lua to [Rust and WebAssembly](https://rustwasm.github.io/docs/book/introduction.html) using this [WASM-4 fantasy game console](https://wasm4.org/docs/)
+
+* [mal - Make a Lisp](https://github.com/kanaka/mal?tab=readme-ov-file#rust-138)
+* [Rust Your Own Lisp](https://dev.to/deciduously/rust-your-own-lisp-50an) from the book [Build Your Own Lisp](https://www.buildyourownlisp.com/)
+* Write a C compiler by converting this [chibicc](https://github.com/rui314/chibicc) and then doing this version [chibicc-riscv](https://github.com/ksco/chibicc-riscv)
+
+### Background
+* [(How to Write a (Lisp) Interpreter (in Python))](http://www.norvig.com/lispy.html)
+* [(An ((Even Better) Lisp) Interpreter (in Python))](http://norvig.com/lispy2.html)
+* [Learning with Peter Norvig's lis.py interpreter](https://github.com/fluentpython/lispy)
+
 ### TOML
 
 * [vim for Rust](https://blog.logrocket.com/configuring-vim-rust-development/)
