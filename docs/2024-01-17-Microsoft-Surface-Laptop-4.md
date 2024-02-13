@@ -12,6 +12,10 @@ title: "Microsoft Surface Laptop 4"
 
 [Install the Windows ADK offline](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-offline-install) and add [the WinPE add-on](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install):
 
+[A comprehensive description of a WinPE installation USB](https://superuser.com/a/1632315)
+[WinPE - Create a Custom Windows Install USB](https://www.elevenforum.com/t/winpe-create-a-custom-windows-install-usb.4804/)
+[Install Windows 11 using WinPE usb on any partition by typing setup at command prompt.](https://www.elevenforum.com/t/install-windows-11-using-winpe-usb-on-any-partition-by-typing-setup-at-command-prompt.9160/)
+
 ```PowerShell
 cd "$env:HOMEPATH\Downloads\Windows Kits\10\ADK"
 .\adksetup.exe /quiet /installpath c:\ADK /features OptionId.DeploymentTools
@@ -345,6 +349,10 @@ chezmoi diff # check possible changes
 # chezmoi apply # optinally apply
 iwr -useb https://christitus.com/win | iex
 ```
+
+## Windows Intune / Autopilot
+
+If you try to install the *Professional* version of windows and the previous owner of the laptop has added it to *Windows Intune* or *Autopilot* then you will need to install the *Home* edition first and then upgrade it to *Pro*.
 
 ### Chezmoi and dotfiles
 
