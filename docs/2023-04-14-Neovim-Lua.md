@@ -6,35 +6,39 @@ title: "Neovim-Lua"
 # Neovim Lua
 <!-- markdownlint-enable MD025 -->
 
-`vi` isn't easy to learn. It's keyboard driven and there is next to no visual help. Even
-modern variants, like `neovim`, don't give you on-screen clues. It is easier
-to pick up things are are visual - Atom, VS Code, etc, but those
-tools make the easy things easier and the hard things harder. In the end, if you are
-serious about editing effectively, you will have to be an expert in the tools for
-job. There are no substitutes.
+`vi` isn't easy to learn. It's keyboard driven and there is next to no visual
+help. Even modern variants, like `neovim`, don't give you on-screen clues. It
+is easier to pick up things are are visual - Atom, VS Code, etc, but those
+tools make the easy things easier and the hard things harder. In the end, if
+you are serious about editing effectively, you will have to be an expert in
+the tools for job. There are no substitutes.
 
-So, sure, if you are a beginner and want to get started, pick the easiest tool because
-everything is hard to begin with. But as soon as you are at the intermediate level, it's
-time to pick up the expert's tools. It's time to put in the hard work. You'll be better for it.
+So, sure, if you are a beginner and want to get started, pick the easiest tool
+because everything is hard to begin with. But as soon as you are at the
+intermediate level, it's time to pick up the expert's tools. It's time to put
+in the hard work. You'll be better for it.
 
-Neovim is text editing equivalent of touch typing. It seems impossible at the start. But soon enough, much sooner
-than you think, you'll be typing at over 60 words-per-minute just looking at the screen, thinking
-about what you are writing. You will not be looking at the keyboard typing at 30 words-per-minute
-and making loads of semantic and syntactic mistakes. It's the same for `vi` (and especially true for `neovim`)
-you'll be editing text quickly and effectively from the keyboard. A mouse is a bonus. This is why touch-typing
+Neovim is text editing equivalent of touch typing. It seems impossible at the
+start. But soon enough, much sooner than you think, you'll be typing at over
+60 words-per-minute just looking at the screen, thinking about what you are
+writing. You will not be looking at the keyboard typing at 30 words-per-minute
+and making loads of semantic and syntactic mistakes. It's the same for `vi`
+(and especially true for `neovim`) you'll be editing text quickly and
+effectively from the keyboard. A mouse is a bonus. This is why touch-typing
 and `vi` go hand-in-hand.
 
-So dive into `neovim`. Learn the experts tool. It'll help make you an expert. Learning to
-be an expert requires you to solve loads of problems. Have fun with them.
+So dive into `neovim`. Learn the experts tool. It'll help make you an expert.
+Learning to be an expert requires you to solve loads of problems. Have fun with
+them.
 
 ## Moving to a new machine
 
-You can definetly copy your configuration to a new machine but you still need to install
-all the prerequisites for your various plugins.
+You can definitely copy your configuration to a new machine but you still need
+to install all the prerequisites for your various plugins.
 
 ### Windows
 
-```PowerhShell
+```PowerShell
 choco install mingw # or # scoop install gcc # or # scoop install llvm
 scoop bucket add nerd-fonts
 scoop install sourcecodepro-nf
@@ -42,17 +46,18 @@ scoop install sourcecodepro-nf
 
 ### Windows terminal
 
-Powershell 7
+PowerShell 7
 Settings → “Startup” → “Default profile”:  select "PowerShell"
 
-see "2024-01-17-Microsoft-Surface-Laptop-4.md" for scoop install, including nerd fonts.
+See `2024-01-17-Microsoft-Surface-Laptop-4.md` for scoop install, including
+nerd fonts.
 
 ```shell
 C:\Users\jackc\git\mkdocs-material-test\docs\2024-01-17-Microsoft-Surface-Laptop-4.md
 ```
 
 Nerd Font
-Settings → “Powershell” profile → “Appearance” → “Font face”: select Nerd Font
+Settings → “PowerShell” profile → “Appearance” → “Font face”: select Nerd Font
 
 ### Alacritty
 
@@ -104,7 +109,8 @@ set shellxquote=
 ```
 
 [Change the default shell](https://superuser.com/questions/1759700/change-default-shell-to-powershell-in-neovim)
-[Some vimrc options, including spell check](https://robindouglas.uk/powershell/vim/2018/04/05/PowerShell-with-Vim.html) `set spell spelllang=en_gb`
+[Some vimrc options, including spell check](https://robindouglas.uk/powershell/vim/2018/04/05/PowerShell-with-Vim.html)
+`set spell spelllang=en_gb`
 
 for LazyVim
 
@@ -119,7 +125,7 @@ find "$(pwd -P)" -name "filename"
 
 then use `gf` on that line (once you have switched to Normal mode) to open the file.
 
-```bash
+```lua
 cat << EOF > ~/.config/LazyVim/lua/plugins/toggleterm.lua
 return {
   {
@@ -144,9 +150,12 @@ EOF
 
 You can "send lines" to the toggled terminals with the following commands:
 
-* `:ToggleTermSendCurrentLine <T_ID>`: sends the whole line where you are standing with your cursor
-* `:ToggleTermSendVisualLines <T_ID>`: sends all the (whole) lines in your visual selection
-* `:ToggleTermSendVisualSelection <T_ID>`: sends only the visually selected text (this can be a block of text or a selection in a single line)
+* `:ToggleTermSendCurrentLine <T_ID>`: sends the whole line where you are
+standing with your cursor
+* `:ToggleTermSendVisualLines <T_ID>`: sends all the (whole) lines in your
+visual selection
+* `:ToggleTermSendVisualSelection <T_ID>`: sends only the visually selected
+text (this can be a block of text or a selection in a single line)
 
 (<T_ID is an optional terminal ID parameter, which defines where should we send the
 lines. If the parameter is not provided, then the default is the first terminal)
@@ -158,12 +167,13 @@ Also, ^z (c-z), to exit vim temporarily and `fg` to go back
 ### Saving session state
 
 LazyVim uses [persistence.nvim](https://github.com/folke/persistence.nvim) so
-obsession.vim may not be needed but persistence.vim does not, by default, automatically open the last session.
+obsession.vim may not be needed but persistence.vim does not, by default,
+automatically open the last session.
 
 Use [obsession.vim](https://github.com/tpope/vim-obsession) (`:Obsess` to start/stop
-recording) and then the state is retained, provided you use `-S` option on startup (otherwise
-use `:source`) `:wa` to write all of your files and `ZZ` to quit. By default, this
-will be saved in the directory where you started it.
+recording) and then the state is retained, provided you use `-S` option on
+startup (otherwise use `:source`) `:wa` to write all of your files and `ZZ` to
+quit. By default, this will be saved in the directory where you started it.
 
 `1<C-g>` for full path or `:echo expand('%:p')`. `<C-r>` in insert mode to add things
 (including filnames, `%`) at the current cursor position or `"%p` in normal mode.
@@ -201,7 +211,8 @@ git clone the target nvim into a subdirectory of .config
 need the latest (9+) version of nvim
 
 * [A Basic Stable IDE config for Neovim](https://github.com/LunarVim/nvim-basic-ide)
-* [Neovim Config Switcher - Gist](https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b) and [Neovim Config Switcher - YouTube](https://youtu.be/LkHjJlSgKZY)
+* [Neovim Config Switcher - Gist](https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b)
+and [Neovim Config Switcher - YouTube](https://youtu.be/LkHjJlSgKZY)
 
 ```bash
 alias nvim-lazy="NVIM_APPNAME=Lazy nvim -S"
@@ -257,7 +268,7 @@ nvim --server ~/.cache/nvim/server.pipe --remote-expr "winnr()"
 
 Reset nvim
 
-```sh
+```bash
 rm -rf ~/.cache/nvim
 rm -rf ~/.local/share/nvim
 rm -rf ./.config/nvim
@@ -267,7 +278,8 @@ rm -rf ./.config/nvim
 * [Why Neovim is the best code editor / IDE for developers](https://console.dev/articles/neovim-best-code-editor-ide-for-developers/)
 * [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug)
 * [GitHub - hrsh7th/nvim-cmp: A completion plugin for neovim coded in Lua.](https://github.com/hrsh7th/nvim-cmp)
-* [How to Configure Neovim to make it Amazing -- complete tutorial](https://youtu.be/J9yqSdvAKXY) with the [Github files here](https://github.com/cpow/cpow-dotfiles)
+* [How to Configure Neovim to make it Amazing -- complete tutorial](https://youtu.be/J9yqSdvAKXY)
+with the [Github files here](https://github.com/cpow/cpow-dotfiles)
 * [neovim configuration](https://youtu.be/J9yqSdvAKXY)
 * [nvim-cmp](https://youtu.be/_DnmphIwnjo)
 * [Intro to LuaSnips](https://youtu.be/Dn800rlPIho)
@@ -280,10 +292,12 @@ It's worth metioning that Juila is buit around pacakges as *the*
 coding/development unit. Best to start with a minimal Pkg (`generate`) and work
 from that. Testing will be easier too.
 
-From this [Neovim + LanguageServer.jl discourse](https://discourse.julialang.org/t/neovim-languageserver-jl/37286) and [Language server - missing references](https://discourse.julialang.org/t/language-server-missing-references/88936/19)
+From this [Neovim + LanguageServer.jl discourse](https://discourse.julialang.org/t/neovim-languageserver-jl/37286)
+and [Language server - missing references](https://discourse.julialang.org/t/language-server-missing-references/88936/19)
 
 "
-[neovim/nvim-lspconfig#1153](https://github.com/neovim/nvim-lspconfig/pull/1153) is merged now so things should work out of the box if you:
+[neovim/nvim-lspconfig#1153](https://github.com/neovim/nvim-lspconfig/pull/1153)
+is merged now so things should work out of the box if you:
 
 Install LanguageServer in the shared environment ~/.julia/environments/nvim-lspconfig:
 
@@ -325,7 +339,8 @@ Go into nvim, open a julia file, wait until the `julials` has loaded.
 
 if the above doesn't work, then ...
 
-I used [.julia/environments/nvim-lspconfig/Makefile](https://raw.githubusercontent.com/fredrikekre/.dotfiles/master/.julia/environments/nvim-lspconfig/Makefile) file which I imported into this document using `:read`
+I used [.julia/environments/nvim-lspconfig/Makefile](https://raw.githubusercontent.com/fredrikekre/.dotfiles/master/.julia/environments/nvim-lspconfig/Makefile)
+file which I imported into this document using `:read`
 
 <!-- markdownlint-disable MD010 -->
 ```bash
@@ -520,11 +535,16 @@ return {
 }
 ```
 
-"You may execute :Gw! command in any of the opened windows. The window where you execute that command will be committed and marked as a merge resolution. It is very useful if you want to use just REMOTE or just LOCAL version without any further merge resolution steps.
+"You may execute :Gw! command in any of the opened windows. The window where
+you execute that command will be committed and marked as a merge resolution. It
+is very useful if you want to use just REMOTE or just LOCAL version without any
+further merge resolution steps.
 
-Want more? When in the central window use d2o or d3o to pull changes from LOCAL or REMOTE file."
+Want more? When in the central window use d2o or d3o to pull changes from LOCAL
+or REMOTE file."
 
-See also [Neovim As Git Mergetool](https://smittie.de/posts/git-mergetool/) for another version (although this doesn't seem to work for me)
+See also [Neovim As Git Mergetool](https://smittie.de/posts/git-mergetool/)
+for another version (although this doesn't seem to work for me)
 
 [details about vimdiff & nvim](https://jdhao.github.io/2021/10/24/diff_in_vim/)
 
