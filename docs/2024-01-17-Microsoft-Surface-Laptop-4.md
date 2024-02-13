@@ -90,7 +90,7 @@ All of the above avoids displaying a command prompt (it's a series of Windows ap
 See [the official documentation](https://learn.microsoft.com/en-us/surface/enable-surface-keyboard-for-windows-pe-deployment#add-keyboard-drivers-to-the-selection-profile) or [this write up](https://www.risual.com/2022/03/adding-surface-drivers-to-windows-image/) for more information. The drivers and firmware for "Surface Laptop 4 with AMD Processor" are [here](https://www.microsoft.com/en-us/download/details.aspx?id=102923). To extract these run:
 
 ```PowerShell
-Msiexec.exe /a SurfaceLaptop4_AMD_Win11_22000_23.120.1653.0.msi targetdir=c:\surface_laptop /qn
+Msiexec.exe /a SurfaceLaptop4_AMD_Win11_22000_23.120.1653.0.msi /qb targetdir=c:\surface_laptop
 ```
 
 Then add these files to the `boot.wim` (or another image file):
@@ -101,7 +101,7 @@ mkdir "c:\winboot\mount"
 $BootWimSource = "D:\sources\boot.wim" 
 $MountPath = "c:\winboot\mount" 
 $BootWim = "c:\winboot\boot.wim"
-$drivers = "C:\surface_laptop\SurfaceUpdate"
+$drivers = "C:\surface_laptop"
 copy $BootWimSource $BootWim
 Mount-WindowsImage -Path $MountPath -ImagePath $BootWim -Index 1 # service
 Add-WindowsDriver -Path $MountPath -Driver $drivers -Recurse
@@ -255,16 +255,23 @@ rename-item e:\install.esd e:\install.esd.old
 copy c:\temp\install.esd e:\sources\install.esd
 ```
 
+[Split a Windows image file (.wim)](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/split-a-windows-image--wim--file-to-span-across-multiple-dvds?view=windows-11)
+
+```PowerShell
+# similarly, with `swm` filesh
+dism /export-image /sourceimagefile:"c:\esd\install.swm" /SourceIndex:1 /DestinationImageFile:c:\temp\install_home.wim /compress:max /checkintegrity
+Mount-WindowsImage -path c:\mnt -imagepath C:\temp\install_home.wim -index 1
+Add-WindowsDriver -Path c:\mnt -Driver C:\surface_laptop\ -Recurse
+Dismount-WinowsImage -Path c:\mnt -save
+Dism /Split-Image /ImageFile:C:\temp\install_home.wim /SWMFile:C:\temp\install_home.swm /FileSize:4000
+copy C:\temp\install_home*.swm d:\sources
+```
+
 [DISM Image Management Command-Line Options](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14?view=windows-11#export-image)
 
 "Use the recovery option to export push-button reset images. The resulting files are much smaller in size, which in turn, greatly reduce the amount of disk space needed for saving the push-button reset image on a recovery drive. The destination file must be specified with an .esd extension."
 
 This appears to be used with both [Windows Recovery Environment (Windows RE)](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference?view=windows-11) and [Push-button reset](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/push-button-reset-overview?view=windows-11)
-
-```text
-djebkgichfodz
-Granada2.3
-```
 
 [What is the most efficient, native way to image a Windows partition?](https://superuser.com/a/1581804)
 
@@ -337,8 +344,6 @@ chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
 chezmoi diff # check possible changes
 # chezmoi apply # optinally apply
 iwr -useb https://christitus.com/win | iex
-
-https://www.posten.no/landinformasjon?land=Storbritannia+og+Nord-Irland&id=GB
 ```
 
 ### Chezmoi and dotfiles
