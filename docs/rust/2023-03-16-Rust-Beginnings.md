@@ -16,11 +16,22 @@ rustup docs --book
 
 ## Learning by Programming
 
+### Games
+
 * convert this [Learn To Code Space Invaders – learn lua by programming](https://bytesnbits.co.uk/space-invaders-coding-course-introduction/) from lua to [Rust and WebAssembly](https://rustwasm.github.io/docs/book/introduction.html) using this [WASM-4 fantasy game console](https://wasm4.org/docs/)
+
+[Bevy - lots of coding](https://youtu.be/TQt-v_bFdao?si=BN7cSQz-7h3_8bb5)
+[Bevy - 3rd from scratch series - Farming Robot](https://youtu.be/NysHtgLxOtU?si=Cb7dWNhmaqNbNP1_)
+[Bevy (half exposition and half coding) - Asteroids?](https://youtu.be/B6ZFuYYZCSY?si=BcmYx9i6vZfvr9VZ)
+[Rust Bevy - Space Invaders](https://youtu.be/j7qHwb7geIM?si=ZRJLgTpEOCN2ZIW8)
+
+### Programming Language
 
 * [mal - Make a Lisp](https://github.com/kanaka/mal?tab=readme-ov-file#rust-138)
 * [Rust Your Own Lisp](https://dev.to/deciduously/rust-your-own-lisp-50an) from the book [Build Your Own Lisp](https://www.buildyourownlisp.com/)
 * Write a C compiler by converting this [chibicc](https://github.com/rui314/chibicc) and then doing this version [chibicc-riscv](https://github.com/ksco/chibicc-riscv)
+
+see [Parsing-Compilers](/docs/Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](/docs/2023-09-04-Writing-A-Programming-Language.md)
 
 ### Background
 * [(How to Write a (Lisp) Interpreter (in Python))](http://www.norvig.com/lispy.html)
@@ -31,6 +42,14 @@ rustup docs --book
 
 * [vim for Rust](https://blog.logrocket.com/configuring-vim-rust-development/)
 * [Rust Load a TOML File](https://codingpackets.com/blog/rust-load-a-toml-file/)
+
+## Helix
+
+[helix-editor](/docs/2024-02-13-Helix.md)
+
+```bash
+rustup component add rust-analyzer // for this to work
+```
 
 ## IDE
 
