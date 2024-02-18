@@ -9,9 +9,20 @@ title: "Rust-Beginnings"
 ## Introduction
 
 * [Learn Rust](https://www.rust-lang.org/learn)
+* [Command line apps in Rust](https://rust-cli.github.io/book/index.html)
+* [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
+* [rustlings](https://rustlings.cool/)
 
 ```bash
 rustup docs --book
+```
+
+### Rust-Analyzer
+
+```PowerShell
+(get-command rust-analyzer).Source # C:\Users\jackc\.cargo\bin\rust-analyzer.exe
+curl -L -O https://github.com/rust-lang/rust-analyzer/releases/download/2024-02-12/rust-analyzer-x86_64-pc-windows-msvc.zip
+copy .\rust-analyzer.exe (get-command rust-analyzer).Source
 ```
 
 ## Learning by Programming
