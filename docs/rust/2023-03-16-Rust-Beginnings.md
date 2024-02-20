@@ -12,6 +12,7 @@ title: "Rust-Beginnings"
 * [Command line apps in Rust](https://rust-cli.github.io/book/index.html)
 * [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 * [rustlings](https://rustlings.cool/)
+* The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
 
 ```bash
 rustup docs --book
