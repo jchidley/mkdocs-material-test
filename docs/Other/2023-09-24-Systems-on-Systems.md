@@ -68,7 +68,7 @@ wsl is started in the current (windows) directory, and windows files appear in L
 ```PS
  @'
 echo this system is $(uname)
-'@ | out-file -filepath .\new.sh ; wsl -d U3 ./new.sh
+'@ | > .\new.sh ; wsl -d U3 ./new.sh
 ```
 
 or this:
