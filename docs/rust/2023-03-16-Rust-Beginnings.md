@@ -13,10 +13,17 @@ title: "Rust-Beginnings"
 * [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 * [rustlings](https://rustlings.cool/)
 * The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
+* [The Rust FFI Omnibus is a collection of examples of using code written in Rust from other languages.](https://jakegoulding.com/rust-ffi-omnibus/)
 
 ```bash
 rustup docs --book
 ```
+
+<space>+p, <space>+P, <space>+y, <space>+Y to paste/cut from the system clipboard (the '*' register '"').
+
+### Speedup
+
+use the [LLD linker](https://lld.llvm.org/) to speed it up.
 
 ### Rust-Analyzer
 
