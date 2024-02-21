@@ -320,33 +320,43 @@ Value=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 
 [Chocolatey and Winget Comparison](https://github.com/ScoopInstaller/Scoop/wiki/Chocolatey-and-Winget-Comparison)
 
+[PowerShell Gallery](https://www.powershellgallery.com/)
+
+[PowerShell Crescendo - working with existing command line tools](https://github.com/PowerShell/Crescendo)
+
+[My Crescendo journey](https://devblogs.microsoft.com/powershell-community/my-crescendo-journey/) and [Crescendo - PowerShell Community](https://devblogs.microsoft.com/powershell-community/tag/crescendo/)
+
 ```PowerShell
 https://aka.ms/PSWindows # upgrade powershell
 # admin user
 Set-ExecutionPolicy AllSigned
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 winget upgrade --all
+winget install --id Git.Git -e --source winget
+winget install chezmoi
+chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
+chezmoi diff # check possible changes
+# chezmoi apply # optinally apply
+winget import -i $env:USERPROFILE\.config\windows_config\winget.json
+# winget export -o $env:USERPROFILE\.config\windows_config\winget.json
 iwr -useb chocolatey.org/install.ps1 | iex
+choco import "$env:USERPROFILE\.config\windows_config\choco_packages.config"
+# choco export "$env:USERPROFILE\.config\windows_config\choco_packages.config"
 # normal user
 iwr -useb get.scoop.sh | iex
-scoop install git
-C:\Users\jackc\scoop\apps\7zip\current\install-context.reg
+scoop import > $env:USERPROFILE\.config\windows_config\scoopfile.json
+# scoop export > $env:USERPROFILE\.config\windows_config\scoopfile.json
+# Set Git Credential Manager Core by running: 
 git config --global credential.helper manager
-C:\Users\jackc\scoop\apps\git\current\install-context.reg
-scoop install sudo
-scoop bucket add extras
-scoop bucket add nerd-fonts
-scoop install sourcecodepro-nf
+# To add context menu entries, run
+'C:\Users\jackc\scoop\apps\git\current\install-context.reg'
+# To create file-associations for .git* and .sh files, run
+'C:\Users\jackc\scoop\apps\git\current\install-file-associations.reg'
 cd $env:HOMEPATH
 mkdir git
 cd git
 git clone https://github.com/jchidley/mkdocs-material-test.git
 # run windows update
-winget install vscode
-choco install chezmoi
-chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
-chezmoi diff # check possible changes
-# chezmoi apply # optinally apply
 iwr -useb https://christitus.com/win | iex
 ```
 
