@@ -337,12 +337,14 @@ winget install chezmoi
 chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
 chezmoi diff # check possible changes
 # chezmoi apply # optinally apply
-winget import -i $env:USERPROFILE\.config\windows_config\winget.json
+# as admin for winget import
+winget import -i $env:USERPROFILE\.config\windows_config\winget.json --accept-package-agreements
 # winget export -o $env:USERPROFILE\.config\windows_config\winget.json
+# as admin for choco
 iwr -useb chocolatey.org/install.ps1 | iex
-choco import "$env:USERPROFILE\.config\windows_config\choco_packages.config"
+choco install "$env:USERPROFILE\.config\windows_config\choco_packages.config"
 # choco export "$env:USERPROFILE\.config\windows_config\choco_packages.config"
-# normal user
+# as normal user for scoop
 iwr -useb get.scoop.sh | iex
 scoop import > $env:USERPROFILE\.config\windows_config\scoopfile.json
 # scoop export > $env:USERPROFILE\.config\windows_config\scoopfile.json
