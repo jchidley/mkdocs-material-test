@@ -15,11 +15,18 @@ title: "Rust-Beginnings"
 * The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
 * [The Rust FFI Omnibus is a collection of examples of using code written in Rust from other languages.](https://jakegoulding.com/rust-ffi-omnibus/)
 
+## Install for Windows
+
+*Build Tools for Visual Studio 2022* - look down the page [Downloads](https://visualstudio.microsoft.com/downloads/)
+
+* MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
+* Windows 11 SDK (10.0.22621.0)
+
+Then run `rustup-init.exe` from [Install Rust](https://www.rust-lang.org/tools/install)
+
 ```bash
 rustup docs --book
 ```
-
-<space>+p, <space>+P, <space>+y, <space>+Y to paste/cut from the system clipboard (the '*' register '"').
 
 ### Speedup
 
