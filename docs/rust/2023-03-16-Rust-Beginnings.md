@@ -8,25 +8,30 @@ title: "Rust-Beginnings"
 
 ## Introduction
 
+The clostest thing that I've found to a hands on and, relatively, short tutorial is this one for [command line apps in Rust](https://rust-cli.github.io/book/index.html). It covers a *lot* of ground and has a set of [resources](https://rust-cli.github.io/book/resources/index.html)
+
 * [Learn Rust](https://www.rust-lang.org/learn)
-* [Command line apps in Rust](https://rust-cli.github.io/book/index.html)
 * [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 * [rustlings](https://rustlings.cool/)
-* The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
+* * The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
 * [The Rust FFI Omnibus is a collection of examples of using code written in Rust from other languages.](https://jakegoulding.com/rust-ffi-omnibus/)
+
+Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/title-page.html) is best left as a revision work because it tries really, really hard to make sure that you've understood everything. I thought that this would be a perfect way to get started but, as I discovered, I became dishartened because I didn't understand everything perfectly and it is labourious to work through. Rust is quite a hard language to get to grips with because it forces you, the programmer, to write correct code. Writing correct code is hard.
 
 ## Install for Windows
 
-*Build Tools for Visual Studio 2022* - look down the page [Downloads](https://visualstudio.microsoft.com/downloads/)
+*Build Tools for Visual Studio 2022* - look down the page [Downloads](https://visualstudio.microsoft.com/downloads/), then install these two bits of software:
 
 * MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
 * Windows 11 SDK (10.0.22621.0)
 
-Then run `rustup-init.exe` from [Install Rust](https://www.rust-lang.org/tools/install)
+Run `rustup-init.exe` from [Install Rust](https://www.rust-lang.org/tools/install)
 
 ```bash
 rustup docs --book
 ```
+
+[Cargo B(inary)Install](https://github.com/cargo-bins/cargo-binstall) to install binary files using Cargo. Normally Cargo downloads the source files and complies them first.
 
 ### Speedup
 
@@ -89,7 +94,7 @@ pylint --extension-pkg-allow-list=your_c_extension
 
 turn on mypy linting and then build a suitable `*.pyi` file to contain the definitions. To do that search for `mypy linting` in the VS Code settings (user and workspace).
 
-* [Neovide](https://neovide.dev/index.html) - doesn't work that well on my Mac Book m
+* [Neovide](https://neovide.dev/index.html) - doesn't work that well on my Mac Book m1
 
 ## With Python
 
@@ -116,15 +121,11 @@ def sum_as_string(a: int, b: int) -> str: ...
 ## Rust
 
 * [Rust Programming Language](https://www.rust-lang.org)
-* [GitHub - rust-lang/rustlings: Small exercises to get you used to reading and writing Rust code!](https://github.com/rust-lang/rustlings/)
-* [Introduction - Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
-* [The Rust Programming Language - The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
 * [A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 * [Frustrated? It's not you, it's Rust](https://fasterthanli.me/articles/frustrated-its-not-you-its-rust)
 * [How to Mix Rust and Python in Your Project](https://medium.com/@MatthieuL49/a-mixed-rust-python-project-24491e2af424)
 * [GitHub - PyO3/pyo3: Rust bindings for the Python interpreter](https://github.com/PyO3/pyo3)
 * [Introduction - PyO3 user guide](https://pyo3.rs/)
-* [Experiment Introduction - The Rust Programming Language](https://rust-book.cs.brown.edu)
 
 ## Rust and Neovim
  
