@@ -10,13 +10,23 @@ title: "Rust-Beginnings"
 
 The clostest thing that I've found to a hands on and, relatively, short tutorial is this one for [command line apps in Rust](https://rust-cli.github.io/book/index.html). It covers a *lot* of ground and has a set of [resources](https://rust-cli.github.io/book/resources/index.html)
 
+### Easy
+
 * [Learn Rust](https://www.rust-lang.org/learn)
 * [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 * [rustlings](https://rustlings.cool/)
-* * The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
-* [The Rust FFI Omnibus is a collection of examples of using code written in Rust from other languages.](https://jakegoulding.com/rust-ffi-omnibus/)
 
 Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/title-page.html) is best left as a revision work because it tries really, really hard to make sure that you've understood everything. I thought that this would be a perfect way to get started but, as I discovered, I became dishartened because I didn't understand everything perfectly and it is labourious to work through. Rust is quite a hard language to get to grips with because it forces you, the programmer, to write correct code. Writing correct code is hard.
+
+[Cargo B(inary)Install](https://github.com/cargo-bins/cargo-binstall) to install binary files using Cargo. Normally Cargo downloads the source files and complies them first.
+* [This Week in Rust](https://this-week-in-rust.org/)
+* [currently](https://this-week-in-rust.org/blog/2013/10/06/the-state-of-rust-08/)
+
+### Trickier
+
+* [A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust) - this reminds me of F#'s tutorial that, if I remember correctly, was included by default with Visual Studio or the .net example project for F#.
+* The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
+* [The Rust FFI Omnibus is a collection of examples of using code written in Rust from other languages.](https://jakegoulding.com/rust-ffi-omnibus/)
 
 ## Install for Windows
 
@@ -27,11 +37,27 @@ Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/tit
 
 Run `rustup-init.exe` from [Install Rust](https://www.rust-lang.org/tools/install)
 
+### rustup
+
+* [The rustup book](https://rust-lang.github.io/rustup/index.html)
+
 ```bash
 rustup docs --book
 ```
 
-[Cargo B(inary)Install](https://github.com/cargo-bins/cargo-binstall) to install binary files using Cargo. Normally Cargo downloads the source files and complies them first.
+### rustup
+
+* [The rustup book](https://rust-lang.github.io/rustup/index.html)
+
+```shell
+rustup docs --book
+```
+
+```Powershell
+rustup target list # cross-compile options
+# cargo build --target=arm-linux-androideabi # for example
+rustup completions powershell >> $PROFILE.CurrentUserCurrentHost # The included using statements belong at the top of $PROFILE 
+```
 
 ### Speedup
 
@@ -39,11 +65,109 @@ use the [LLD linker](https://lld.llvm.org/) to speed it up.
 
 ### Rust-Analyzer
 
+If you have installed rust-analyzer via rustup _do not_ update it standalone, nor the other way around.
+
+#### From Source
+
+Initial Instllation:
+
+```shell
+git clone https://github.com/rust-lang/rust-analyzer.git
+cd rust-analyzer
+git checkout release # master is also an option
+cargo xtask install --server # standalone client
+```
+
+Update:
+
+```shell
+cd rust-analyzer
+git pull
+cargo xtask install --server # standalone client
+```
+
+#### From Releases 
+
+Install:
+
+* Download a suitable Windows specific release e.g. `rust-analyzer-x86_64-pc-windows-msvc.zip`
+* Extract the files
+* Copy the `rust-analyzer.exe` file to a suitable directory (e.g. `C:\tools`)
+* Add that directory to the user's *path* _environmental variable_
+* Open a new `Command Prompt` or `PowerShell` to use `rust-analyzer` 
+
+Update:
+
 ```PowerShell
-(get-command rust-analyzer).Source # C:\Users\jackc\.cargo\bin\rust-analyzer.exe
-curl -L -O https://github.com/rust-lang/rust-analyzer/releases/download/2024-02-12/rust-analyzer-x86_64-pc-windows-msvc.zip
+(get-command rust-analyzer).Source # c:\tools # for example
+curl -L -O https://github.com/rust-lang/rust-analyzer/releases/download/2024-02-12/rust-analyzer-x86_64-pc-windows-msvc.zip # check current version
 copy .\rust-analyzer.exe (get-command rust-analyzer).Source
 ```
+
+#### rustup
+
+## String, str, u8
+
+Rust is going to try pretty hard to make sure that these are valid conversions. Strings convert to u8 (bytes) in very specific ways. Ways that include variable multi-byte encoding.
+
+[How do I convert between String, &str, Vec\<u8\> and &\[u8\]](https://stackoverflow.com/a/41034751/3617057)
+
+```code
+&str    -> String  | String::from(s) or s.to_string() or s.to_owned()
+&str    -> &[u8]   | s.as_bytes()
+&str    -> Vec<u8> | s.as_bytes().to_vec() or s.as_bytes().to_owned()
+String  -> &str    | &s if possible* else s.as_str()
+String  -> &[u8]   | s.as_bytes()
+String  -> Vec<u8> | s.into_bytes()
+&[u8]   -> &str    | s.to_vec() or s.to_owned()
+&[u8]   -> String  | std::str::from_utf8(s).unwrap(), but don't**
+&[u8]   -> Vec<u8> | String::from_utf8(s).unwrap(), but don't**
+Vec<u8> -> &str    | &s if possible* else s.as_slice()
+Vec<u8> -> String  | std::str::from_utf8(&s).unwrap(), but don't**
+Vec<u8> -> &[u8]   | String::from_utf8(s).unwrap(), but don't**
+
+* target should have explicit type (i.e., checker can't infer that)
+
+** handle the error properly instead
+```
+
+There are also these other functions, and probably more too.
+ 
+```rust
+std::str::from_utf8_unchecked
+std::string::String::from_utf8
+String::from_utf8_lossy
+```
+
+Sometimes you just want to the type [see Boiethios's Stackoverflow answer](https://stackoverflow.com/a/58119924/3617057) or [fasterthanli.me's use of type_name](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+
+```rust
+use std::any::type_name;
+
+fn main() {
+    let x = &false;
+    print_type_name_of(&x);
+
+    let ref x = &false;
+    print_type_name_of(&x);
+
+    let x = 1.0;
+    print_type_name_of(&x);
+}
+
+fn print_type_name_of<T>(_: &T) {
+    println!("{}", std::any::type_name::<T>());
+}
+```
+
+To find out what your type, defined in your libraries not `main.rs`, implements:
+
+`cargo doc --open # --document-private-items # for private types too`
+
+### Documenting
+
+* [The rustdoc book](https://doc.rust-lang.org/rustdoc/index.html)
+* [mdBook is a command line tool to create books with Markdown](https://rust-lang.github.io/mdBook/)
 
 ## Learning by Programming
 
