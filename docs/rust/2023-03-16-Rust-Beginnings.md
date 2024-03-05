@@ -28,6 +28,18 @@ Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/tit
 * The Dark Arts of Unsafe Rust [The Rustonomicon](https://doc.rust-lang.org/stable/nomicon/intro.html)
 * [The Rust FFI Omnibus is a collection of examples of using code written in Rust from other languages.](https://jakegoulding.com/rust-ffi-omnibus/)
 
+### Dead Tree, Live Bits
+
+[Zero To Production In Rust - An introduction to backend development](https://www.zero2prod.com/) "Zero To Production is the ideal starting point for your journey as a Rust backend developer. You will learn by doing: you will build a fully functional email newsletter API, starting from scratch."
+
+[Rust in Action - Systems programming concepts and techniques](https://www.manning.com/books/rust-in-action) also has an accociated audiobook from Audible. Interesting to look at source code / companion pdf and listen to it. Requires more work to understand which is a good thing.
+
+[Packt Publishing](https://www.packtpub.com/), [Manning](https://www.manning.com/) and the big dog [O’Reilly](https://www.oreilly.com/), and probably others, have libraries of both books and video courses.
+
+[Rust in Motion](https://www.manning.com/livevideo/rust-in-motion) is a little outdated but still relevant, one of the presenters wrote the *rust book*.
+
+[Rust exercises on Exercism](https://exercism.org/tracks/rust/exercises)
+
 ## Install for Windows
 
 *Build Tools for Visual Studio 2022* - look down the page [Downloads](https://visualstudio.microsoft.com/downloads/), then install these two bits of software:
@@ -42,14 +54,6 @@ Run `rustup-init.exe` from [Install Rust](https://www.rust-lang.org/tools/instal
 * [The rustup book](https://rust-lang.github.io/rustup/index.html)
 
 ```bash
-rustup docs --book
-```
-
-### rustup
-
-* [The rustup book](https://rust-lang.github.io/rustup/index.html)
-
-```shell
 rustup docs --book
 ```
 
@@ -171,6 +175,12 @@ To find out what your type, defined in your libraries not `main.rs`, implements:
 
 ## Learning by Programming
 
+### Exercises in Programming Style
+
+[Exercises in Programming Style](https://github.com/crista/exercises-in-programming-style) by Crista, who wrote a book of the same name, which I own on Kindle.
+
+[F# port of the examples in "Exercises in Programming Style"](https://github.com/theburningmonk/exercises-in-programming-style-fsharp), starting with [Exercises in Programming Style–Style 1](https://theburningmonk.com/2015/08/exercises-in-programming-stylestyle-1/), [Exercises in Programming Style–Go Forth](https://theburningmonk.com/2015/09/exercises-in-programming-stylestyle-2/) for more try [this search](site:https://theburningmonk.com/ "Exercises in programming style")
+
 ### Games
 
 * convert this [Learn To Code Space Invaders – learn lua by programming](https://bytesnbits.co.uk/space-invaders-coding-course-introduction/) from lua to [Rust and WebAssembly](https://rustwasm.github.io/docs/book/introduction.html) using this [WASM-4 fantasy game console](https://wasm4.org/docs/)
@@ -260,4 +270,3 @@ def sum_as_string(a: int, b: int) -> str: ...
 
 * [lua - Rust](https://docs.rs/lua/latest/lua/)
 * [GitHub - amethyst/rlua: High level Lua bindings to Rust](https://github.com/amethyst/rlua)
-
