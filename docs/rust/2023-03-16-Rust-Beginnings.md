@@ -15,12 +15,15 @@ The clostest thing that I've found to a hands on and, relatively, short tutorial
 * [Learn Rust](https://www.rust-lang.org/learn)
 * [Rust by Example](https://doc.rust-lang.org/stable/rust-by-example/index.html)
 * [rustlings](https://rustlings.cool/)
+* [easy rust](https://dhghomon.github.io/easy_rust/Chapter_0.html)
+* [The Rust Edition Guide](https://doc.rust-lang.org/edition-guide/introduction.html) is great to read as many books and examples now use older editions.
 
 Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/title-page.html) is best left as a revision work because it tries really, really hard to make sure that you've understood everything. I thought that this would be a perfect way to get started but, as I discovered, I became dishartened because I didn't understand everything perfectly and it is labourious to work through. Rust is quite a hard language to get to grips with because it forces you, the programmer, to write correct code. Writing correct code is hard.
 
 [Cargo B(inary)Install](https://github.com/cargo-bins/cargo-binstall) to install binary files using Cargo. Normally Cargo downloads the source files and complies them first.
 * [This Week in Rust](https://this-week-in-rust.org/)
 * [currently](https://this-week-in-rust.org/blog/2013/10/06/the-state-of-rust-08/)
+* [Rewritten in Rust: Modern Alternatives of Command-Line Tools](https://zaiste.net/posts/shell-commands-rust/) is slightly out of date (e.g. `btm` replaces `ytop`) but still great to see what is possible.
 
 ### Trickier
 
@@ -196,7 +199,7 @@ To find out what your type, defined in your libraries not `main.rs`, implements:
 * [Rust Your Own Lisp](https://dev.to/deciduously/rust-your-own-lisp-50an) from the book [Build Your Own Lisp](https://www.buildyourownlisp.com/)
 * Write a C compiler by converting this [chibicc](https://github.com/rui314/chibicc) and then doing this version [chibicc-riscv](https://github.com/ksco/chibicc-riscv)
 
-see [Parsing-Compilers](/docs/Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](/docs/2023-09-04-Writing-A-Programming-Language.md)
+see [Parsing-Compilers](docs/Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](docs/2023-09-04-Writing-A-Programming-Language.md)
 
 ### Background
 * [(How to Write a (Lisp) Interpreter (in Python))](http://www.norvig.com/lispy.html)
@@ -210,7 +213,7 @@ see [Parsing-Compilers](/docs/Other/2021-07-06-Parsing-Compilers.md) and [Writin
 
 ## Helix
 
-[helix-editor](/docs/2024-02-13-Helix.md)
+[helix-editor](docs/2024-02-13-Helix.md)
 
 ```bash
 rustup component add rust-analyzer // for this to work
