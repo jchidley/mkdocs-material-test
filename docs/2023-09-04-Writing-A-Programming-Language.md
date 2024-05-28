@@ -50,6 +50,7 @@ title: "Writing-A-Programming-Language"
 
 ### Lisp and Scheme
 
+* [On Lisp is a comprehensive study of advanced Lisp techniques](https://www.lurklurk.org/onlisp/onlisp.html)
 * [(How to Write a (Lisp) Interpreter (in Python))](http://www.norvig.com/lispy.html)
 * [(An ((Even Better) Lisp) Interpreter (in Python))](http://norvig.com/lispy2.html)
 * [Learning with Peter Norvig's lis.py interpreter](https://github.com/fluentpython/lispy)
@@ -84,6 +85,11 @@ title: "Writing-A-Programming-Language"
 * Readable [MAE Manual](https://atariwiki.org/wiki/attach/MAE%20Assembler/MAE_Manual.pdf)
 * [EHS Disk Macro Assembler/Text Editor (MAE) - Manual](https://archive.org/details/EHSDiskMacroAssemblerManual/mode/2up)
 * [PDP-11 Lisp implementation](http://archive.computerhistory.org/resources/text/DEC/pdp-1/DEC.pdp_1.1964.102650371.pdf)
+
+### Linker
+
+* [Beginner's Guide to Linkers](https://www.lurklurk.org/linkers/linkers.html)
+* [mold: A Modern Linker](https://github.com/rui314/mold)
 
 ### C64 Specific
 
