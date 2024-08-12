@@ -6,6 +6,12 @@ title: "Microsoft Surface Laptop 4"
 # Microsoft Surface Laptop 4
 <!-- markdownlint-enable MD025 -->
 
+### PowerShell History
+
+```PowerShell
+hx (Get-PSReadlineOption).HistorySavePath # hx is Helix Editor
+```
+
 ## Building a Boot Disk
 
 [Create a recovery drive (WinRE)](https://support.microsoft.com/en-us/windows/create-a-recovery-drive-abb4691b-5324-6d4a-8766-73fab304c246) using the control panel from a existing version of windows, [create Windows 11 installation media](https://www.microsoft.com/en-gb/software-download/windows11) or build [Windows PE (WinPE)](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro?view=windows-11) as described below.
