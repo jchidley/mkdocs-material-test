@@ -27,6 +27,12 @@ title: "Writing-A-Programming-Language"
 
 ### Parsing
 
+Here's a few introductory texts: 
+
+* [When to use a Parser Combinator? When to use a Parser Generator?](https://softwareengineering.stackexchange.com/questions/338665/when-to-use-a-parser-combinator-when-to-use-a-parser-generator)
+* [LL and LR in Context: Why Parsing Tools Are Hard](https://blog.reverberate.org/2013/09/ll-and-lr-in-context-why-parsing-tools.html)
+* [LL and LR Parsing Demystified](https://blog.reverberate.org/2013/07/ll-and-lr-parsing-demystified.html)
+
 * [fparsec Tutorial](https://www.quanttec.com/fparsec/tutorial.html)
 * [Lerche (German for Lark) is a partial port of the Lark grammar processor from Python to Julia](https://github.com/jamesrhester/Lerche.jl)
 * [Lark - a parsing toolkit for Python](https://github.com/lark-parser/lark)
@@ -37,6 +43,14 @@ title: "Writing-A-Programming-Language"
 * [AbstractTrees.jl](https://juliacollections.github.io/AbstractTrees.jl/stable/)
 * [Trees in Julia](https://discourse.julialang.org/t/trees-in-julia/12173)
 * [GraphMakie.jl In this example we are going to plot an abstract syntax tree of a Julia function using the Bucheim Layout from NetworkLayout.jl.](https://graph.makie.org/dev/generated/syntaxtree/)
+
+#### Rust
+
+* [nom - A byte-oriented, zero-copy, parser combinators library](https://lib.rs/crates/nom), [The Nom Guide (Nominomicon)](https://tfpk.github.io/nominomicon/)
+* [lalrpop - convenient LR(1) parser generator](https://lib.rs/crates/lalrpop), [LALRPOP Book](https://lalrpop.github.io/lalrpop/)
+* [logos - Create ridiculously fast Lexers](https://lib.rs/crates/lalrpop), [Logos Handbook](https://logos.maciej.codes/)
+* [combine - Fast parser combinators on arbitrary streams with zero-copy support](https://lib.rs/crates/combine), [combine wiki](https://github.com/Marwes/combine/wiki)
+* [pest - The Elegant Parser](https://lib.rs/crates/pest), [pest book](https://pest.rs/book/)
 
 ### LLVM
 
