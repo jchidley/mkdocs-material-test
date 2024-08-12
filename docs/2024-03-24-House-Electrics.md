@@ -7,6 +7,26 @@ title: "House-Electrics"
 <!-- markdownlint-enable MD025 -->
 
 
+## Update 12/8/24
+
+[ElectricalOM - Ideal Software Tool for Domestic, Commercial and Industrial Low Voltage Electrical Design to BS7671](https://electricalom.com/site/free.php)
+[FoxESS - Modbus](https://github.com/nathanmarlor/foxess_modbus)
+Buy "Fox H1-6.0 Hybrid Inverter 6kW" from [TradeSparky](https://www.tradesparky.com/solarsparky/battery-storage/fox-ess/hybrid/fox-h1-60-hybrid-inverter-6kw)
+[This repo contains a bit of everything BYD register, scripts, logs, wiring etc](https://gitlab.com/pelle8/inverter_resources)
+This software enables EV battery packs to be used for stationary storage [Battery-Emulator](https://github.com/dalathegreat/Battery-Emulator)
+[Nissan LEAF battery](https://github.com/dalathegreat/Battery-Emulator/wiki/Nissan-LEAF-battery)
+[Powerwall Installation Documents](https://www.tesla.com/support/energy/powerwall/installer-resources/powerwall-installation-documents)
+
+[PredBat Youtube](https://www.youtube.com/@springfall2008), 
+ Home battery prediction and automatic charging for Home Assistant [Predbat ](https://springfall2008.github.io/batpred/) and GitHub [Predbat](https://github.com/springfall2008/batpred?tab=readme-ov-file)
+
+[The fire rated board, aka Fire Batts, is simple and very quick to install to provide up to four hours fire and smoke protection](https://www.fireprotectiononline.co.uk/fire-resistant-board-pfp?msclkid=96d005ef41c616aa178b6383495da688&utm_source=bing&utm_medium=cpc&utm_campaign=Search%20-%20Miscellaneous%20Products%20%2F%20Generic%20Fire%20Keywords%20%5B550%25%20ROAS%5D%20%5BEX,%20PH%20%26%20BR%5D%20MM&utm_term=Fireboard&utm_content=SS%20-%20Fireboard%20MM#product-details-tab-Technical-Specification)
+
+ [PredBat - Powerful Automated Home Battery Management](https://www.youtube.com/watch?v=cvfqORGsZ0g)
+
+[XLPE Insulated, PVC Bedded and Sheathed, Steel Wire Armoured Cables](https://www.doncastercables.com/cables/6/26/SWA-and-Mains-Distribution/XLPE-Insulated--PVC-Bedded-and-Sheathed--Steel-Wire-Armoured-Cables/)
+
+
 dishwasher turned on at 23:21, says it will take 2:15 ish. First 1/2 hour isn't much activity, then 1/2 hour of water heating and 1/2 hour drying at the end.
 
 ## Duct
@@ -38,6 +58,10 @@ twinwall for smoothness
 
 ## Tesla Battery
 
+Finder DIN Rail Power Relay, 20A Switching Current, 2NC, DPST
+22.24.8.230.4000 AC
+22.24.9.024.4000 24V DC
+[Finder DIN Rail Power Relay, 230V ac Coil, 20A Switching Current, DPST](https://uk.rs-online.com/web/p/power-relays/0159622)
 [Internet Connectivity](https://www.tesla.com/support/energy/powerwall/own/internet-connectivity) and [Plan Internet Connection for the Backup Gateway 2](https://service.tesla.com/docs/Public/Energy/Powerwall/Powerwall-2-Backup-Gateway-2-Installation-Manual-NA-EN/GUID-DBB9849D-6E32-44C9-ADA2-1F0FC57A0E40.html)
 [Gateway Ethernet connection](https://www.reddit.com/r/TeslaSolar/comments/12564rd/gateway_ethernet_connection/)
 
@@ -46,6 +70,43 @@ twinwall for smoothness
 I beleive that there is now less availabe, following firmware updates, than there once was
 
 [Powerwall-Dashboard](https://github.com/jasonacox/Powerwall-Dashboard)
+
+## Leaf Battery
+
+[Battery-Emulator](https://github.com/dalathegreat/Battery-Emulator)
+[Raspberry Pi version of Battery-Emulator](https://gitlab.com/pelle8/inverter_resources)
+
+Moving heavyweight items
+[Engine Hoist Hire](https://www.nationaltoolhireshops.co.uk/product/engine-hoist-hire/)
+[Turntable Truck with Pneumatic Tyres Hire](https://www.nationaltoolhireshops.co.uk/product/pneumatic-tyre-turntable-truck-hire/)
+[All Terrain Pallet Truck Hire](https://www.nationaltoolhireshops.co.uk/product/all-terrain-pallet-truck-hire/)
+[Large 4 Wheel Turntable Truck](https://www.hss.com/hire/p/large-4-wheel-turntable-truck)
+[Turntable Trolleys](https://handle-it.com/trolleys/turntable-trolleys/)
+[Bad Boy All Purpose Trolley](https://handle-it.com/bad-boy-all-purpose-trolley/)
+
+Battery Fires - key is containment and supresssion around the fire. It usually doesn't go out by itself because is supplies the fuel, oxidiser and gas required. Can explode.
+
+## DIY Battery 
+
+Lots of useful stuff about Fox ESS H1 [Fox ESS H1-5.0-E ~33KW Peugeot E208](https://openinverter.org/forum/viewtopic.php?t=3153)
+
+[2-Channel Isolated CAN HAT for Raspberry Pi](https://thepihut.com/products/2-channel-isolated-can-hat-for-raspberry-pi)
+
+"The FoxESS inverters support an Eastron SDM230 Modbus energy meter instead of the supplied CT clamp. This is connected on pins 1&2 of the "Meter/CT/RS485" connector.
+
+## Fox ESS
+
+[FoxESS - Modbus](https://github.com/nathanmarlor/foxess_modbus)
+[FoxESS V1 BMS protocol](https://foxesscommunity.com/viewtopic.php?t=164)
+[Solax/FoxESS V1 Hybrid/Fit/AC Can Bus Protocol](https://github.com/rand12345/solax_can_bus)
+[Rust no_std CHAdeMO crate](https://github.com/rand12345/chademo-rs)
+
+## Safety
+
+Need overgloves to prevent puncturing
+
+[Gloves - Insulated, Under & Over](https://www.tester.co.uk/high-voltage-utility-and-rail/high-voltage-personal-protection/gloves-insulated-under-and-over)
+[https://alertelectrmimcal.com/electrical-equipment/circuit-protection/verso-circuit-protection/verso-main-switch-spd-consumer-unit.html](https://www.thesafetysupplycompany.co.uk/p/726925/polyco-class-0-electricians-yellow-gloves-360mm-bm-re0360.html?vid=66685149&msclkid=60b2e61264cc10e3f676807924ced683&utm_source=bing&utm_medium=cpc&utm_campaign=UPP_SSC_UK_PMAX_TRO_YF12_905627624-9974-46b8-a23b-1306920a47b0&utm_term=2328971786554768&utm_content=Upp_SSC_4)
 
 ## Testing
 
