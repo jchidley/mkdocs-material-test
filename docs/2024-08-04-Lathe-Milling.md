@@ -29,6 +29,8 @@ Working out change gear combinations [Change Gears for Threading](https://little
 * both of the above a variations of, or inspired by, [Clough42 Lathe Electronic Leadscrew Controller](https://github.com/clough42/electronic-leadscrew) which is mostly a turn key system.
 * [Didge - A Digital Gearbox](https://github.com/prototypicall/Didge)
 
+Explanation of quadrature encoding, using the rotary encoder. [Clough42 Electronic Leadscrew | First test . . . problems](https://youtu.be/V4CPL6_BdHg?si=xoUsfi2afbnLun07&t=1799)
+
 ### Toolpost fixtures, drill, etc
 
 * Still being used now [NewTool Post Drill Modification Use On Mini Lathe & Myford Plus New Vice](https://www.youtube.com/watch?v=1mr3I_8HnJQ) based on this one [Home Made Toolpost Dremel Type Drill Myford/Mini Lathe Micro Milling](https://www.youtube.com/watch?v=K4DHkNykers)
