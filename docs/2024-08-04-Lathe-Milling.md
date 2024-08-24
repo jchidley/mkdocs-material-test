@@ -16,6 +16,7 @@ One source of cheaper tooling [RDG Tools](https://www.rdgtools.co.uk/)
 
 Working out change gear combinations [Change Gears for Threading](https://littlemachineshop.com/reference/change_gears.php)
 
+Lead screw upgrade [Example for Warco Mini Lathe Threading Kits](https://www.warco.co.uk/mini-lathe-accessories/303107-mini-lathe-threading-convert-thread-screw-cutting-lathes.html#/720-type-imperial)
 
 ## DRO
 
