@@ -21,6 +21,8 @@ title: "Rust-Beginnings"
 ### More involved
 
 [Rust exercises on Exercism](https://exercism.org/tracks/rust/exercises)
+[C2Rust](https://github.com/immunant/c2rust?tab=readme-ov-file)
+[Citrus: Convert C to Rust](https://gitlab.com/citrus-rs/citrus)
 
 Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/title-page.html) is best left as a revision work because it tries really, really hard to make sure that you've understood everything. I thought that this would be a perfect way to get started but, as I discovered, I became dishartened because I didn't understand everything perfectly and it is labourious to work through. Rust is quite a hard language to get to grips with because it forces you, the programmer, to write correct code. Writing correct code is hard.
 
@@ -111,8 +113,6 @@ Update:
 curl -L -O https://github.com/rust-lang/rust-analyzer/releases/download/2024-02-12/rust-analyzer-x86_64-pc-windows-msvc.zip # check current version
 copy .\rust-analyzer.exe (get-command rust-analyzer).Source
 ```
-
-#### rustup
 
 ## String, str, u8
 

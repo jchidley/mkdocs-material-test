@@ -57,14 +57,9 @@ I found `rust` one of the most invovled languages to learn. Like many people I h
 
 I don't consider `rust` difficult to learn but it does take much, much longer to start real programming by yourself. Contrast this with `Python` which is easy to start programming and then descends into a morass of libraies, virutalisation and package management. Spreadsheets are also an easy entry to programming with data front and centre. Spreadsheets soon become an impossible change-management problem with their plethora of easily modified and obscured functions. There are banks that have banned spreadsheets from certain parts of their business owing to this complexity and lack of control.
 
-## Embedded
-
-* [Introduction to Rust programming on bare metal hardware by Mike Kefeder - Rust Zürisee March 2023](https://www.youtube.com/watch?v=KECu_piSM5s)
-* [The Embedded Rust ESP Development Ecosystem](https://dev.to/apollolabsbin/embedded-rust-the-esp-development-ecosystem-5478)
+## See also
 
 [Fornjot is an early-stage CAD kernel](https://github.com/hannobraun/fornjot)
-
-## See also
 
 [Rust Beginnings](rust\2023-03-16-Rust-Beginnings.md) needs to be moved from here, and deleted in beginning rust
 
