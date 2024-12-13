@@ -8,8 +8,7 @@ title: "Lathe-Milling"
 
 ## Introduction
 
-A sentence
-
+[C3 Mini-Lathe Metalworking Beginners](http://www.mini-lathe.org.uk/)
 [TouchDRO](https://www.touchdro.com/)
 
 One source of cheaper tooling [RDG Tools](https://www.rdgtools.co.uk/)
@@ -18,12 +17,24 @@ Working out change gear combinations [Change Gears for Threading](https://little
 
 Lead screw upgrade [Example for Warco Mini Lathe Threading Kits](https://www.warco.co.uk/mini-lathe-accessories/303107-mini-lathe-threading-convert-thread-screw-cutting-lathes.html#/720-type-imperial)
 
+## Materials
+
+[Materials for use on hobby Mini-lathe](http://www.mini-lathe.org.uk/mini_lathe_materials.shtml)
+
 ## DRO
 
 * TouchDRO is the first of its kind tablet-based digital readout. [Touch DRO](https://www.touchdro.com/)
 * Get sensors from here, you want the 5 micron ones "M-DRO EH-05" [Machine DRO - M-DRO - Magnetic](https://www.machine-dro.co.uk/digital-readouts-display-and-encoders/linear-encoders/m-dro-magnetic) see [Technical Information](https://www.machine-dro.co.uk/media/downloads/dro-eh-05-encoder_techincal.pdf)
 
+## Levelling
+
+[DIY Laser levelling using webcam and laser level](https://www.mycncuk.com/threads/12966-DIY-Laser-levelling-using-webcam-and-laser-level/page32)
+[Machine to mill a flat surface on steel tube for mounting linear rails.](https://grabcad.com/library/machine-to-mill-a-flat-surface-on-steel-tube-for-mounting-linear-rails-1)
+
 ### Electronic Lead Screw
+
+[Clough42 Lathe Electronic Leadscrew Controller](https://github.com/clough42/electronic-leadscrew)
+[Wiring Everything Together](https://github.com/clough42/electronic-leadscrew/wiki/Wiring-Everything-Together)
 
 * Another version, explains why not Clough42 [Arduino based Electronic leadscrew - First threads](https://www.youtube.com/watch?v=dRzuYhGitEk) and [Electronic Leadscrew v2 - for mini lathes](https://www.youtube.com/watch?v=g6xE1vrWuu8)
 * [STM32 - Electronic Leadscrew](https://github.com/hobbymachinist/els?tab=readme-ov-file)
@@ -46,6 +57,15 @@ note the use of a plate [HOW TO REGRIND SPOT & CENTER DRILLS PERFECTLY ON THE CH
 
 [Using A Boring Head & Angle Plate On The Lathe](https://youtu.be/fFYlVYdyeLM?si=oLOmSz9QCx-xam0m)
 
+## Suppliers
+
+Cheap plastics (Acetal) [Sheet Plastics](https://www.sheetplastics.co.uk/natural-white-acetal-rod-various-sizes)
+
+Smaller but well stocked [Chronos](https://www.chronos.ltd.uk/)
+Good selection [RDG Tools](https://www.rdgtools.co.uk/index.html)
+Massive selection [Cromwell](https://www.cromwell.co.uk/basket)
+
+UK Supplier of DRO [Machine-DRO](https://www.machine-dro.co.uk/digital-readouts-display-and-encoders/linear-encoders/all-linear-encoders/m-dro-ehm-series-mini-head-with-160mm-6-1-4-inch-reading-length-magnetic-tape-encoder)
 
 ## Links
 
