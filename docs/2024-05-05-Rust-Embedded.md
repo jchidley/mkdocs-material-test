@@ -6,7 +6,17 @@ title: "rust-Embedded"
 # rust Embedded
 <!-- markdownlint-enable MD025 -->
 
+## Operating System development tutorials in Rust on the Raspberry Pi
+
+[rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
+
 ## Introduction
+
+The guy that built JeeLabs's stuff, for exampe JeeNode [JC's Logbook](https://jc.wippler.nl/posts/)
+"How do you make sure that all “readings” get logged, yet still retain the ability to adjust and extend the underlying database and software?" [The logic of data logging](https://web.archive.org/web/20170730145913/http://jeelabs.org/2009/03/22/the-logic-of-data-logging/index.html)
+
+The improved version of JeeNode's communications chip was done by [Low Power Lab](https://lowpowerlab.com/)
+To measure very low voltages or currents [CurrentRanger](https://lowpowerlab.com/shop/product/152)
 
 see also [Pi Pico](2023-11-05-Pi-Pico.md)
 
@@ -15,6 +25,7 @@ see also [Pi Pico](2023-11-05-Pi-Pico.md)
 
 * [Writing an OS in Rust ](https://os.phil-opp.com/)
 * [Discover the world of microcontrollers through Rust!](https://docs.rust-embedded.org/discovery/microbit/index.html)
+* [MicroBit Schematic](https://github.com/microbit-foundation/microbit-v2-hardware/blob/main/V2.00/MicroBit_V2.0.0_S_schematic.PDF)
 * [Embedded Rust documentation](https://docs.rust-embedded.org/)
 
 * [Get-PnpDevice = Returns information about PnP devices.](https://learn.microsoft.com/en-us/powershell/module/pnpdevice/get-pnpdevice?view=windowsserver2022-ps)
@@ -25,6 +36,7 @@ see also [Pi Pico](2023-11-05-Pi-Pico.md)
 
 * [Introduction to Rust programming on bare metal hardware by Mike Kefeder - Rust Zürisee March 2023](https://www.youtube.com/watch?v=KECu_piSM5s)
 * [The Embedded Rust ESP Development Ecosystem](https://dev.to/apollolabsbin/embedded-rust-the-esp-development-ecosystem-5478)
+(Embedded Developer)[https://blog.mark-stevens.co.uk/]
 
 # Embedded HALs
 
@@ -35,11 +47,209 @@ There appear to be at least 2 completely different HALs/APIs/ecosystems for supp
 
 These are not compatible, see [Embassy-RP and RP2040-hal Compatibility?](https://github.com/embassy-rs/embassy/issues/3180) and [Embassy-RP and RP2040-hal Compatibility?](https://github.com/rp-rs/rp-hal/issues/816)
 
+## rust-analyzer
+
+[helix - Language Server Configurations](https://github.com/helix-editor/helix/wiki/Language-Server-Configurations#rust) :"Everything under the rust-analyzer key goes under language-server.rust-analyzer.config key in helix" 
+
+From [rust-analyzer manual](https://rust-analyzer.github.io/manual.html)
+
+"rust-analyzer does not require Cargo. However, if you use some other build system, you’ll have to describe the structure of your project for rust-analyzer in the rust-project.json format:"
+
+## Debugging
+
+[rtt](https://docs.rs/rtt-target/latest/rtt_target/)
+
+only appears in debug compilation. There's also a function to send information back "Reading".
+
+```
+use rtt_target::{debug_rtt_init_print, debug_rprintln};
+
+fn main() -> ! {
+    debug_rtt_init_print!(); // nop in --release
+    loop {
+        debug_rprintln!("Hello, world!"); // not present in --release
+    }
+}
+```
+
+[defmt](https://defmt.ferrous-systems.com/) ("de format", short for "deferred formatting") is a highly efficient logging framework that targets resource-constrained devices, like microcontrollers.
+
+### rust toolchain override causes rust-analyzer language server to exit.
+
+[Github issue raised](https://github.com/helix-editor/helix/issues/11612)
+
+[rust toolchain override](https://rust-lang.github.io/rustup/overrides.html) causes rust-analyzer Language server to exit.
+
+`rustup toolchain list`:
+
+```
+stable-x86_64-pc-windows-msvc (default)
+1.80-x86_64-pc-windows-msvc (override)
+```
+
+`helix.log`:
+
+```
+2024-08-31T14:20:03.024 helix_lsp::transport [ERROR] rust-analyzer err <- "error: Unknown binary 'rust-analyzer.exe' in official toolchain '1.80-x86_64-pc-windows-msvc'.\n"
+2024-08-31T14:20:03.074 helix_lsp::transport [ERROR] rust-analyzer err: <- StreamClosed
+2024-08-31T14:20:03.074 helix_lsp [ERROR] failed to initialize language server: server closed the stream
+```
+
+
+`rust-toolchain.toml`:
+
+```
+[toolchain]
+channel = "1.80"
+components = [ "rust-src", "rustfmt", "llvm-tools" ]
+targets = [
+    "thumbv7em-none-eabi",
+    "thumbv7m-none-eabi",
+    "thumbv6m-none-eabi",
+    "thumbv7em-none-eabihf",
+    "thumbv8m.main-none-eabihf",
+    "riscv32imac-unknown-none-elf",
+    "wasm32-unknown-unknown",
+]
+```
+
+VS Code works fine with this configuration, helix doesn't.
+
+#### Mitigation
+
+Start helix from a directory where the override isn't in effect to edit the desired file.
+
+## Embassy HALs
+
+Discovery f0 has interesting peripherals but these need to be added (LD4 for an LED is the most prosaic)
+
+(Note: search command history with PowerShell `rg probe-rs $env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine`)
+
+For ST chips, might need to update firmware using [STSW-LINK007](https://www.st.com/en/development-tools/stsw-link007.html)
+
+need to adjust `.\.cargo\config.toml` runner command (find the chip with `probe-rs chip info nrf528` and might need to add the `--probe` parameter too with the USB ID)
+
+and flavours in `Cargo.toml` (e.g. for STM32 see `https://github.com/embassy-rs/embassy/blob/main/embassy-stm32/Cargo.toml`)
+
+microbit v2 [microbit-bsp](https://github.com/lulf/microbit-bsp.git) had to add ""--probe" argument (find using `probe-rs info`). Also adapted the `embassy\examples\nrf52840` but I'm not sure the bsp is complete - compiles and is loaded but doesn't seem to do anything.
+
+### Works
+
+```
+rp2040
+Cores (2):
+    - core0 (Armv6m)
+    - core1 (Armv6m)
+RAM: 0x20000000..0x20042000 (264.00 KiB)
+RAM: 0x21000000..0x21010000 (64.00 KiB)
+RAM: 0x21010000..0x21020000 (64.00 KiB)
+RAM: 0x21020000..0x21030000 (64.00 KiB)
+RAM: 0x21030000..0x21040000 (64.00 KiB)
+NVM: 0x10000000..0x18000000 (128.00 MiB)
+```
+
+```
+STM32F303RETx
+Cores (1):
+    - main (Armv7em)
+RAM: 0x20000000..0x20010000 (64.00 KiB)
+NVM: 0x08000000..0x08080000 (512.00 KiB)
+```
+
+```
+nRF52833_xxAA
+Cores (1):
+    - main (Armv7em)
+RAM: 0x20000000..0x20020000 (128.00 KiB)
+RAM: 0x00800000..0x00820000 (128.00 KiB)
+NVM: 0x00000000..0x00080000 (512.00 KiB)
+NVM: 0x10001000..0x10002000 (4.00 KiB)
+```
+
+```
+STM32F072RBTx
+Cores (1):
+    - main (Armv6m)
+RAM: 0x20000000..0x20004000 (16.00 KiB)
+NVM: 0x08000000..0x08020000 (128.00 KiB)
+```
+
+```
+STM32F030R8Tx
+Cores (1):
+    - main (Armv6m)
+RAM: 0x20000000..0x20002000 (8.00 KiB)
+NVM: 0x08000000..0x08010000 (64.00 KiB)
+```
+
+```
+STM32F051R8Tx
+Cores (1):
+    - main (Armv6m)
+RAM: 0x20000000..0x20002000 (8.00 KiB)
+NVM: 0x08000000..0x08010000 (64.00 KiB)
+```
+
+blinky in debug will not fit, but --release will
+
+```
+stm32f302r8tx
+Cores (1):
+    - main (Armv7em)
+RAM: 0x20000000..0x20004000 (16.00 KiB)
+NVM: 0x08000000..0x08010000 (64.00 KiB)
+```
+
+blinky --release works, --debug won't
+
+```
+stm32l031k6tx
+Cores (1):
+    - main (Armv6m)
+RAM: 0x20000000..0x20002000 (8.00 KiB)
+NVM: 0x08000000..0x08008000 (32.00 KiB)
+```
+
+### STM32 flash too small
+
+blinky --release overflowed:
+
+```
+= note: rust-lld: error: section '.bss' will not fit in region 'RAM': overflowed by 2388 bytes
+rust-lld: error: section '.uninit' will not fit in region 'RAM': overflowed by 3412 bytes
+```
+
+```
+stm32l011k4tx
+Cores (1):
+    - main (Armv6m)
+RAM: 0x20000000..0x20000800 (2.00 KiB)
+NVM: 0x08000000..0x08004000 (16.00 KiB)
+```
+
 ## From C to Rust
 
 * [C2Rust](https://github.com/immunant/c2rust?tab=readme-ov-file)
 * [Citrus: Convert C to Rust](https://gitlab.com/citrus-rs/citrus)
 * [Lessons learned porting C++ to rust](https://www.youtube.com/watch?v=kcMAiTg5j1w)
+
+### c2rust
+
+For Arduino sketches, this consists of:
+
+1. Compile using arduino-cli
+2. cd to build directory `cd /tmp/arduino/sketches/EA070D50AE3989211800C04360BDAE60` for example
+3. inspect `compile_commands.json` using `bat compile_commands.json -r 1:35` for example
+4. rename .cpp to .c if required
+
+Then rounds of:
+
+1. `c2rust transpile blink.c -- -I/home/jackc/.arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino`
+2. remove current rust output e.g. `rm blink.rs`
+3. Find missing includes: `fd pgmspace.h ~ -H` for example
+4. include them in new commmand.
+
+If you'd prefer to avoid `arduino-cli` then [PlatformIO Core CLI](https://docs.platformio.org/en/latest/core/installation/index.html) is an alternative.
 
 ### Pi Pico
 
@@ -48,6 +258,8 @@ These are not compatible, see [Embassy-RP and RP2040-hal Compatibility?](https:/
 * [A Practical Look at PIO on the Raspberry Pi Pico](https://dev.to/blues/a-practical-look-at-pio-on-the-raspberry-pi-pico-50j8)
 
 ### rust
+
+[Embassy pio module embassy_rp::pio](https://docs.embassy.dev/embassy-rp/git/rp2040/pio/index.html)
 
 [pio-rs](https://github.com/rp-rs/pio-rs) note: "you can call pio::assembler::new() and construct a pio program using the 'builder pattern' - effectively you are compiling a pio program at run-time on the rp2040 itself!"
 
