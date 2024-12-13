@@ -6,6 +6,10 @@ title: "rust-Embedded"
 # rust Embedded
 <!-- markdownlint-enable MD025 -->
 
+[embassy-template](https://github.com/lulf/embassy-template) "Simple template to generate a embassy project for a few common boards. Make sure you've run cargo install cargo-generate before using."
+
+[defmt book](https://defmt.ferrous-systems.com/introduction) "defmt ("de format", short for "deferred formatting") is a highly efficient logging framework that targets resource-constrained devices, like microcontrollers."
+
 ## Operating System development tutorials in Rust on the Raspberry Pi
 
 [rust-raspberrypi-OS-tutorials](https://github.com/rust-embedded/rust-raspberrypi-OS-tutorials)
@@ -226,6 +230,59 @@ Cores (1):
 RAM: 0x20000000..0x20000800 (2.00 KiB)
 NVM: 0x08000000..0x08004000 (16.00 KiB)
 ```
+
+## Testing
+
+This is tricky with embedded because `cargo test` uses `std` which doesn't exist for embedded. One way is to use [custom_test_frameworks](https://rust-lang.github.io/rfcs/2318-custom-test-frameworks.html) as noted in [The Rust Unstable Book](https://doc.rust-lang.org/unstable-book/language-features/custom-test-frameworks.html). There's a long blog entry on [testing](https://os.phil-opp.com/testing/) in "Writing an OS in Rust" by Philipp Oppermann.
+
+Other sources, [How to test code when #![no_std] is set](https://users.rust-lang.org/t/how-to-test-code-when-no-std-is-set/93180), [How do I test crates with #![no_std]?](https://stackoverflow.com/questions/28185854/how-do-i-test-crates-with-no-std), [Testing for no_std compatibility in Rust crates](https://blog.dbrgn.ch/2019/12/24/testing-for-no-std-compatibility/) and [Nine Rules for Running Rust on Embedded Systems](https://towardsdatascience.com/nine-rules-for-running-rust-on-embedded-systems-b0c247ee877e)
+
+suggest either including `#![cfg_attr(not(test), no_std)]` at the top of the file or adding 
+
+```rust
+#[cfg(test)]
+mod tests {
+    extern crate std;
+}```
+
+to the testing part.
+
+
+* Rule 1: Confirm that your project works with WASM WASI and WASM in the Browser.
+
+```rust
+cargo test --target wasm32-wasip1
+cargo test --target wasm32-unknown-unknown
+```
+
+* Rule 2: Use target thumbv7m-none-eabi and cargo tree to identify and fix dependencies incompatible with no_std.
+
+```rust
+rustup target add thumbv7m-none-eabi
+cargo check --target thumbv7m-none-eabi
+# then
+cargo tree --edges no-dev --format "{p} {f}"
+```
+
+* Rule 3: Mark main (non-test) code no_std and alloc. Replace std:: with core:: and alloc::.
+* Rule 4: Use Cargo features to let your main code use std optionally for file-related (etc.) functions.
+* Rule 5: Understand why test code always uses the standard library.
+
+```rust
+# DOES NOT TEST `no_std`
+cargo test --no-default-features
+```
+
+"Functions from std that are unavailable in a true no_std environment will still be accessible during testing."
+
+```rust
+#![cfg(test)]
+// imports required for testing
+use std::prelude::v1::*;
+use std::{format, print, println, vec};
+```
+
+* Rule 6: Create a simple embedded test project. Run it with QEMU.
 
 ## From C to Rust
 
