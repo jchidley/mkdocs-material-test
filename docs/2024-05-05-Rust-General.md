@@ -14,7 +14,6 @@ title: "rust-General"
 [Effective Rust](https://www.lurklurk.org/effective-rust/title-page.html)
 [The Cargo Book](https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html)
 
-
 ## Rust based System Tools
 
 [ripgrep is a line-oriented search tool](https://github.com/BurntSushi/ripgrep)
@@ -22,15 +21,12 @@ title: "rust-General"
 [fd is a program to find entries in your filesystem. ](https://github.com/sharkdp/fd)
 [bat - A cat(1) clone with wings.](https://github.com/sharkdp/bat)
 
-
 ## Introduction
 
 * currently [This Week in Rust](https://this-week-in-rust.org/blog/2014/06/14/this-week-in-rust-52/)
+[The Rustacean Station Podcast](https://rustacean-station.org/)
 [idiomatic-rust](https://github.com/mre/idiomatic-rust)
 [Idiomatic Rust: Resources And Learning Material](https://corrode.dev/idiomatic-rust/)
-
-[Ratatui is a Rust library for cooking up delicious text user interfaces](https://ratatui.rs/introduction/)
-[Awesome Ratatui](https://github.com/ratatui-org/awesome-ratatui)
 
 [Dioxus is a Rust library for building apps that run on ...](https://dioxuslabs.com/)
 
@@ -41,6 +37,22 @@ title: "rust-General"
 [Pretty State Machine Patterns in Rust](https://hoverbear.org/blog/rust-state-machine-pattern/)
 
 [Fornjot is an early-stage CAD kernel, using boundary representation (b-rep), written in the Rust programming language.](https://www.fornjot.app/)
+
+## GUI, TUI, Command Line
+
+[egui (pronounced "e-gooey") is a simple, fast, and highly portable immediate mode GUI library for Rust.](https://github.com/emilk/egui)
+[Building cross-platform GUI apps in Rust using egui](https://blog.logrocket.com/building-cross-platform-gui-apps-rust-using-egui/)
+[Ratatui is a Rust library for cooking up delicious text user interfaces](https://ratatui.rs/introduction/)
+[Awesome Ratatui](https://github.com/ratatui-org/awesome-ratatui)
+[Command Line Argument Parser for Rust](https://docs.rs/clap/latest/clap/) see also (Command Line Applications in Rust)[https://rust-cli.github.io/book/index.html]
+
+## Data
+
+(Influx)[https://pimylifeup.com/raspberry-pi-influxdb/]
+(Monitoring Your Raspberry Pi System using InfluxDB Telegraf)[https://randomnerdtutorials.com/monitor-raspberry-pi-influxdb-telegraf/]
+(MQTT Producer Output Plugin)[https://github.com/influxdata/telegraf/blob/release-1.32/plugins/outputs/mqtt/README.md]
+(Flight, DataFusion, Arrow, and Parquet: Using the FDAP Architecture to build InfluxDB 3.0)[https://www.influxdata.com/blog/flight-datafusion-arrow-parquet-fdap-architecture-influxdb/]
+(ZigBee@Linux: Getting Data from ZigBee Devices via MQTT to InfluxDB and Grafana)[https://dietrichschroff.blogspot.com/2020/11/zigbeelinux-getting-data-from-zigbee.html]
 
 ## Parsers
 
@@ -53,14 +65,16 @@ Fast parser combinators on arbitrary streams with zero-copy support](https://lib
 [Nom Tutorial](https://github.com/benkay86/nom-tutorial)
 [Parsing Text with Nom](https://blog.adamchalmers.com/nom-chars/)
 
-
 ## Concurrency
 [tools for concurrent programming](https://github.com/crossbeam-rs/crossbeam)
 [Rayon: data parallelism in Rust](https://smallcultfollowing.com/babysteps/blog/2015/12/18/rayon-data-parallelism-in-rust/)
 
 [Grid Search on Large Language Models using Ollama and Rust](https://dezoito.github.io/2023/12/27/rust-ollama-grid-search.html)
 
+### Unicode
+
+use ripgrep to search a downloaded copy of the [Unicode Character Database](https://www.unicode.org/ucd/), the [latest was 16](https://www.unicode.org/versions/Unicode16.0.0/) at the time of writing. There's a zip file of the complete database [UCD.zip](https://www.unicode.org/Public/UCD/latest/ucd/) or an XML version [ucd.all.flat.zip](https://www.unicode.org/Public/UCD/latest/ucdxml/) that shoudl be extracted to use [ripgrep](https://github.com/BurntSushi/ripgrep) on.
+
 <!-- markdownlint-disable MD034 -->
 * https://example.com
 <!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)
