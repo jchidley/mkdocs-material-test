@@ -9,6 +9,7 @@ title: "House-Electrics"
 
 ## Update 12/8/24
 
+[RS PRO 5A Inline Fuse Holder for 5x20mm Fuse, 250V](https://uk.rs-online.com/web/p/fuse-holders/2846487)
 [ElectricalOM - Ideal Software Tool for Domestic, Commercial and Industrial Low Voltage Electrical Design to BS7671](https://electricalom.com/site/free.php)
 [FoxESS - Modbus](https://github.com/nathanmarlor/foxess_modbus)
 Buy "Fox H1-6.0 Hybrid Inverter 6kW" from [TradeSparky](https://www.tradesparky.com/solarsparky/battery-storage/fox-ess/hybrid/fox-h1-60-hybrid-inverter-6kw)
@@ -257,12 +258,21 @@ His consumption for heating vs my consumption varies from 4.4 times in the colde
 
 * [Tesla releases API for solar, Powerwall systems, EV chargers](https://www.pv-magazine.com/2024/01/08/tesla-releases-api-for-solar-powerwall-systems-ev-chargers/)
 * [Tesla API - Energy Endpoints](https://developer.tesla.com/docs/fleet-api#charging_sessions-only-for-business-fleet-owners)
-* [Tesla Powerwall 2 - Local Gateway API documentation](https://github.com/vloschiavo/powerwall2)
+* [Tesla Powerwall 2 - Local Gateway API documentation](https://github.com/ vloschiavo/powerwall2)
 [AgileBattery](https://github.com/halfrubbish/AgileBattery) and [AgileBattery: Tesla Powerwall and Octopus Energy Agile integration](https://www.reddit.com/r/OctopusEnergy/comments/16z2zee/agilebattery_tesla_powerwall_and_octopus_energy/)
 
 ## Fans
 
 ### Heat Recovery Fans
+
+Building Regulations Part F: Ventillation
+https://assets.publishing.service.gov.uk/media/61deba42d3bf7f054fcc243d/ADF1.pdf
+
+Minimum extract ventillation rates for continuous extract systems.
+Kitchen: 13 (above the fan below)
+Utility room: 8 (set to 9)
+Bathroom: 8 (set to 9)
+Sanitary accommodation: 6 (set to 6)
 
 [Lo-Carbon Tempra SELV HTP](https://www.vent-axia.com/range/lo-carbon-tempra-selv-htp)
 [Currently cheapest £203 from www.electrical2go.co.uk](https://www.electrical2go.co.uk/vent-axia-lo-carbon-tempra-lp-single-room-heat-recovery-fan-403832.html?msclkid=604edd093b3518c6dfe3b8fd9130d9d1&utm_source=bing&utm_medium=cpc&utm_campaign=Smart%20Shopping%20-%20All%20Products%20%5BROAS%5D%20MM&utm_term=4582008568042712&utm_content=PL%20-%20All%20Products%20MM)
