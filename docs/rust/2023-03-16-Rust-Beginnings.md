@@ -46,6 +46,8 @@ Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/tit
 
 [Rust in Motion](https://www.manning.com/livevideo/rust-in-motion) is a little outdated but still relevant, one of the presenters wrote the *rust book*.
 
+[Roguelike Tutorial - In Rust](https://bfnightly.bracketproductions.com/rustbook/chapter_0.html)
+
 ## Install for Windows
 
 *Build Tools for Visual Studio 2022* - look down the page [Downloads](https://visualstudio.microsoft.com/downloads/), then install these two bits of software:
