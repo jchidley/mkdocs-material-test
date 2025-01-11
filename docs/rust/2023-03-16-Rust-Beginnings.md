@@ -17,6 +17,7 @@ title: "Rust-Beginnings"
 * [Rust Programming Tutorial](https://youtube.com/playlist?list=PLDbRgZ0OOEpUkWDGqp91ODn0dk7LPBAUL&si=ieLsv_wfmKSBKGtO)
 * [The Rust Edition Guide](https://doc.rust-lang.org/edition-guide/introduction.html) is great to read as many books and examples now use older editions.
 * [The Rust Reference](https://doc.rust-lang.org/stable/reference/)
+* [Rust Design Patterns](https://rust-unofficial.github.io/patterns/intro.html)
 
 ### More involved
 
