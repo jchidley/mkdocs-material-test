@@ -6,11 +6,9 @@ title: "Microsoft Surface Laptop 4"
 # Microsoft Surface Laptop 4
 <!-- markdownlint-enable MD025 -->
 
-
 ## Apply WIM file
 
-
-For recover parttion, [see](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-desktop-editions-sample-scripts?view=windows-11&preserve-view=true#-createpartitions-uefitxt)
+For recover partition, [see](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-desktop-editions-sample-scripts?view=windows-11&preserve-view=true#-createpartitions-uefitxt)
 
 ```shell
 rem == CreatePartitions-UEFI.txt ==
@@ -38,11 +36,15 @@ list volume
 exit
 ```
 
+### Git Bash
+
+Installed with git for windows. From [MinGW-w64](https://www.mingw-w64.org/)
+see [Setting up Git Bash / MINGW / MSYS2 on Windows](https://www.pascallandau.com/blog/setting-up-git-bash-mingw-msys2-on-windows/)
 
 ### PowerShell History
 
 ```PowerShell
-hx (Get-PSReadlineOption).HistorySavePath # hx is Helix Editor
+$PROFILE # C:\Users\jackc\Documents\PowerShell\Microsoft.PowerShell_profile.ps1hx (Get-PSReadlineOption).HistorySavePath # hx is Helix Editor
 ```
 
 ## Building a Boot Disk
@@ -375,7 +377,7 @@ winget install --id Git.Git -e --source winget
 winget install chezmoi
 chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
 chezmoi diff # check possible changes
-# chezmoi apply # optinally apply
+# chezmoi apply # optionally apply
 # as admin for winget import
 winget import -i $env:USERPROFILE\.config\windows_config\winget.json --accept-package-agreements
 # winget export -o $env:USERPROFILE\.config\windows_config\winget.json
@@ -403,7 +405,9 @@ iwr -useb https://christitus.com/win | iex
 
 ## Windows Intune / Autopilot
 
-If you try to install the *Professional* version of windows and the previous owner of the laptop has added it to *Windows Intune* or *Autopilot* then you will need to install the *Home* edition first and then upgrade it to *Pro*.
+Probably best to go full enterprise install: workstation, WinPE, specialize, etc. Intune and Autopilot are now really aggressive.
+
+Previously: If you try to install the *Professional* version of windows and the previous owner of the laptop has added it to *Windows Intune* or *Autopilot* then you will need to install the *Home* edition first and then upgrade it to *Pro*.
 
 ### Chezmoi and dotfiles
 
