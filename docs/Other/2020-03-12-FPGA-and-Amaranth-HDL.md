@@ -329,11 +329,7 @@ pip install markupsafe==2.0.1 # fixes ImportError: cannot import name 'soft_unic
 
 [ImportError: cannot import name 'soft_unicode' from 'markupsafe'](https://stackoverflow.com/questions/72191560/importerror-cannot-import-name-soft-unicode-from-markupsafe)
 
-```PS
-# usbipd wsl detach --all
-# usbipd list
-usbipd wsl attach --busid 1-2 --distribution U3
-```
+see [2023-09-24-Systems-on-Systems.md](2023-09-24-Systems-on-Systems.md) for `usbipd`.
 
 ```bash
 python3 -m amaranth_boards.ulx3s 85F

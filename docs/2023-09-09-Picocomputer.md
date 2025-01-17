@@ -20,26 +20,7 @@ Open PuTTY, select the Serial connection type and enter the COM7 (see above) in 
 
 Now it's time to deal with the WSL side of things.
 
-https://github.com/dorssel/usbipd-win
-
-```cmd
-winget install usbipd
-```
-
-https://github.com/dorssel/usbipd-win/wiki/WSL-support
-
-```ubuntu
-sudo apt install linux-tools-virtual hwdata
-sudo update-alternatives --install /usr/local/bin/usbip usbip `ls /usr/lib/linux-tools/*/usbip | tail -n1` 20
-```
-
-```cmd
-usbipd wsl list
-# look for Picoprobe entry, like this:
-# 1-2    2e8a:0004  USB Serial Device (COM5), Picoprobe
-# you might not need the "--distribution ubuntu" part if you only have one WSL distribution installed
-usbipd wsl attach --busid 1-2 --distribution ubuntu
-```
+see [2023-09-24-Systems-on-Systems.md](2023-09-24-Systems-on-Systems.md) for `usbipd`
 
 ### openocd
 
