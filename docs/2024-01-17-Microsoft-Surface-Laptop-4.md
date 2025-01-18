@@ -36,11 +36,6 @@ list volume
 exit
 ```
 
-### Git Bash
-
-Installed with git for windows. From [MinGW-w64](https://www.mingw-w64.org/)
-see [Setting up Git Bash / MINGW / MSYS2 on Windows](https://www.pascallandau.com/blog/setting-up-git-bash-mingw-msys2-on-windows/)
-
 ### PowerShell History
 
 ```PowerShell
