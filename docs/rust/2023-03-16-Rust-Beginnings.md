@@ -119,38 +119,13 @@ copy .\rust-analyzer.exe (get-command rust-analyzer).Source
 
 ## String, str, u8
 
-Rust is going to try pretty hard to make sure that these are valid conversions. Strings convert to u8 (bytes) in very specific ways. Ways that include variable multi-byte encoding.
+See [Unicode, Strings, str, char, u8](./2024-05-05-Rust-General.md)
 
-[How do I convert between String, &str, Vec\<u8\> and &\[u8\]](https://stackoverflow.com/a/41034751/3617057)
+Rust uses ut8 encoding for strings, etc, chars are u32 which is the size of [Unicode Scalar Value](https://unicode.org/glossary/#unicode_scalar_value) but characters are just a number known as a [Code point: Any value in the Unicode codespace.](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-3/#G22700). For some langauges characters can be made up of several code points. [Unicode® Standard Annex #29](https://www.unicode.org/reports/tr29/) 
 
-```code
-&str    -> String  | String::from(s) or s.to_string() or s.to_owned()
-&str    -> &[u8]   | s.as_bytes()
-&str    -> Vec<u8> | s.as_bytes().to_vec() or s.as_bytes().to_owned()
-String  -> &str    | &s if possible* else s.as_str()
-String  -> &[u8]   | s.as_bytes()
-String  -> Vec<u8> | s.into_bytes()
-&[u8]   -> &str    | s.to_vec() or s.to_owned()
-&[u8]   -> String  | std::str::from_utf8(s).unwrap(), but don't**
-&[u8]   -> Vec<u8> | String::from_utf8(s).unwrap(), but don't**
-Vec<u8> -> &str    | &s if possible* else s.as_slice()
-Vec<u8> -> String  | std::str::from_utf8(&s).unwrap(), but don't**
-Vec<u8> -> &[u8]   | String::from_utf8(s).unwrap(), but don't**
+## Types
 
-* target should have explicit type (i.e., checker can't infer that)
-
-** handle the error properly instead
-```
-
-There are also these other functions, and probably more too.
- 
-```rust
-std::str::from_utf8_unchecked
-std::string::String::from_utf8
-String::from_utf8_lossy
-```
-
-Sometimes you just want to the type [see Boiethios's Stackoverflow answer](https://stackoverflow.com/a/58119924/3617057) or [fasterthanli.me's use of type_name](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
+[Sometimes you just want to the type [see Boiethios's Stackoverflow answer](https://stackoverflow.com/a/58119924/3617057) or [fasterthanli.me's use of type_name](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 
 ```rust
 use std::any::type_name;

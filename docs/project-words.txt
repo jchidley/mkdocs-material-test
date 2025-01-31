@@ -45,3 +45,13 @@ unvented
 Arotherm
 Daikin
 Stelrad
+Newtype
+egui
+IMGUI
+Ratatui
+Ollama
+maskify
+snmalloc
+Callgrind
+Rustacean
+println

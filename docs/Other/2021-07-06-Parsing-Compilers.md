@@ -17,6 +17,7 @@ Faster programs:
 ## Compiler Information
 
 Some books are:
+* I bought, and downloaded `Crafting Interpreters.pdf`, [Crafting Interpreters](https://craftinginterpreters.com/)
 * [Crafting Interpreters reference books](https://twitter.com/munificentbob/status/901543375945388032)
 * Lisp in small pieces by Christian Queinnec 978-0521545662
 * Crafting a compiler by Charles N Fischer 978-0805332018

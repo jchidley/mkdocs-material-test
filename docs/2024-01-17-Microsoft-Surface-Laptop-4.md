@@ -370,10 +370,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 winget upgrade --all
 winget install --id Git.Git -e --source winget
 winget install chezmoi
-chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
-chezmoi diff # check possible changes
-# chezmoi apply # optionally apply
-# as admin for winget import
+# see [2024-02-12-chezmoi.md](2024-02-12-chezmoi.md)
 winget import -i $env:USERPROFILE\.config\windows_config\winget.json --accept-package-agreements
 # winget export -o $env:USERPROFILE\.config\windows_config\winget.json
 # as admin for choco

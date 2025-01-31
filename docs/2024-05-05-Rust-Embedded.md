@@ -6,6 +6,40 @@ title: "rust-Embedded"
 # rust Embedded
 <!-- markdownlint-enable MD025 -->
 
+## Update from 30/12/24
+
+[This is the website for Jonathan 'theJPster' Pallant](https://thejpster.org.uk/) he does rust embedded stuff, like this [Neotron Pico](https://neotron-compute.github.io/Neotron-Book/neotron_pico.html)
+
+[A fast and flexible allocator for no_std and WebAssembly](https://crates.io/crates/talc)
+
+## Testing
+
+[Test driven embedded rust](https://hackaday.io/page/21907-test-driven-embedded-rust-development-tutorial) using [mockall - a powerful mock object library for Rust](https://docs.rs/mockall/latest/mockall/#user-guide)
+
+Comment out `target = "thumbv7em-none-eabihf"` in in the `[build]` section of `.cargo/config.toml`, so you will need to `cargo build --release --target=thumbv7em-none-eabihf` for cargo.
+
+Add 
+
+```rust
+#![cfg_attr(not(test), no_main)]
+#![cfg_attr(not(test), no_std)]
+
+#[cfg(not(test))]
+use panic_halt as _;
+```
+
+at the top of source files.
+
+Need to use [mockall](https://docs.rs/mockall/latest/mockall/) add `[dev-dependencies]
+mockall = "0.13.1"`
+
+See also [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives/)
+
+[Rust Unit Testing - Mockall Crate](https://www.youtube.com/watch?v=zp6HuZ56Cl4)
+
+
+## Previously
+
 [embassy-template](https://github.com/lulf/embassy-template) "Simple template to generate a embassy project for a few common boards. Make sure you've run cargo install cargo-generate before using."
 
 [defmt book](https://defmt.ferrous-systems.com/introduction) "defmt ("de format", short for "deferred formatting") is a highly efficient logging framework that targets resource-constrained devices, like microcontrollers."
