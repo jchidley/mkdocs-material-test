@@ -37,17 +37,40 @@ Brown University's version of the [Rust Book](https://rust-book.cs.brown.edu/tit
 
 ### Dead Tree, Live Bits
 
-"[Zero To Production In Rust](https://www.zero2prod.com/) is the ideal starting point for your journey as a Rust backend developer. You will learn by doing: you will build a fully functional email newsletter API, starting from scratch."
+* "[Zero To Production In Rust](https://www.zero2prod.com/) is the ideal starting point for your journey as a Rust backend developer. You will learn by doing: you will build a fully functional email newsletter API, starting from scratch."
+* [Rust for Rustaceans](https://nostarch.com/rust-rustaceans#reviews)
+* [Rust in Action - Systems programming concepts and techniques](https://www.manning.com/books/rust-in-action) also has an accociated audiobook from Audible. Interesting to look at source code / companion pdf and listen to it. Requires more work to understand which is a good thing.
+* [Packt Publishing](https://www.packtpub.com/), [Manning](https://www.manning.com/) and the big dog [O’Reilly](https://www.oreilly.com/), and probably others, have libraries of both books and video courses.
+* [Rust in Motion](https://www.manning.com/livevideo/rust-in-motion) is a little outdated but still relevant, one of the presenters wrote the *rust book*.
+* [Roguelike Tutorial - In Rust](https://bfnightly.bracketproductions.com/rustbook/chapter_0.html)
 
-[Rust for Rustaceans](https://nostarch.com/rust-rustaceans#reviews)
+## AI Assisted Programming
 
-[Rust in Action - Systems programming concepts and techniques](https://www.manning.com/books/rust-in-action) also has an accociated audiobook from Audible. Interesting to look at source code / companion pdf and listen to it. Requires more work to understand which is a good thing.
+[The best AI for coding in 2025 (and what not to use - including DeepSeek R1)](https://www.zdnet.com/article/the-best-ai-for-coding-in-2025-and-what-not-to-use-including-deepseek-r1/)
+[How to use ChatGPT to write code: What it does well and what it doesn't](https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code-what-it-does-well-and-what-it-doesnt/)
 
-[Packt Publishing](https://www.packtpub.com/), [Manning](https://www.manning.com/) and the big dog [O’Reilly](https://www.oreilly.com/), and probably others, have libraries of both books and video courses.
+"
+* ChatGPT can produce both useful and unusable code. For best results, provide clear and detailed prompts.
+* ChatGPT excels in assisting with specific coding tasks or routines, rather than building complete applications from scratch.
+* Use ChatGPT to find and choose the right coding libraries for specific purposes, and engage in an interactive discussion to narrow down options.
+* Be cautious about the ownership of AI-generated code and always verify the code's reliability. Don't blindly trust the generated output.
+* Treat interactions with ChatGPT as a conversation. Refine your questions based on the AI's responses to get closer to the desired output.
+"
 
-[Rust in Motion](https://www.manning.com/livevideo/rust-in-motion) is a little outdated but still relevant, one of the presenters wrote the *rust book*.
+[How ChatGPT can rewrite and improve your existing code](https://www.zdnet.com/article/how-chatgpt-can-rewrite-and-improve-your-existing-code/) - explain the code, rewrite the code in another language, improve the code, "make it as concise as possible"
+[How to use ChatGPT to create an app](https://www.zdnet.com/article/how-to-use-chatgpt-to-create-an-app/)
+[25 AI tips to boost your programming productivity with ChatGPT](https://www.zdnet.com/article/25-ai-tips-to-boost-your-programming-productivity-with-chatgpt/)
 
-[Roguelike Tutorial - In Rust](https://bfnightly.bracketproductions.com/rustbook/chapter_0.html)
+[awesome-chatgpt](https://github.com/sindresorhus/awesome-chatgpt)
+
+[smartcat (sc)](https://github.com/efugier/smartcat) "Puts a brain behind cat! CLI interface to bring language models into the Unix ecosystem and allow terminal power users to make the most out of LLMs while maintaining full control."
+[What is Swiftide?](https://swiftide.rs/what-is-swiftide/) "Swiftide is a Rust library for building LLM applications. Large language models are amazing, but need context to solve real problems. Swiftide allows you to ingest, transform and index large amounts of data fast, and then query that data so it it can be injected into prompts."
+[kwaak](https://github.com/bosun-ai/kwaak?tab=readme-ov-file) "What is Kwaak? Always wanted to run a team of AI agents locally from your own machine? Write code, improve test coverage, update documentation, or improve code quality, while you focus on building the cool stuff? Kwaak enables you to run a team of autonomous AI agents right from your terminal, in parallel."
+[Tenere - TUI interface for LLMs written in Rust](https://github.com/pythops/tenere)
+[aichat](https://github.com/sigoden/aichat?tab=readme-ov-file) "AIChat is an all-in-one LLM CLI tool featuring Shell Assistant, CMD & REPL Mode, RAG, AI Tools & Agents, and More." written in rust
+
+[ShellGPT](https://github.com/TheR1D/shell_gpt?tab=readme-ov-file) "A python based command-line productivity tool powered by AI large language models (LLM)."
+[LangChain](https://python.langchain.com/docs/introduction/) "LangChain is a framework for developing applications powered by large language models (LLMs)." also [langchain_rust](https://github.com/Abraxas-365/langchain-rust) "This is the Rust language implementation of LangChain."
 
 ## Install for Windows
 
@@ -174,11 +197,19 @@ To find out what your type, defined in your libraries not `main.rs`, implements:
 
 ### Programming Language
 
-* [mal - Make a Lisp](https://github.com/kanaka/mal?tab=readme-ov-file#rust-138)
-* [Rust Your Own Lisp](https://dev.to/deciduously/rust-your-own-lisp-50an) from the book [Build Your Own Lisp](https://www.buildyourownlisp.com/)
-* Write a C compiler by converting this [chibicc](https://github.com/rui314/chibicc) and then doing this version [chibicc-riscv](https://github.com/ksco/chibicc-riscv)
+See `mal - make a lisp`, `(An ((Even Better) Lisp) Interpreter (in Python))` and `chibicc` in these links:
 
 see [Parsing-Compilers](docs/Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](docs/2023-09-04-Writing-A-Programming-Language.md)
+
+Rust specific links:
+
+* based on `Risp` [Building a Lisp-like Language from Scratch in Rust](https://momori.dev/posts/building-a-lisp-like-language-from-scratch-in-rust/)
+* [Risp (in (Rust) (Lisp))](https://stopa.io/post/222)
+* [Rust Your Own Lisp](https://dev.to/deciduously/rust-your-own-lisp-50an) with [source code](https://github.com/deciduously/blispr)
+* rust specific mal [mal-rust](https://github.com/jotare/mal-rust)
+* another [mal-rust](https://github.com/seven1m/mal-rust?tab=readme-ov-file)
+* embedded lisp in rust [Steel - An embeddable and extensible scheme dialect built in Rust.](https://github.com/mattwparas/steel)
+* embeddable lisp [rust_lisp](https://github.com/brundonsmith/rust_lisp)
 
 ### Background
 * [(How to Write a (Lisp) Interpreter (in Python))](http://www.norvig.com/lispy.html)

@@ -10,6 +10,12 @@ title: "Writing-A-Programming-Language"
 
 ## Introduction
 
+What language to learn?
+
+* Leading indicator [PYPL PopularitY of Programming Language](https://pypl.github.io/PYPL.html)
+* Lagging indicator [The RedMonk Programming Language Rankings: June 2024](https://redmonk.com/sogrady/2024/09/12/language-rankings-6-24/)
+* One person's perspective [26 programming languages in 25 days, Part 2: Reflections on language design](https://matt.might.net/articles/26-languages-part2/)
+
 * [How to Design Programs, Second Edition](https://htdp.org/2023-8-14/Book/index.html)
 * [LET'S BUILD A COMPILER! By Jack W. Crenshaw, Ph.D.](https://compilers.iecc.com/crenshaw/tutor1.txt)
 * [The ppci (pure python compiler infrastructure) project is a compiler written entirely in python](https://ppci.readthedocs.io/en/latest/index.html)
@@ -46,6 +52,7 @@ Here's a few introductory texts:
 
 #### Rust
 
+* [winnow aims to be your “do everything” parser, much like people treat regular expressions.](https://docs.rs/winnow/latest/winnow/)
 * [nom - A byte-oriented, zero-copy, parser combinators library](https://lib.rs/crates/nom), [The Nom Guide (Nominomicon)](https://tfpk.github.io/nominomicon/)
 * [lalrpop - convenient LR(1) parser generator](https://lib.rs/crates/lalrpop), [LALRPOP Book](https://lalrpop.github.io/lalrpop/)
 * [logos - Create ridiculously fast Lexers](https://lib.rs/crates/lalrpop), [Logos Handbook](https://logos.maciej.codes/)
@@ -60,6 +67,7 @@ Here's a few introductory texts:
 
 ### C
 
+* Practical, step-by-step, compiler [chibicc: A small C compiler](https://github.com/rui314/chibicc) and [chibicc documentation, in Japanese](https://www.sigbus.info/compilerbook)
 * [cproc: Small C11 compiler based on QBE](https://sr.ht/~mcf/cproc/)
 
 ### Lisp and Scheme
@@ -70,6 +78,7 @@ Here's a few introductory texts:
 * [Learning with Peter Norvig's lis.py interpreter](https://github.com/fluentpython/lispy)
 * Lots more information and links [Scheme (programming language) - Wikipedia](https://en.wikipedia.org/wiki/Scheme_(programming_language))
 * [beau­tiful racket - an intro­duc­tion to language-oriented programming](https://beautifulracket.com/)
+* [Racket Documentation](https://docs.racket-lang.org/)
 * [Bits of information about Lisp, Scheme, 8 bit LISP](http://web.archive.org/web/20100131151915/http://www.ip9.org/munro/skimp/)
 * [The Make-A-Lisp Process](https://github.com/kanaka/mal/blob/master/process/guide.md)
 * [uLisp](http://www.ulisp.com/show?1AA0)

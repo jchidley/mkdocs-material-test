@@ -55,3 +55,4 @@ snmalloc
 Callgrind
 Rustacean
 println
+sudoedit
