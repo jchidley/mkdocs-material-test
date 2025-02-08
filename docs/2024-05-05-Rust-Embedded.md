@@ -14,7 +14,7 @@ title: "rust-Embedded"
 
 ## Testing
 
-[Test driven embedded rust](https://hackaday.io/page/21907-test-driven-embedded-rust-development-tutorial) using [mockall - a powerful mock object library for Rust](https://docs.rs/mockall/latest/mockall/#user-guide)
+[Test driven embedded rust](https://hackaday.io/page/21907-test-driven-embedded-rust-development-tutorial) "In this tutorial we will set up an embedded development environment in rust that focuses on test driven development (TDD for short). TDD is especially useful for embedded systems, as testing the code on the target hardware is significantly more difficult than testing software written for the host device." using [mockall - a powerful mock object library for Rust](https://docs.rs/mockall/latest/mockall/#user-guide)
 
 Comment out `target = "thumbv7em-none-eabihf"` in in the `[build]` section of `.cargo/config.toml`, so you will need to `cargo build --release --target=thumbv7em-none-eabihf` for cargo.
 

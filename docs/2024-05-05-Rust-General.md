@@ -8,6 +8,11 @@ title: "rust-General"
 
 ## Additions From 18/1/25
 
+[Blessed.rs](https://blessed.rs/crates#section-common-subsection-general) "an unofficial guide to the rust ecosystem"
+
+[RustyLine](https://github.com/kkawakam/rustyline) is a "Readline implementation in Rust that is based on Antirez' Linenoise" see [Similar projects](https://github.com/kkawakam/rustyline?tab=readme-ov-file#similar-projects) for other readline.
+[noline](https://github.com/rustne-kretser/noline/tree/master) "is an IO-agnostic #[no_std] line editor providing robust line editing for any system. The core functiunality is IO-free, so it can be adapted to any system be it embedded, async, async embedded, WASM or IPoAC (IP over Avian Carriers)."
+
 As good an argument for rust, from a security point of view, as I've seen
 [The existential threat against C++ and where to go from here - Helge Penne - NDC TechTown 2024](https://www.youtube.com/watch?v=gG4BJ23BFBE) along with this one [Moving from C to Rust for embedded software development](https://www.youtube.com/watch?v=YXvebHRn8hs)
 
@@ -289,6 +294,9 @@ But [Is it considered a bad practice to implement Deref for newtypes?](https://s
 [Fornjot is an early-stage CAD kernel, using boundary representation (b-rep), written in the Rust programming language.](https://www.fornjot.app/)
 
 ## GUI, TUI, Command Line
+
+[Full Stack Rust with Leptos](https://benw.is/posts/full-stack-rust-with-leptos)
+[Using Rust and Leptos to build beautiful, declarative UIs](https://blog.logrocket.com/using-rust-leptos-build-beautiful-declarative-uis/)
 
 [egui - Rust - building a UI to plot a sensor value in real time](https://www.youtube.com/watch?v=zUvHkkkrmIY)
 [egui (pronounced "e-gooey") is a simple, fast, and highly portable immediate mode GUI (IMGUI) library for Rust.](https://github.com/emilk/egui)
