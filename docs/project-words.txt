@@ -56,3 +56,6 @@ Callgrind
 Rustacean
 println
 sudoedit
+onnx
+Karpathy
+Andrej
