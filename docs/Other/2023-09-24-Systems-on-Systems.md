@@ -6,81 +6,7 @@ title: "Systems-on-Systems"
 # Systems-on-Systems
 <!-- markdownlint-enable MD025 -->
 
-## Linux Kernel Building on WSL 2
-
-[Building your own WSL 2 kernel with additional drivers](https://github.com/dorssel/usbipd-win/wiki/WSL-support#building-your-own-wsl-2-kernel-with-additional-drivers)
-"Recent versions of Windows running WSL kernel 5.10.60.1 or later already include support for common scenarios like USB-to-serial adapters and flashing embedded development boards. Only if you require special drivers will you need to build your own kernel for WSL 2."
-
-```sh
-# cmd
-wsl --update
-# Export current distribution to be able to fall back if something goes wrong.
-wsl --export <current-distro> <temporary-path>\wsl2-usbip.tar
-# Import new distribution with current distribution as base.
-wsl --import wsl2-usbip <install-path> <temporary-path>\wsl2-usbip.tar
-# Run new distribution.
-wsl --distribution wsl2-usbip --user <user>
-# upgrade it
-sudo apt update &&  sudo apt -y full-upgrade
-# Install prerequisites.
-sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev autoconf libudev-dev libtool
-# Clone kernel that matches WSL version. To find the version you can run.
-uname -r
-# Clone the kernel repo, then checkout the branch/tag that matches your kernel version
-git clone https://github.com/microsoft/WSL2-Linux-Kernel.git
-cd WSL2-Linux-Kernel
-git checkout linux-msft-wsl-5.10.43.3
-# Copy current configuration file.
-cp /proc/config.gz config.gz
-gunzip config.gz
-mv config .config
-# add features
-sudo make menuconfig
-# number of processors
-getconf _NPROCESSORS_ONLN
-# substitute 8 below for the number from above
-sudo make -j 8 && sudo make modules_install -j 8 && sudo make install -j 8
-cp arch/x86/boot/bzImage /mnt/c/Users/<user>/usbip-bzImage
-# Create a `.wslconfig file` on `/mnt/c/Users/<user>/` and add a reference to the created image with the following.
-[wsl2]
-kernel=c:\\users\\<user>\\usbip-bzImage
-```
-
-## WSL
-
-[How to locate the .vhdx file and disk path for your Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/disk-space#how-to-locate-the-vhdx-file-and-disk-path-for-your-linux-distribution)
-
-Finding
-
-```sh
-# PowerShell
-Foreach ($i in Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss) {write-host $i.GetValue("BasePath")}
-# Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss | foreach-object {write-host $_.GetValue("BasePath")}
-```
-
-Exporting
-
-```sh
-# PowerShell
-wsl --export --vhd Alpine D:\WindowsBackup\WSL2\Alpine.vhdx
-```
-
-## Virtual Machines
-
-[Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server)
-
-```sh
-# PowerShell
-Get-VM | Export-VM -Path D:\WindowsBackup\
-```
-
-## Custom Linux for WSL
-
-[Import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro)
-
-### Here Stings, Environment, heredoc
-
-### Linux
+## Here Stings, Environment, heredoc
 
 [Here Documents and Here Strings](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Here-Documents)
 
@@ -201,37 +127,110 @@ also can access WSL from \\wsl$\distribution
 
 [about_Environment_Variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3)
 
-### Ubuntu
+# Virtual Machines
+
+[Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server)
 
 ```sh
 # PowerShell
-# wsl --unregister Gentoo
-# download the file to <FileName>
-mkdir -p <InstallLocation>
-wsl --import <Distro> <InstallLocation> <FileName>
-wsl -d <Distro>
+Get-VM | Export-VM -Path D:\WindowsBackup\
 ```
 
-```bash
-cat << EOF > /etc/wsl.conf
-[boot]
-systemd=true
-[user]
-default=jackc
-EOF
-useradd -G sudo -m -s /bin/bash jackc
-passwd jackc
-sed -E -i 's|^\s*(%sudo.*\s+)(ALL)\s*$|\1NOPASSWD:\2|' /etc/sudoers
-# EDITOR=vi visudo
-# NOPASSWD:ALL
-sudo apt update && sudo apt -y full-upgrade
+# WSL
+
+[Import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro)
+
+* [Awesome-WSL: Awesome list dedicated to Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#10-gui-apps)
+* [How to add second WSL2 Ubuntu distro](https://superuser.com/questions/1515246/how-to-add-second-wsl2-ubuntu-distro-fresh-install)
+* [ubuntu images](https://cloud-images.ubuntu.com/wsl/)
+* [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
+* [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
+* [usbipd-win](https://github.com/dorssel/usbipd-win)
+
+## Linux Kernel Building on WSL 2
+
+[Building your own WSL 2 kernel with additional drivers](https://github.com/dorssel/usbipd-win/wiki/WSL-support#building-your-own-wsl-2-kernel-with-additional-drivers)
+"Recent versions of Windows running WSL kernel 5.10.60.1 or later already include support for common scenarios like USB-to-serial adapters and flashing embedded development boards. Only if you require special drivers will you need to build your own kernel for WSL 2."
+
+```sh
+# cmd
+wsl --update
+# Export current distribution to be able to fall back if something goes wrong.
+wsl --export <current-distro> <temporary-path>\wsl2-usbip.tar
+# Import new distribution with current distribution as base.
+wsl --import wsl2-usbip <install-path> <temporary-path>\wsl2-usbip.tar
+# Run new distribution.
+wsl --distribution wsl2-usbip --user <user>
+# upgrade it
+sudo apt update &&  sudo apt -y full-upgrade
+# Install prerequisites.
+sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev autoconf libudev-dev libtool
+# Clone kernel that matches WSL version. To find the version you can run.
+uname -r
+# Clone the kernel repo, then checkout the branch/tag that matches your kernel version
+git clone https://github.com/microsoft/WSL2-Linux-Kernel.git
+cd WSL2-Linux-Kernel
+git checkout linux-msft-wsl-5.10.43.3
+# Copy current configuration file.
+cp /proc/config.gz config.gz
+gunzip config.gz
+mv config .config
+# add features
+sudo make menuconfig
+# number of processors
+getconf _NPROCESSORS_ONLN
+# substitute 8 below for the number from above
+sudo make -j 8 && sudo make modules_install -j 8 && sudo make install -j 8
+cp arch/x86/boot/bzImage /mnt/c/Users/<user>/usbip-bzImage
+# Create a `.wslconfig file` on `/mnt/c/Users/<user>/` and add a reference to the created image with the following.
+[wsl2]
+kernel=c:\\users\\<user>\\usbip-bzImage
 ```
+
+## Find and Export WSL distro
+
+[How to locate the .vhdx file and disk path for your Linux distribution](https://learn.microsoft.com/en-us/windows/wsl/disk-space#how-to-locate-the-vhdx-file-and-disk-path-for-your-linux-distribution)
+
+Finding
 
 ```sh
 # PowerShell
-wsl -t U3
-wsl -d U3
+Foreach ($i in Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss) {write-host $i.GetValue("BasePath")}
+# Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss | foreach-object {write-host $_.GetValue("BasePath")}
 ```
+
+Exporting
+
+```sh
+# PowerShell
+wsl --export --vhd Alpine D:\WindowsBackup\WSL2\Alpine.vhdx
+```
+
+## Custom Linux for WSL - Alpine
+
+new process
+
+[Build a Custom Linux Distribution for WSL](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro)
+
+use [alpine-chroot-install](https://github.com/alpinelinux/alpine-chroot-install) to install alpine in its own directory an an existing linux system. Run `destroy` to remove all the bindings.
+
+[wsl.conf](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconf) which are system specific settings. see also [.wslconfig](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig) for settings for all wsl.
+
+see [WSL_Alpine_build](https://github.com/jchidley/WSL_Alpine_build) for the build script.
+
+see [OpenRC](https://wiki.alpinelinux.org/wiki/OpenRC) for some information about that. [How to enable and start services on Alpine Linux](https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/) is useful but the `rc` appears to be `openrc` now. `openrc shutdown` sort of shuts down alpine but `wsl -t` actually stops it.
+
+```sh
+rc-service {service-name} restart # OR
+/etc/init.d/{service-name} restart
+```
+
+[What's the difference between "Service" and "/etc/init.d/"?](https://askubuntu.com/a/47664)
+
+"service runs a script in a predictable environment (working directory is / and only 2 environment variables are set: LANG and TERM). It also adds the ability to do --full-restart. So to sum up:
+
+service may run scripts from either /etc/init or /etc/init.d (upstart or System V)
+service runs scripts in a predictable environment."
 
 ## USB on WSL
 
@@ -285,140 +284,7 @@ get-ChildItem C:\Users\jackc\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu
 dir \\wsl$\distribution-name
 ```
 
-### WSL
-
-* [Awesome-WSL: Awesome list dedicated to Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#10-gui-apps)
-* [How to add second WSL2 Ubuntu distro](https://superuser.com/questions/1515246/how-to-add-second-wsl2-ubuntu-distro-fresh-install)
-* [ubuntu images](https://cloud-images.ubuntu.com/wsl/)
-* [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
-* [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
-* [usbipd-win](https://github.com/dorssel/usbipd-win)
-
-### Alpine WSL
-
-new process
-
-[Build a Custom Linux Distribution for WSL](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro)
-
-use [alpine-chroot-install](https://github.com/alpinelinux/alpine-chroot-install) to install alpine in its own directory an an existing linux system. Run `destroy` to remove all the bindings.
-
-[wsl.conf](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconf) which are system specific settings. see also [.wslconfig](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig) for settings for all wsl.
-
-```sh
-# PowerShell
-# clean start
-wsl # the host system
-wsl.exe --unregister alp
-rm alpine-chroot-install
-rm ~/alpine.wsl.gz
-/alpine/destroy -r
-```
-
-```bash
-wget https://raw.githubusercontent.com/alpinelinux/alpine-chroot-install/v0.14.0/alpine-chroot-install \
-    && echo 'ccbf65f85cdc351851f8ad025bb3e65bae4d5b06  alpine-chroot-install' | sha1sum -c \
-    || exit 1
-sudo ./alpine-chroot-install -p helix \
--p tree-sitter-javascript \
--p tree-sitter-toml \
--p tree-sitter-python \
--p tree-sitter-typescript \
--p tree-sitter-json \
--p tree-sitter-rust \
--p tree-sitter-ini \
--p tree-sitter-regex \
--p tree-sitter-css \
--p tree-sitter-c \
--p tree-sitter-bash \
--p tree-sitter-comment \
--p tree-sitter-cpp \
--p tree-sitter-html \
--p openrc \
--p docker \
--p fd \
--p bat
-
-# unbind the various mounts for chroot: we don't want them
-/alpine/destroy
-
-sudo mkdir /alpine/usr/lib/wsl
-cat << EOF | sudo tee /alpine/usr/lib/wsl/terminal-profile.json
-{
-  "profiles": [
-    {
-      "colorScheme": "Gruvbox Dark (Hard)"
-    }
-  ]
-}
-EOF
-
-cat << EOF | sudo tee /alpine/etc/wsl-distribution.conf
-# /etc/wsl-distribution.conf
-
-[oobe]
-command = /etc/oobe.sh
-defaultUid = 0 # root user, can use 1000 for normal (or another number), this needs
-# to match the same id used in oobe.sh
-defaultName = alp #  or some other name, used in the `wsl -d` etc commands
-
-[shortcut]
-icon = /usr/lib/wsl/my-icon.ico
-
-[windowsterminal]
-ProfileTemplate = /usr/lib/wsl/terminal-profile.json
-EOF
-
-# to startup docker
-cat << EOF | sudo tee /alpine/etc/oobe.sh
-# /etc/oobe.sh
-ln -s /etc/init.d/docker /etc/runlevels/boot/docker 
-echo "run wsl.exe -t alp"
-exit
-EOF
-sudo chmod +x /alpine/etc/oobe.sh
-
-# seems to be required for docker
-cat << EOF | sudo tee /alpine/etc/network/interfaces
-# /etc/network/interfaces
-# The loopback network interface
-auto lo
-iface lo inet loopback
-EOF
-
-cat << EOF | sudo tee /alpine/etc/wsl.conf
-# /etc/wsl.conf
-
-[boot]
-systemd=false
-command = /sbin/openrc boot
-# if systemd=true then WSL will try to start run `systemd` on boot.
-EOF
-
-# wsl.exe --unregister alp # this needs to be manual
-cd /alpine
-# if you're really worried about size, use `--best` for `gzip`
-sudo tar --numeric-owner --absolute-names -c  * | gzip --fast > ~/alpine.wsl.gz
-wsl.exe --install --from-file ~/alpine.wsl.gz # surprisingly fast with alpine.
-```
-
-```sh
-# PowerShell
-wsl.exe -d alp
-```
-
-see [OpenRC](https://wiki.alpinelinux.org/wiki/OpenRC) for some information about that. [How to enable and start services on Alpine Linux](https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/) is useful but the `rc` appears to be `openrc` now. `openrc shutdown` sort of shuts down alpine but `wsl -t` actually stops it.
-
-```sh
-rc-service {service-name} restart # OR
-/etc/init.d/{service-name} restart
-```
-
-[What's the difference between "Service" and "/etc/init.d/"?](https://askubuntu.com/a/47664)
-
-"service runs a script in a predictable environment (working directory is / and only 2 environment variables are set: LANG and TERM). It also adds the ability to do --full-restart. So to sum up:
-
-service may run scripts from either /etc/init or /etc/init.d (upstart or System V)
-service runs scripts in a predictable environment."
+# Docker
 
 [Setting up Alpine Linux with Rootless Docker](https://virtualzone.de/posts/alpine-docker-rootless/). How will this work on WSL when the user has a bunch of privileges, like deleting all the users files, gifted by WSL?
 
@@ -476,7 +342,7 @@ rc-service monitor_directory start
 exec "$@"
 ```
 
-## Putty
+# Putty
 
 I suggest that you [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to test out the connection on the Windows side.
 
@@ -484,7 +350,7 @@ On Windows run the "Device Manager" and expand the Ports (COM & LPT) section. No
 
 Open PuTTY, select the Serial connection type and enter the COM7 (see above) in the Serial line box. Set the Speed to 115200 and click on the Open button. A window should open that repetitively prints "Hello, World!".
 
-## Links
+# Links
 
 <!-- markdownlint-disable MD034 -->
 <!-- markdownlint-enable MD034 -->
