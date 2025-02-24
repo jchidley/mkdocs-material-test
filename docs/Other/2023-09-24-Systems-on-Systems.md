@@ -8,6 +8,12 @@ title: "Systems-on-Systems"
 
 ## Here Stings, Environment, heredoc
 
+Here documents (heredoc, here-documents), and to a lesser extent here string, are widely used for automation and in scripts. Alpine Linux, for example, uses them extensively.
+
+After that, `expect`, is used to automate `stdin` with more control. [Pexpect ](https://pexpect.readthedocs.io/en/stable/) "s a pure Python module for spawning child applications; controlling them; and responding to expected patterns in their output" and there's a `rust` version [rexpect](https://github.com/rust-cli/rexpect).
+
+The best reference is from the Linux Documentation Project's [Chapter 19. Here Documents](https://tldp.org/LDP/abs/html/here-docs.html), with lots of great examples.
+[https://thelinuxcode.com/bash-heredoc-tutorial/](https://thelinuxcode.com/bash-heredoc-tutorial/)
 [Here Documents and Here Strings](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Here-Documents)
 
 This type of redirection instructs the shell to read input from the current source until a line containing only word (with no trailing blanks) is seen. All of the lines read up to that point are then used as the standard input (or file descriptor n if n is specified) for a command.
@@ -32,8 +38,6 @@ A variant of here documents, the format is:
 ```
 
 The word undergoes tilde expansion, parameter and variable expansion, command substitution, arithmetic expansion, and quote removal. Filename expansion and word splitting are not performed. The result is supplied as a single string, with a newline appended, to the command on its standard input (or file descriptor n if n is specified).
-
-[https://thelinuxcode.com/bash-heredoc-tutorial/](https://thelinuxcode.com/bash-heredoc-tutorial/)
 
 ```bash
 # replaces l with e
@@ -75,9 +79,49 @@ sudo bash -c "cat > $OUTFILE" << EOF
 #/ ? < > \ : * | ”
 #Filename="z:"${$winFn//\//\\}
 echo "This is a generated shell script."
-App='eval wine "C:\Program Files\foxit\Foxit Reader.exe" "'$winFn'"'
+App='eval "C:\Windows\notepad.exe" "'$winFn'"'
 $App
 EOF
+```
+
+using `sh` functions to generate scripts, from [alpine-chroot-install](https://github.com/alpinelinux/alpine-chroot-install). Note the use of `printf format [arguments]` as an alternative to `echo`. The Alpine guys are the masters of `sh` scripts, in my opinion.
+
+```bash
+gen_chroot_script() {
+	cat <<-EOF
+		#!/bin/sh
+		set -e
+
+		ENV_FILTER_REGEX='($(echo "$CHROOT_KEEP_VARS" | tr -s ' ' '|'))'
+	EOF
+	if [ -n "$QEMU_EMULATOR" ]; then
+		printf 'export QEMU_EMULATOR="%s"' "$QEMU_EMULATOR"
+	fi
+	cat <<-'EOF'
+
+		user='root'
+		if [ $# -ge 2 ] && [ "$1" = '-u' ]; then
+		    user="$2"; shift 2
+		fi
+		oldpwd="$(pwd)"
+		[ "$(id -u)" -eq 0 ] || _sudo='sudo'
+
+		tmpfile="$(mktemp)"
+		chmod 644 "$tmpfile"
+		export | sed -En "s/^([^=]+ ${ENV_FILTER_REGEX}=)('.*'|\".*\")$/\1\3/p" > "$tmpfile" || true
+
+		cd "$(dirname "$0")"
+		$_sudo mv "$tmpfile" env.sh
+		$_sudo chroot . /usr/bin/env -i su -l "$user" \
+		    sh -c ". /etc/profile; . /env.sh; cd '$oldpwd' 2>/dev/null; \"\$@\"" \
+		    -- "${@:-sh}"
+	EOF
+	# NOTE: ash does not load login profile when run with QEMU user-mode
+	# emulation (I have no clue why), that's why /etc/profile is sourced here.
+}
+
+gen_chroot_script > enter-chroot
+chmod +x enter-chroot
 ```
 
 Pass a command to WSL without PowerShell expanding it first
@@ -124,7 +168,6 @@ wslpath '$tmpfile'
 also can access WSL from \\wsl$\distribution
 
 [about_Quoting_Rules](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules?view=powershell-7.3)
-
 [about_Environment_Variables](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3)
 
 # Virtual Machines
@@ -138,14 +181,13 @@ Get-VM | Export-VM -Path D:\WindowsBackup\
 
 # WSL
 
-[Import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro)
-
-* [Awesome-WSL: Awesome list dedicated to Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#10-gui-apps)
-* [How to add second WSL2 Ubuntu distro](https://superuser.com/questions/1515246/how-to-add-second-wsl2-ubuntu-distro-fresh-install)
-* [ubuntu images](https://cloud-images.ubuntu.com/wsl/)
-* [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
-* [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
-* [usbipd-win](https://github.com/dorssel/usbipd-win)
+- [Import any Linux distribution to use with WSL](https://learn.microsoft.com/en-us/windows/wsl/use-custom-distro)
+- [Awesome-WSL: Awesome list dedicated to Windows Subsystem for Linux](https://github.com/sirredbeard/Awesome-WSL#10-gui-apps)
+- [How to add second WSL2 Ubuntu distro](https://superuser.com/questions/1515246/how-to-add-second-wsl2-ubuntu-distro-fresh-install)
+- [ubuntu images](https://cloud-images.ubuntu.com/wsl/)
+- [How to change default user in WSL Ubuntu bash on Windows 10](https://askubuntu.com/questions/816732/how-to-change-default-user-in-wsl-ubuntu-bash-on-windows-10)
+- [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
+- [usbipd-win](https://github.com/dorssel/usbipd-win)
 
 ## Linux Kernel Building on WSL 2
 
@@ -208,15 +250,11 @@ wsl --export --vhd Alpine D:\WindowsBackup\WSL2\Alpine.vhdx
 
 ## Custom Linux for WSL - Alpine
 
-new process
+see [WSL_Alpine_build](https://github.com/jchidley/WSL_Alpine_build) for the my build script. This uses [alpine-chroot-install](https://github.com/alpinelinux/alpine-chroot-install) to install alpine in its own directory an an existing linux system. Run `destroy` to remove all the bindings.
 
 [Build a Custom Linux Distribution for WSL](https://learn.microsoft.com/en-us/windows/wsl/build-custom-distro)
 
-use [alpine-chroot-install](https://github.com/alpinelinux/alpine-chroot-install) to install alpine in its own directory an an existing linux system. Run `destroy` to remove all the bindings.
-
 [wsl.conf](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconf) which are system specific settings. see also [.wslconfig](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig) for settings for all wsl.
-
-see [WSL_Alpine_build](https://github.com/jchidley/WSL_Alpine_build) for the build script.
 
 see [OpenRC](https://wiki.alpinelinux.org/wiki/OpenRC) for some information about that. [How to enable and start services on Alpine Linux](https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/) is useful but the `rc` appears to be `openrc` now. `openrc shutdown` sort of shuts down alpine but `wsl -t` actually stops it.
 

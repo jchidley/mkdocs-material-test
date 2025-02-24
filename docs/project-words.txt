@@ -60,3 +60,13 @@ onnx
 Karpathy
 Andrej
 Tiktokenizer
+mktemp
+Pexpect
+rexpect
+openrc
+busid
+udevadm
+lazydocker
+dvdrental
+PGPASSWORD
+initdb
