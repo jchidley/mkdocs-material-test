@@ -1,6 +1,11 @@
 ---
 date: "2023-03-16"
 title: "Python-Fake-Data-and-Testing"
+tags:
+  - python
+  - testing
+  - fake-data
+  - development
 ---
 <!-- markdownlint-disable MD025 -->
 # Python Fake Data and Testing

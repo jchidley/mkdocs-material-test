@@ -1,6 +1,12 @@
 ---
 date: "2024-05-05"
 title: "rust-General"
+tags:
+  - rust
+  - programming
+  - performance
+  - error-handling
+  - unicode
 ---
 <!-- markdownlint-disable MD025 -->
 # rust General

@@ -174,7 +174,7 @@ General enquieries: 0800 0294285
 
 Earlier video using spreadsheets to show the value [GivEnergy Giv-AC 3.0 Battery, Home Assistant and Solar Forecast Automation](https://www.youtube.com/watch?v=IBXoD6KUtxk)
 
-Solar Forecasing[solcast](www.solcast.com)
+Solar Forecasing [solcast](https://www.solcast.com)
 
  TCP Modbus connection to MQTT/JSON for GivEnergy Battery/PV Invertors [GivEnergy GivTCP](https://github.com/GivEnergy/giv_tcp)
 

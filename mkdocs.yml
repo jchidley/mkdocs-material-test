@@ -1,4 +1,234 @@
 theme:
   name: material
+  features:
+    # Navigation
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.instant
+    - navigation.expand
+    
+    # Table of contents
+    - toc.follow
+    
+    # Search
+    - search.suggest
+    - search.highlight
+    - search.share
+    
+    # Header
+    - header.autohide
+  
+  icon:
+    repo: fontawesome/brands/github
+    
 site_name: Jack's Digital Garden
 site_url: https://jchidley.github.io/mkdocs-material-test/
+
+# Repository
+repo_url: https://github.com/jchidley/mkdocs-material-test
+repo_name: Digital Garden
+
+nav:
+  - Home: index.md
+  - Archive: archive.md
+  - Tags: tags.md
+  - Blog:
+    - Pi Pico Documentation: 2023-11-05-Pi-Pico.md
+    - Template: 2099-12-23-Template.md
+  - Programming:
+    - Rust: 
+      - Overview: rust/index.md
+      - Getting Started: rust/2023-03-16-Rust-Beginnings.md
+      - How I Learned Rust: 2024-03-10-How-I-Learned-Rust.md
+      - General: 2024-05-05-Rust-General.md
+      - Data: 2024-05-05-Rust-Data.md
+      - Embedded: 2024-05-05-Rust-Embedded.md
+    - Python:
+      - Overview: Python/index.md
+      - Fake Data and Testing: Python/2023-03-16-Python-Fake-Data-and-Testing.md
+      - Useful Libraries: Python/2023-03-16-Python-Links.md
+    - F#:
+      - Overview: F#/index.md
+      - Continuing to choose F#: "F#/2017-04-28-Continuing-to-choose-F#.md"
+      - Testing With F#: "F#/2017-10-17-Testing-With-F#.md"
+      - Testing and FParsec: F#/2017-10-23-Testing-and-FParsec.md
+      - Using FsCheck: F#/2017-10-28-Understanding-and-Using-FsCheck.md
+      - Computational Expressions: "F#/2017-10-30-The-Point-of-F#-Computational-Expressions-AKA-F#-Monads.md"
+    - Julia:
+      - Introduction: 2023-03-21-Julia.md
+      - Drawing: 2023-04-08-Julia-Drawing.md
+  - Hardware:
+    - Raspberry Pi: 
+      - Overview: Pi/index.md
+      - Home Router: Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md
+      - Cross-Compilation: Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md
+      - Alpine Router: Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md
+      - Arch Linux: Pi/2020-12-17-Arch-Linux-Raspberry-Pi.md
+      - X11: Pi/2022-07-09-Rasbian-X11.md
+      - Pi Gen: Pi/2022-07-16-Pi-Gen.md
+      - Pi Pico: Pi/2022-07-17-Pi-Pico.md
+      - iPad Development: Pi/2022-07-17-Pi-as-iPad-Development-Machine.md
+      - Alpine Image: Pi/2022-08-07-Alpine-Image-Build-Raspberry-Pi.md
+    - Embedded: 
+      - Overview: Embedded/index.md
+      - STM32 Development: Embedded/2017-05-30-STM32-Development.md
+      - Toolchains: Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md
+    - Arduino:
+      - Introduction: 2024-08-25-Arduino.md
+      - LCD & Pushbutton: 2024-08-26-LCD-1602-Pushbutton.md
+    - Home Automation:
+      - Home Assistant/ESPHome: 2023-11-15-Home-Assistant-ESPHome.md
+      - Energy Monitor: 2024-06-15-Open-Energy-Monitor-Emon.md
+    - Maker Projects:
+      - FreeCAD: 2024-09-15-FreeCAD.md
+      - VFD 3-Phase Converter: 2023-05-01-VFD-3-Phase-Converter.md
+      - Lathe & Milling: 2024-08-04-Lathe-Milling.md
+      - Phase-Locked Loop: 2024-08-17-Phase-Locked-Loop-PLL.md
+  - Operating Systems:
+    - Linux: 
+      - Overview: Linux/index.md
+      - Traffic Management: Linux/2020-01-07-Traffic-Manager-Not-Firewall.md
+      - DNS Setup: Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md
+      - Minimal Boot: Linux/2020-01-27-Simplest-possible-Linux-boot.md
+      - Filesystems: Linux/2020-01-28-FileSystems.md
+      - DD Command: Linux/2020-02-02-DD.md
+      - Alpine Install: Linux/2020-02-09-Alpine-Linux-Install.md
+      - Boot Process: Linux/2021-06-14-Booting-Linux-and-Other-Operating-Systems.md
+      - Arch GUI/VNC: Linux/2021-06-15-Arch-Linux-GUI-VNC.md
+      - Arch Install: Linux/2021-06-17-Arch-Linux-Installation.md
+      - Vim: Linux/2022-07-14-Vim.md
+      - Tmux: Linux/2022-07-16-Tmux.md
+      - NixOS: 2024-02-29-NixOS.md
+    - Apple: 
+      - Overview: Apple/index.md
+      - Python on Apple: Apple/2021-06-06-python-apple.md
+      - Mac Setup: Apple/2021-06-26-Mac-Setup.md
+      - Surface Laptop: 2024-01-17-Microsoft-Surface-Laptop-4.md
+  - Tools:
+    - Git: 2024-01-28-Git.md
+    - Neovim: 2023-04-14-Neovim-Lua.md
+    - Helix: 2024-02-13-Helix.md
+    - chezmoi: 2024-02-12-chezmoi.md
+    - Home Maintenance:
+      - Plumbing: 2024-04-14-Plumbing.md
+      - House Electrics: 2024-03-24-House-Electrics.md
+      - Roof Replacement: 2024-03-17-Asbestos-Roof-Replacement.md
+  - AI and Data:
+    - AI Coding: 2025-02-08-AI-Coding.md
+    - Database and GraphQL: 2025-02-23-Database_GraphQL.md
+    - Testing: 2025-03-01-Testing.md
+    - DaVinci Resolve: 2025-03-27-DaVinci-Resolve.md
+    - Web Info: 2025-04-21-Web-Site-Information-and-Manipulation.md
+  - Other:
+    - Games: 
+      - Overview: Games/index.md
+      - Factorio: Games/2020-01-15-Factorio.md
+      - Astroneer: Games/2022-11-09-Astroneer.md
+    - Misc: 
+      - Overview: Other/index.md
+      - Git Epiphany: Other/2017-05-08-Git-Epiphany.md
+      - Git Epilogue: Other/2017-05-18-Git-Epilogue.md
+      - Python Data: Other/2020-01-17-Data-with-Python.md
+      - SQLite: Other/2020-01-23-SQLite-Stuff.md
+      - URL Collection: Other/2020-02-09-URL-Dump.md
+      - Links: 
+        - 2020-03-02: Other/2020-03-02-Links.md
+        - 2020-11-18: Other/2020-11-18-Links.md
+        - 2023-03-16 Main: 2023-03-16-Links.md
+        - 2023-03-16 iPad: 2023-03-16-Links-iPad.md
+        - 2023-10-23: Other/2023-10-23-Links.md
+        - 2023-11-24: 2023-11-24-Links.md
+        - 2023-12-08: 2023-12-08-Links.md
+        - 2024-01-17: 2024-01-17-Links.md
+        - 2024-05-05: 2024-05-05-Links.md
+      - FPGA: Other/2020-03-12-FPGA-and-Amaranth-HDL.md
+      - Signals: Other/2020-04-21-Signals.md
+      - 3D Printing:
+        - Prusa: Other/2020-09-24-Prusa-3d-printer.md
+        - Klipper: Other/2020-10-29-Klipper-3D.md
+      - Screen: Other/2020-11-13-Screen.md
+      - Raku: Other/2020-12-08-Raku.md
+      - Audio: Other/2021-02-06-Audio.md
+      - Link Dump: Other/2021-03-24-Link-Dump-iPad-Transfer.md
+      - Parsing: Other/2021-07-06-Parsing-Compilers.md
+      - FastAPI: Other/2022-03-25-FastAPI-and-JavaScript.md
+      - Radio: Other/2022-03-25-Radio-and-Electronics.md
+      - GitHub Pages: Other/2022-08-04-GitHub-Pages-Jekyll.md
+      - CADQuery: Other/2022-10-07-cadquery.md
+      - RISC-V: Other/2023-09-22-Risc-V.md
+      - Systems: Other/2023-09-24-Systems-on-Systems.md
+      - Shell: Other/2023-09-26-awk-sed-bash.md
+      - J-Core: 2020-03-02-j-core-links.md
+      - Picocomputer: 2023-09-09-Picocomputer.md
+      - Programming Languages: 2023-09-04-Writing-A-Programming-Language.md
+    - Template: Other/2099-12-23-Template.md
+
+markdown_extensions:
+  # Table of contents
+  - toc:
+      permalink: true
+      
+  # Code blocks and syntax highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          
+  # Content tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+      
+  # Data tables
+  - tables
+  
+  # Footnotes
+  - footnotes
+  
+  # Formatted text and admonitions
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  
+  # Emoji
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+  - mermaid2:
+      arguments:
+        theme: neutral
+        flowchart:
+          curve: basis

@@ -1,6 +1,10 @@
 ---
 date: "2024-03-10"
 title: "How-I-Learned-Rust"
+tags:
+  - rust
+  - programming
+  - learning
 ---
 <!-- markdownlint-disable MD025 -->
 # How I Learned Rust
@@ -61,7 +65,7 @@ I don't consider `rust` difficult to learn but it does take much, much longer to
 
 [Fornjot is an early-stage CAD kernel](https://github.com/hannobraun/fornjot)
 
-[Rust Beginnings](rust\2023-03-16-Rust-Beginnings.md) needs to be moved from here, and deleted in beginning rust
+[Rust Beginnings](/docs/rust/2023-03-16-Rust-Beginnings.md) needs to be moved from here, and deleted in beginning rust
 
 ## Links
 

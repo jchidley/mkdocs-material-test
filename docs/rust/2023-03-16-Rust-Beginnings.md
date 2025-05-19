@@ -1,6 +1,11 @@
 ---
 date: "2023-03-16"
 title: "Rust-Beginnings"
+tags:
+  - rust
+  - programming
+  - installation
+  - resources
 ---
 <!-- markdownlint-disable MD025 -->
 # Rust Beginnings
@@ -114,7 +119,7 @@ copy .\rust-analyzer.exe (get-command rust-analyzer).Source
 
 ## String, str, u8
 
-See [Unicode, Strings, str, char, u8](./2024-05-05-Rust-General.md)
+See [Unicode, Strings, str, char, u8](/docs/2024-05-05-Rust-General.md)
 
 Rust uses ut8 encoding for strings, etc, chars are u32 which is the size of [Unicode Scalar Value](https://unicode.org/glossary/#unicode_scalar_value) but characters are just a number known as a [Code point: Any value in the Unicode codespace.](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-3/#G22700). For some langauges characters can be made up of several code points. [Unicode® Standard Annex #29](https://www.unicode.org/reports/tr29/) 
 
@@ -171,7 +176,7 @@ To find out what your type, defined in your libraries not `main.rs`, implements:
 
 See `mal - make a lisp`, `(An ((Even Better) Lisp) Interpreter (in Python))` and `chibicc` in these links:
 
-see [Parsing-Compilers](docs/Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](docs/2023-09-04-Writing-A-Programming-Language.md)
+see [Parsing-Compilers](/docs/Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](/docs/2023-09-04-Writing-A-Programming-Language.md)
 
 Rust specific links:
 
@@ -195,7 +200,7 @@ Rust specific links:
 
 ## Helix
 
-[helix-editor](docs/2024-02-13-Helix.md)
+[helix-editor](/docs/2024-02-13-Helix.md)
 
 ```bash
 rustup component add rust-analyzer // for this to work

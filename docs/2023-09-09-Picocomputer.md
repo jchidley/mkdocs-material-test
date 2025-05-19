@@ -20,7 +20,7 @@ Open PuTTY, select the Serial connection type and enter the COM7 (see above) in 
 
 Now it's time to deal with the WSL side of things.
 
-see [2023-09-24-Systems-on-Systems.md](2023-09-24-Systems-on-Systems.md) for `usbipd`
+see [2023-09-24-Systems-on-Systems.md](/docs/Other/2023-09-24-Systems-on-Systems.md) for `usbipd`
 
 ### openocd
 
