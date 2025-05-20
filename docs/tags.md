@@ -1,6 +1,8 @@
 ---
 title: Tags
 description: Browse content by tags
+hide:
+  - navigation
 ---
 
 # Tags

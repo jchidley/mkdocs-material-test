@@ -20,9 +20,13 @@ theme:
     
     # Header
     - header.autohide
+    
+    # Tags
+    - tags
   
   icon:
     repo: fontawesome/brands/github
+    tag: material/tag-outline
     
 site_name: Jack's Digital Garden
 site_url: https://jchidley.github.io/mkdocs-material-test/
@@ -211,7 +215,8 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags
+  - tags:
+      tags_file: tags.md
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
