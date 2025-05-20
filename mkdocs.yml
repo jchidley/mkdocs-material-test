@@ -26,7 +26,8 @@ theme:
   
   icon:
     repo: fontawesome/brands/github
-    tag: material/tag-outline
+    tag:
+      default: material/tag-outline
     
 site_name: Jack's Digital Garden
 site_url: https://jchidley.github.io/mkdocs-material-test/
