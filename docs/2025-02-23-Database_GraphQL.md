@@ -1,6 +1,12 @@
 ---
 date: "2025-02-23"
 title: "Database_GraphQL"
+tags:
+  - database
+  - postgresql
+  - graphql
+  - rust
+  - docker
 ---
 <!-- markdownlint-disable MD025 -->
 # Template

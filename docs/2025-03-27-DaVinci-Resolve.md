@@ -1,6 +1,11 @@
 ---
 date: "2025-03-27"
 title: "DaVinci-Resolve"
+tags:
+  - video-editing
+  - davinci-resolve
+  - media
+  - software
 ---
 <!-- markdownlint-disable MD025 -->
 # DaVinci-Resolve

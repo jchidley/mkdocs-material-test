@@ -1,6 +1,12 @@
 ---
 date: "2025-04-21"
 title: "Web-Site-Information-and-Manipulation"
+tags:
+  - web
+  - tools
+  - markdown
+  - url-extraction
+  - web-scraping
 ---
 <!-- markdownlint-disable MD025 -->
 # Web Site Information and Manipulation

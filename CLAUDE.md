@@ -53,3 +53,25 @@ The Digital Garden content is organized primarily as dated Markdown files with v
 - Projects and notes on various subjects
 
 When adding new content, follow the existing naming convention of date-prefixed files (`YYYY-MM-DD-Topic.md`).
+
+## Content Metadata
+
+All content files should include proper frontmatter with at least these fields:
+
+```yaml
+---
+date: "YYYY-MM-DD"
+title: "Title"
+tags:
+  - tag1
+  - tag2
+  - tag3
+---
+```
+
+Tags are important for site navigation and content discovery. Use 3-5 relevant tags that categorize the content appropriately. Common tags include:
+
+- Programming languages: rust, python, julia, javascript
+- Operating systems: linux, macos, windows
+- Hardware platforms: raspberry-pi, arduino, embedded
+- Content types: tutorial, guide, reference, notes
