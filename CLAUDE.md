@@ -75,3 +75,7 @@ Tags are important for site navigation and content discovery. Use 3-5 relevant t
 - Operating systems: linux, macos, windows
 - Hardware platforms: raspberry-pi, arduino, embedded
 - Content types: tutorial, guide, reference, notes
+
+## Recent Memory Updates
+
+- Update navigation, including the archive, after relevant file changes
