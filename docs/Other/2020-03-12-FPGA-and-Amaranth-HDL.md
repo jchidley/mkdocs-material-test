@@ -404,5 +404,50 @@ Move the extracted files to P:\Tools\graphviz-2.38\release\bin adjust PATH
 
 Run `dot show.dot -Tjpg -O` to convert to jpg with the name `show.dot.jpg`
 
+## J-Core Project
+
+J-Core is an open-source implementation of the SuperH SH-2 processor designed for FPGAs and ASIC implementations.
+
+### J-Core Development
+
+* [J-Core Project Homepage](https://j-core.org/index.html)
+* [J-Core design walkthrough](https://j-core.org/talks/ELC-2016.pdf)
+* [J-Core ICE40 implementation](https://github.com/j-core/j-core-ice40)
+* [J-Core mailing list](https://lists.j-core.org/pipermail/j-core/)
+* [J-Core development discussion](https://lists.j-core.org/pipermail/j-core/2019-September/000819.html)
+* [Core Semiconductor - J-Core commercial support](https://www.coresemi.io/about-us/why-core-semiconductor)
+
+### Related Development Tools
+
+* [Linux From Scratch](http://www.linuxfromscratch.org/lfs/view/stable/index.html)
+* [mkroot build system](https://github.com/landley/mkroot/blob/master/mkroot.sh)
+* [Rob Landley's homepage](https://landley.net/index.html)
+* [Rob Landley's notes](https://landley.net/notes.html#22-01-2020)
+* [Rob Landley's LCA 2017 talk](https://landley.net/talks/lca-2017.txt)
+* [Suckless philosophy](https://suckless.org/philosophy/)
+
+### QEMU and Emulation
+
+* [QEMU ARM System emulator](https://www.qemu.org/docs/master/qemu-doc.html#ARM-System-emulator)
+* [Raspberry Pi discussion forum](https://www.raspberrypi.org/forums/viewtopic.php?f=66&t=4256)
+* [What is Raspbian?](https://raspberrypi.stackexchange.com/questions/1217/what-is-raspbian)
+
+### Additional FPGA Resources
+
+* [fpga4fun.com](https://www.fpga4fun.com/)
+* [GHDL synthesis](https://github.com/tgingold/ghdlsynth-beta)
+* [GHDL VHDL simulator](https://github.com/ghdl/ghdl)
+* [Yosys synthesis suite](https://github.com/YosysHQ/yosys)
+* [VHDL to Verilog converter](https://github.com/ldoolitt/vhd2vl)
+* [UPduino FPGA tutorial](https://blog.idorobots.org/entries/upduino-fpga-tutorial.html)
+* [Build your own CPU from scratch inside an FPGA](https://pingu98.wordpress.com/2019/04/08/how-to-build-your-own-cpu-from-scratch-inside-an-fpga/)
+* [The lull before the storm](https://folknologylabs.wordpress.com/2016/08/17/the-lull-before-the-storm/)
+* [IceStorm FPGA toolchain](http://www.clifford.at/icestorm/)
+* [APIO FPGA toolbox](https://github.com/FPGAwars/apio)
+
+### Licensing
+
+* [BSD Zero Clause License](https://opensource.org/licenses/0BSD)
+
 <!-- markdownlint-disable MD034 -->
 <!-- markdownlint-enable MD034 -->

@@ -123,6 +123,46 @@ let strictOptions = filtered.map(i => {return i.id + ": true"}).join(", ");
 * [JavaScript Helper Functions](https://vanillajstoolkit.com/helpers/)
 * [JavaScript Libraries](https://vanillajstoolkit.com/libraries/)
 
+## Web Development Resources
+
+### Svelte
+
+* [Svelte tutorial](https://svelte.dev/tutorial/basics)
+* [SvelteKit](https://kit.svelte.dev)
+* [How to add JSDoc Typechecking to SvelteKit](https://www.swyx.io/jsdoc-swyxkit)
+* [Svelte • Cybernetically enhanced web apps](https://svelte.dev)
+* [Reactivity - Svelte Society](https://sveltesociety.dev/recipes/svelte-language-fundamentals/reactivity)
+
+### JavaScript Development
+
+* [JavaScript basics - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+* [The Modern JavaScript Tutorial](https://javascript.info)
+* [JSHint Options Reference](https://jshint.com/docs/options/)
+* [prettier-eslint](https://github.com/prettier/prettier-eslint)
+* [VS Code Prettier ESLint](https://github.com/idahogurl/vs-code-prettier-eslint)
+* [ESLint](https://eslint.org)
+* [Configure Rules](https://eslint.org/docs/latest/use/configure/rules)
+* [TypeScript is JavaScript with syntax for types](https://www.typescriptlang.org)
+
+### JSDoc
+
+* [Type Safe JavaScript with JSDoc](https://medium.com/@trukrs/type-safe-javascript-with-jsdoc-7a2a63209b76)
+
+### Static Site Generators
+
+* [Relearn CSS layout: Every Layout](https://every-layout.dev)
+* [Lesson 2: Hello world | Learn Eleventy From Scratch](https://learneleventyfromscratch.com/lesson/2.html#adding-some-dependencies)
+* [GitHub - Andy-set-studio/learneleventyfromscratch.com: In this Eleventy course, we go from a completely empty directory to a full-blown marketing site for a design agency, and along the way, we dive really deep into Eleventy and front-end development best practices.](https://github.com/Andy-set-studio/learneleventyfromscratch.com)
+* [Overview — Eleventy](https://www.11ty.dev/docs/)
+
+### Web APIs and Tools
+
+* [README - Everything curl](https://everything.curl.dev)
+* [Menu](https://docs.nodegui.org)
+* [Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com)
+* [Template Designer Documentation — Jinja Documentation (3.1.x)](https://jinja.palletsprojects.com/en/3.1.x/templates/)
+* [Chart.js | Open source HTML5 Charts for your website](https://www.chartjs.org)
+
 <!-- markdownlint-disable MD034 -->
 https://vuejs.org/
 https://fastapi.tiangolo.com/deployment/docker/
