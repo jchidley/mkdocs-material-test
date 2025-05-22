@@ -54,7 +54,7 @@ nav:
     - Python:
       - Overview: Python/index.md
       - Fake Data and Testing: Python/2023-03-16-Python-Fake-Data-and-Testing.md
-      - Useful Libraries: Python/2023-03-16-Python-Links.md
+      - General Resources: 2025-01-23-Python-General-Resources.md
     - F#:
       - Overview: F#/index.md
       - Continuing to choose F#: "F#/2017-04-28-Continuing-to-choose-F#.md"
@@ -140,15 +140,8 @@ nav:
       - SQLite: Other/2020-01-23-SQLite-Stuff.md
       - URL Collection: Other/2020-02-09-URL-Dump.md
       - Links: 
-        - 2020-03-02: Other/2020-03-02-Links.md
         - 2020-11-18: Other/2020-11-18-Links.md
-        - 2023-03-16 Main: 2023-03-16-Links.md
-        - 2023-03-16 iPad: 2023-03-16-Links-iPad.md
-        - 2023-10-23: Other/2023-10-23-Links.md
-        - 2023-11-24: 2023-11-24-Links.md
-        - 2023-12-08: 2023-12-08-Links.md
-        - 2024-01-17: 2024-01-17-Links.md
-        - 2024-05-05: 2024-05-05-Links.md
+        - Miscellaneous: 2025-01-23-Miscellaneous-Links.md
       - FPGA: Other/2020-03-12-FPGA-and-Amaranth-HDL.md
       - Signals: Other/2020-04-21-Signals.md
       - 3D Printing:
@@ -157,7 +150,6 @@ nav:
       - Screen: Other/2020-11-13-Screen.md
       - Raku: Other/2020-12-08-Raku.md
       - Audio: Other/2021-02-06-Audio.md
-      - Link Dump: Other/2021-03-24-Link-Dump-iPad-Transfer.md
       - Parsing: Other/2021-07-06-Parsing-Compilers.md
       - FastAPI: Other/2022-03-25-FastAPI-and-JavaScript.md
       - Radio: Other/2022-03-25-Radio-and-Electronics.md
@@ -166,7 +158,6 @@ nav:
       - RISC-V: Other/2023-09-22-Risc-V.md
       - Systems: Other/2023-09-24-Systems-on-Systems.md
       - Shell: Other/2023-09-26-awk-sed-bash.md
-      - J-Core: 2020-03-02-j-core-links.md
       - Picocomputer: 2023-09-09-Picocomputer.md
       - Programming Languages: 2023-09-04-Writing-A-Programming-Language.md
     - Template: Other/2099-12-23-Template.md
