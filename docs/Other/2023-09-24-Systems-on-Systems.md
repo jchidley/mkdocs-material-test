@@ -189,6 +189,70 @@ Get-VM | Export-VM -Path D:\WindowsBackup\
 - [WSL - Connect USB devices](https://learn.microsoft.com/en-us/windows/wsl/connect-usb)
 - [usbipd-win](https://github.com/dorssel/usbipd-win)
 
+### APT Extras Script (Ubuntu/WSL)
+
+Here’s a ready-to-run Bash script that builds `baseline.txt`, `manual.txt`, `extras.txt`, echoes what each file is, and then prints a one-line summary for every package in `extras.txt`.
+
+Save it as `make-extras.sh` and run with `bash make-extras.sh` (no sudo needed unless your logs require it).
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Dependencies check
+need() { command -v "$1" >/dev/null 2>&1 || { echo "Missing required command: $1" >&2; exit 1; }; }
+for cmd in zgrep awk sort head cut comm apt-mark apt-cache; do need "$cmd"; done
+
+# Gather earliest install date from dpkg logs
+earliest=$(zgrep -h " install " /var/log/dpkg.log* 2>/dev/null | awk '{print $1}' | sort | head -n1 || true)
+if [[ -z "${earliest:-}" ]]; then
+  echo "No install entries found in /var/log/dpkg.log* — nothing to do." >&2
+  exit 1
+fi
+
+# Build baseline: packages installed on the earliest date
+zgrep -h " install " /var/log/dpkg.log* \
+  | awk -v d="$earliest" '$1==d{print $4}' \
+  | cut -d: -f1 \
+  | sort -u > baseline.txt
+
+# Get all packages marked as manually installed
+apt-mark showmanual | sort > manual.txt
+
+# Subtract baseline from manual -> extras
+# (Requires bash for process substitution)
+comm -23 manual.txt <(sort baseline.txt) > extras.txt
+
+# Echo what each file represents
+echo
+echo "baseline.txt – packages installed on the very first day ($earliest)"
+echo "manual.txt   – everything marked manual"
+echo "extras.txt   – your real extras (manual minus baseline)"
+echo
+
+# Quick counts
+printf "Counts: baseline=%d, manual=%d, extras=%d\n" \
+  "$(wc -l < baseline.txt)" \
+  "$(wc -l < manual.txt)" \
+  "$(wc -l < extras.txt)"
+echo
+
+# Summaries for extras (one line per package)
+if [[ -s extras.txt ]]; then
+  echo "Package summaries (extras):"
+  xargs -a extras.txt apt-cache show \
+    | awk -F': ' '/^Package/{pkg=$2} /^Description-en/{print pkg " - " $2}'
+else
+  echo "No extras found (extras.txt is empty)."
+fi
+```
+
+Notes
+
+- Output files are written to the current working directory (`baseline.txt`, `manual.txt`, `extras.txt`).
+- Re-running the script overwrites these files with fresh results.
+- Clean up with: `rm -f baseline.txt manual.txt extras.txt`.
+
 ## Linux Kernel Building on WSL 2
 
 [Building your own WSL 2 kernel with additional drivers](https://github.com/dorssel/usbipd-win/wiki/WSL-support#building-your-own-wsl-2-kernel-with-additional-drivers)
