@@ -1,7 +1,17 @@
 ---
 date: "2022-08-07"
-title: "Alpine-Image-Build-Raspberry-Pi"
+title: "Alpine Image Build Raspberry Pi"
+tags:
+  - raspberry-pi
+  - alpine-linux
+  - linux
+  - embedded
+  - image-building
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written August 2022. Alpine image building and apkovl customization for Raspberry Pi.
 
 <!-- markdownlint-disable MD025 -->
 # Alpine Image Build Raspberry Pi

@@ -1,7 +1,17 @@
 ---
 date: "2020-11-18"
 title: "Alpine Linux Raspberry Pi Router"
+tags:
+  - raspberry-pi
+  - alpine-linux
+  - networking
+  - router
+  - dns
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written November 2020 for Alpine Linux on Raspberry Pi. Part of the [Pi Router series](2020-01-05-Building-A-Raspberry-Pi-Home-Router.md). Configs verified January 2026.
 
 <!-- markdownlint-disable MD025 -->
 # Alpine Linux Raspberry Pi Router
@@ -376,7 +386,7 @@ lbu ci
 * [Nftables/Examples - Gentoo Wiki](https://wiki.gentoo.org/wiki/Nftables/Examples)
 * [Scripting - nftables wiki](https://wiki.nftables.org/wiki-nftables/index.php/Scripting)
 * [How do I see what iptables is doing?](https://www.opsist.com/blog/2015/08/11/how-do-i-see-what-iptables-is-doing.html)
-* [Alpine Linux Stateful Firewall](https://ronvalente.net/posts/alpine-firewall/)
+
 * [Blocking DHCP servers and router advertisements with nftables | ungleich.ch](https://ungleich.ch/u/blog/nftables-block-dhcp-and-router-advertisements/)
 * [Linux Router with VPN on a Raspberry Pi (IPv6) - Alpine Linux](https://wiki.alpinelinux.org/wiki/Linux_Router_with_VPN_on_a_Raspberry_Pi_(IPv6))
 
