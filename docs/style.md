@@ -133,6 +133,18 @@ When improving a document:
 3. **Preserve my voice** — rewrite suggestions, don't impose
 4. **Iterate** — small improvements over time, not big rewrites
 
+### Standing Approvals
+
+The following changes can be applied without asking:
+
+- **Frontmatter**: Add missing date, title, tags, `llm_assisted: true`
+- **Info boxes**: Add tested/reference info boxes
+- **Dead links**: Remove or update to working URLs
+- **Moved repos**: Find forks or new locations (search thoroughly first)
+- **Broken syntax**: Fix obvious errors (like empty frontmatter `---`)
+
+For content changes, structural reorganization, or anything affecting my voice — discuss first.
+
 ## Review Checklist
 
 Before publishing new how-to content:
