@@ -1,7 +1,16 @@
 ---
 date: "2017-07-01"
-title: Toolchains and Developer Choice
+title: "Toolchains and Developer Choice"
+tags:
+  - embedded
+  - stm32
+  - toolchain
+  - arm
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written July 2017. Thoughtful piece on embedded toolchain philosophy.
 
 # Toolchains and Developer Choice
 
@@ -31,7 +40,7 @@ The other factor, for me, is that you can buy a whole Linux system, including Wi
 
 I use the [GNU Toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm), ST ST-Link tool and [VS Code](https://code.visualstudio.com/).
 
-For GDB debugging use SEGGER’s [J-Link for ST-Link on board](https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/?L=0) or [this](https://github.com/texane/stlink) reverse engineered ST Link.
+For GDB debugging use SEGGER’s [J-Link for ST-Link on board](https://www.segger.com/products/debug-probes/j-link/models/other-j-links/st-link-on-board/?L=0) or [this](https://github.com/stlink-org/stlink) reverse engineered ST Link.
 
 With this setup, you can use pretty much anything for development (Notepad++, VS Code, Atom, for example) with a little command line fiddling.
 

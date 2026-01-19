@@ -1,7 +1,16 @@
 ---
 date: "2023-09-09"
-title: " Picocomputer"
+title: "Picocomputer"
+tags:
+  - raspberry-pi
+  - pico
+  - cc65
+  - retro
+llm_assisted: true
 ---
+
+!!! info "Reference"
+    Picocomputer setup with cc65 toolchain.
 <!-- markdownlint-disable MD025 -->
 # Picocomputer
 <!-- markdownlint-enable MD025 -->

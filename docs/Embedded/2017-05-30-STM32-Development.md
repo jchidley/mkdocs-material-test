@@ -1,11 +1,20 @@
 ---
 date: "2017-05-30"
-title: STM32 Development
+title: "STM32 Development"
+tags:
+  - embedded
+  - stm32
+  - arm
+  - microcontroller
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written May 2017. Some links may be outdated as ST restructures URLs periodically.
 
 # STM32 Development
 
-[This online book](https://www.cs.indiana.edu/~geobrown/book.pdf), [this excellent blog](http://blog.mark-stevens.co.uk/?s=stm32) and this [YouTube delivered "Embedded Systems Programming Course"](https://www.youtube.com/playlist?list=PLfcIZXsDLA1-QEyrD4R9YcWWKpbCcrGVP&app=desktop) are a little dated but still relevant. It’s possible to follow along using [current parts from ST](http://www.st.com/). Today’s best option seems to be the cheap and functional [32F072BDISCOVERY](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/32f072bdiscovery.html) development board (the optional [NUCLEO-F072RB](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f072rb.html) board makes [mbed](https://www.mbed.com/en/) simpler, if you go down that route) both of which are based on the [STM32F072RB](http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f0-series/stm32f0x2/stm32f072rb.html) processor.
+[This online book](https://web.archive.org/web/2023/https://www.cs.indiana.edu/~geobrown/book.pdf), [this excellent blog](http://blog.mark-stevens.co.uk/?s=stm32) and this [YouTube delivered "Embedded Systems Programming Course"](https://www.youtube.com/playlist?list=PLfcIZXsDLA1-QEyrD4R9YcWWKpbCcrGVP&app=desktop) are a little dated but still relevant. It’s possible to follow along using [current parts from ST](http://www.st.com/). Today’s best option seems to be the cheap and functional [32F072BDISCOVERY](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-discovery-kits/32f072bdiscovery.html) development board (the optional [NUCLEO-F072RB](http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f072rb.html) board makes [mbed](https://www.mbed.com/en/) simpler, if you go down that route) both of which are based on the [STM32F072RB](http://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32f0-series/stm32f0x2/stm32f072rb.html) processor.
 
 The really useful [STM32SnippetsF0](http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32snippets/stm32snippetsf0.html) are written for the discovery board above and work for the Nucleo variant with minor modifications. The snippets use the registers directly which is good for their very small code size, clear understanding of how the software and hardware work together and direct relationship with the reference manual: [RM0091: STM32F0x1/STM32F0x2/STM32F0x8 advanced ARM®-based 32-bit MCUs.](http://www.st.com/resource/en/reference_manual/dm00031936.pdf)
 

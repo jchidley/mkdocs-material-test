@@ -36,7 +36,7 @@ These are followed as guides — structure genuinely helps readers.
 | ☑ | `Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md` | How-to | [Review](2026-01-19-Alpine-Linux-Review.md) ✓ Configs verified, dead link removed |
 | ☑ | `Pi/2020-12-17-Arch-Linux-Raspberry-Pi.md` | Notes | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Added tags, fixed empty bullet |
 | ☐ | `Pi/2022-07-16-Pi-Gen.md` | How-to | |
-| ☐ | `Pi/2022-07-17-Pi-Pico.md` | How-to | |
+| ☑ | `Pi/2022-07-17-Pi-Pico.md` | Reference | [Review](2026-01-19-Pi-Pico-Embedded-Review.md) ✓ Added tags, removed empty section |
 | ☑ | `Pi/2022-08-07-Alpine-Image-Build-Raspberry-Pi.md` | How-to | [Review](2026-01-19-Alpine-Linux-Review.md) ✓ Added tags |
 | ☑ | `Linux/2020-01-07-Traffic-Manager-Not-Firewall.md` | How-to | [Review](2026-01-19-Pi-Router-Companions-Review.md) ✓ Fixed nftables bug, removed dead link |
 | ☑ | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | How-to | [Review](2026-01-19-Pi-Router-Companions-Review.md) ✓ BIND verified, URL fixed |
@@ -44,10 +44,10 @@ These are followed as guides — structure genuinely helps readers.
 | ☑ | `Linux/2020-02-09-Alpine-Linux-Install.md` | How-to | ✓ Fixed broken frontmatter, removed dead link, added tags |
 | ☑ | `Linux/2021-06-17-Arch-Linux-Installation.md` | How-to | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Added tags |
 | ☑ | `Linux/2021-06-15-Arch-Linux-GUI-VNC.md` | How-to | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Fixed heading, updated sara repo to fork |
-| ☐ | `Embedded/2017-05-30-STM32-Development.md` | How-to | |
-| ☐ | `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` | How-to | |
-| ☐ | `2023-11-05-Pi-Pico.md` | How-to | |
-| ☐ | `2023-09-09-Picocomputer.md` | How-to | |
+| ☑ | `Embedded/2017-05-30-STM32-Development.md` | How-to | [Review](2026-01-19-Pi-Pico-Embedded-Review.md) ✓ Fixed dead link (archive.org), added tags |
+| ☑ | `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` | How-to | [Review](2026-01-19-Pi-Pico-Embedded-Review.md) ✓ Updated stlink repo, added tags |
+| ☑ | `2023-11-05-Pi-Pico.md` | Reference | [Review](2026-01-19-Pi-Pico-Embedded-Review.md) ✓ Fixed link path, added tags |
+| ☑ | `2023-09-09-Picocomputer.md` | Reference | [Review](2026-01-19-Pi-Pico-Embedded-Review.md) ✓ Fixed title, added tags |
 | ☐ | `2024-01-17-Microsoft-Surface-Laptop-4.md` | How-to | 452 lines — Windows imaging |
 | ☐ | `Apple/2021-06-26-Mac-Setup.md` | How-to | |
 
@@ -188,14 +188,14 @@ Older content, functional programming.
 
 | Priority | Total | Done | Remaining |
 |----------|-------|------|-----------|
-| 1. Instructional | 19 | 11 | 8 |
-| 2. Reference | 15 | 2 | 13 |
+| 1. Instructional | 19 | 14 | 5 |
+| 2. Reference | 15 | 4 | 11 |
 | 3. Mixed/Tools | 5 | 0 | 5 |
 | 4. Explorations | 9 | 0 | 9 |
 | 5. Domain | 16 | 0 | 16 |
 | 6. F# | 5 | 0 | 5 |
 | 7. Misc | 18 | 0 | 18 |
-| **Total** | **87** | **13** | **74** |
+| **Total** | **87** | **18** | **69** |
 
 ---
 
@@ -216,6 +216,11 @@ Older content, functional programming.
 | 2026-01-19 | `Linux/2020-01-28-FileSystems.md` | ✓ Fixed NTFS-3G link (403→GitHub), added tags |
 | 2026-01-19 | `Linux/2020-02-02-DD.md` | ✓ Added tags and info box |
 | 2026-01-19 | `Linux/2020-02-09-Alpine-Linux-Install.md` | ✓ Fixed broken frontmatter, removed dead link (blog.w1r3.net), added tags |
+| 2026-01-19 | `Pi/2022-07-17-Pi-Pico.md` | ✓ Added tags, removed empty Links section |
+| 2026-01-19 | `2023-11-05-Pi-Pico.md` | ✓ Fixed relative link path, added tags |
+| 2026-01-19 | `2023-09-09-Picocomputer.md` | ✓ Fixed title (leading space), added tags |
+| 2026-01-19 | `Embedded/2017-05-30-STM32-Development.md` | ✓ Fixed dead book.pdf link (→archive.org), added tags |
+| 2026-01-19 | `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` | ✓ Updated stlink repo (texane→stlink-org), added tags |
 
 ---
 
