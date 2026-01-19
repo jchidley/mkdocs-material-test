@@ -1,7 +1,17 @@
 ---
 date: "2020-01-05"
 title: "Building A Raspberry Pi Home Router"
+tags:
+  - raspberry-pi
+  - linux
+  - networking
+  - router
+  - arch-linux
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written January 2020 for Raspberry Pi 4 with Arch Linux ARM. Commands may need adjustment for newer versions.
 
 # Building A Raspberry Pi Home Router
 Replacing a home router with a Raspberry Pi - better performance and full linux customisation.  Inspired by [bigdinousaur](https://blog.bigdinosaur.org/running-bind9-and-isc-dhcp/) and [Ars Technica](https://arstechnica.com/gadgets/2016/04/the-ars-guide-to-building-a-linux-router-from-scratch/).
@@ -15,6 +25,14 @@ I had originally wanted to use a Raspberry Pi 3 (the latest available) as they a
 With the release of the Raspberry Pi 4 it was time to revisit my solution.  I use a 4GB Pi 4 as a desktop and it will support up to about [900Mbps](https://www.jeffgeerling.com/blogs/jeff-geerling/getting-gigabit-networking).  Changing to a DIY server and good WiFi has demonstrated that a 100Mbps ISP link is good enough, even for a family of 5.  Now is a good time to revisit my work, learn how to setup my router reliably and quickly.  Given Jeff's performance numbers, I expect that my Pi 3 B+ should be good enough, certainly a Pi 4 should do the trick.  I have quite a few old Pis lying around (I love that they maintain compatibility with the old hardware) so if my router goes down I can run the router on an old Pi until a new Pi 4 (or 5!) arrives.
 
 From Jeff Geerling's blog [Getting Gigabit Networking on a Raspberry Pi 2, 3 and B+](https://www.jeffgeerling.com/blogs/jeff-geerling/getting-gigabit-networking).  "You can get Gigabit networking working on any current Raspberry Pi (A+, B+, Pi 2 model B, Pi 3 model B), and you can increase the throughput to at least 300+ Mbps [...] The Raspberry Pi 3 model B+ includes a Gigabit wired LAN adaptor onboard—though it's still hampered by the USB 2.0 bus speed (so in real world use you get ~224 Mbps instead of ~950 Mbps). [...] The Raspberry Pi 4 model B finally has true Gigabit wired LAN, owing to it's new I/O architecture [...] the Pi 4 can sustain over 900 Mbps"
+
+## Prerequisites
+
+- Raspberry Pi 4 (recommended) or Pi 3 B+ (minimum for ~100Mbps)
+- SD card (2GB minimum, 8GB+ recommended)
+- USB-to-Ethernet adapter (for second network interface)
+- Another Linux machine to prepare the SD card
+- Basic familiarity with Linux command line
 
 ## Instructions
 
@@ -75,6 +93,9 @@ ip addr #interface names and MAC addresses
 
 I gave my Ethernet devices [known-and-consistent-despite-booting name](https://wiki.archlinux.org/index.php/Systemd-networkd#Renaming_an_interface) to save time troubleshooting, using the MAC addresses from above.
 
+!!! warning "Replace MAC addresses"
+    Replace `12:34:56:78:90:ab` in the examples below with your actual MAC addresses from `ip addr` output.
+
 /etc/systemd/network/10-ethusb0.link
 
 ```bash
@@ -131,6 +152,11 @@ enable systemd network service with `systemctl enable systemd-networkd.service`.
 
 A reboot (not forgeting `userdel -r alarm` to remove this well known user) is the quickest way to reset things and ensure that they start correctly at power on.  `ip addr` shows that both interfaces are up and have assigned addresses.
 
+You should see both interfaces with addresses:
+
+- `wan0` with a DHCP-assigned address from your ISP
+- `ethusb0` with `10.2.0.1/16`
+
 ## Routing Between networks
 
 Test forwarding between ip4 networks with `sysctl net.ipv4.ip_forward=1` and then make it permanent with:
@@ -169,6 +195,20 @@ Run these commands...
 ```bash
 nft -f /etc/nftables.conf
 nft -s list ruleset # check rules have been loaded correctly
+```
+
+You should see:
+
+```
+table ip nat_table {
+    chain postrouting {
+        type nat hook postrouting priority srcnat; policy accept;
+        oifname "wan0" masquerade
+    }
+}
+```
+
+```bash
 systemctl enable nftables
 systemctl start nftables
 ```
@@ -230,6 +270,24 @@ systemctl status dhcpd4@ethusb0.service # will also display the allocated addres
 ## The End of the Beginning
 
 This is enough to replace the original [pretty-good-for-a-consumer-grade](https://www.asus.com/Networking/RTN66U/) which has been repurposed as a [WAP](https://en.wikipedia.org/wiki/Wireless_access_point).  To exercise more control over the home network requires [implementing a DNS server](2020-01-08-DNS-Setup-For-DIY-Home-Router).
+
+## Troubleshooting
+
+**No internet on client device:**
+
+- Check `ip addr` shows both interfaces up
+- Verify `sysctl net.ipv4.ip_forward` returns `1`
+- Check `nft list ruleset` shows the masquerade rule
+
+**DHCP not assigning addresses:**
+
+- Check `systemctl status dhcpd4@ethusb0.service` for errors
+- Verify client is connected to the correct interface
+
+**Can't reach router from client:**
+
+- Ensure client has IP in `10.2.x.x` range
+- Check cable/connection to USB ethernet adapter
 
 ## Links
 * [BigDinosaur Blog on Running BIND9 and ISC-DHCP](https://blog.bigdinosaur.org/running-bind9-and-isc-dhcp/)

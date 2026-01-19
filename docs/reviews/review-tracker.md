@@ -31,7 +31,7 @@ These are followed as guides — structure genuinely helps readers.
 
 | Status | Document | Type | Notes |
 |--------|----------|------|-------|
-| ☐ | `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` | How-to | [Review created](2026-01-19-Pi-Router-Review.md) |
+| ☑ | `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` | How-to | [Review](2026-01-19-Pi-Router-Review.md) ✓ Applied |
 | ☐ | `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | How-to | Cross-compilation setup |
 | ☐ | `Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md` | How-to | Long, detailed |
 | ☐ | `Pi/2020-12-17-Arch-Linux-Raspberry-Pi.md` | How-to | |
@@ -188,14 +188,14 @@ Older content, functional programming.
 
 | Priority | Total | Done | Remaining |
 |----------|-------|------|-----------|
-| 1. Instructional | 19 | 0 | 19 |
+| 1. Instructional | 19 | 1 | 18 |
 | 2. Reference | 15 | 0 | 15 |
 | 3. Mixed/Tools | 5 | 0 | 5 |
 | 4. Explorations | 9 | 0 | 9 |
 | 5. Domain | 16 | 0 | 16 |
 | 6. F# | 5 | 0 | 5 |
 | 7. Misc | 18 | 0 | 18 |
-| **Total** | **87** | **0** | **87** |
+| **Total** | **87** | **1** | **86** |
 
 ---
 
@@ -203,7 +203,7 @@ Older content, functional programming.
 
 | Date | Document | Outcome |
 |------|----------|---------|
-| 2026-01-19 | `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` | Review created, awaiting approval |
+| 2026-01-19 | `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` | ✓ Applied: prerequisites, expected outputs, MAC warning, troubleshooting, tested date |
 
 ---
 
