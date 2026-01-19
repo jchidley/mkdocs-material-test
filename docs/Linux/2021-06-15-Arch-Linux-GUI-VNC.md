@@ -1,10 +1,23 @@
 ---
 date: "2021-06-15"
 title: "Arch Linux GUI VNC"
+tags:
+  - arch-linux
+  - linux
+  - gui
+  - vnc
+  - xorg
+llm_assisted: true
 ---
 
+!!! info "Tested"
+    Originally written June 2021. GUI setup with suckless tools.
+
+!!! warning "sara repo moved"
+    The original sara repo (gitluin/sara) was deleted. Use a fork: [shizonic/sara](https://github.com/shizonic/sara) or [Matrimer/sara](https://github.com/Matrimer/sara).
+
 <!-- markdownlint-disable MD025 -->
-# Arch Linux Installation
+# Arch Linux GUI VNC
 <!-- markdownlint-enable MD025 -->
 
 ## Introduction
@@ -24,11 +37,11 @@ localectl --no-convert set-x11-keymap gb # UK keyboard layout
 setxkbmap gb # X11 current session only
 ```
 
-[sara - lightweight tiling window manager](https://github.com/gitluin/sara)
+[sara - lightweight tiling window manager](https://github.com/shizonic/sara)
 
 ```bash
 pacman -S libxft libxinerama # and for dmenu
-git clone https://github.com/gitluin/sara.git
+git clone https://github.com/shizonic/sara.git
 cd sara
 cp config.def.h config.h
 sed -i -E 's/barpx\s+=\s+18/barpx\t\t\t= 0/g' config.h # set top bar to 0
@@ -111,7 +124,7 @@ If you use localhost in your VNC config then you will have to use ssh as a tunne
 * [AUR - Arch User Repository](https://wiki.archlinux.org/index.php/Arch_User_Repository)
 * [tbsm - minimal display manager](https://aur.archlinux.org/packages/tbsm/)
 * [st - simple terminal](https://st.suckless.org)
-* [GitHub - gitluin/sara: Originally a fork of catwm, now an offspring of dwm with a streamlined featureset, plus some bspwm.](https://github.com/gitluin/sara)
+* [GitHub - sara: Originally a fork of catwm, now an offspring of dwm with a streamlined featureset](https://github.com/shizonic/sara)
 * [Alacritty - graphics accelerated terminal](https://github.com/alacritty/alacritty)
 * [st fonts](https://wiki.archlinux.org/index.php/st#Font)
 * [Symbol fonts for linux terminals](https://c42f.github.io/2015/12/29/crisp-terminal-fonts.html)

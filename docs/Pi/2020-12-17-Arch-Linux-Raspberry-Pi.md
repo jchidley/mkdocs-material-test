@@ -1,7 +1,15 @@
 ---
 date: "2020-12-17"
 title: "Arch Linux Raspberry Pi"
+tags:
+  - raspberry-pi
+  - arch-linux
+  - linux
+llm_assisted: true
 ---
+
+!!! info "Notes"
+    Brief notes for Arch Linux on Raspberry Pi. See [Arch Linux Installation](../Linux/2021-06-17-Arch-Linux-Installation.md) for full guide.
 
 <!-- markdownlint-disable MD025 -->
 # Arch Linux Raspberry Pi
@@ -39,6 +47,5 @@ pacman -S xf86-video-fbdev # need to check with Raspbian OS 64
 ## Links
 
 * [archlinux - Install Xorg on Arch-Linux-ARM - Raspberry Pi Stack Exchange](https://raspberrypi.stackexchange.com/questions/116446/install-xorg-on-arch-linux-arm#comment200213_116446)
-* 
 
 <!-- markdownlint-enable MD034 -->

@@ -1,7 +1,16 @@
 ---
 date: "2021-06-17"
 title: "Arch Linux Installation"
+tags:
+  - arch-linux
+  - linux
+  - installation
+  - efi
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written June 2021. Pithy guide to Arch Linux installation with EFI boot.
 
 <!-- markdownlint-disable MD025 -->
 # Arch Linux Installation

@@ -34,7 +34,7 @@ These are followed as guides — structure genuinely helps readers.
 | ☑ | `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` | How-to | [Review](2026-01-19-Pi-Router-Review.md) ✓ Applied |
 | ☐ | `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | How-to | Cross-compilation setup |
 | ☑ | `Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md` | How-to | [Review](2026-01-19-Alpine-Linux-Review.md) ✓ Configs verified, dead link removed |
-| ☐ | `Pi/2020-12-17-Arch-Linux-Raspberry-Pi.md` | How-to | |
+| ☑ | `Pi/2020-12-17-Arch-Linux-Raspberry-Pi.md` | Notes | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Added tags, fixed empty bullet |
 | ☐ | `Pi/2022-07-16-Pi-Gen.md` | How-to | |
 | ☐ | `Pi/2022-07-17-Pi-Pico.md` | How-to | |
 | ☑ | `Pi/2022-08-07-Alpine-Image-Build-Raspberry-Pi.md` | How-to | [Review](2026-01-19-Alpine-Linux-Review.md) ✓ Added tags |
@@ -42,8 +42,8 @@ These are followed as guides — structure genuinely helps readers.
 | ☑ | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | How-to | [Review](2026-01-19-Pi-Router-Companions-Review.md) ✓ BIND verified, URL fixed |
 | ☐ | `Linux/2020-01-27-Simplest-possible-Linux-boot.md` | How-to | |
 | ☐ | `Linux/2020-02-09-Alpine-Linux-Install.md` | How-to | |
-| ☐ | `Linux/2021-06-17-Arch-Linux-Installation.md` | How-to | 246 lines |
-| ☐ | `Linux/2021-06-15-Arch-Linux-GUI-VNC.md` | How-to | |
+| ☑ | `Linux/2021-06-17-Arch-Linux-Installation.md` | How-to | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Added tags |
+| ☑ | `Linux/2021-06-15-Arch-Linux-GUI-VNC.md` | How-to | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Fixed heading, updated sara repo to fork |
 | ☐ | `Embedded/2017-05-30-STM32-Development.md` | How-to | |
 | ☐ | `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` | How-to | |
 | ☐ | `2023-11-05-Pi-Pico.md` | How-to | |
@@ -188,14 +188,14 @@ Older content, functional programming.
 
 | Priority | Total | Done | Remaining |
 |----------|-------|------|-----------|
-| 1. Instructional | 19 | 5 | 14 |
+| 1. Instructional | 19 | 8 | 11 |
 | 2. Reference | 15 | 0 | 15 |
 | 3. Mixed/Tools | 5 | 0 | 5 |
 | 4. Explorations | 9 | 0 | 9 |
 | 5. Domain | 16 | 0 | 16 |
 | 6. F# | 5 | 0 | 5 |
 | 7. Misc | 18 | 0 | 18 |
-| **Total** | **87** | **5** | **82** |
+| **Total** | **87** | **8** | **79** |
 
 ---
 
@@ -208,6 +208,9 @@ Older content, functional programming.
 | 2026-01-19 | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | ✓ BIND configs verified valid, fixed URL, added tags |
 | 2026-01-19 | `Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md` | ✓ nftables + unbound verified, removed dead link, added tags |
 | 2026-01-19 | `Pi/2022-08-07-Alpine-Image-Build-Raspberry-Pi.md` | ✓ Added tags and info box |
+| 2026-01-19 | `Pi/2020-12-17-Arch-Linux-Raspberry-Pi.md` | ✓ Added tags, fixed empty bullet |
+| 2026-01-19 | `Linux/2021-06-17-Arch-Linux-Installation.md` | ✓ Added tags and info box |
+| 2026-01-19 | `Linux/2021-06-15-Arch-Linux-GUI-VNC.md` | ✓ Fixed heading, updated sara repo to working fork |
 
 ---
 
