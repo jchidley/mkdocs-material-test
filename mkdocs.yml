@@ -127,6 +127,11 @@ nav:
     - Testing: 2025-03-01-Testing.md
     - DaVinci Resolve: 2025-03-27-DaVinci-Resolve.md
     - Web Info: 2025-04-21-Web-Site-Information-and-Manipulation.md
+  - Meta:
+    - Style Guide: style.md
+    - Reviews:
+      - Tracker: reviews/review-tracker.md
+      - Pi Router Review: reviews/2026-01-19-Pi-Router-Review.md
   - Other:
     - Games: 
       - Overview: Games/index.md
