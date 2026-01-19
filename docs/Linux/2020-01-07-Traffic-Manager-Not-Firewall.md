@@ -1,7 +1,17 @@
 ---
 date: "2020-01-07"
 title: "Traffic Manager Not Firewall"
+tags:
+  - linux
+  - networking
+  - security
+  - nftables
+  - firewall
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written January 2020 for Arch Linux. Part of the [Pi Router series](../Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md). nftables syntax verified January 2026.
 <!-- 2020-01-07-Traffic-Manager-Not-Firewall.md -->
 
 <!-- markdownlint-disable MD025 -->
@@ -29,8 +39,8 @@ cat > /etc/nftables.conf << "EOF"
 #!/usr/sbin/nft -f
 flush ruleset
 
-define wan = eth0
-define lan = eth1
+define wan = "eth0"
+define lan = "eth1"
 define private_special_purpose = {10.0.0.0/8, 100.64.0.0/10, 172.16.0.0/12, 192.0.0.0/24, 192.168.0.0/16, 198.18.0.0/15}
 define documentation_special_purpose = {192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24}
 define internet_special_purpose = {192.88.99.0/24, 224.0.0.0/4, 240.0.0.0/4}
@@ -43,13 +53,13 @@ table ip filter {
   chain input {
     type filter hook input priority filter; policy drop;
 
-    meta if $wan ip saddr $martians drop
+    iifname $wan ip saddr $martians drop
 
     ct state invalid drop
 
-    meta if lo ct state new accept
+    iifname "lo" ct state new accept
 
-    meta if $lan ct state new accept
+    iifname $lan ct state new accept
 
     icmp type echo-request accept
 
@@ -59,9 +69,9 @@ table ip filter {
   chain forward {
     type filter hook forward priority filter; policy drop;
 
-    meta if $lan meta oif $wan accept
+    iifname $lan oifname $wan accept
 
-    meta if $wan meta oif $lan ct state established,related accept
+    iifname $wan oifname $lan ct state established,related accept
   }
 
 # Output hook is accept by default 
@@ -74,7 +84,7 @@ table ip nat {
   chain postrouting {
     type nat hook postrouting priority srcnat;
 
-    oif $wan masquerade persistent
+    oifname $wan masquerade persistent
   }
 }
 EOF
@@ -103,4 +113,3 @@ iptables-restore-translate -f save.txt
 * [Reserved IP addresses](https://en.wikipedia.org/wiki/Reserved_IP_addresses)
 * [nftables wiki](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page)
 * [Quick reference-nftables in 10 minutes](https://wiki.nftables.org/wiki-nftables/index.php/Quick_reference-nftables_in_10_minutes)
-* [Alpine Linux Stateful Firewall - deadnull](https://ronvalente.net/posts/alpine-firewall/)

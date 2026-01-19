@@ -1,7 +1,17 @@
 ---
 date: "2020-01-08"
 title: "DNS Setup For DIY Home Router"
+tags:
+  - linux
+  - networking
+  - dns
+  - bind
+  - dhcp
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written January 2020 for Arch Linux with BIND 9. Part of the [Pi Router series](../Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md). BIND configs verified January 2026.
 
 <!-- markdownlint-disable MD025 -->
 # DNS Setup For DIY Home Router
@@ -193,7 +203,7 @@ systemctl status named
 
 ## Links
 
-* [Upside-Down-Ternet](http://www.ex-parrot.com/~pete/upside-down-ternet.html)
+* [Upside-Down-Ternet](https://pete.ex-parrot.com/upside-down-ternet.html)
 * [BigDinosaur's notes](https://blog.bigdinosaur.org/running-bind9-and-isc-dhcp/)
 * [The IETF](https://www.ietf.org/) 
 * [test example invalid and localhost reserved tlds](https://tools.ietf.org/html/rfc2606) `.test .example .invalid .localhost`

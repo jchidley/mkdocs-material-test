@@ -183,6 +183,15 @@ Some things can't be tested without the target environment:
 
 **Document these limitations** so future reviewers know what remains untested.
 
+### When Tools or Permissions Are Needed
+
+If verification requires tools not installed or elevated permissions:
+
+1. **Prompt Jack first** — ask if he wants to install the tool or run with sudo
+2. **Offer alternatives** — e.g., "I can check syntax if you run `sudo apt install bind9-utils`"
+3. **Accept decline** — if declined, mark as ⚠️ Skipped with reason
+4. **Don't assume** — never assume tools are available or permissions granted
+
 ## Attribution
 
 This Digital Garden uses LLM assistance for some content. Documents will be marked as follows:
