@@ -1,7 +1,17 @@
 ---
 date: "2020-01-27"
 title: "Simplest possible Linux boot"
+tags:
+  - linux
+  - boot
+  - kernel
+  - embedded
+  - minimal
+llm_assisted: true
 ---
+
+!!! info "Reference"
+    Notes from Rob Landley's talk on building minimal Linux systems. Timestamps reference [the video](https://www.youtube.com/watch?v=Sk9TatW9ino).
 <!-- 2020-01-27-Simplest-possible-Linux-boot -->
 
 <!-- markdownlint-disable MD025 -->

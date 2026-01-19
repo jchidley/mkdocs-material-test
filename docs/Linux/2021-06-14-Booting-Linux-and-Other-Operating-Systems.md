@@ -1,7 +1,17 @@
 ---
 date: "2021-06-14"
 title: "Booting Linux and Other Operating Systems"
+tags:
+  - linux
+  - boot
+  - uefi
+  - efi
+  - multi-boot
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written June 2021. UEFI multi-boot with rEFInd and EFI shell.
 
 <!-- markdownlint-disable MD025 -->
 # Booting Linux and Other Operating Systems

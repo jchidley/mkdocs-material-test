@@ -1,7 +1,17 @@
 ---
 date: "2020-01-28"
 title: "File systems"
+tags:
+  - linux
+  - filesystem
+  - ntfs
+  - overlayfs
+  - raspberry-pi
+llm_assisted: true
 ---
+
+!!! info "Reference"
+    Notes on filesystems, NTFS access from Linux, and OverlayFS.
 <!-- markdownlint-disable MD025 -->
 # File systems
 <!-- markdownlint-enable MD025 -->
@@ -16,7 +26,7 @@ Turn off faststart by:
 powercfg /h off
 ```
 
-Use [NTFS-3G](https://www.tuxera.com/community/ntfs-3g-faq/) to share data with Windows and Linux.  [Here is Arch Linux' information](https://wiki.archlinux.org/index.php/NTFS-3G).
+Use [NTFS-3G](https://github.com/tuxera/ntfs-3g) to share data with Windows and Linux.  [Here is Arch Linux' information](https://wiki.archlinux.org/index.php/NTFS-3G).
 
 ```bash
 pacman -S ntfs-3g
