@@ -1,5 +1,16 @@
 ---
+date: "2020-02-09"
+title: "Alpine Linux Install"
+tags:
+  - alpine-linux
+  - linux
+  - installation
+  - xfce
+llm_assisted: true
 ---
+
+!!! info "Tested"
+    Originally written February 2020. Alpine Linux installation with XFCE desktop. See also [Alpine Linux Raspberry Pi Router](../Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md) and [Alpine Image Build](../Pi/2022-08-07-Alpine-Image-Build-Raspberry-Pi.md).
 
 <!-- markdownlint-disable MD025 -->
 # Alpine Linux Install
@@ -145,7 +156,7 @@ Notes about apk cache [Alpine local backup](https://wiki.alpinelinux.org/wiki/Al
 [Alpine Source Map by boot sequence](https://wiki.alpinelinux.org/wiki/Alpine_Source_Map_by_boot_sequence)
 
 [Alpine Linux APK off-line overlay builder](https://github.com/rnalrd/apkovl-builder/blob/master/create_apkovl.sh)
-[Automated provisioning using apkovl](https://blog.w1r3.net/2018/04/16/automated-provisioning-using-apkovl.html)
+
 [Create a bootable SDHC from a Mac](https://wiki.alpinelinux.org/wiki/Create_a_bootable_SDHC_from_a_Mac)
 
 [Semi-Automatic Installation](https://docs.alpinelinux.org/user-handbook/0.1a/Installing/manual.html#_repositories)

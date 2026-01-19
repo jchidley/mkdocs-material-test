@@ -41,7 +41,7 @@ These are followed as guides — structure genuinely helps readers.
 | ☑ | `Linux/2020-01-07-Traffic-Manager-Not-Firewall.md` | How-to | [Review](2026-01-19-Pi-Router-Companions-Review.md) ✓ Fixed nftables bug, removed dead link |
 | ☑ | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | How-to | [Review](2026-01-19-Pi-Router-Companions-Review.md) ✓ BIND verified, URL fixed |
 | ☑ | `Linux/2020-01-27-Simplest-possible-Linux-boot.md` | Reference | [Review](2026-01-19-Linux-Boot-Fundamentals-Review.md) ✓ Added tags |
-| ☐ | `Linux/2020-02-09-Alpine-Linux-Install.md` | How-to | |
+| ☑ | `Linux/2020-02-09-Alpine-Linux-Install.md` | How-to | ✓ Fixed broken frontmatter, removed dead link, added tags |
 | ☑ | `Linux/2021-06-17-Arch-Linux-Installation.md` | How-to | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Added tags |
 | ☑ | `Linux/2021-06-15-Arch-Linux-GUI-VNC.md` | How-to | [Review](2026-01-19-Arch-Linux-Review.md) ✓ Fixed heading, updated sara repo to fork |
 | ☐ | `Embedded/2017-05-30-STM32-Development.md` | How-to | |
@@ -188,14 +188,14 @@ Older content, functional programming.
 
 | Priority | Total | Done | Remaining |
 |----------|-------|------|-----------|
-| 1. Instructional | 19 | 10 | 9 |
+| 1. Instructional | 19 | 11 | 8 |
 | 2. Reference | 15 | 2 | 13 |
 | 3. Mixed/Tools | 5 | 0 | 5 |
 | 4. Explorations | 9 | 0 | 9 |
 | 5. Domain | 16 | 0 | 16 |
 | 6. F# | 5 | 0 | 5 |
 | 7. Misc | 18 | 0 | 18 |
-| **Total** | **87** | **12** | **75** |
+| **Total** | **87** | **13** | **74** |
 
 ---
 
@@ -215,6 +215,7 @@ Older content, functional programming.
 | 2026-01-19 | `Linux/2021-06-14-Booting-Linux-and-Other-Operating-Systems.md` | ✓ Added tags and info box |
 | 2026-01-19 | `Linux/2020-01-28-FileSystems.md` | ✓ Fixed NTFS-3G link (403→GitHub), added tags |
 | 2026-01-19 | `Linux/2020-02-02-DD.md` | ✓ Added tags and info box |
+| 2026-01-19 | `Linux/2020-02-09-Alpine-Linux-Install.md` | ✓ Fixed broken frontmatter, removed dead link (blog.w1r3.net), added tags |
 
 ---
 
