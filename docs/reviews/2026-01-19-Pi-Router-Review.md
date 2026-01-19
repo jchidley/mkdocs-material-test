@@ -145,6 +145,58 @@ table ip nat_table {
 
 ---
 
+## Code & Command Verification
+
+What can be tested without the actual hardware setup:
+
+| Command/Code | Testable? | Status | Notes |
+|--------------|-----------|--------|-------|
+| `mkfs.vfat`, `mkfs.ext4` | ⚠️ Destructive | Not tested | Requires SD card, would wipe data |
+| `wget ...ArchLinuxARM-rpi-4-latest.tar.gz` | ✓ URL check | ❌ **Needs check** | Verify URL still valid |
+| `bsdtar -xpf` | ✓ Syntax | ✓ Valid | Standard bsdtar usage |
+| `pacman -S nftables dhcp usbutils` | ✓ Package names | ❌ **Needs check** | Verify packages exist in Arch ARM repos |
+| systemd .link/.network file syntax | ✓ Syntax | ✓ Valid | Standard systemd-networkd format |
+| nftables.conf syntax | ✓ Syntax | ❌ **Needs check** | Can validate with `nft -c -f` if nft installed |
+| dhcpd.conf syntax | ✓ Syntax | ❌ **Needs check** | Can validate with `dhcpd -t` if dhcpd installed |
+| systemd service file syntax | ✓ Syntax | ✓ Valid | Standard systemd format |
+
+### Verification Actions Needed
+
+1. **Check Arch Linux ARM URL is still valid:**
+   ```bash
+   curl -sI http://os.archlinuxarm.org/os/ArchLinuxARM-rpi-4-latest.tar.gz | head -1
+   ```
+
+2. **Verify package names** (if Arch system available):
+   ```bash
+   pacman -Ss ^nftables$ ^dhcp$ ^usbutils$
+   ```
+
+3. **Validate nftables syntax** (if nft installed):
+   ```bash
+   echo 'flush ruleset
+   define wan_if = "wan0"
+   table ip nat_table {
+       chain postrouting {
+           type nat hook postrouting priority 0; policy accept;
+           oifname $wan_if masquerade
+       }
+   }' | nft -c -f -
+   ```
+
+### Verification Results
+
+| Check | Result | Date | Notes |
+|-------|--------|------|-------|
+| Arch ARM URL | ✅ Valid | 2026-01-19 | HTTP 302 redirect (normal for mirror) |
+| Package names | ⚠️ Skipped | 2026-01-19 | No Arch system available to verify |
+| nftables syntax | ⚠️ Skipped | 2026-01-19 | `nft -c` requires root even for syntax check |
+| dhcpd syntax | ⚠️ Skipped | 2026-01-19 | dhcpd not installed on test system |
+
+**Conclusion:** URL confirmed valid. Syntax checks require either root access or target hardware. Manual verification recommended when following the guide.
+
+---
+
 ## Next Steps
 
 If you'd like to proceed with any of these changes:

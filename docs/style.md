@@ -141,12 +141,47 @@ Before publishing new how-to content:
 - [ ] Commands have expected outputs?
 - [ ] Tested recently / version noted?
 - [ ] Links working?
+- [ ] Code/commands verified? (see below)
 
 For reference content:
 
 - [ ] Organized by purpose, not chronology?
 - [ ] Annotations explain why each resource matters?
 - [ ] Stale links removed?
+
+## Code & Command Verification
+
+**Every review of instructional content must include a verification section.** Test what can be tested.
+
+### What to verify
+
+| Type | How to Test |
+|------|-------------|
+| **URLs** | `curl -sI <url> | head -1` — check for 200/302 |
+| **Package names** | Check package manager or official repos |
+| **Config syntax** | Use tool's built-in validation (e.g., `nginx -t`, `nft -c -f`) |
+| **Shell commands** | Run in safe environment if non-destructive |
+| **Code snippets** | Compile/lint check where possible |
+
+### What to document
+
+For each testable item, record:
+
+- ✅ Verified working
+- ⚠️ Skipped (with reason: needs hardware, needs root, destructive)
+- ❌ Broken (needs fix)
+- ❓ Pending
+
+### Limitations
+
+Some things can't be tested without the target environment:
+
+- Hardware-specific commands (flashing SD cards, GPIO)
+- Commands requiring root/sudo
+- Destructive operations (formatting, deleting)
+- Network configurations (requires actual network setup)
+
+**Document these limitations** so future reviewers know what remains untested.
 
 ## Attribution
 
