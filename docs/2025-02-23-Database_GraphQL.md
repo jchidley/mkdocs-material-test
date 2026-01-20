@@ -61,13 +61,13 @@ For getting data from websites, it seems as if we have REST, GraphQL and gRPC, w
    This maps port 5432 of your host to port 5432 of the container, allowing you to connect using a PostgreSQL client.
 
    If you haven't already specified a host port, find the container ID or name and inspect it:
-   ```sh
-   docker inspect <container_id_or_name> | grep "IPAddress"
+   ```bash
+   docker inspect my-postgres | grep "IPAddress"
    ```
 
    If you've mapped the container port to a host port, you can see the mapping with:
-   ```sh
-   docker port <container_id_or_name>
+   ```bash
+   docker port my-postgres
    ```
   
 6. **Example**:

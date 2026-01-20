@@ -33,10 +33,10 @@ I use the current versions of [helix editor](https://helix-editor.com/), using [
 
 Install `rust` using `rustup`
 
-```PowerhShell
+```powershell
 cd $env:TEMP # Windows temporary directory
 cargo new --lib rust_explore # almost all programming involves creating and using libraries
-cargo test --lib tests -- --nocapture # `-- --nocapture` for `println!`` and friends
+cargo test --lib tests -- --nocapture # `-- --nocapture` for `println!` and friends
 Set-ExecutionPolicy Unrestricted -Scope Process; iex (iwr "https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.ps1").Content # binary install for crates
 cargo binstall cargo-watch # watcher
 # open 3 panes: 1) `hx .\src\lib.rs` editor 2) `cargo watch -x check` hot-loading compile checking 3) `cargo test --lib explore -- --nocapture` or `cargo add some-crate` or some other command

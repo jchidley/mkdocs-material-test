@@ -48,7 +48,7 @@ chown named:named /etc/rndc.key
 
 Here is the `/etc/dhcpd.conf` file that has been adjusted from the [most basic one](https://wiki.archlinux.org/index.php/Dhcpd) for dynamic updates of DNS.  See [BigDinosaur's](https://blog.bigdinosaur.org/running-bind9-and-isc-dhcp/) and [semicomplete's](https://www.semicomplete.com/articles/dynamic-dns-with-dhcp/) notes for more explanations.
 
-```bash
+```text
 ddns-updates on;
 ddns-update-style interim;
 ddns-domainname "chidley.test.";
@@ -84,7 +84,7 @@ subnet 192.168.2.0 netmask 255.255.255.0 {
 ```
 The Arch Linx Wiki has [concise information on BIND](https://wiki.archlinux.org/index.php/BIND) with the simplest of examples, this has been extended following [the ISC recommendations](https://kb.isc.org/docs/aa-00269).  I used BigDinosaur and semicomplete to adjust it for dynamic updates of DHCP and DNS
 
-```bash
+```text
 acl "trusted" {
 	10.1.0.0/16;
 	localhost;
@@ -130,7 +130,7 @@ zone "." IN {
 
 `/var/named/chidley.test.zone` is based on [Arch Linux example zone file](https://wiki.archlinux.org/index.php/BIND#Creating_a_zonefile):
 
-```bash
+```text
 $TTL 300	; 5 mins for testing
 ; chidley.test
 @	IN	SOA	alampi.chidley.test. postmaster.chidley.test. (
@@ -147,7 +147,7 @@ localhost	IN	A	127.0.0.1
 
 An almost identical one for `/var/named/1.10.rev`:
 
-```bash
+```text
 $ORIGIN .
 $TTL 300	; 5 mins for testing
 ; 1.10.rev
@@ -190,7 +190,7 @@ systemctl status dhcpd4@ethusb0
 systemctl status named
 ```
 
-```bash
+```text
 % nsupdate
 > server 10.1.0.1
 > key rndc-key N8Hk2RUFO84bEVl3uGTD2A==

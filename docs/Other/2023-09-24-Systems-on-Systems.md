@@ -27,7 +27,7 @@ This type of redirection instructs the shell to read input from the current sour
 
 The format of here-documents is:
 
-```sh
+```text
 [n]<<[-]word
         here-document
 delimiter
@@ -40,7 +40,7 @@ If the redirection operator is ‘<<-’, then all leading tab characters are st
 3.6.7 Here Strings
 A variant of here documents, the format is:
 
-```bash
+```text
 [n]<<< word
 ```
 
@@ -133,8 +133,7 @@ chmod +x enter-chroot
 
 Pass a command to WSL without PowerShell expanding it first
 
-```sh
-# PowerShell
+```powershell
 @'
 echo $SHELL
 '@ | wsl -d U3 --
@@ -150,9 +149,8 @@ echo $ENV:OS `$SHELL
 
 wsl is started in the current (windows) directory, and windows files appear in Linux with 777 permissions, so this works
 
-```sh
-# PowerShell
- @'
+```powershell
+@'
 echo this system is $(uname)
 '@ | > .\new.sh ; wsl -d U3 ./new.sh
 # or this:
@@ -164,8 +162,7 @@ echo $env:os wrote it, `$(uname) is executing it
 
 temporary file
 
-```sh
-# PowerShell
+```powershell
 $tmpfile = New-TemporaryFile
 @"
 wslpath '$tmpfile'
@@ -181,8 +178,7 @@ also can access WSL from \\wsl$\distribution
 
 [Hyper-V](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server)
 
-```sh
-# PowerShell
+```powershell
 Get-VM | Export-VM -Path D:\WindowsBackup\
 ```
 
@@ -265,17 +261,23 @@ Notes
 [Building your own WSL 2 kernel with additional drivers](https://github.com/dorssel/usbipd-win/wiki/WSL-support#building-your-own-wsl-2-kernel-with-additional-drivers)
 "Recent versions of Windows running WSL kernel 5.10.60.1 or later already include support for common scenarios like USB-to-serial adapters and flashing embedded development boards. Only if you require special drivers will you need to build your own kernel for WSL 2."
 
-```sh
-# cmd
+First, in cmd/PowerShell:
+
+```bat
 wsl --update
-# Export current distribution to be able to fall back if something goes wrong.
+rem Export current distribution to be able to fall back if something goes wrong.
 wsl --export <current-distro> <temporary-path>\wsl2-usbip.tar
-# Import new distribution with current distribution as base.
+rem Import new distribution with current distribution as base.
 wsl --import wsl2-usbip <install-path> <temporary-path>\wsl2-usbip.tar
-# Run new distribution.
+rem Run new distribution.
 wsl --distribution wsl2-usbip --user <user>
+```
+
+Then, inside WSL:
+
+```bash
 # upgrade it
-sudo apt update &&  sudo apt -y full-upgrade
+sudo apt update && sudo apt -y full-upgrade
 # Install prerequisites.
 sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev autoconf libudev-dev libtool
 # Clone kernel that matches WSL version. To find the version you can run.
@@ -295,7 +297,11 @@ getconf _NPROCESSORS_ONLN
 # substitute 8 below for the number from above
 sudo make -j 8 && sudo make modules_install -j 8 && sudo make install -j 8
 cp arch/x86/boot/bzImage /mnt/c/Users/<user>/usbip-bzImage
-# Create a `.wslconfig file` on `/mnt/c/Users/<user>/` and add a reference to the created image with the following.
+```
+
+Create a `.wslconfig` file on `/mnt/c/Users/<user>/` and add a reference to the created image:
+
+```ini
 [wsl2]
 kernel=c:\\users\\<user>\\usbip-bzImage
 ```
@@ -306,16 +312,14 @@ kernel=c:\\users\\<user>\\usbip-bzImage
 
 Finding
 
-```sh
-# PowerShell
+```powershell
 Foreach ($i in Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss) {write-host $i.GetValue("BasePath")}
 # Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss | foreach-object {write-host $_.GetValue("BasePath")}
 ```
 
 Exporting
 
-```sh
-# PowerShell
+```powershell
 wsl --export --vhd Alpine D:\WindowsBackup\WSL2\Alpine.vhdx
 ```
 
@@ -329,7 +333,7 @@ see [WSL_Alpine_build](https://github.com/jchidley/WSL_Alpine_build) for the my 
 
 see [OpenRC](https://wiki.alpinelinux.org/wiki/OpenRC) for some information about that. [How to enable and start services on Alpine Linux](https://www.cyberciti.biz/faq/how-to-enable-and-start-services-on-alpine-linux/) is useful but the `rc` appears to be `openrc` now. `openrc shutdown` sort of shuts down alpine but `wsl -t` actually stops it.
 
-```sh
+```bash
 rc-service {service-name} restart # OR
 /etc/init.d/{service-name} restart
 ```
@@ -349,8 +353,7 @@ Now it's time to deal with the WSL side of things.
 [usbipd-win on WSL 2](https://github.com/dorssel/usbipd-win#wsl-2)
 [WSL support](https://github.com/dorssel/usbipd-win/wiki/WSL-support)
 
-```sh
-# PowerShell
+```powershell
 winget install usbipd
 usbipd list
 usbipd bind --busid 4-4 # or "4-4" for another, "Shared" survives reboot
@@ -376,20 +379,19 @@ If you're still unable to access the debug probes after following these steps, t
 
 If you are using WSL, you may need to enable the udev service. To check if the service is running, run service udev status. If the service is not started, edit /etc/wsl.conf (with sudo) and make sure the following is included:
 
-```sh
+```ini
 [boot]
 command="service udev start"
 ```
 
 From the [usbipd wiki](https://github.com/dorssel/usbipd-win/wiki/WSL-support#udev)'s entry about udev:  "using embedded devices with openocd, copy `share/openocd/contrib60-openocd.rules` to the `/etc/udev/rules.d folder`"
 
-```sh
-# PowerShell
+```powershell
 Get-ChildItem "HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss" -Recurse | findstr BasePath
 get-ChildItem C:\Users\jackc\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc\LocalState\ext4.vhdx | Select-Object @{Name='Size'; Expression={[int]($_.Length / 1MB)}}
 ```
 
-```sh
+```bat
 dir \\wsl$\distribution-name
 ```
 
@@ -434,7 +436,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 `/etc/init.d/monitor_directory`
 
-```sh
+```bash
 #!/sbin/openrc-run
 name="Monitor Directory"
 description="Monitor a directory"
@@ -443,7 +445,7 @@ command_background=true # needed for rc-service to stop, start, etc
 pidfile="/run/monitor_directory.pid" # needed for rc-service to stop, start, etc
 ```
 
-```sh
+```bash
 #!/bin/sh
 openrc default
 rc-update add monitor_directory default

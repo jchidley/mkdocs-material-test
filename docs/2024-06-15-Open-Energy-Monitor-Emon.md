@@ -17,7 +17,7 @@ tags:
 
 Download and install Python for Windows
 
-```shell
+```powershell
 cd "$env:USERPROFILE\AppData\Local\Programs\Python\Python312\Scripts"
 pip install requests
 z temp # zoxide

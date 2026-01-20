@@ -17,7 +17,7 @@ llm_assisted: true
 
 For recover partition, [see](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-desktop-editions-sample-scripts?view=windows-11&preserve-view=true#-createpartitions-uefitxt)
 
-```shell
+```bat
 rem == CreatePartitions-UEFI.txt ==
 rem == These commands are used with DiskPart to
 rem    create three partitions
@@ -72,10 +72,11 @@ To find out what features can be installed, use the list option (/help for more 
 .\adkwinpesetup.exe /list # OptionId.WindowsPreinstallationEnvironment
 ```
 
-```PowerShell
+```bat
 diskpart
 List disk
-select disk X # X is the USB drive
+select disk X
+rem X is the USB drive
 clean
 convert MBR
 create partition primary size=2048
@@ -221,8 +222,8 @@ Screen resolution: 2496 x 1664
 To [add PowerShell](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-adding-powershell-support-to-windows-pe?view=windows-11),
 start the "Deployment and Imaging Tools Environment" as an administrator and run these commands:
 
-```shell
-$APK = "C:\\Program Files (x86)\Windows Kits\10"
+```powershell
+$APK = "C:\Program Files (x86)\Windows Kits\10"
 # mount path as above
 # nvim search/replace - select range, :, then
 # /C:\\WinPE_amd64_PS\\mount/$MountPath/g
@@ -246,38 +247,40 @@ After booting WinPE you can run powershell with this command `X:\Windows\system3
 
 ## Image Management
 
-```shell
-# Capture Multiple Partitions
+```bat
+rem Capture Multiple Partitions
 diskpart
 list volume
-select partition=x # x is number of partition to rename
+select partition=x
+rem x is number of partition to rename
 assign letter=s
 exit
 
 DISM /image:C:\ /optimize-image /boot
-Dism /Capture-Image /ImageFile:E:\windows.wim /CaptureDir:C:\ /Name:"Windows" /CheckIntegrity # /Compress:{fast|max|none} default max
+Dism /Capture-Image /ImageFile:E:\windows.wim /CaptureDir:C:\ /Name:"Windows" /CheckIntegrity
+rem /Compress:{fast|max|none} default max
 Dism /Capture-Image /ImageFile:C:\my-system-partition.wim /CaptureDir:S:\ /Name:"My system partition"
 
-# Apply Image
-Set high-performance power scheme to speed deployment
+rem Apply Image
+rem Set high-performance power scheme to speed deployment
 call powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 
 dism /Apply-Image /ImageFile:E:\Images\ThinImage.wim /Index:1 /ApplyDir:W:\
 
-# Copy boot files to the System partition
+rem Copy boot files to the System partition
 W:\Windows\System32\bcdboot W:\Windows /s S:
 
-# Copy the Windows RE image to the Windows RE Tools partition
+rem Copy the Windows RE image to the Windows RE Tools partition
 md R:\Recovery\WindowsRE
 xcopy /h W:\Windows\System32\Recovery\Winre.wim R:\Recovery\WindowsRE\
 
-# Register the location of the recovery tools
+rem Register the location of the recovery tools
 W:\Windows\System32\Reagentc /Setreimage /Path R:\Recovery\WindowsRE /Target W:\Windows
 
-# Verify the configuration status of the images
+rem Verify the configuration status of the images
 W:\Windows\System32\Reagentc /Info /Target W:\Windows
 
-# FFU
+rem FFU
 DISM.exe /capture-ffu /imagefile=e:\windows.ffu /capturedrive=\\.\PhysicalDrive0 /name:disk0 /description:"Windows FFU"
 ```
 
@@ -423,17 +426,17 @@ Previously: If you try to install the *Professional* version of windows and the 
 
 [Fix Your Windows PC Problems](https://www.youtube.com/watch?v=v0pFyWXp540)
 
-```shell
-dism command using your windows image
+```bat
+rem dism command using your windows image
 dism /image:c:\ /cleanup-image /restorehealth /source:c:\windows
 
-# Add this command you yours and change path to your path
-/scratchdir:{path}
+rem Add this command to yours and change path to your path
+rem /scratchdir:{path}
 
-# This command uses the windows image on USB drive we created.
+rem This command uses the windows image on USB drive we created.
 dism /image:c:\ /cleanup-image /restorehealth /source:{path to install.wim or install.esd}
 
-sfc /scannow from windows recovery
+rem sfc /scannow from windows recovery
 sfc /scannow /offbootdir={drive}\ /offwindir={drive}\windows
 ```
 

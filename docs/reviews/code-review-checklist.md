@@ -39,20 +39,20 @@ For each file:
 
 ---
 
-## Phase 1: Fix Mislabeled Code Blocks
+## Phase 1: Fix Mislabeled Code Blocks ✅
 
 These files have code blocks tagged with the wrong language:
 
 | Status | File | Issue | Fix |
 |--------|------|-------|-----|
-| ☐ | `2024-01-17-Microsoft-Surface-Laptop-4.md` | `shell` blocks are actually PowerShell/cmd | → `powershell` or `cmd` |
-| ☐ | `2024-06-15-Open-Energy-Monitor-Emon.md` | `shell` block is PowerShell | → `powershell` |
-| ☐ | `2024-03-10-How-I-Learned-Rust.md` | `PowerhShell` typo | → `powershell` |
-| ☐ | `2024-09-15-FreeCAD.md` | `posh` non-standard | → `powershell` |
-| ☐ | `Other/2023-09-24-Systems-on-Systems.md` | Mixed PowerShell/bash in `sh` blocks | Split or relabel |
-| ☐ | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | Config files tagged as `bash` | → `text` or `ini` |
-| ☐ | `Other/2021-02-06-Audio.md` | Config/menu output tagged as `bash` | → `text` or `ini` |
-| ☐ | `2025-02-23-Database_GraphQL.md` | `<placeholder>` syntax in `sh` blocks | Fix or → `text` |
+| ✅ | `2024-01-17-Microsoft-Surface-Laptop-4.md` | `shell` blocks are actually PowerShell/cmd | → `powershell`, `bat` |
+| ✅ | `2024-06-15-Open-Energy-Monitor-Emon.md` | `shell` block is PowerShell | → `powershell` |
+| ✅ | `2024-03-10-How-I-Learned-Rust.md` | `PowerhShell` typo | → `powershell` |
+| ✅ | `2024-09-15-FreeCAD.md` | `posh` non-standard | → `powershell` |
+| ✅ | `Other/2023-09-24-Systems-on-Systems.md` | Mixed PowerShell/bash in `sh` blocks | Split into `powershell`, `bash`, `bat`, `ini`, `text` |
+| ✅ | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | Config files tagged as `bash` | → `text` |
+| ✅ | `Other/2021-02-06-Audio.md` | Config/menu output tagged as `bash` | → `text`, `ini` |
+| ✅ | `2025-02-23-Database_GraphQL.md` | `<placeholder>` syntax in `sh` blocks | Fixed to use actual container name |
 
 ---
 
@@ -208,6 +208,24 @@ Track issues discovered during review:
 3. **Container** - Run in Docker for isolation
 4. **VM/QEMU** - For OS-level operations
 5. **Manual** - Note in docs "tested on date X"
+
+---
+
+---
+
+## Completed Work
+
+### Phase 1 Complete (2026-01-20)
+
+Fixed 8 files with mislabeled code blocks:
+
+- Changed `shell` → `bat` for Windows batch/diskpart scripts
+- Changed `shell`/`sh` → `powershell` for PowerShell code
+- Changed `PowerhShell`/`posh` → `powershell` (standardized)
+- Changed `bash` → `text` for config files (BIND, DHCP, zone files)
+- Changed `bash` → `ini` for INI-style configs (systemd, wsl.conf)
+- Changed `bash` → `text` for interactive session output (bluetoothctl, raspi-config menus)
+- Split mixed-language blocks in Systems-on-Systems.md
 
 ---
 
