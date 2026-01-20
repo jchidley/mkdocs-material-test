@@ -131,7 +131,7 @@ find "$(pwd -P)" -name "filename"
 
 then use `gf` on that line (once you have switched to Normal mode) to open the file.
 
-```lua
+```bash
 cat << EOF > ~/.config/LazyVim/lua/plugins/toggleterm.lua
 return {
   {
@@ -226,7 +226,7 @@ alias nvim-kick="NVIM_APPNAME=kickstart nvim -S"
 alias nvim-chad="NVIM_APPNAME=LunarVim nvim -S"
 alias nvim-astro="NVIM_APPNAME=AstroNvim nvim -S"
 
-funtcion nvims() {
+function nvims() {
   items=("default" "kickstart" "Lazy" "LunarVim" "AstroNvim")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
@@ -510,6 +510,7 @@ end
 
 end # module
 endef
+EOF
 ```
 <!-- markdownlint-enable MD010 -->
 

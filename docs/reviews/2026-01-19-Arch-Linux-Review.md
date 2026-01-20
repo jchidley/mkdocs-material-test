@@ -146,7 +146,7 @@ This is more of a notes dump than a guide. Contains:
 
 ### Arch Pi — Frontmatter
 
-```yaml
+```text
 ---
 date: "2020-12-17"
 title: "Arch Linux Raspberry Pi"
@@ -163,7 +163,7 @@ llm_assisted: true
 
 ### Arch Installation — Frontmatter
 
-```yaml
+```text
 ---
 date: "2021-06-17"
 title: "Arch Linux Installation"
@@ -181,7 +181,7 @@ llm_assisted: true
 
 ### GUI VNC — Frontmatter + Heading Fix
 
-```yaml
+```text
 ---
 date: "2021-06-15"
 title: "Arch Linux GUI VNC"

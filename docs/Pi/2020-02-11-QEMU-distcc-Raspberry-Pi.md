@@ -27,9 +27,9 @@ tags:
 
 * [QEMU Documentation/Platforms/ARM](https://wiki.qemu.org/Documentation/Platforms/ARM#Generic_ARM_system_emulation_with_the_virt_machine)
 * [Virtual 32 bit QEMU](https://translatedcode.wordpress.com/2016/11/03/installing-debian-on-qemus-32-bit-arm-virt-board/)
-* [Installing Debian on QEMU’s 64-bit ARM “virt” board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)
+* [Installing Debian on QEMU’s 64-bit ARM "virt" board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)
 * [Debian on QEMU’s Raspberry Pi 3 model - flaky](https://translatedcode.wordpress.com/2018/04/25/debian-on-qemus-raspberry-pi-3-model/)
-* [Raspbian “stretch” for Raspberry Pi 3 on QEMU - February 2019](https://github.com/wimvanderbauwhede/limited-systems/wiki/Raspbian-%22stretch%22-for-Raspberry-Pi-3-on-QEMU)
+* [Raspbian "stretch" for Raspberry Pi 3 on QEMU - February 2019](https://github.com/wimvanderbauwhede/limited-systems/wiki/Raspbian-%22stretch%22-for-Raspberry-Pi-3-on-QEMU)
 * [Windows for Raspberry Pi 2 on QEMU HOWTO - June 2018 but older](https://github.com/0xabu/qemu/wiki)
 * [Run a virtualized image of Raspberry Pi in QEMU - April 2018](https://web.archive.org/web/20201205213426/https://tkrel.com/7390)
 * [Emulate Raspberry PI with QEMU - April 2018](http://blog.hellonico.info/iot/arm_on_qemu/)
@@ -79,32 +79,32 @@ qemu-img convert -f raw -O qcow2 ../Downloads/2020-08-20-raspios-buster-armhf-li
 Finally, my modified command to start the image was:
 
 ```bash
-qemu-system-aarch64\
-    -M raspi3\
-    -append "rw earlyprintk loglevel=8 console=ttyAMA0,115200 dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootdelay=1"\
-    -dtb ./bcm2710-rpi-3-b-plus.dtb\
-    -sd rpi.qcow2\
-    -kernel kernel8.img\
-    -m 1G\
-    -smp 4\
-    -serial stdio\
+qemu-system-aarch64 \
+    -M raspi3 \
+    -append "rw earlyprintk loglevel=8 console=ttyAMA0,115200 dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootdelay=1" \
+    -dtb ./bcm2710-rpi-3-b-plus.dtb \
+    -sd rpi.qcow2 \
+    -kernel kernel8.img \
+    -m 1G \
+    -smp 4 \
+    -serial stdio \
     -usb -device usb-mouse -device usb-kbd
 ```
 
 `qemu-img resize 2022-07-20-jack-lite-qemu.img 8G`
 
 ```bash
-qemu-system-aarch64\
-    -M raspi3b\
-    -append "rw earlyprintk loglevel=8 console=ttyAMA0,115200 dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootdelay=1"\
-    -dtb .dtb/bcm2710-rpi-3-b-plus.dtb\
+qemu-system-aarch64 \
+    -M raspi3b \
+    -append "rw earlyprintk loglevel=8 console=ttyAMA0,115200 dwc_otg.lpm_enable=0 root=/dev/mmcblk0p2 rootdelay=1" \
+    -dtb .dtb/bcm2710-rpi-3-b-plus.dtb \
     -drive file=./2022-07-20-jack-lite-qemu.img,format=raw,id=sd \
-    -kernel kernel8.img\
-    -m 1G\
-    -smp 4\
-    -serial stdio\
-    -usb -device usb-mouse -device usb-kbd\
-    -nographic
+    -kernel kernel8.img \
+    -m 1G \
+    -smp 4 \
+    -serial stdio \
+    -usb -device usb-mouse -device usb-kbd \
+    -nographic \
     -device usb-net,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22
 ```
 
@@ -114,9 +114,9 @@ qemu-system-aarch64 \
     -dtb ./bcm2710-rpi-3-b.dtb \
     -M raspi3 -m 1024 \
     -serial mon:stdio \
-    -append \"console=ttyAMA0 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait rw\" \
+    -append "console=ttyAMA0 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait rw" \
     -drive file=./raspbian-buster.img,format=raw,id=sd \
-    -no-reboot
+    -no-reboot \
     -nographic
 ```
 
@@ -134,9 +134,9 @@ Changing /etc/fstab entries for /boot and / to /dev/mmcblk0p1 and /dev/mmcblk0p2
 
 I don't need a graphics terminal so `-nographic` and adjusting `-serial mon:stdio` which also allows scripting and cut and paste to the terminal, apparently.  Currently on shutdown the kernel panics leading to a hang requiring me to manually kill the qemu command. Adding `-no-reboot` and `panic=1` to "-append 'OPTIONS'" is supposed to fix this.
 
-[QEMU kernel for raspberry pi 3 with networking and virtio support](https://stackoverflow.com/questions/61562014/qemu-kernel-for-raspberry-pi-3-with-networking-and-virtio-support) “The latest versions of QEMU (5.1.0 and 5.0.1) have USB emulation for the raspi3 machine (qemu-system-aarch64 -M raspi3).
+[QEMU kernel for raspberry pi 3 with networking and virtio support](https://stackoverflow.com/questions/61562014/qemu-kernel-for-raspberry-pi-3-with-networking-and-virtio-support) "The latest versions of QEMU (5.1.0 and 5.0.1) have USB emulation for the raspi3 machine (qemu-system-aarch64 -M raspi3).
 
-You can emulate networking and access to SSH if you use: -device usb-net,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22 in QEMU”
+You can emulate networking and access to SSH if you use: -device usb-net,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22 in QEMU"
 
 ```bash
 qemu-system-aarch64 \
@@ -145,7 +145,7 @@ qemu-system-aarch64 \
     -kernel kernel8.img \
     -dtb bcm2710-rpi-3-b-plus.dtb \
     -sd 2020-08-20-raspios-buster-armhf.img \
-    -append “console=ttyAMA0 root=/dev/mmcblk0p2 rw rootwait rootfstype=ext4” \
+    -append "console=ttyAMA0 root=/dev/mmcblk0p2 rw rootwait rootfstype=ext4" \
     -nographic \
     -device usb-net,netdev=net0 -netdev user,id=net0,hostfwd=tcp::5555-:22
 ```
@@ -166,7 +166,7 @@ sudo qemu-system-aarch64 \
     -usb -device usb-mouse -device usb-kbd \
     -device usb-net,netdev=net0 \
     -netdev user,id=net0,hostfwd=tcp::5555-:22
-``` 
+```
 
 [boot - Running raspbian buster with qemu - Raspberry Pi Stack Exchange](https://raspberrypi.stackexchange.com/questions/100384/running-raspbian-buster-with-qemu)
 [Debian "buster" for Raspberry Pi 3 on QEMU · wimvanderbauwhede/limited-systems Wiki · GitHub](https://github.com/wimvanderbauwhede/limited-systems/wiki/Debian-%22buster%22-for-Raspberry-Pi-3-on-QEMU)
@@ -183,7 +183,7 @@ qemu-system-aarch64 \
     -m 1024 \
     -serial mon:stdio \
     -nographic
-``` 
+```
 
 Answer here is to use the `virt` emulation
 [virtual machine - Trying to run Raspberry-Pi image under QEMU, but VM memory is limited to 256MB - Stack Overflow](https://stackoverflow.com/questions/69143721/trying-to-run-raspberry-pi-image-under-qemu-but-vm-memory-is-limited-to-256mb)
@@ -261,14 +261,14 @@ qemu-system-aarch64 \
     -dtb ./bcm2710-rpi-3-b.dtb \
     -M raspi3 -m 1024 \
     -serial mon:stdio \
-    -append \"console=ttyAMA0 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait rw\" \
+    -append "console=ttyAMA0 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait rw" \
     -drive file=./raspbian-buster.img,format=raw,id=sd \
-    -no-reboot
+    -no-reboot \
     -nographic
 ```
  
 My /etc/fstab on the Raspbian image is:
-```bash
+```text
 /dev/mmcblk0p1                                  /boot                           vfat    defaults                0       2
 /dev/mmcblk0p2                                  /                               ext4    defaults,noatime        0       1
 
@@ -294,7 +294,7 @@ proc                                            /proc                           
 * [booting a fresh linux kernel on qemu](https://ops.tips/notes/booting-linux-on-qemu/)
 * [How to Build A Custom Linux Kernel For Qemu](https://mgalgs.github.io/2015/05/16/how-to-build-a-custom-linux-kernel-for-qemu-2015-edition.html)
 * [Fast linux kernel testing with qemu](https://web.archive.org/web/20200210092931/http://ncmiller.github.io/2016/05/14/linux-and-qemu.html)
-* [Use “ and not ‘ on Qemu on Windows](https://github.com/dhruvvyas90/qemu-rpi-kernel/issues/71)
+* [Use " and not ‘ on Qemu on Windows](https://github.com/dhruvvyas90/qemu-rpi-kernel/issues/71)
 * [Hello world for bare metal ARM using QEMU](https://balau82.wordpress.com/2010/02/28/hello-world-for-bare-metal-arm-using-qemu/)
 
 * [Pi Linux From Scratch - PiLFS - QEMU](https://intestinate.com/pilfs/beyond.html#qemuuser)

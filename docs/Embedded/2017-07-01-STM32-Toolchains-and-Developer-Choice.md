@@ -53,7 +53,7 @@ open a bash on Windows prompt
 ```bash
 mkdir arm && cd arm
 tar -xvf # the downloaded file
-export arm_bin=~/Downloads/arm/gcc-arm-none-eabi-6-2017-q1-update/bin`
+export arm_bin=~/Downloads/arm/gcc-arm-none-eabi-6-2017-q1-update/bin
 export PATH=$PATH:$arm_bin
 ```
 
@@ -71,7 +71,7 @@ Code Generator: copy only the necessary library files
 -  Edit the main.c as required.
 -  Remove all the extra source files that you don't need. The bare minimum
 
-```bash
+```makefile
 C_SOURCES =  \
 Src/system_stm32f0xx.c \
 Src/main.c \

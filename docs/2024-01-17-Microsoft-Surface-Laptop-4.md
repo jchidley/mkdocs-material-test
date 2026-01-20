@@ -91,13 +91,13 @@ Exit
 
 run `Deployment and Imaging Tools Environment` app
 
-```cmd
+```bat
 copype amd64 C:\WinPE_amd64
 ```
 
 run `Deployment and Imaging Tools Environment` app as administrator
 
-```cmd
+```bat
 Makewinpemedia /ufd C:\WinPE_amd64 P:
 xcopy C:\Images\install.wim I:\install.wim # path to install image # Image
 ```

@@ -22,7 +22,7 @@ llm_assisted: true
 
 Turn off faststart by:
 
-```cmd
+```bat
 powercfg /h off
 ```
 

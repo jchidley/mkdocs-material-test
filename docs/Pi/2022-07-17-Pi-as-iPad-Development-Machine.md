@@ -43,14 +43,14 @@ Use raspi-config to set the country before use."
 
 files in /var/lib/systemd/rfkill have a single entry for 0 or 1
 on this system:
-```bash
+```text
 platform-3f300000.mmcnr:wlan
 platform-fe300000.mmcnr:wlan
 platform-soc:bluetooth
 ```
 
 This is what exists prior to first boot. Contents of both are 1
-```bash
+```text
 platform-3f300000.mmcnr:wlan  platform-fe300000.mmcnr:wlan
 ```
 

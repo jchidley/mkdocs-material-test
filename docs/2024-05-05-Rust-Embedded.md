@@ -288,14 +288,14 @@ mod tests {
 
 * **Rule 1:** Confirm that your project works with WASM WASI and WASM in the Browser.
 
-```rust
+```bash
 cargo test --target wasm32-wasip1
 cargo test --target wasm32-unknown-unknown
 ```
 
 * **Rule 2:** Use target thumbv7m-none-eabi and cargo tree to identify and fix dependencies incompatible with no_std.
 
-```rust
+```bash
 rustup target add thumbv7m-none-eabi
 cargo check --target thumbv7m-none-eabi
 # then
@@ -306,7 +306,7 @@ cargo tree --edges no-dev --format "{p} {f}"
 * **Rule 4:** Use Cargo features to let your main code use std optionally for file-related (etc.) functions.
 * **Rule 5:** Understand why test code always uses the standard library.
 
-```rust
+```bash
 # DOES NOT TEST `no_std`
 cargo test --no-default-features
 ```

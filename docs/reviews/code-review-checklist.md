@@ -56,48 +56,69 @@ These files have code blocks tagged with the wrong language:
 
 ---
 
-## Phase 2: Shell Scripts (bash/sh/shell/ash)
+## Phase 2: Shell Scripts (bash/sh/shell/ash) ✅
 
-**274 blocks across 39 files**
+**274 blocks across 39 files** — Syntax checked with shellcheck
 
-### High Priority (complex scripts, likely to have issues)
+### Summary
 
-| Status | File | Blocks | Syntax | Test | Notes |
-|--------|------|--------|--------|------|-------|
-| ☐ | `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` | 16 | ☐ | ☐ | Router setup scripts |
-| ☐ | `Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md` | 17 | ☐ | ☐ | Alpine router config |
-| ☐ | `Pi/2022-07-17-Pi-as-iPad-Development-Machine.md` | 20 | ☐ | ☐ | Dev environment setup |
-| ☐ | `Linux/2021-06-17-Arch-Linux-Installation.md` | 18 | ☐ | ☐ | Arch install guide |
-| ☐ | `Pi/2022-07-16-Pi-Gen.md` | 16 | ☐ | ☐ | Pi image generation |
-| ☐ | `Pi/2022-08-07-Alpine-Image-Build-Raspberry-Pi.md` | 15+13 | ☐ | ☐ | Alpine + ash scripts |
-| ☐ | `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | 14 | ☐ | ☐ | QEMU setup |
+All shell blocks have been reviewed with `shellcheck -S error`. Remaining warnings are style suggestions (like `SC2068: Double quote array expansions`), not syntax errors.
 
-### Medium Priority (moderate complexity)
+### Fixes Applied
 
-| Status | File | Blocks | Syntax | Test | Notes |
-|--------|------|--------|--------|------|-------|
-| ☐ | `2023-04-14-Neovim-Lua.md` | 10 | ☐ | ☐ | Neovim setup |
-| ☐ | `Linux/2021-06-15-Arch-Linux-GUI-VNC.md` | 9 | ☐ | ☐ | GUI/VNC setup |
-| ☐ | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | 9 | ☐ | ☐ | DNS config |
-| ☐ | `Pi/2022-07-09-Rasbian-X11.md` | 8 | ☐ | ☐ | X11 setup |
-| ☐ | `Linux/2022-07-14-Vim.md` | 7 | ☐ | ☐ | Vim build |
-| ☐ | `Linux/2020-02-09-Alpine-Linux-Install.md` | 6 | ☐ | ☐ | Alpine install |
-| ☐ | `Linux/2021-06-14-Booting-Linux-and-Other-Operating-Systems.md` | 6 | ☐ | ☐ | Boot config |
-| ☐ | `Linux/2020-01-27-Simplest-possible-Linux-boot.md` | 5 | ☐ | ☐ | Minimal boot |
-| ☐ | `Other/2023-09-24-Systems-on-Systems.md` | 20 | ☐ | ☐ | Mixed WSL/Linux |
+| File | Issue | Fix |
+|------|-------|-----|
+| `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | Unicode curly quotes in bash strings | Replaced with straight quotes |
+| `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | Missing line continuations (`\`) | Added backslashes |
+| `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | Trailing spaces after ``` | Removed |
+| `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | fstab content labeled as `bash` | → `text` |
+| `Pi/2022-07-17-Pi-as-iPad-Development-Machine.md` | File listing output labeled as `bash` | → `text` |
+| `2023-04-14-Neovim-Lua.md` | Typo: `funtcion` | → `function` |
+| `2023-04-14-Neovim-Lua.md` | Missing `EOF` in heredoc | Added `EOF` terminator |
+| `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` | Stray backtick in export | Removed |
+| `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` | Makefile syntax labeled as `bash` | → `makefile` |
+| `Linux/2021-06-14-Booting-Linux-and-Other-Operating-Systems.md` | rEFInd config labeled as `bash` | → `text` |
+| `Other/2023-09-24-Systems-on-Systems.md` | OpenRC init script labeled as `bash` | → `text` |
+| `Other/2023-09-24-Systems-on-Systems.md` | Problematic `${$var}` syntax in heredoc | Escaped for documentation |
 
-### Lower Priority (simple scripts)
+### Files Reviewed (High Priority)
 
-| Status | File | Blocks | Syntax | Test | Notes |
-|--------|------|--------|--------|------|-------|
-| ☐ | `Other/2020-11-13-Screen.md` | 4 | ☐ | ☐ | Screen basics |
-| ☐ | `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` | 4 | ☐ | ☐ | FPGA setup |
-| ☐ | `Linux/2022-07-16-Tmux.md` | 4 | ☐ | ☐ | Tmux config |
-| ☐ | `Other/2023-09-26-awk-sed-bash.md` | 3 | ☐ | ☐ | Text processing |
-| ☐ | `2024-02-12-chezmoi.md` | 3 | ☐ | ☐ | Dotfiles |
-| ☐ | `2024-02-13-Helix.md` | 3 | ☐ | ☐ | Editor setup |
-| ☐ | `Linux/2020-01-07-Traffic-Manager-Not-Firewall.md` | 2 | ☐ | ☐ | nftables |
-| ☐ | `Linux/2020-01-28-FileSystems.md` | 2 | ☐ | ☐ | FS commands |
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` | 16 | Clean |
+| ✅ | `Pi/2020-11-18-Alpine-Linux-Raspberry-Pi-Router.md` | 17 | Clean |
+| ✅ | `Pi/2022-07-17-Pi-as-iPad-Development-Machine.md` | 20 | Fixed file listings |
+| ✅ | `Linux/2021-06-17-Arch-Linux-Installation.md` | 18 | Clean |
+| ✅ | `Pi/2022-07-16-Pi-Gen.md` | 16 | Clean |
+| ✅ | `Pi/2022-08-07-Alpine-Image-Build-Raspberry-Pi.md` | 28 | Clean |
+| ✅ | `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | 14 | Fixed quotes, continuations |
+
+### Files Reviewed (Medium Priority)
+
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `2023-04-14-Neovim-Lua.md` | 10 | Fixed typo, heredoc |
+| ✅ | `Linux/2021-06-15-Arch-Linux-GUI-VNC.md` | 9 | Clean |
+| ✅ | `Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md` | 9 | Clean |
+| ✅ | `Pi/2022-07-09-Rasbian-X11.md` | 8 | Clean |
+| ✅ | `Linux/2022-07-14-Vim.md` | 7 | Clean |
+| ✅ | `Linux/2020-02-09-Alpine-Linux-Install.md` | 6 | Clean |
+| ✅ | `Linux/2021-06-14-Booting-Linux-and-Other-Operating-Systems.md` | 6 | Fixed rEFInd config |
+| ✅ | `Linux/2020-01-27-Simplest-possible-Linux-boot.md` | 5 | Clean |
+| ✅ | `Other/2023-09-24-Systems-on-Systems.md` | 20 | Fixed init script, heredoc |
+
+### Files Reviewed (Lower Priority)
+
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `Other/2020-11-13-Screen.md` | 4 | Clean |
+| ✅ | `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` | 4 | Clean |
+| ✅ | `Linux/2022-07-16-Tmux.md` | 4 | Clean |
+| ✅ | `Other/2023-09-26-awk-sed-bash.md` | 3 | Clean |
+| ✅ | `2024-02-12-chezmoi.md` | 3 | Clean |
+| ✅ | `2024-02-13-Helix.md` | 3 | Clean |
+| ✅ | `Linux/2020-01-07-Traffic-Manager-Not-Firewall.md` | 2 | Clean |
+| ✅ | `Linux/2020-01-28-FileSystems.md` | 2 | Clean |
 | ☐ | `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` | 2 | ☐ | ☐ | ARM toolchain |
 | ☐ | `2023-03-21-Julia.md` | 2 | ☐ | ☐ | Julia install |
 | ☐ | `Other/2021-02-06-Audio.md` | 10 | ☐ | ☐ | Audio config (many false positives expected) |
@@ -110,71 +131,135 @@ These files have code blocks tagged with the wrong language:
 
 ---
 
-## Phase 3: Rust (12 blocks)
+## Phase 3: Rust (8 actual Rust blocks) ✅
 
-| Status | File | Blocks | Syntax | Compile | Notes |
-|--------|------|--------|--------|---------|-------|
-| ☐ | `2024-05-05-Rust-Embedded.md` | 6 | ☐ | ☐ | Embedded Rust |
-| ☐ | `2024-05-05-Rust-General.md` | 5 | ☐ | ☐ | General Rust |
-| ☐ | `rust/2023-03-16-Rust-Beginnings.md` | 1 | ☐ | ☐ | Intro Rust |
+Originally 12 blocks, but 4 were mislabeled shell commands or text.
 
----
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `2024-05-05-Rust-Embedded.md` | 3 | Fixed 3 shell commands: `rust` → `bash` |
+| ✅ | `2024-05-05-Rust-General.md` | 4 | Fixed trailing space, function list → `text` |
+| ✅ | `rust/2023-03-16-Rust-Beginnings.md` | 1 | Clean |
 
-## Phase 4: Python (6 blocks)
+### Fixes Applied
 
-| Status | File | Blocks | Syntax | Run | Notes |
-|--------|------|--------|--------|-----|-------|
-| ☐ | `2023-11-05-Pi-Pico.md` | 2 | ☐ | ☐ | MicroPython |
-| ☐ | `Other/2022-03-25-FastAPI-and-JavaScript.md` | 1 | ☐ | ☐ | FastAPI |
-| ☐ | `Other/2022-10-07-cadquery.md` | 1 | ☐ | ☐ | CadQuery |
-
----
-
-## Phase 5: PowerShell (14+ blocks)
-
-| Status | File | Blocks | Syntax | Test | Notes |
-|--------|------|--------|--------|------|-------|
-| ☐ | `2024-01-17-Microsoft-Surface-Laptop-4.md` | 9 | ☐ | ☐ | WinPE/Deployment |
-| ☐ | `Other/2023-09-24-Systems-on-Systems.md` | ~5 | ☐ | ☐ | WSL integration |
-| ☐ | `2024-01-28-Git.md` | 1 | ☐ | ☐ | |
-| ☐ | `2024-03-10-How-I-Learned-Rust.md` | 1 | ☐ | ☐ | |
-| ☐ | `2024-06-15-Open-Energy-Monitor-Emon.md` | 1 | ☐ | ☐ | |
-| ☐ | `2024-09-15-FreeCAD.md` | 1 | ☐ | ☐ | |
+| File | Issue | Fix |
+|------|-------|-----|
+| `2024-05-05-Rust-Embedded.md` | `cargo test` commands labeled as `rust` | → `bash` |
+| `2024-05-05-Rust-Embedded.md` | `rustup`/`cargo` commands labeled as `rust` | → `bash` |
+| `2024-05-05-Rust-General.md` | Trailing space after closing brace | Removed |
+| `2024-05-05-Rust-General.md` | Function path list labeled as `rust` | → `text` |
 
 ---
 
-## Phase 6: YAML (20 blocks)
+## Phase 4: Python (6 blocks) ✅
 
-| Status | File | Blocks | Syntax | Notes |
-|--------|------|--------|--------|-------|
-| ☐ | `2024-02-13-Helix.md` | 1 | ☐ | Helix config |
-| ☐ | `2024-03-24-House-Electrics.md` | 1 | ☐ | |
-| ☐ | `Other/2022-08-04-GitHub-Pages-Jekyll.md` | 2 | ☐ | Jekyll config |
-| ☐ | `reviews/*.md` | 16 | ☐ | Review metadata |
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `2023-03-21-Julia.md` | 1 | Clean |
+| ✅ | `2023-11-05-Pi-Pico.md` | 1 | Fixed: shell command was in python block |
+| ✅ | `Other/2022-03-25-FastAPI-and-JavaScript.md` | 1 | Clean |
+| ✅ | `Other/2022-10-07-cadquery.md` | 1 | Fixed: placeholder `cq. ...` → working example |
+| ✅ | `rust/2023-03-16-Rust-Beginnings.md` | 1 | Clean |
+
+### Fixes Applied
+
+| File | Issue | Fix |
+|------|-------|-----|
+| `2023-11-05-Pi-Pico.md` | `mpremote` shell command in python block | → `bash` |
+| `Other/2022-10-07-cadquery.md` | Placeholder `cq. ...` not valid Python | → working example code |
 
 ---
 
-## Phase 7: Lua (4 blocks)
+## Phase 5: PowerShell (26 blocks) ✅
 
-| Status | File | Blocks | Syntax | Notes |
-|--------|------|--------|--------|-------|
-| ☐ | `2023-04-14-Neovim-Lua.md` | 4 | ☐ | Neovim config |
+All blocks pass PowerShell parser validation and PSScriptAnalyzer (Error severity).
+
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `2024-01-17-Microsoft-Surface-Laptop-4.md` | 9 | WinPE/Deployment scripts |
+| ✅ | `Other/2023-09-24-Systems-on-Systems.md` | 8 | WSL integration |
+| ✅ | `2023-04-14-Neovim-Lua.md` | 2 | Neovim setup |
+| ✅ | `rust/2023-03-16-Rust-Beginnings.md` | 2 | Rust toolchain |
+| ✅ | `2024-01-28-Git.md` | 1 | Git config |
+| ✅ | `2024-02-13-Helix.md` | 1 | Editor setup |
+| ✅ | `2024-03-10-How-I-Learned-Rust.md` | 1 | Rust install |
+| ✅ | `2024-06-15-Open-Energy-Monitor-Emon.md` | 1 | Energy monitor |
+| ✅ | `2024-09-15-FreeCAD.md` | 1 | FreeCAD setup |
 
 ---
 
-## Phase 8: Other Languages (no automated testing)
+## Phase 6: YAML (20 blocks) ✅
 
-| Language | File | Blocks | Manual Review |
-|----------|------|--------|---------------|
-| Julia | `2023-03-21-Julia.md` | 16 | ☐ |
-| Julia | `2023-05-01-VFD-3-Phase-Converter.md` | 1 | ☐ |
-| F# | `F#/2017-10-23-Testing-and-FParsec.md` | 4 | ☐ |
-| F# | `F#/2017-10-28-Understanding-and-Using-FsCheck.md` | 8 | ☐ |
-| F# | `F#/2017-10-30-...Monads.md` | 2 | ☐ |
-| Vim | `2023-04-14-Neovim-Lua.md` | 3 | ☐ |
-| JavaScript | `Other/2022-03-25-FastAPI-and-JavaScript.md` | 2 | ☐ |
-| HTML | Various | 3 | ☐ |
-| Verilog | `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` | 1 | ☐ |
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `2024-02-13-Helix.md` | 1 | Fixed: TOML mislabeled as `yaml` → `toml` |
+| ✅ | `2024-03-24-House-Electrics.md` | 1 | Fixed: missing closing ``` on separate line |
+| ✅ | `Other/2022-08-04-GitHub-Pages-Jekyll.md` | 2 | Clean |
+| ✅ | `reviews/*.md` | 16 | Fixed: frontmatter examples `yaml` → `text` |
+
+### Fixes Applied
+
+| File | Issue | Fix |
+|------|-------|-----|
+| `2024-02-13-Helix.md` | TOML config labeled as `yaml` | → `toml` |
+| `2024-03-24-House-Electrics.md` | Code block not closed properly | Fixed closing ``` placement |
+| `reviews/2026-01-19-*.md` | Frontmatter examples with `---` markers labeled as `yaml` | → `text` (12 blocks)
+
+---
+
+## Phase 7: Lua (4 blocks) ✅
+
+| Status | File | Blocks | Notes |
+|--------|------|--------|-------|
+| ✅ | `2023-04-14-Neovim-Lua.md` | 3 | Clean (selene warns about `vim` global - expected for Neovim configs) |
+
+### Fixes Applied
+
+| File | Issue | Fix |
+|------|-------|-----|
+| `2023-04-14-Neovim-Lua.md` | Bash heredoc mislabeled as `lua` | → `bash` |
+
+### Notes
+
+Selene reports `vim is not defined` for Neovim config files. This is expected - the `vim` global is injected by Neovim at runtime. These are valid configs.
+
+---
+
+## Phase 8: Other Languages ✅
+
+Manual review completed. No linters available, but checked for obvious issues.
+
+| Language | File | Blocks | Status |
+|----------|------|--------|--------|
+| Julia | `2023-03-21-Julia.md` | 16 | ✅ Clean |
+| Julia | `2023-05-01-VFD-3-Phase-Converter.md` | 1 | ✅ Clean |
+| F# | `F#/2017-10-23-Testing-and-FParsec.md` | 4 | ✅ Clean |
+| F# | `F#/2017-10-28-Understanding-and-Using-FsCheck.md` | 8 | ✅ Clean |
+| F# | `F#/2017-10-30-...Monads.md` | 2 | ✅ Clean |
+| Vim | `2023-04-14-Neovim-Lua.md` | 3 | ✅ Clean |
+| Vim | `2023-03-21-Julia.md` | 1 | ✅ Clean |
+| JavaScript | `Other/2022-03-25-FastAPI-and-JavaScript.md` | 2 | ✅ Clean |
+| HTML | `Other/2022-03-25-FastAPI-and-JavaScript.md` | 1 | ✅ Clean |
+| Verilog | `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` | 1 | ✅ Clean |
+| Yosys | `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` | 1 | ✅ Clean (DSL) |
+| Mermaid | `index.md` | 1 | ✅ Clean (diagram) |
+| aichat | `2025-02-23-Database_GraphQL.md` | 1 | ✅ Clean (AI output) |
+
+### Mislabeled Blocks Fixed
+
+| File | Issue | Fix |
+|------|-------|-----|
+| `2023-09-09-Picocomputer.md` | `ubuntu` | → `bash` (2 blocks) |
+| `2023-11-05-Pi-Pico.md` | `ubuntu` | → `bash` (1 block) |
+| `2023-09-09-Picocomputer.md` | `cmd` | → `bat` (1 block) |
+| `2024-01-17-Microsoft-Surface-Laptop-4.md` | `cmd` | → `bat` (2 blocks) |
+| `Linux/2020-01-28-FileSystems.md` | `cmd` | → `bat` (1 block) |
+| `Linux/2020-02-02-DD.md` | `cmd` | → `bat` (3 blocks) |
+| `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` | `cmd` | → `bat` (1 block) |
+| `2024-05-05-Rust-General.md` | `code` | → `text` (reference table) |
+| `Linux/2020-02-09-Alpine-Linux-Install.md` | `mac` | → `bash` (macOS commands) |
+| `Other/2022-08-04-GitHub-Pages-Jekyll.md` | `html` (was frontmatter) | → `text` (2 blocks) |
 
 ---
 
@@ -214,6 +299,61 @@ Track issues discovered during review:
 ---
 
 ## Completed Work
+
+### Phase 8 Complete (2026-01-20)
+
+Manual review of 40 blocks in Julia, F#, Vim, JavaScript, HTML, Verilog, Yosys, Mermaid, and aichat.
+
+**Mislabeled blocks fixed:**
+- `ubuntu` → `bash` (3 blocks)
+- `cmd` → `bat` (8 blocks)
+- `code` → `text` (1 block)
+- `mac` → `bash` (1 block)
+- `html` → `text` (2 blocks - were frontmatter examples)
+
+### Phases 3-7 Complete (2026-01-20)
+
+**Phase 3: Rust** — 8 blocks (was 12, 4 were mislabeled shell commands)
+- Fixed shell commands labeled as `rust` → `bash` (3 blocks)
+- Fixed function path list → `text` (1 block)
+- Fixed trailing whitespace (1 block)
+
+**Phase 4: Python** — 5 blocks
+- Fixed shell command in python block → `bash`
+- Fixed placeholder syntax `cq. ...` → working example
+
+**Phase 5: PowerShell** — 26 blocks, all clean
+
+**Phase 6: YAML** — 8 actual YAML blocks (was 20, 12 were frontmatter examples)
+- Fixed TOML mislabeled as `yaml` → `toml`
+- Fixed unclosed code block
+- Fixed frontmatter examples → `text` (12 blocks)
+
+**Phase 7: Lua** — 3 blocks (was 4, 1 was bash heredoc)
+- Fixed bash heredoc mislabeled as `lua` → `bash`
+- Neovim configs use `vim` global (expected, not an error)
+
+### Phase 2 Complete (2026-01-20)
+
+Ran shellcheck across all 274 bash/sh/shell blocks in 39 files. Fixed 12 issues:
+
+**Syntax Errors Fixed:**
+- Unicode curly quotes (`"` `"`) replaced with straight quotes
+- Missing line continuation backslashes added
+- Typo `funtcion` → `function` 
+- Missing `EOF` heredoc terminator added
+- Stray backtick removed from export statement
+- Trailing spaces after code block delimiters removed
+
+**Mislabeled Blocks Fixed:**
+- fstab content: `bash` → `text`
+- File listings: `bash` → `text`  
+- Makefile syntax: `bash` → `makefile`
+- rEFInd config: `bash` → `text`
+- OpenRC init script: `bash` → `text`
+
+**Documentation Improvements:**
+- Escaped problematic `${$var}` syntax shown as example in heredoc
 
 ### Phase 1 Complete (2026-01-20)
 

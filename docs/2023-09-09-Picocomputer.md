@@ -33,7 +33,7 @@ see [2023-09-24-Systems-on-Systems.md](/docs/Other/2023-09-24-Systems-on-Systems
 
 ### openocd
 
-```ubuntu
+```bash
 $ sudo apt install automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev
 sudo apt install pkg-config # missing on my WSL ubuntu
 $ git clone https://github.com/raspberrypi/openocd.git --branch rp2040-v0.12.0 --depth=1 --no-single-branch
@@ -48,7 +48,7 @@ sudo make install
 ## Software Installation
 
 I recommend using [Scoop](https://github.com/ScoopInstaller/Scoop) 
-```cmd
+```bat
 iwr -useb get.scoop.sh | iex
 scoop install cmake make msys2 
 msys2

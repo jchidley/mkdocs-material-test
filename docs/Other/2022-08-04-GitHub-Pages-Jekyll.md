@@ -20,7 +20,7 @@ Posts [https://jekyllrb.com/docs/posts/] are for blogs. These are kept in a `_po
 
 [Front matter](https://jekyllrb.com/docs/front-matter/) looks like this:
 
-```html
+```text
 ---
 layout: post
 title: Blogging Like a Hacker
@@ -31,7 +31,7 @@ which is `yaml` and the variables defined are used in liquid markup.
 
 The minimum is this:
 
-```html
+```text
 ---
 ---
 ```

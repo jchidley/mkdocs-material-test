@@ -140,7 +140,7 @@ llm_generated: true
 
 ### Alpine Router — Frontmatter
 
-```yaml
+```text
 ---
 date: "2020-11-18"
 title: "Alpine Linux Raspberry Pi Router"
@@ -159,7 +159,7 @@ llm_assisted: true
 
 ### Image Build — Frontmatter
 
-```yaml
+```text
 ---
 date: "2022-08-07"
 title: "Alpine Image Build Raspberry Pi"

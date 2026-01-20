@@ -157,7 +157,7 @@ Fixed config validated successfully with `sudo nft -c -f`.
 
 ### Traffic Manager — Frontmatter & Header
 
-```yaml
+```text
 ---
 date: "2020-01-07"
 title: "Traffic Manager Not Firewall"
@@ -176,7 +176,7 @@ llm_assisted: true
 
 ### DNS Setup — Frontmatter & Header
 
-```yaml
+```text
 ---
 date: "2020-01-08"
 title: "DNS Setup For DIY Home Router"

@@ -290,7 +290,7 @@ I created a specific Python environment in [Anaconda](https://www.anaconda.com/)
 
 [How to Install and Import Modules in Python 3 | Linode Docs](https://www.linode.com/docs/guides/installing-and-importing-modules-in-python-3/)
 
-```cmd
+```bat
 pip install git+https://github.com/m-labs/nmigen-boards.git.git
 pip install git+https://github.com/m-labs/nmigen-boards.git-boards.git
 ```

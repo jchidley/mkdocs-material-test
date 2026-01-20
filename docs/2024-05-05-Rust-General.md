@@ -387,7 +387,7 @@ Rust is going to try pretty hard to make sure that these are valid conversions. 
 
 [How do I convert between String, &str, Vec\<u8\> and &\[u8\]](https://stackoverflow.com/a/41034751/3617057)
 
-```code
+```text
 &str    -> String  | String::from(s) or s.to_string() or s.to_owned()
 &str    -> &[u8]   | s.as_bytes()
 &str    -> Vec<u8> | s.as_bytes().to_vec() or s.as_bytes().to_owned()
@@ -476,12 +476,12 @@ fn main() {
     println!("concat_strings: {}", concat_strings);
     let joined_strings = vec!["abc".to_string(), "def".to_string()].join("---");
     println!("joined_strings: {}", joined_strings);
-} 
+}
 ```
 
 There are also these other functions, and probably more too.
  
-```rust
+```text
 std::str::from_utf8_unchecked
 std::string::String::from_utf8
 String::from_utf8_lossy

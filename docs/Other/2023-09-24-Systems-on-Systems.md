@@ -33,9 +33,9 @@ The format of here-documents is:
 delimiter
 ```
 
-No parameter and variable expansion, command substitution, arithmetic expansion, or filename expansion is performed on word. If any part of word is quoted, the delimiter is the result of quote removal on word, and the lines in the here-document are not expanded. If word is unquoted, all lines of the here-document are subjected to parameter expansion, command substitution, and arithmetic expansion, the character sequence \newline is ignored, and ‘\’ must be used to quote the characters ‘\’, ‘$’, and ‘`’.
+No parameter and variable expansion, command substitution, arithmetic expansion, or filename expansion is performed on word. If any part of word is quoted, the delimiter is the result of quote removal on word, and the lines in the here-document are not expanded. If word is unquoted, all lines of the here-document are subjected to parameter expansion, command substitution, and arithmetic expansion, the character sequence \newline is ignored, and '\' must be used to quote the characters '\', '$', and '`'.
 
-If the redirection operator is ‘<<-’, then all leading tab characters are stripped from input lines and the line containing delimiter. This allows here-documents within shell scripts to be indented in a natural fashion.
+If the redirection operator is '<<-', then all leading tab characters are stripped from input lines and the line containing delimiter. This allows here-documents within shell scripts to be indented in a natural fashion.
 
 3.6.7 Here Strings
 A variant of here documents, the format is:
@@ -83,11 +83,12 @@ EOF
 sudo bash -c "cat > $OUTFILE" << EOF
 #!/bin/bash
 #? [ ] / \ = + < > : ; " , * | 
-#/ ? < > \ : * | ”
-#Filename="z:"${$winFn//\//\\}
+#/ ? < > \ : * | "
+# Note: The following line shows problematic bash syntax for illustration
+#Filename="z:"\${winFn//\//\\}
 echo "This is a generated shell script."
 App='eval "C:\Windows\notepad.exe" "'$winFn'"'
-$App
+\$App
 EOF
 ```
 
@@ -194,7 +195,7 @@ Get-VM | Export-VM -Path D:\WindowsBackup\
 
 ### APT Extras Script (Ubuntu/WSL)
 
-Here’s a ready-to-run Bash script that builds `baseline.txt`, `manual.txt`, `extras.txt`, echoes what each file is, and then prints a one-line summary for every package in `extras.txt`.
+Here's a ready-to-run Bash script that builds `baseline.txt`, `manual.txt`, `extras.txt`, echoes what each file is, and then prints a one-line summary for every package in `extras.txt`.
 
 Save it as `make-extras.sh` and run with `bash make-extras.sh` (no sudo needed unless your logs require it).
 
@@ -209,7 +210,7 @@ for cmd in zgrep awk sort head cut comm apt-mark apt-cache; do need "$cmd"; done
 # Gather earliest install date from dpkg logs
 earliest=$(zgrep -h " install " /var/log/dpkg.log* 2>/dev/null | awk '{print $1}' | sort | head -n1 || true)
 if [[ -z "${earliest:-}" ]]; then
-  echo "No install entries found in /var/log/dpkg.log* — nothing to do." >&2
+  echo "No install entries found in /var/log/dpkg.log* - nothing to do." >&2
   exit 1
 fi
 
@@ -228,9 +229,9 @@ comm -23 manual.txt <(sort baseline.txt) > extras.txt
 
 # Echo what each file represents
 echo
-echo "baseline.txt – packages installed on the very first day ($earliest)"
-echo "manual.txt   – everything marked manual"
-echo "extras.txt   – your real extras (manual minus baseline)"
+echo "baseline.txt - packages installed on the very first day ($earliest)"
+echo "manual.txt   - everything marked manual"
+echo "extras.txt   - your real extras (manual minus baseline)"
 echo
 
 # Quick counts
@@ -436,7 +437,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 `/etc/init.d/monitor_directory`
 
-```bash
+```text
 #!/sbin/openrc-run
 name="Monitor Directory"
 description="Monitor a directory"

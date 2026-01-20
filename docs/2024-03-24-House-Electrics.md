@@ -145,9 +145,9 @@ Need overgloves to prevent puncturing
 [Unable to connect to wifi: Auth Expired and Association Expired](https://community.home-assistant.io/t/unable-to-connect-to-wifi-auth-expired-and-association-expired/678570/2) with the issue on GitHub [ Wifi not connected to the esp32 module. #2144 - Wifi power lowering fix](https://github.com/espressif/arduino-esp32/issues/2144#issuecomment-1212591202)
 
 ```yaml
-
 wifi:
-  output_power: 8.5dB```
+  output_power: 8.5dB
+```
 
 [MottramLabs.com CT Clamps](https://web.archive.org/web/20250313132223/https://www.mottramlabs.com/ct_products.html)
 

@@ -130,7 +130,7 @@ edit /boot/refind_linux.conf and add `initrd=boot\intel-ucode.img initrd=boot\in
 
 Might also want to add sample menu items to refind.conf, copied from `refind.conf-sample`, at the bottom of the file.
 
-```bash
+```text
 menuentry "nuc3arch1" {
     icon     /refind/icons/os_arch.png
     loader   /nuc3arch1/vmlinuz-linux

@@ -154,7 +154,7 @@ llm_generated: true
 
 ### Simplest Linux Boot — Frontmatter
 
-```yaml
+```text
 ---
 date: "2020-01-27"
 title: "Simplest possible Linux boot"
@@ -173,7 +173,7 @@ llm_assisted: true
 
 ### Booting Linux — Frontmatter
 
-```yaml
+```text
 ---
 date: "2021-06-14"
 title: "Booting Linux and Other Operating Systems"
@@ -192,7 +192,7 @@ llm_assisted: true
 
 ### FileSystems — Frontmatter
 
-```yaml
+```text
 ---
 date: "2020-01-28"
 title: "File systems"
@@ -211,7 +211,7 @@ llm_assisted: true
 
 ### DD — Frontmatter
 
-```yaml
+```text
 ---
 date: "2020-02-02"
 title: "DD"

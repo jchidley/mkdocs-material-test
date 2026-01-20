@@ -138,7 +138,7 @@ sh mkimage.sh --tag edge \
 
 [Pro Terminal Commands: Using diskutil](https://applegazette.com/mac/pro-terminal-commands-using-diskutil/)
 
-```mac
+```bash
 diskutil listFilesystems
 diskutil list
 diskutil eraseDisk MS-DOS ALPINE disk§
