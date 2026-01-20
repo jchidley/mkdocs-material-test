@@ -68,6 +68,14 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 | **Mario Zechner** | [mariozechner.at](https://mariozechner.at/) | libGDX, basis universal | Active |
 | **Armin Ronacher** | [lucumr.pocoo.org](https://lucumr.pocoo.org/) | Flask, Jinja2, Click, Rye | Jul 2025 |
 
+## Legendary: Pure Builder
+
+| Person | Site | Major Projects | Last Updated |
+|--------|------|----------------|--------------|
+| **Fabrice Bellard** | [bellard.org](https://bellard.org/) | QEMU, FFmpeg, TinyCC, QuickJS, JSLinux, TinyEMU, TSAC, ts_zip | Jan 2026 |
+
+Fabrice Bellard is in a category of his own. Not a blogger—his site is a sparse list of projects. But every project is foundational infrastructure that millions depend on. Recent work includes **ts_zip** and **TSAC** (using LLMs for compression), **Micro QuickJS** (JS for microcontrollers), and **TextSynth** (LLM inference server). The defining trait: solving impossibly hard problems with minimal code, often solo.
+
 ## Key Characteristics They Share
 
 - Ship real projects (not just commentary)
