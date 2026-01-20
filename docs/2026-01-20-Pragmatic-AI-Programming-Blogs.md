@@ -19,6 +19,9 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 
 | Person | Blog | Social | Major Projects | Last Updated |
 |--------|------|--------|----------------|--------------|
+| **Simon Willison** | [simonwillison.net](https://simonwillison.net/) | [@simonw](https://x.com/simonw) | Django (co-creator), Datasette, llm CLI | Dec 2025 |
+| **Mario Zechner** | [mariozechner.at](https://mariozechner.at/) | [@badlogicgames](https://x.com/badlogicgames) | libGDX, basis universal | Active |
+| **Armin Ronacher** | [lucumr.pocoo.org](https://lucumr.pocoo.org/) | [@mitsuhiko](https://x.com/mitsuhiko) | Flask, Jinja2, Click, Rye | Jul 2025 |
 | **Sebastian Raschka** | [sebastianraschka.com](https://sebastianraschka.com/blog/) / [Ahead of AI](https://magazine.sebastianraschka.com/) | [@rasbt](https://x.com/rasbt) | LLMs-from-scratch (83k ⭐), litgpt, ML books | Dec 2025 |
 | **Andrej Karpathy** | [karpathy.ai](https://karpathy.ai/) / [bearblog](https://karpathy.bearblog.dev/) | [@karpathy](https://x.com/karpathy) | nanoGPT, minGPT, Tesla Autopilot, Zero to Hero | Dec 2025 |
 | **Jeremy Howard** | [jeremy.fast.ai](https://jeremy.fast.ai/) / [fast.ai](https://www.fast.ai/) | [@jeremyphoward](https://x.com/jeremyphoward) | fast.ai, fastai library (25k ⭐), ULMFiT | Jul 2025 |
@@ -28,6 +31,9 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 
 ### Why They Fit
 
+- **Simon Willison**: Prolific blogger, builds in public. Django co-creator, now focused on practical AI tooling (Datasette, llm CLI).
+- **Mario Zechner**: libGDX creator. Deep technical posts on compression, graphics, and systems programming.
+- **Armin Ronacher**: Flask, Jinja2, Click, Rye creator. Writes thoughtfully about language design and developer experience.
 - **Sebastian Raschka**: Deep technical explainers with code. No hype, just "here's how it actually works."
 - **Andrej Karpathy**: Legendary for making complex concepts accessible. Practical, hands-on.
 - **Jeremy Howard**: "Making neural nets uncool again" - pragmatism over complexity.
@@ -62,14 +68,6 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 | **Mitchell Hashimoto** | [mitchellh.com](https://mitchellh.com/) | Pragmatic engineering | Aug 2025 |
 | **Rachel Thomas** | [rachel.fast.ai](https://rachel.fast.ai/) | AI ethics | Active |
 
-## Original Inspirations
-
-| Person | Blog | Social | Major Projects | Last Updated |
-|--------|------|--------|----------------|--------------|
-| **Simon Willison** | [simonwillison.net](https://simonwillison.net/) | [@simonw](https://x.com/simonw) | Django (co-creator), Datasette, llm CLI | Dec 2025 |
-| **Mario Zechner** | [mariozechner.at](https://mariozechner.at/) | [@badaborium](https://x.com/badlogicgames) | libGDX, basis universal | Active |
-| **Armin Ronacher** | [lucumr.pocoo.org](https://lucumr.pocoo.org/) | [@maborium](https://x.com/mitsuhiko) | Flask, Jinja2, Click, Rye | Jul 2025 |
-
 ## Legendary: Pure Builder
 
 | Person | Site | Major Projects | Last Updated |
@@ -98,6 +96,9 @@ To check when these blogs were last updated, use the prompt below with an AI ass
 Check the following blogs for their most recent post date. For each, report the title and date of the most recent article:
 
 Tier 1:
+- https://simonwillison.net/
+- https://mariozechner.at/
+- https://lucumr.pocoo.org/
 - https://sebastianraschka.com/blog/
 - https://karpathy.ai/
 - https://www.fast.ai/
@@ -118,10 +119,8 @@ Tier 3:
 - https://mitchellh.com/
 - https://rachel.fast.ai/
 
-Originals:
-- https://simonwillison.net/
-- https://mariozechner.at/
-- https://lucumr.pocoo.org/
+Legendary:
+- https://bellard.org/
 
 Format as a markdown table with columns: Blog, Latest Post Title, Date
 ```

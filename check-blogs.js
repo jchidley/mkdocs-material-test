@@ -13,6 +13,9 @@ const BRAVE_SKILL = path.join(process.env.HOME, '.codex/skills/brave-search');
 
 const blogs = [
   // Tier 1
+  { name: 'Simon Willison', url: 'simonwillison.net', tier: 1 },
+  { name: 'Mario Zechner', url: 'mariozechner.at', tier: 1 },
+  { name: 'Armin Ronacher', url: 'lucumr.pocoo.org', tier: 1 },
   { name: 'Sebastian Raschka', url: 'sebastianraschka.com/blog', tier: 1 },
   { name: 'Andrej Karpathy', url: 'karpathy.ai', tier: 1 },
   { name: 'Jeremy Howard', url: 'fast.ai', tier: 1 },
@@ -30,10 +33,7 @@ const blogs = [
   { name: 'swyx', url: 'swyx.io', tier: 3 },
   { name: 'Mitchell Hashimoto', url: 'mitchellh.com', tier: 3 },
   { name: 'Rachel Thomas', url: 'rachel.fast.ai', tier: 3 },
-  // Originals
-  { name: 'Simon Willison', url: 'simonwillison.net', tier: 0 },
-  { name: 'Mario Zechner', url: 'mariozechner.at', tier: 0 },
-  { name: 'Armin Ronacher', url: 'lucumr.pocoo.org', tier: 0 },
+
   // Legendary
   { name: 'Fabrice Bellard', url: 'bellard.org', tier: -1 },
 ];
@@ -71,7 +71,6 @@ async function main() {
   
   const tiers = {
     '-1': '## Legendary: Pure Builder',
-    0: '## Original Inspirations',
     1: '## Tier 1: Highly Recommended',
     2: '## Tier 2: Excellent',
     3: '## Tier 3: Worth Following'
@@ -88,7 +87,7 @@ async function main() {
   }
   
   // Group by tier
-  for (const tier of [-1, 0, 1, 2, 3]) {
+  for (const tier of [-1, 1, 2, 3]) {
     const tierResults = results.filter(r => r.tier === tier);
     if (tierResults.length === 0) continue;
     
