@@ -17,6 +17,7 @@ This page provides a chronological listing of all content in the digital garden,
 ## 2026
 
 ### January
+- [Pragmatic AI & Programming Blogs](2026-01-20-Pragmatic-AI-Programming-Blogs.md) - ai, programming, blogs, resources
 - [Review: Building A Raspberry Pi Home Router](reviews/2026-01-19-Pi-Router-Review.md) - meta, review
 - [Documentation Style and Improvement Plan](style.md) - meta, documentation, writing
 
