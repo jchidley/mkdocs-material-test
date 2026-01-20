@@ -28,6 +28,8 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 | **Hamel Husain** | [hamel.dev](https://hamel.dev/) | [@HamelHusain](https://x.com/HamelHusain) | CodeSearchNet (used by OpenAI), nbdev, fastpages | Jan 2026 |
 | **Julia Evans** | [jvns.ca](https://jvns.ca/) | [@b0rk](https://x.com/b0rk) | Wizard Zines, rbspy | Jan 2026 |
 | **Peter Steinberger** | [steipete.me](https://steipete.me/) | [@steipete](https://x.com/steipete) | PSPDFKit, Poltergeist, AI dev workflows | Dec 2025 |
+| **Geoffrey Huntley** | [ghuntley.com](https://ghuntley.com/) | [@GeoffreyHuntley](https://x.com/GeoffreyHuntley) | AI coding agents, context engineering | Jan 2026 |
+| **Amos Wenger** | [fasterthanli.me](https://fasterthanli.me/) | [@fasterthanlime](https://x.com/fasterthanlime) | Rust deep dives, systems programming | Active |
 
 ### Why They Fit
 
@@ -40,6 +42,8 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 - **Hamel Husain**: Writes posts like "Fuck You, Show Me The Prompt" - extremely practical, no BS.
 - **Julia Evans**: Master of explaining hard things simply. Zines are delightful. Not AI-focused but similar pragmatic style.
 - **Peter Steinberger**: iOS veteran turned AI-native developer. Writes candidly about AI-assisted workflows ("Just Talk To It", "Shipping at Inference-Speed"). Ships constantly.
+- **Geoffrey Huntley**: Builds commercial AI coding agents. Writes definitive guides on context engineering, MCP servers, secure code generation. No-BS practitioner perspective.
+- **Amos Wenger**: Long-form, exploratory Rust content. "An excuse to teach Rust" through deep dives into how things actually work. Also does video.
 
 ## Tier 2: Excellent, Slightly More Specialized
 
@@ -105,6 +109,8 @@ Tier 1:
 - https://hamel.dev/
 - https://jvns.ca/
 - https://steipete.me/
+- https://ghuntley.com/
+- https://fasterthanli.me/
 
 Tier 2:
 - https://huyenchip.com/blog/

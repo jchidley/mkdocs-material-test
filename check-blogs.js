@@ -22,6 +22,8 @@ const blogs = [
   { name: 'Hamel Husain', url: 'hamel.dev', tier: 1 },
   { name: 'Julia Evans', url: 'jvns.ca', tier: 1 },
   { name: 'Peter Steinberger', url: 'steipete.me', tier: 1 },
+  { name: 'Geoffrey Huntley', url: 'ghuntley.com', tier: 1 },
+  { name: 'Amos Wenger', url: 'fasterthanli.me', tier: 1 },
   // Tier 2
   { name: 'Chip Huyen', url: 'huyenchip.com', tier: 2 },
   { name: 'Eugene Yan', url: 'eugeneyan.com', tier: 2 },
