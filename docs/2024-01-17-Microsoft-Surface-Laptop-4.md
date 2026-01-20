@@ -1,6 +1,13 @@
 ---
 date: "2024-01-17"
 title: "Microsoft Surface Laptop 4"
+tags:
+  - windows
+  - surface
+  - deployment
+  - winpe
+  - powershell
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
 # Microsoft Surface Laptop 4

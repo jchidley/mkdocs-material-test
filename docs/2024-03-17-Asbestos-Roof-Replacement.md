@@ -1,6 +1,10 @@
 ---
 date: "2024-03-17"
 title: "Asbestos Roof Replacement"
+tags:
+  - home-maintenance
+  - roofing
+  - solar
 ---
 <!-- markdownlint-disable MD025 -->
 # Asbestos Roof Replacement
@@ -38,11 +42,6 @@ perlins a 90 cm spacing
 [Asbestos essentials](https://www.hse.gov.uk/asbestos/essentials/index.htm)
 [emoving asbestos cement (AC) sheets, gutters etc and dismantling a small AC structure](https://www.hse.gov.uk/pubns/guidance/a14.pdf)
 
-[Hazardous waste collection](https://www.cityoflondon.gov.uk/services/waste-and-recycling/commercial-waste/hazardous-waste-collection)
+[Hazardous waste collection](https://www.cityoflondon.gov.uk/services/waste-and-recycling/commercial-waste) *(page restructured)*
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)

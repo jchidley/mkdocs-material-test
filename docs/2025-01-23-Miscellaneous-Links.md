@@ -1,6 +1,6 @@
 ---
 date: "2025-01-23"
-title: "Miscellaneous-Links"
+title: "Miscellaneous Links"
 tags:
   - links
   - resources
@@ -10,6 +10,7 @@ tags:
   - sailing
   - games
   - energy
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
 # Miscellaneous Links
@@ -52,7 +53,7 @@ This document consolidates various links and resources that don't fit into speci
 ### Waste Water Heat Recovery
 
 * [Waste Water Heat Recovery Systems - Buy online](https://thecodestore.co.uk/products/energy/waste-water-heat-recovery/)
-* [Mira HeatCapture™ | Heat Recovery System by Mira Showers](https://www.mirashowers.co.uk/professional-zone/for-the-specifier/mira-heatcapture/)
+* ~~Mira HeatCapture™ | Heat Recovery System by Mira Showers~~ (product page removed)
 * [Recoup Pipe HEX Installation Pack R-HEX-01 & R-PA-02 heat exchanger and WWHR installation pack | Wolseley](https://www.wolseley.co.uk/product/recoup-pipe-hex-installation-pack-r-hex-01-r-pa-02-heat-exchanger-and-wwhr-installation-pack/)
 * [Power-Pipe X2-84](https://thecodestore.co.uk/product/power-pipe-x2-84/)
 
@@ -80,7 +81,7 @@ This document consolidates various links and resources that don't fit into speci
 
 ### Timber and Building Calculators
 
-* [TIMBER BEAM CALCULATOR](https://www.timberbeamcalculator.co.uk/app/calculator/results/flat-roof-joists/british-standards?c=74cc70218c9e173265f937d26f6256a1)
+* [TIMBER BEAM CALCULATOR](https://www.timberbeamcalculator.co.uk/en-gb/)
 * [Span tables for roofing](https://www.labcwarranty.co.uk/hubfs/Blog/Blog%20PDFs/labcw-tech-update-trada-span-tables.pdf)
 * [Timber Beam Calculator](https://www.timberbeamcalculator.co.uk/en-gb/)
 * [How to Design and Build a Flat Roof](https://www.diydoctor.org.uk/projects/building_a_flat_roof.htm)
@@ -106,7 +107,7 @@ This document consolidates various links and resources that don't fit into speci
 
 * [UJK Parf Mk II Guide System | Axminster Tools](https://www.axminstertools.com/ujk-technology-parf-guide-system-mkii-104779)
 * [DRO Scale Selection Guide](https://www.touchdro.com/resources/getting-started/dro-scale-selection-guide.html)
-* [Magnetic Tape For Linear Measurement Applications](http://www.electronicaems.com/Magnetic-Tape.php)
+* [Magnetic Tape For Linear Measurement Applications](https://web.archive.org/web/2023/http://www.electronicaems.com/Magnetic-Tape.php)
 * [Friction Loss Calculator | Line Loss Calculator](https://inventory.powerzone.com/resources/friction-loss-calculator/%3Afr%3D20%3Afru%3DL%2FMIN%3Avc%3DWater%3Av%3D1%3Avu%3DCENTIPOISE%20%2F%20CP%3Asg%3D1%3Apl%3D20%3Aplu%3DMeters%3Apid%3D14%3Apidu%3DMillimeters%3Ahzc%3DCopper%3Ahzfc%3D140%3Arh%3D0.0015%3Arhu%3DMillimeters%3Arflu%3DHEAD%20M%3Arfvu%3DMeters%2FSec)
 
 ### 3D Printing
@@ -143,8 +144,7 @@ This document consolidates various links and resources that don't fit into speci
 
 ### Mini Transat Racing
 
-* [Hire Structure Pogo 2 in La Rochelle - Click&Boat](https://www.clickandboat.com/uk/boat-hire/la-rochelle/sailboat/structure-pogo-2-r2k7d)
-* [Charter Structure Pogo 2 in La Rochelle - Click&Boat](https://www.clickandboat.com/en/boat-rental/la-rochelle/sailboat/structure-pogo-2-r2k7d?fromDate=2020-09-12&toDate=2020-09-13)
+* ~~Hire Structure Pogo 2 in La Rochelle - Click&Boat~~ (listings no longer available)
 * [The Pogo2 - a Production class](http://minitransat650.com/leov/html/pogo2.html)
 * [Mini Fastnet | Organization Winches Club](https://minifastnet.winchesclub.org/en/)
 * [Individual boat histories](http://www.histoiredeshalfs.com/Histoire%20des%20Minis/464.htm)
@@ -301,5 +301,5 @@ This document consolidates various links and resources that don't fit into speci
 ## Miscellaneous Equipment and Parts
 
 * [Parts for my LifeCycle](https://www.gympart.com)
-* [Everbuild Technique Hybriflex 480 - Joints & Perimeters | Sika UK | Expansion Joints & Perimeter Seals](https://gbr.sika.com/en/construction/joint-sealing/expansion-jointsperimeterseals/everbuild-tecnichybriflex480.html)
+* [Everbuild Technique Hybriflex 480 - Joints & Perimeters | Sika UK](https://web.archive.org/web/2023/https://gbr.sika.com/en/construction/joint-sealing/expansion-jointsperimeterseals/everbuild-tecnichybriflex480.html)
 * [Shopping Cart | VEVOR UK](https://uk.vevor.com/cart)

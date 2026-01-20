@@ -1,6 +1,10 @@
 ---
 date: "2024-08-26"
-title: "LCD-1602-Pushbutton"
+title: "LCD 1602 Keypad Shield"
+tags:
+  - arduino
+  - embedded
+  - hardware
 ---
 <!-- markdownlint-disable MD025 -->
 # LCD 1602 Pushbutton
@@ -20,11 +24,4 @@ Someone wrote an [Arduino library for the chipset](https://github.com/duinoWitch
 
 For the Pi Pico the pin numbers are used as is (0, 1, etc) for A0..A3 reserved for analog.
 
-A sentence
 
-## Links
-
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)

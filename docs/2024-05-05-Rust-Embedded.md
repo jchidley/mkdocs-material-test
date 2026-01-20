@@ -1,6 +1,12 @@
 ---
 date: "2024-05-05"
-title: "rust-Embedded"
+title: "Rust Embedded"
+tags:
+  - rust
+  - embedded
+  - raspberry-pi
+  - microcontrollers
+  - testing
 ---
 <!-- markdownlint-disable MD025 -->
 # rust Embedded
@@ -11,32 +17,6 @@ title: "rust-Embedded"
 [This is the website for Jonathan 'theJPster' Pallant](https://thejpster.org.uk/) he does rust embedded stuff, like this [Neotron Pico](https://neotron-compute.github.io/Neotron-Book/neotron_pico.html)
 
 [A fast and flexible allocator for no_std and WebAssembly](https://crates.io/crates/talc)
-
-## Testing
-
-[Test driven embedded rust](https://hackaday.io/page/21907-test-driven-embedded-rust-development-tutorial) "In this tutorial we will set up an embedded development environment in rust that focuses on test driven development (TDD for short). TDD is especially useful for embedded systems, as testing the code on the target hardware is significantly more difficult than testing software written for the host device." using [mockall - a powerful mock object library for Rust](https://docs.rs/mockall/latest/mockall/#user-guide)
-
-Comment out `target = "thumbv7em-none-eabihf"` in in the `[build]` section of `.cargo/config.toml`, so you will need to `cargo build --release --target=thumbv7em-none-eabihf` for cargo.
-
-Add 
-
-```rust
-#![cfg_attr(not(test), no_main)]
-#![cfg_attr(not(test), no_std)]
-
-#[cfg(not(test))]
-use panic_halt as _;
-```
-
-at the top of source files.
-
-Need to use [mockall](https://docs.rs/mockall/latest/mockall/) add `[dev-dependencies]
-mockall = "0.13.1"`
-
-See also [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives/)
-
-[Rust Unit Testing - Mockall Crate](https://www.youtube.com/watch?v=zp6HuZ56Cl4)
-
 
 ## Previously
 
@@ -58,7 +38,7 @@ To measure very low voltages or currents [CurrentRanger](https://lowpowerlab.com
 
 see also [Pi Pico](2023-11-05-Pi-Pico.md)
 
-* [Embassy is a project to make async/await a first-class option for embedded development.](https://embassy.dev/book/dev/index.html)
+* [Embassy is a project to make async/await a first-class option for embedded development.](https://embassy.dev/book/)
 * [Embedded Rust & Embassy: GPIO Button Controlled Blinking](https://dev.to/theembeddedrustacean/embedded-rust-embassy-gpio-button-controlled-blinking-3ee6)
 
 * [Writing an OS in Rust ](https://os.phil-opp.com/)
@@ -267,29 +247,53 @@ NVM: 0x08000000..0x08004000 (16.00 KiB)
 
 ## Testing
 
-This is tricky with embedded because `cargo test` uses `std` which doesn't exist for embedded. One way is to use [custom_test_frameworks](https://rust-lang.github.io/rfcs/2318-custom-test-frameworks.html) as noted in [The Rust Unstable Book](https://doc.rust-lang.org/unstable-book/language-features/custom-test-frameworks.html). There's a long blog entry on [testing](https://os.phil-opp.com/testing/) in "Writing an OS in Rust" by Philipp Oppermann.
+Testing embedded Rust is tricky because `cargo test` uses `std` which doesn't exist for embedded targets.
 
-Other sources, [How to test code when #![no_std] is set](https://users.rust-lang.org/t/how-to-test-code-when-no-std-is-set/93180), [How do I test crates with #![no_std]?](https://stackoverflow.com/questions/28185854/how-do-i-test-crates-with-no-std), [Testing for no_std compatibility in Rust crates](https://blog.dbrgn.ch/2019/12/24/testing-for-no-std-compatibility/) and [Nine Rules for Running Rust on Embedded Systems](https://towardsdatascience.com/nine-rules-for-running-rust-on-embedded-systems-b0c247ee877e)
+### Test-Driven Development with Mocking
 
-suggest either including `#![cfg_attr(not(test), no_std)]` at the top of the file or adding 
+[Test driven embedded rust](https://hackaday.io/page/21907-test-driven-embedded-rust-development-tutorial) — TDD is especially useful for embedded systems, as testing on target hardware is significantly more difficult than host testing. Uses [mockall - a powerful mock object library for Rust](https://docs.rs/mockall/latest/mockall/#user-guide).
+
+Comment out `target = "thumbv7em-none-eabihf"` in the `[build]` section of `.cargo/config.toml`, so you will need to `cargo build --release --target=thumbv7em-none-eabihf` for cargo.
+
+Add at the top of source files:
+
+```rust
+#![cfg_attr(not(test), no_main)]
+#![cfg_attr(not(test), no_std)]
+
+#[cfg(not(test))]
+use panic_halt as _;
+```
+
+Need to use [mockall](https://docs.rs/mockall/latest/mockall/) — add `[dev-dependencies] mockall = "0.13.1"`
+
+See also [Mocking in Rust: Mockall and alternatives](https://blog.logrocket.com/mocking-rust-mockall-alternatives/) and [Rust Unit Testing - Mockall Crate](https://www.youtube.com/watch?v=zp6HuZ56Cl4)
+
+### no_std Testing Challenges
+
+One way is to use [custom_test_frameworks](https://rust-lang.github.io/rfcs/2318-custom-test-frameworks.html) as noted in [The Rust Unstable Book](https://doc.rust-lang.org/unstable-book/language-features/custom-test-frameworks.html). There's a long blog entry on [testing](https://os.phil-opp.com/testing/) in "Writing an OS in Rust" by Philipp Oppermann.
+
+Other sources: [How to test code when #![no_std] is set](https://users.rust-lang.org/t/how-to-test-code-when-no-std-is-set/93180), [How do I test crates with #![no_std]?](https://stackoverflow.com/questions/28185854/how-do-i-test-crates-with-no-std), [Testing for no_std compatibility in Rust crates](https://blog.dbrgn.ch/2019/12/24/testing-for-no-std-compatibility/) and [Nine Rules for Running Rust on Embedded Systems](https://towardsdatascience.com/nine-rules-for-running-rust-on-embedded-systems-b0c247ee877e)
+
+Either include `#![cfg_attr(not(test), no_std)]` at the top of the file or add:
 
 ```rust
 #[cfg(test)]
 mod tests {
     extern crate std;
-}```
+}
+```
 
-to the testing part.
+### Nine Rules Summary
 
-
-* Rule 1: Confirm that your project works with WASM WASI and WASM in the Browser.
+* **Rule 1:** Confirm that your project works with WASM WASI and WASM in the Browser.
 
 ```rust
 cargo test --target wasm32-wasip1
 cargo test --target wasm32-unknown-unknown
 ```
 
-* Rule 2: Use target thumbv7m-none-eabi and cargo tree to identify and fix dependencies incompatible with no_std.
+* **Rule 2:** Use target thumbv7m-none-eabi and cargo tree to identify and fix dependencies incompatible with no_std.
 
 ```rust
 rustup target add thumbv7m-none-eabi
@@ -298,9 +302,9 @@ cargo check --target thumbv7m-none-eabi
 cargo tree --edges no-dev --format "{p} {f}"
 ```
 
-* Rule 3: Mark main (non-test) code no_std and alloc. Replace std:: with core:: and alloc::.
-* Rule 4: Use Cargo features to let your main code use std optionally for file-related (etc.) functions.
-* Rule 5: Understand why test code always uses the standard library.
+* **Rule 3:** Mark main (non-test) code no_std and alloc. Replace std:: with core:: and alloc::.
+* **Rule 4:** Use Cargo features to let your main code use std optionally for file-related (etc.) functions.
+* **Rule 5:** Understand why test code always uses the standard library.
 
 ```rust
 # DOES NOT TEST `no_std`
@@ -316,7 +320,7 @@ use std::prelude::v1::*;
 use std::{format, print, println, vec};
 ```
 
-* Rule 6: Create a simple embedded test project. Run it with QEMU.
+* **Rule 6:** Create a simple embedded test project. Run it with QEMU.
 
 ## From C to Rust
 
@@ -358,7 +362,4 @@ Note that embassy includes it's own Pico specific HALs, etc
 
 [pio-rs](https://github.com/rp-rs/pio-rs)
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-<!-- markdownlint-enable MD034 -->

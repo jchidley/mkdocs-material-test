@@ -208,7 +208,7 @@ rustup component add rust-analyzer // for this to work
 
 ## IDE
 
-[pylint replacement with Ruff](https://github.com/charliermarsh/ruff/issues/970)
+[pylint replacement with Ruff](https://github.com/astral-sh/ruff/issues/970)
 
 in `.pylintrc` file (or `pylintrc`, or...)
 
@@ -247,7 +247,7 @@ def sum_as_string(a: int, b: int) -> str: ...
 * [Rust Programming Language](https://www.rust-lang.org)
 * [A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 * [Frustrated? It's not you, it's Rust](https://fasterthanli.me/articles/frustrated-its-not-you-its-rust)
-* [How to Mix Rust and Python in Your Project](https://medium.com/@MatthieuL49/a-mixed-rust-python-project-24491e2af424)
+* [How to Mix Rust and Python in Your Project](https://web.archive.org/web/20250313022951/https://medium.com/@MatthieuL49/a-mixed-rust-python-project-24491e2af424)
 * [GitHub - PyO3/pyo3: Rust bindings for the Python interpreter](https://github.com/PyO3/pyo3)
 * [Introduction - PyO3 user guide](https://pyo3.rs/)
 

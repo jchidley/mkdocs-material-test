@@ -1,14 +1,15 @@
 ---
 date: "2025-03-27"
-title: "DaVinci-Resolve"
+title: "DaVinci Resolve"
 tags:
   - video-editing
   - davinci-resolve
   - media
   - software
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
-# DaVinci-Resolve
+# DaVinci Resolve
 <!-- markdownlint-enable MD025 -->
 
 ## Introduction
@@ -17,13 +18,6 @@ tags:
 
 ## Settings
 
-apper to be kept in
+Appear to be kept in:
 
-"C:\Users\jackc\AppData\Roaming\Blackmagic Design\DaVinci Resolve"
-
-## Links
-
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)
+`C:\Users\jackc\AppData\Roaming\Blackmagic Design\DaVinci Resolve`

@@ -24,156 +24,13 @@ These changes can be applied without asking:
 
 ---
 
-## Progress: 18/87 (21%)
+## Progress: 87/87 (100%) ✅
 
 ---
 
-## Remaining Clusters
-
-### Cluster: Rust (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2024-05-05-Rust-General.md` | 498 lines |
-| ☐ | `2024-05-05-Rust-Embedded.md` | 364 lines |
-| ☐ | `2024-05-05-Rust-Data.md` | |
-| ☐ | `rust/2023-03-16-Rust-Beginnings.md` | 262 lines |
-
-### Cluster: Editors/Tools (5 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2023-04-14-Neovim-Lua.md` | 590 lines — longest |
-| ☐ | `2024-02-13-Helix.md` | |
-| ☐ | `Linux/2022-07-14-Vim.md` | |
-| ☐ | `Linux/2022-07-16-Tmux.md` | |
-| ☐ | `Other/2020-11-13-Screen.md` | |
-
-### Cluster: Python/Data (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2025-01-23-Python-General-Resources.md` | |
-| ☐ | `Python/2023-03-16-Python-Fake-Data-and-Testing.md` | |
-| ☐ | `Other/2020-01-17-Data-with-Python.md` | |
-| ☐ | `Other/2020-01-23-SQLite-Stuff.md` | |
-
-### Cluster: Git/DevOps (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2024-01-28-Git.md` | |
-| ☐ | `2024-02-12-chezmoi.md` | |
-| ☐ | `Other/2017-05-08-Git-Epiphany.md` | |
-| ☐ | `Other/2017-05-18-Git-Epilogue.md` | |
-
-### Cluster: Pi Build Tools (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` | 18KB cross-compilation |
-| ☐ | `Pi/2022-07-16-Pi-Gen.md` | |
-| ☐ | `Pi/2022-07-09-Rasbian-X11.md` | |
-| ☐ | `Pi/2022-07-17-Pi-as-iPad-Development-Machine.md` | 286 lines |
-
-### Cluster: Home Automation/IoT (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2023-11-15-Home-Assistant-ESPHome.md` | |
-| ☐ | `2024-06-15-Open-Energy-Monitor-Emon.md` | |
-| ☐ | `2024-08-25-Arduino.md` | |
-| ☐ | `2024-08-26-LCD-1602-Pushbutton.md` | |
-
-### Cluster: 3D Printing/CAD (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `Other/2020-09-24-Prusa-3d-printer.md` | |
-| ☐ | `Other/2020-10-29-Klipper-3D.md` | |
-| ☐ | `Other/2022-10-07-cadquery.md` | |
-| ☐ | `2024-09-15-FreeCAD.md` | |
-
-### Cluster: Home Maintenance (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2024-03-24-House-Electrics.md` | 288 lines |
-| ☐ | `2024-04-14-Plumbing.md` | 346 lines |
-| ☐ | `2024-03-17-Asbestos-Roof-Replacement.md` | |
-| ☐ | `2024-08-04-Lathe-Milling.md` | |
-
-### Cluster: F# Series (5 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `F#/2017-04-28-Continuing-to-choose-F#.md` | |
-| ☐ | `F#/2017-10-17-Testing-With-F#.md` | |
-| ☐ | `F#/2017-10-23-Testing-and-FParsec.md` | |
-| ☐ | `F#/2017-10-28-Understanding-and-Using-FsCheck.md` | |
-| ☐ | `F#/2017-10-30-The-Point-of-F#-Computational-Expressions-AKA-F#-Monads.md` | |
-
-### Cluster: Julia (2 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2023-03-21-Julia.md` | 403 lines |
-| ☐ | `2023-04-08-Julia-Drawing.md` | |
-
-### Cluster: Languages/Compilers (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2023-09-04-Writing-A-Programming-Language.md` | |
-| ☐ | `Other/2021-07-06-Parsing-Compilers.md` | |
-| ☐ | `Other/2020-12-08-Raku.md` | |
-| ☐ | `Other/2023-09-26-awk-sed-bash.md` | |
-
-### Cluster: Hardware/Electronics (5 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2023-05-01-VFD-3-Phase-Converter.md` | |
-| ☐ | `2024-08-17-Phase-Locked-Loop-PLL.md` | |
-| ☐ | `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` | 453 lines |
-| ☐ | `Other/2022-03-25-Radio-and-Electronics.md` | |
-| ☐ | `Other/2020-04-21-Signals.md` | |
-
-### Cluster: AI/Modern Tech (4 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2025-02-08-AI-Coding.md` | 262 lines |
-| ☐ | `2025-02-23-Database_GraphQL.md` | |
-| ☐ | `2025-03-01-Testing.md` | |
-| ☐ | `2025-05-22-Claude.md` | |
-
-### Cluster: Web/Media (3 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `Other/2022-03-25-FastAPI-and-JavaScript.md` | |
-| ☐ | `2025-03-27-DaVinci-Resolve.md` | |
-| ☐ | `2025-04-21-Web-Site-Information-and-Manipulation.md` | |
-
-### Cluster: Apple/Windows (3 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2024-01-17-Microsoft-Surface-Laptop-4.md` | 452 lines |
-| ☐ | `Apple/2021-06-26-Mac-Setup.md` | |
-| ☐ | `Apple/2021-06-06-python-apple.md` | |
-
-### Cluster: Misc (7 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2025-01-23-Miscellaneous-Links.md` | 304 lines |
-| ☐ | `Other/2020-02-09-URL-Dump.md` | |
-| ☐ | `Other/2023-09-24-Systems-on-Systems.md` | 458 lines |
-| ☐ | `Other/2021-02-06-Audio.md` | |
-| ☐ | `Other/2022-08-04-GitHub-Pages-Jekyll.md` | |
-| ☐ | `Other/2023-09-22-Risc-V.md` | |
-| ☐ | `2024-02-29-NixOS.md` | Short |
-
-### Cluster: Games (2 docs)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `Games/2020-01-15-Factorio.md` | |
-| ☐ | `Games/2022-11-09-Astroneer.md` | |
-
-### Cluster: Exploration (keep voice) (1 doc)
-| Status | Document | Notes |
-|--------|----------|-------|
-| ☐ | `2024-03-10-How-I-Learned-Rust.md` | Keep narrative voice |
-
 ---
 
-## Completed (18 docs)
+## Completed (87 docs)
 
 ### ✅ Pi Router Series
 - `Pi/2020-01-05-Building-A-Raspberry-Pi-Home-Router.md` — prerequisites, outputs, troubleshooting
@@ -196,6 +53,79 @@ These changes can be applied without asking:
 - `Linux/2020-01-28-FileSystems.md` — fixed NTFS-3G link
 - `Linux/2020-02-02-DD.md` — tags
 
+### ✅ Pi Build Tools Series
+- `Pi/2020-02-11-QEMU-distcc-Raspberry-Pi.md` — added tags, **fixed 4 dead links** (tkrel→archive.org, yuankun→archive.org, ncmiller→archive.org), fixed malformed URL with `/*`
+- `Pi/2022-07-16-Pi-Gen.md` — added tags, **fixed broken date format**, removed placeholder
+- `Pi/2022-07-09-Rasbian-X11.md` — added tags, title fix (Rasbian→Raspbian), removed placeholder links
+- `Pi/2022-07-17-Pi-as-iPad-Development-Machine.md` — **fixed missing frontmatter** (date, title), added tags, **fixed 3 dead links** (techcraft.co→archive.org)
+
+### ✅ Git/DevOps Series
+- `2024-01-28-Git.md` — added tags, removed empty Links section
+- `2024-02-12-chezmoi.md` — title fix, added tags, converted bare URL to markdown link, removed placeholder
+- `Other/2017-05-08-Git-Epiphany.md` — added tags, **fixed dead link** (2ndscale.com→archive.org)
+- `Other/2017-05-18-Git-Epilogue.md` — added tags
+
+### ✅ Python/Data Series
+- `2025-01-23-Python-General-Resources.md` — title fix, **fixed 5 dead/moved links** (numba→archive.org, learnpythonwithrune→archive.org, pipx URL, ruff repo, scipy URL, itnext→archive.org)
+- `Python/2023-03-16-Python-Fake-Data-and-Testing.md` — title fix, **fixed 4 dead links** (re-thought→archive.org, towardsdatascience→archive.org, insightsndata→archive.org), removed placeholder
+- `Other/2020-01-17-Data-with-Python.md` — added tags, **fixed 2 dead links** (Medium→archive.org, pythondata→archive.org), fixed typo "SQLAlchemey"
+- `Other/2020-01-23-SQLite-Stuff.md` — added tags, **converted bare URLs to proper markdown links**, fixed dead link (azcentral→archive.org)
+
+### ✅ Editors/Tools Series
+- `2023-04-14-Neovim-Lua.md` — added tags, **fixed 2 dead links** (console.dev→archive.org, ebens.me→archive.org)
+- `2024-02-13-Helix.md` — fixed malformed link syntax, fixed cspell.org URL
+- `Linux/2022-07-14-Vim.md` — added tags, **fixed broken date format**, removed placeholder links
+- `Linux/2022-07-16-Tmux.md` — added tags, **fixed broken date format**, **fixed copy-paste errors** (stray "Vim", wrong section name), removed placeholder links
+- `Other/2020-11-13-Screen.md` — added tags, **fixed 2 dead links** (elecrealm.com→archive.org)
+
+### ✅ Rust Series
+- `2024-05-05-Rust-General.md` — title fix, **fixed malformed link**, ratatui URL, removed placeholder, Medium→archive.org, removed duplicate "Exercises in Programming Style" (covered in Beginnings)
+- `2024-05-05-Rust-Embedded.md` — added tags, **fixed embassy book URL**, removed empty section, **merged duplicate Testing sections**
+- `2024-05-05-Rust-Data.md` — added tags, removed placeholder links
+- `rust/2023-03-16-Rust-Beginnings.md` — **fixed ruff repo URL** (moved to astral-sh), Medium→archive.org
+
+### ✅ Home Automation/IoT Series
+- `2023-11-15-Home-Assistant-ESPHome.md` — title fix, added tags, **fixed dead sequr.be link** (marked as offline), **fixed malformed garage door link**, **fixed mottramlabs→archive.org**, removed placeholder
+- `2024-06-15-Open-Energy-Monitor-Emon.md` — title fix, added tags, removed placeholder section
+- `2024-08-25-Arduino.md` — added tags, **fixed typo** (udpate→update), removed empty Links section
+- `2024-08-26-LCD-1602-Pushbutton.md` — title fix, added tags, removed placeholder content and incomplete text
+
+### ✅ 3D Printing/CAD Series
+- `Other/2020-09-24-Prusa-3d-printer.md` — title fix (3d→3D), added tags
+- `Other/2020-10-29-Klipper-3D.md` — **fixed typo in title** (Kipper→Klipper), added tags, **converted bare URLs to markdown links**
+- `Other/2022-10-07-cadquery.md` — **fixed broken date** (2099→2022), **fixed title** (Template→CadQuery), added tags, **converted bare URLs to markdown links**
+- `2024-09-15-FreeCAD.md` — added tags, **fixed malformed link** (empty link text), **converted bare URLs to markdown links**
+
+### ✅ Home Maintenance Series
+- `2024-03-24-House-Electrics.md` — title fix, added tags, **fixed 4 malformed/empty links** (consumer units, safety gloves, CEF enclosures, solar spreadsheet), **fixed mottramlabs→archive.org**, removed placeholder
+- `2024-04-14-Plumbing.md` — added tags, removed placeholder section
+- `2024-03-17-Asbestos-Roof-Replacement.md` — added tags, **fixed dead link** (City of London page restructured), removed placeholder
+- `2024-08-04-Lathe-Milling.md` — title fix, added tags, removed placeholder
+
+### ✅ F# Series
+- `F#/2017-04-28-Continuing-to-choose-F#.md` — added tags, **fixed 2 dead links** (theburningmonk→archive.org, biarity.me→archive.org)
+- `F#/2017-10-17-Testing-With-F#.md` — added tags, **fixed xUnit URL** (github.io→xunit.net), **fixed 3 dead links** (navision-blog→archive.org, smallcheck→archive.org, stuartgunter→archive.org)
+- `F#/2017-10-23-Testing-and-FParsec.md` — added tags, **fixed 3 dead links** (fogcreek→archive.org, bjoernrochel→archive.org), fixed xUnit URL
+- `F#/2017-10-28-Understanding-and-Using-FsCheck.md` — added tags, **fixed dead link** (navision-blog→archive.org)
+- `F#/2017-10-30-The-Point-of-F#-Computational-Expressions-AKA-F#-Monads.md` — added tags
+
+### ✅ Julia Series
+- `2023-03-21-Julia.md` — added tags, **fixed Makie tutorial URL**, **fixed 6 dead links** (csus.edu debugger→archive.org, smallcheck docs & paper→archive.org, Unitful→GitHub, ahsmart cheatsheet→archive.org, devgenius→archive.org)
+- `2023-04-08-Julia-Drawing.md` — added tags, removed placeholder
+
+### ✅ Languages/Compilers Series
+- `2023-09-04-Writing-A-Programming-Language.md` — title fix, added tags, **fixed malformed URL** (missing `/` in https), **fixed 2 dead links** (micro-lisp→archive.org, 6502.org→archive.org), **converted bare URL to markdown link**, removed placeholder
+- `Other/2021-07-06-Parsing-Compilers.md` — title fix, added tags
+- `Other/2020-12-08-Raku.md` — added tags, **marked Alpine rakudo link as moved** (package location changed)
+- `Other/2023-09-26-awk-sed-bash.md` — title fix, added tags, **fixed dead link** (linuxconfig→archive.org), removed placeholder
+
+### ✅ Hardware/Electronics Series
+- `2023-05-01-VFD-3-Phase-Converter.md` — title fix, added tags, removed placeholder
+- `2024-08-17-Phase-Locked-Loop-PLL.md` — title fix, added tags, removed placeholder
+- `Other/2020-03-12-FPGA-and-Amaranth-HDL.md` — title fix, added tags
+- `Other/2022-03-25-Radio-and-Electronics.md` — added tags
+- `Other/2020-04-21-Signals.md` — title fix, added tags, **fixed 3 dead links** (pythonforengineers→archive.org, python-control→latest version, caltech→archive.org)
+
 ### ✅ Pi Pico/Embedded Series
 - `Pi/2022-07-17-Pi-Pico.md` — tags, empty section
 - `2023-11-05-Pi-Pico.md` — fixed link path
@@ -203,6 +133,40 @@ These changes can be applied without asking:
 - `Embedded/2017-05-30-STM32-Development.md` — **fixed dead book.pdf** (→archive.org)
 - `Embedded/2017-07-01-STM32-Toolchains-and-Developer-Choice.md` — updated stlink repo
 
+### ✅ AI/Modern Tech Series
+- `2025-02-08-AI-Coding.md` — title fix, removed placeholder, **fixed 2 dead links** (copilot-mcp marketplace→GitHub, @bhancock_ai→@aiwithbrandon), removed localhost/ChatGPT links
+- `2025-02-23-Database_GraphQL.md` — **fixed title** (Database_GraphQL→Database and GraphQL), **fixed H1** (Template→proper title), removed Bing search links, removed placeholder
+- `2025-03-01-Testing.md` — **fixed malformed list** (missing newline), removed placeholder
+- `2025-05-22-Claude.md` — **converted bare URLs to markdown links**
+
+### ✅ Web/Media Series
+- `Other/2022-03-25-FastAPI-and-JavaScript.md` — added tags, **fixed 3 dead links** (johnresig→archive.org, svelte tutorial→new docs, sveltesociety recipes→homepage), **converted bare URLs to markdown links**
+- `2025-03-27-DaVinci-Resolve.md` — title fix (DaVinci-Resolve→DaVinci Resolve), **fixed typo** (apper→Appear), removed placeholder, formatted path as code
+- `2025-04-21-Web-Site-Information-and-Manipulation.md` — title fix, removed placeholder
+
+### ✅ Apple/Windows Series
+- `2024-01-17-Microsoft-Surface-Laptop-4.md` — added tags (windows, surface, deployment, winpe, powershell)
+- `Apple/2021-06-26-Mac-Setup.md` — added tags (macos, apple, setup, python)
+- `Apple/2021-06-06-python-apple.md` — added tags, **fixed 4 dead links** (rednafi singledispatch→archive.org, towardsdatascience conda×2→archive.org, techinscribed→archive.org)
+
+### ✅ Misc Series
+- `2025-01-23-Miscellaneous-Links.md` — title fix, **fixed 5 dead links** (Click&Boat×2→removed, electronicaems→archive.org, Sika→archive.org, Mira→removed, timber calc→homepage)
+- `Other/2020-02-09-URL-Dump.md` — added tags, **fixed 2 dead links** (uncooperative.org→archive.org, adelielinux→archive.org)
+- `Other/2023-09-24-Systems-on-Systems.md` — title fix, added tags
+- `Other/2021-02-06-Audio.md` — **fixed broken date format**, added tags, **fixed malformed link**, **fixed 2 dead links** (tutsplus→removed, mindful-audio→archive.org)
+- `Other/2022-08-04-GitHub-Pages-Jekyll.md` — **fixed missing frontmatter**, added tags, **fixed dead link** (VS Code marketplace→GitHub repo)
+- `Other/2023-09-22-Risc-V.md` — title fix, added tags, **fixed 7 dead links** (jborza→archive.org, michaeljclark→archive.org, 5 Zephyr docs→new URLs)
+- `2024-02-29-NixOS.md` — added tags (all 6 links verified working)
+
 ---
 
-*Last updated: 2026-01-19*
+### ✅ Games Series
+- `Games/2020-01-15-Factorio.md` — added tags, **fixed malformed link** (missing link text), **converted bare URLs to markdown links**, **fixed dead link** (xtvideos.net→archive.org)
+- `Games/2022-11-09-Astroneer.md` — added tags, **fixed typo** (Sppedrun→Speedrun), **converted bare URL to markdown link**, removed placeholder link
+
+### ✅ How I Learned Rust (narrative doc)
+- `2024-03-10-How-I-Learned-Rust.md` — title fix (hyphenated→spaced), **fixed dead link** (doggo dot rs YouTube→archive.org), **converted bare URL to markdown link**, kept narrative voice intact
+
+---
+
+*Last updated: 2026-01-20*

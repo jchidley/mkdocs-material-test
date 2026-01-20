@@ -1,6 +1,10 @@
 ---
 date: "2021-07-06"
-title: "Parsing Compilers"
+title: "Parsing and Compilers"
+tags:
+  - compilers
+  - parsing
+  - programming-languages
 ---
 <!-- markdownlint-disable MD025 -->
 # Parsing Compilers

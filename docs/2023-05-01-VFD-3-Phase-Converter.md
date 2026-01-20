@@ -1,6 +1,10 @@
 ---
 date: "2023-05-01"
-title: "VFD-3-Phase-Converter"
+title: "VFD 3-Phase Converter"
+tags:
+  - electronics
+  - modbus
+  - vfd
 ---
 <!-- markdownlint-disable MD025 -->
 # VFD 3 Phase Converter
@@ -33,9 +37,6 @@ Julia `using CRC32c; crc32c("one")`
 
 ## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
 * [See appendices for 485 CAN bus etc](https://docs.galco.com/techdoc/dlpc/driv_ac_vfd-e_um.pdf)
 * [Online CRC Calculator](https://www.lammertbies.nl/comm/info/crc-calculation)
 * [VFD](https://realpars.com/variable-frequency-drive/)

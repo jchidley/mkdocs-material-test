@@ -1,6 +1,10 @@
 ﻿---
 date: "2017-10-30"
 title: "The Point of F# Computational Expressions AKA F# Monads"
+tags:
+  - fsharp
+  - functional-programming
+  - monads
 ---
 
 # What's the Point of a F# Computational Expression AKA F# Monad?

@@ -1,6 +1,10 @@
 ---
 date: "2020-09-24"
-title: "Prusa 3d Printer"
+title: "Prusa 3D Printer"
+tags:
+  - 3d-printing
+  - prusa
+  - hardware
 ---
 <!-- markdownlint-disable MD025 -->
 ### Prusa Mk3S

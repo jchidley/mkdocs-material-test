@@ -1,6 +1,10 @@
 ---
 date: "2017-05-18"
-title: Git Epilogue
+title: "Git Epilogue"
+tags:
+  - git
+  - version-control
+  - ssh
 ---
 <!-- markdownlint-disable MD025 -->
 # Git Epilogue

@@ -1,6 +1,13 @@
 ---
 date: "2023-09-24"
-title: "Systems-on-Systems"
+title: "Systems on Systems"
+tags:
+  - wsl
+  - linux
+  - docker
+  - shell
+  - powershell
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
 # Systems-on-Systems

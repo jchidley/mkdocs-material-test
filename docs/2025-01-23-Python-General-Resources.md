@@ -1,6 +1,6 @@
 ---
 date: "2025-01-23"
-title: "Python-General-Resources"
+title: "Python General Resources"
 tags:
   - python
   - testing
@@ -48,7 +48,7 @@ For focused resources on testing frameworks and fake data generation, see [Pytho
 ## Performance
 
 * [Introduction to the Numba library](https://kratzert.github.io/2017/09/12/introduction-to-the-numba-library.html)
-* [Speed Up your Algorithms Part 2-- Numba](https://towardsdatascience.com/speed-up-your-algorithms-part-2-numba-293e554c5cc1)
+* [Speed Up your Algorithms Part 2-- Numba](https://web.archive.org/web/20240708162802/https://towardsdatascience.com/speed-up-your-algorithms-part-2-numba-293e554c5cc1)
 * [Numba documentation -- Numba 0.56.4+0.g288a38bbd.dirty-py3.7-linux-x86_64.egg documentation](https://numba.readthedocs.io/en/stable/index.html)
 
 ## Finance and Monte Carlo
@@ -57,13 +57,13 @@ For focused resources on testing frameworks and fake data generation, see [Pytho
 * [Quantitative Economics with Python – QuantEcon](https://quantecon.org/python-lectures/)
 * [Quantitative Economics with Python -- Quantitative Economics with Python](https://python.quantecon.org/intro.html)
 * [Monte Carlo Simulation with Python - Practical Business Python](https://pbpython.com/monte-carlo.html)
-* [Python for Finance: Risk and Return - Learn Python With Rune](https://www.learnpythonwithrune.org/python-for-finance-risk-and-return/)
+* [Python for Finance: Risk and Return - Learn Python With Rune](https://web.archive.org/web/20230329004949/https://www.learnpythonwithrune.org/python-for-finance-risk-and-return/)
 
 ## Development Tools
 
 * [How to set up a perfect Python project](https://sourcery.ai/blog/python-best-practices/)
-* [pipx -- Install and Run Python Applications in Isolated Environments](https://pypa.github.io/pipx/#overview-what-is-pipx)
-* [GitHub - charliermarsh/ruff: An extremely fast Python linter, written in Rust.](https://github.com/charliermarsh/ruff)
+* [pipx -- Install and Run Python Applications in Isolated Environments](https://pipx.pypa.io/)
+* [GitHub - astral-sh/ruff: An extremely fast Python linter, written in Rust.](https://github.com/astral-sh/ruff)
 * [Practical Business Python -](https://pbpython.com)
 
 ## Web Frameworks
@@ -79,7 +79,7 @@ For focused resources on testing frameworks and fake data generation, see [Pytho
 ## Scientific Computing
 
 * [1. Getting started with Python for science -- Scipy lecture notes](https://scipy-lectures.org/intro/index.html)
-* [Introduction -- SciPy v1.10.1 Manual](https://docs.scipy.org/doc/scipy/tutorial/general.html)
+* [Introduction -- SciPy Manual](https://docs.scipy.org/doc/scipy/tutorial/)
 * [Randomized Designs -- pyDOE 0.3.6 documentation](https://pythonhosted.org/pyDOE/randomized.html)
 * [pyDOE: The experimental design package for python -- pyDOE 0.3.6 documentation](https://pythonhosted.org/pyDOE/index.html)
 
@@ -89,7 +89,7 @@ For focused resources on testing frameworks and fake data generation, see [Pytho
 
 ## Game Development
 
-* [Creating Pac-Man clone in Python in 300 lines of code or less-- Part 1](https://itnext.io/how-to-create-pac-man-in-python-in-300-lines-of-code-or-less-part-1-288d54baf939)
+* [Creating Pac-Man clone in Python in 300 lines of code or less-- Part 1](https://web.archive.org/web/20251030053525/https://itnext.io/how-to-create-pac-man-in-python-in-300-lines-of-code-or-less-part-1-288d54baf939)
 
 ## Machine Learning
 

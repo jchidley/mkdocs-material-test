@@ -1,6 +1,10 @@
 ---
 date: "2017-10-28"
 title: "Understanding and Using FsCheck"
+tags:
+  - fsharp
+  - testing
+  - fscheck
 ---
 
 # Understanding and Using FsCheck
@@ -192,7 +196,7 @@ So the type ``float`` just isn't going to work for these tests.  I need a closel
 * [FsCheck](https://fscheck.github.io/FsCheck/)
 * [http://blog.ploeh.dk/tags/#FsCheck-ref](http://blog.ploeh.dk/tags/#FsCheck-ref) 
 * [http://blog.mavnn.co.uk/fscheck-breaking-your-code-in-new-and-exciting-ways/](http://blog.mavnn.co.uk/fscheck-breaking-your-code-in-new-and-exciting-ways/) 
-* [http://www.navision-blog.de/blog/2016/03/21/property-based-testing-in-the-real-world/](http://www.navision-blog.de/blog/2016/03/21/property-based-testing-in-the-real-world/) 
+* [Property based testing in the real world](https://web.archive.org/web/20230930125645/http://www.navision-blog.de/blog/2016/03/21/property-based-testing-in-the-real-world/) 
 * [http://jackfoxy.com/gaining-fscheck-fluency-through-transparency/](http://jackfoxy.com/gaining-fscheck-fluency-through-transparency/) 
 
 ## More Links

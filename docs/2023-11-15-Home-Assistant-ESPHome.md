@@ -1,6 +1,11 @@
 ---
 date: "2023-11-15"
-title: "Home-Assistant-ESPHome"
+title: "Home Assistant and ESPHome"
+tags:
+  - home-automation
+  - esphome
+  - raspberry-pi
+  - iot
 ---
 <!-- markdownlint-disable MD025 -->
 # Template
@@ -11,25 +16,21 @@ title: "Home-Assistant-ESPHome"
 * [Understanding MQTT Topics](http://www.steves-internet-guide.com/understanding-mqtt-topics/)
 * [Scargill Tech Blog](https://tech.scargill.net/)
 * [A simple setup for your own smart home server (on a Raspberry Pi)](https://github.com/OliverHi/smarthomeserver)
-* [Home Assistant Container](https://sequr.be/blog/2021/08/home-assistant-container-part-1-install-debian-docker-and-portainer/)
+* ~~[Home Assistant Container](https://sequr.be/blog/2021/08/home-assistant-container-part-1-install-debian-docker-and-portainer/)~~ *(site offline, no archive)*
 * [Random Light Schedule on Home Assistant](https://community.home-assistant.io/t/random-light-schedule/10134/16)
 * [Home Assistant Configuration Example](https://github.com/arsaboo/homeassistant-config)
 * [How much does it cost to run a smart home?](https://notenoughtech.com/home-automation/smart-lights-wont-save-you-money/#google_vignette)
 
 ## Links
-
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
 * [Firmware, etc on Sonoff BasicR4](https://notenoughtech.com/home-automation/sonoff-basicr4/)
 * [Tutorial on making a ESPHome External Component from scratch](https://community.home-assistant.io/t/tutorial-on-making-a-esphome-external-component-from-scratch/592758) and [HomeThing](https://homething.io/)
 * [Build your own CT Clamp Power and Energy Monitor with ESPHome](https://youtu.be/fvCqXjey8lI?si=8ripOyHlnpB_znNG)
-* [Loads of interesting ESP8266 ESP32 products](https://www.mottramlabs.com/esp_products.html)
+* [Loads of interesting ESP8266 ESP32 products](https://web.archive.org/web/20250210041830/https://www.mottramlabs.com/esp_products.html)
 * [MAKE AN ARDUINO TEMPERATURE SENSOR (THERMISTOR TUTORIAL)](https://www.circuitbasics.com/arduino-thermistor-temperature-sensor-tutorial/)
 * [HOW ROTARY ENCODERS WORK – ELECTRONICS BASICS](https://www.thegeekpub.com/245407/how-rotary-encoders-work-electronics-basics/)
 * [Incremental encoder](https://en.wikipedia.org/wiki/Incremental_encoder)
 * [Rpi pico w onboard temperature sensor and onboard led](https://community.home-assistant.io/t/rpi-pico-w-onboard-temperature-sensor-and-onboard-led/564904/3)
-* [pico-w-garage-door-sensor](Raspberry Pi Pico W Garage Door Sensor)
+* Raspberry Pi Pico W Garage Door Sensor *(link broken, removed)*
 * [Using ESPHome on the Raspberry Pi Pico W and other RP2040 microcontroller boards](https://koen.vervloesem.eu/blog/using-esphome-on-the-raspberry-pi-pico-w-and-other-rp2040-microcontroller-boards/)
 * [Development for Home Assistant](https://developers.home-assistant.io/docs/development_index) and [my fork of Home Assistant](https://github.com/jchidley/core)
 * This is the normal Home Assistant documentation for [examples of Home Assistant custom config](https://github.com/home-assistant/example-custom-config/tree/master) this will work with [ESPHome](https://esphome.io/custom/custom_component.html) but they prefer that you use [exernal components](https://esphome.io/components/external_components) but the documentation for external components is severely limited, as of 2023

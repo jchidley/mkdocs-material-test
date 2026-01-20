@@ -1,6 +1,11 @@
 ---
 date: "2020-03-12"
-title: "FPGA-and-Amaranth-HDL"
+title: "FPGA and Amaranth HDL"
+tags:
+  - fpga
+  - hdl
+  - verilog
+  - hardware
 ---
 <!-- 2020-03-12-Toolchain.md -->
 

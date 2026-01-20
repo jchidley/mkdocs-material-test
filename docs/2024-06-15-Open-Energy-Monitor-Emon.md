@@ -1,6 +1,11 @@
 ---
 date: "2024-06-15"
-title: "Open-Energy-Monitor-Emon"
+title: "Open Energy Monitor (Emon)"
+tags:
+  - energy-monitoring
+  - home-automation
+  - raspberry-pi
+  - iot
 ---
 <!-- markdownlint-disable MD025 -->
 # Open Energy Monitor Emon
@@ -65,8 +70,4 @@ There are 2 kinds, pt100 and pt1000. pt1000 seems slightly cheaper.
 
 [AVR-DB Firmware](https://github.com/openenergymonitor/avrdb_firmware/)
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->

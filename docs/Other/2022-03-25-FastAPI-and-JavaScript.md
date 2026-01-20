@@ -1,6 +1,13 @@
 ---
 date: "2022-03-25"
 title: "FastAPI and JavaScript"
+tags:
+  - python
+  - javascript
+  - fastapi
+  - web
+  - svelte
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
 # FastAPI JavaScript
@@ -91,7 +98,7 @@ function download(thing, filename = 'download'){
     link.click();
 
     URL.revokeObjectURL(link.href);
-}   
+}
 ```
 
 ## Working with NodeLists
@@ -106,8 +113,8 @@ let strictOptions = filtered.map(i => {return i.id + ": true"}).join(", ");
 
 ## Classes
 
-[Simple “Class” Instantiation](https://johnresig.com/blog/simple-class-instantiation/)
-[JavaScript without “new” and “this”keywords](https://nemisj.com/js-without-new-and-this/)
+[Simple "Class" Instantiation](https://web.archive.org/web/2022/https://johnresig.com/blog/simple-class-instantiation/)
+[JavaScript without "new" and "this"keywords](https://nemisj.com/js-without-new-and-this/)
 
 ## Links
 
@@ -127,11 +134,11 @@ let strictOptions = filtered.map(i => {return i.id + ": true"}).join(", ");
 
 ### Svelte
 
-* [Svelte tutorial](https://svelte.dev/tutorial/basics)
+* [Svelte tutorial](https://svelte.dev/docs/svelte/overview)
 * [SvelteKit](https://kit.svelte.dev)
 * [How to add JSDoc Typechecking to SvelteKit](https://www.swyx.io/jsdoc-swyxkit)
 * [Svelte • Cybernetically enhanced web apps](https://svelte.dev)
-* [Reactivity - Svelte Society](https://sveltesociety.dev/recipes/svelte-language-fundamentals/reactivity)
+* [Svelte Society](https://sveltesociety.dev/)
 
 ### JavaScript Development
 
@@ -153,17 +160,15 @@ let strictOptions = filtered.map(i => {return i.id + ": true"}).join(", ");
 * [Relearn CSS layout: Every Layout](https://every-layout.dev)
 * [Lesson 2: Hello world | Learn Eleventy From Scratch](https://learneleventyfromscratch.com/lesson/2.html#adding-some-dependencies)
 * [GitHub - Andy-set-studio/learneleventyfromscratch.com: In this Eleventy course, we go from a completely empty directory to a full-blown marketing site for a design agency, and along the way, we dive really deep into Eleventy and front-end development best practices.](https://github.com/Andy-set-studio/learneleventyfromscratch.com)
-* [Overview — Eleventy](https://www.11ty.dev/docs/)
+* [Overview - Eleventy](https://www.11ty.dev/docs/)
 
 ### Web APIs and Tools
 
 * [README - Everything curl](https://everything.curl.dev)
 * [Menu](https://docs.nodegui.org)
 * [Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com)
-* [Template Designer Documentation — Jinja Documentation (3.1.x)](https://jinja.palletsprojects.com/en/3.1.x/templates/)
+* [Template Designer Documentation - Jinja Documentation (3.1.x)](https://jinja.palletsprojects.com/en/3.1.x/templates/)
 * [Chart.js | Open source HTML5 Charts for your website](https://www.chartjs.org)
 
-<!-- markdownlint-disable MD034 -->
-https://vuejs.org/
-https://fastapi.tiangolo.com/deployment/docker/
-<!-- markdownlint-enable MD034 -->
+* [Vue.js](https://vuejs.org/)
+* [FastAPI Docker Deployment](https://fastapi.tiangolo.com/deployment/docker/)

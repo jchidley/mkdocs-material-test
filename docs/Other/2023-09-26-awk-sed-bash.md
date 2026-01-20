@@ -1,6 +1,11 @@
 ---
 date: "2023-09-26"
-title: "Awk Sed bash"
+title: "Awk, Sed, and Bash"
+tags:
+  - bash
+  - awk
+  - sed
+  - linux
 ---
 <!-- markdownlint-disable MD025 -->
 # Awk Sed
@@ -21,7 +26,7 @@ Don't forget to use both `man` and `info` commands to learn more about the vairo
 
 * [bash manual](https://www.gnu.org/software/bash/manual/bash.html)
 * [bash debugger](https://bashdb.sourceforge.net/bashdb.html)
-* [debugging bash scripts](https://linuxconfig.org/how-to-debug-bash-scripts)
+* [debugging bash scripts](https://web.archive.org/web/20250527203000/https://linuxconfig.org/how-to-debug-bash-scripts)
 
 ## Here documents
 
@@ -185,9 +190,4 @@ exit
 * [Awk tutorial](https://www.grymoire.com/Unix/Awk.html)
 * [The awk programming language](https://www.pement.org/awk.htm)
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)

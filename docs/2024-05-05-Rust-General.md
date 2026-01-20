@@ -1,6 +1,6 @@
 ---
 date: "2024-05-05"
-title: "rust-General"
+title: "Rust General"
 tags:
   - rust
   - programming
@@ -133,8 +133,6 @@ use [codewars](https://www.codewars.com/kata/search/rust?q=&xids=completed&beta=
 
 [Rust By Practice](https://practice.course.rs/why-exercise.html)
 
-Exercises in programming style [Exercises in Programming Style, 2nd Edition](https://www.routledge.com/Exercises-in-Programming-Style/Lopes/p/book/9780367350208) [https://github.com/crista/exercises-in-programming-style](https://github.com/crista/exercises-in-programming-style) [Exercises in Prog Style, F#, The Burning Monk](https://theburningmonk.com/tags/exercises-in-prog-style/)
-
 Concise talk on ["Type-Driven API Design in Rust" by Will Crichton](https://www.youtube.com/watch?v=bnnacleqg6k)
 Building with types [The Typestate Pattern in Rust](https://cliffle.com/blog/rust-typestate/). Let Get Rusty's video [Improve your Rust APIs with the type state pattern](https://www.youtube.com/watch?v=_ccDqRTx-JU). And No Boilerplate's [Compiler-Driven Development in Rust](https://www.youtube.com/watch?v=Kdpfhj3VM04) video.
 
@@ -193,7 +191,7 @@ And `v.into()` returns `From::from(v)` by default."
 [Trait objects](https://doc.rust-lang.org/reference/types/trait-object.html)
 [What makes something a "trait object"?](https://stackoverflow.com/questions/27567849/what-makes-something-a-trait-object)
 [How do you actually use dynamically sized types in Rust?](https://stackoverflow.com/a/25753422/3617057)
-[Trait Objects vs Generics in Rust](https://medium.com/@richinex/trait-objects-vs-generics-in-rust-426a9ce22d78)
+[Trait Objects vs Generics in Rust](https://web.archive.org/web/20240605124806/https://medium.com/@richinex/trait-objects-vs-generics-in-rust-426a9ce22d78)
 
 ### Custom Error, static
 
@@ -312,7 +310,7 @@ But [Is it considered a bad practice to implement Deref for newtypes?](https://s
 [Rusty_Art ](https://github.com/altunenes/rusty_art) based on [nannou](https://guide.nannou.cc/welcome) that uses egui. Via TimClicks' [Pixelate an image in less than 50 lines of code - Learning Rust Creatively](https://www.youtube.com/watch?v=t4DmszQfD-Q)
 [Building a GUI for my Tiling Window Manager in Pure Rust with egui and eframe | Part 1](https://www.youtube.com/watch?v=zZKjBMt4kZ4)
 [Building cross-platform GUI apps in Rust using egui](https://blog.logrocket.com/building-cross-platform-gui-apps-rust-using-egui/)
-[Ratatui is a Rust library for cooking up delicious text user interfaces](https://ratatui.rs/introduction/)
+[Ratatui is a Rust library for cooking up delicious text user interfaces](https://ratatui.rs/)
 [Awesome Ratatui](https://github.com/ratatui-org/awesome-ratatui)
 [Command Line Argument Parser for Rust](https://docs.rs/clap/latest/clap/) see also [Command Line Applications in Rust](https://rust-cli.github.io/book/index.html)
 
@@ -493,6 +491,4 @@ Unicode support modules for Rust. [unicode-rs](https://unicode-rs.github.io/) th
 
 use ripgrep to search a downloaded copy of the [Unicode Character Database](https://www.unicode.org/ucd/), the [latest was 16](https://www.unicode.org/versions/Unicode16.0.0/) at the time of writing. There's a zip file of the complete database [UCD.zip](https://www.unicode.org/Public/UCD/latest/ucd/) or an XML version [ucd.all.flat.zip](https://www.unicode.org/Public/UCD/latest/ucdxml/) that should be extracted to use [ripgrep](https://github.com/BurntSushi/ripgrep) on.
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
+

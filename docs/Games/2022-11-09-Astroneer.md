@@ -1,6 +1,10 @@
 ---
 date: "2022-11-09"
 title: "Astroneer"
+tags:
+  - games
+  - astroneer
+  - speedrun
 ---
 
 <!-- markdownlint-disable MD025 -->
@@ -9,7 +13,7 @@ title: "Astroneer"
 
 ## Introduction
 
-## Sppedrun
+## Speedrun
 
 Sylva: canister, large platform A, 3 generators (of 8 total), 250 bytes, smelter
 caverns for 3 laterite, 1 sphalerite, 5 quartz, 
@@ -31,7 +35,4 @@ Satellite - 7 triptychs
 
 ## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://docs.google.com/presentation/d/e/2PACX-1vRU9D4rIqXjCjSGcDCeVcWpKxcS1264fQPeP6bVbhwRdnj_ArMcks5BrLtVWXNqT3BkD9XgAqZBUloR/pub?start=false&loop=false&delayms=60000&slide=id.p
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)
+* [Astroneer Speedrun Guide](https://docs.google.com/presentation/d/e/2PACX-1vRU9D4rIqXjCjSGcDCeVcWpKxcS1264fQPeP6bVbhwRdnj_ArMcks5BrLtVWXNqT3BkD9XgAqZBUloR/pub?start=false&loop=false&delayms=60000&slide=id.p)

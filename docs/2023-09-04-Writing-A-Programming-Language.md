@@ -1,6 +1,10 @@
 ---
 date: "2023-09-04"
-title: "Writing-A-Programming-Language"
+title: "Writing A Programming Language"
+tags:
+  - compilers
+  - programming-languages
+  - parsing
 ---
 <!-- markdownlint-disable MD025 -->
 # Writing A Programming Language
@@ -82,7 +86,7 @@ Here's a few introductory texts:
 * [Bits of information about Lisp, Scheme, 8 bit LISP](http://web.archive.org/web/20100131151915/http://www.ip9.org/munro/skimp/)
 * [The Make-A-Lisp Process](https://github.com/kanaka/mal/blob/master/process/guide.md)
 * [uLisp](http://www.ulisp.com/show?1AA0)
-* [micro-lisp](https://github.com/carld/micro-lisp)
+* [micro-lisp](https://web.archive.org/web/20241017232810/https://github.com/carld/micro-lisp)
 * [femtolisp - a lightweight, robust, scheme-like lisp implementation used in julia](https://github.com/JeffBezanson/femtolisp)
 * [LISP on the BBC Microcomputer Remastered PDF](https://stardot.org.uk/forums/viewtopic.php?t=17811)
 
@@ -96,14 +100,14 @@ Here's a few introductory texts:
 ## Back Ends
 
 * [Code Generation](https://fileadmin.cs.lth.se/cs/Education/EDAN65/2021/lectures/L11.pdf)
-* Someone wrote a Lisp assembler for the 6502 and wrote a blog about it. [Fun with Lisp: Programming the NES](https:/ahefner.livejournal.com/20528.html) with [code on github](https://github.com/ahefner/asm6502)
+* Someone wrote a Lisp assembler for the 6502 and wrote a blog about it. [Fun with Lisp: Programming the NES](https://ahefner.livejournal.com/20528.html) with [code on github](https://github.com/ahefner/asm6502)
 * [QBE - Compiler Backend](https://c9x.me/compile/)
 * [Let's get hands-on with QBE](https://briancallahan.net/blog/20210829.html)
 * [LISP/8-6502 interpreter](http://web.archive.org/web/20090106184314/http://www.hugbox.org/lisp8/lisp-6502.asm)
 * [6502 “Illegal” Opcodes Demystified](https://www.masswerk.at/nowgobang/2021/6502-illegal-opcodes)
 * [Henry Baker's COMFY compiler for the 6502 processor ported to Common Lisp](https://github.com/jaoswald/cl-comfy-6502)
 * [Lisp interpreter written for the Apple //e.](https://github.com/hausdorff/turtles)
-* [Implementing Lisp for 6502/65C816](http://forum.6502.org/viewtopic.php?t=1427)
+* [Implementing Lisp for 6502/65C816](https://web.archive.org/web/20240101000000/http://forum.6502.org/viewtopic.php?t=1427) *(archived)*
 * [David A. Wheeler's 6502 Language Implementation Approaches](https://dwheeler.com/6502/)
 * Readable [MAE Manual](https://atariwiki.org/wiki/attach/MAE%20Assembler/MAE_Manual.pdf)
 * [EHS Disk Macro Assembler/Text Editor (MAE) - Manual](https://archive.org/details/EHSDiskMacroAssemblerManual/mode/2up)
@@ -152,9 +156,7 @@ Keyboard is a bit weird: Tab key acts as the CTRL key on the C64, and the left C
 * This is a collection of emulators [M.CU.M.E = Multi CompUter Machine Emulator](https://github.com/Jean-MarcHarvengt/MCUME/tree/master/MCUME_pico/bin/PICOMPUTERMAX)
 * Lots of references and hardware [ZX Spectrum for Raspberry Pico Pi RP2040](https://github.com/fruit-bat/pico-zxspectrum)
 
-<!-- markdownlint-disable MD034 -->
-http://telarity.com/~dan/cbm/languages.html
-<!-- markdownlint-enable MD034 -->
+[CBM Languages](http://telarity.com/~dan/cbm/languages.html)
 Weird archive formats: possibly 16 bit operating systems.
 
 Nicholas Vrtis, Transactor Publishing Inc., Vol.8,Iss.6)
@@ -162,8 +164,4 @@ LISP interpreter. All numbers are stored as 24 bit integers.
 <http://www.csbruce.com/cbm/ftp/c64/programming/mlisp1p2.arc>
 <https://www.funet.fi/pub/cbm/c64/programming/mlisp.sfx>
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)

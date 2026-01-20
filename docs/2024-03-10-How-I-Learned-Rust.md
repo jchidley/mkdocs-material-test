@@ -1,6 +1,6 @@
 ---
 date: "2024-03-10"
-title: "How-I-Learned-Rust"
+title: "How I Learned Rust"
 tags:
   - rust
   - programming
@@ -52,9 +52,9 @@ Given that almost everyting that I do involves the command line I used [Command 
 
 ## Getting Started
 
-I did a skim read of the [The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html), and watched [doggo dot rs](https://www.youtube.com/@doggodotrs)'s full rust course.
+I did a skim read of the [The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html), and watched [doggo dot rs](https://web.archive.org/web/2024/https://www.youtube.com/@doggodotrs)'s full rust course *(channel archived)*.
 
-I followed this up with working my way through [rustlings](https://github.com/rust-lang/rustlings), Trevor Sullivan's [Rust Programming Tutorial](https://youtube.com/playlist?list=PLDbRgZ0OOEpUkWDGqp91ODn0dk7LPBAUL&si=sMPsWPC0eELRTf_5) and *Mastering Rust - Second Edition*
+I followed this up with working my way through [rustlings](https://github.com/rust-lang/rustlings), Trevor Sullivan's [Rust Programming Tutorial](https://youtube.com/playlist?list=PLDbRgZ0OOEpUkWDGqp91ODn0dk7LPBAUL) and *Mastering Rust - Second Edition*
 by *Rahul Sharma and Vesa Kaihlavirta* concurrently.
 
 I found `rust` one of the most invovled languages to learn. Like many people I have learnt, to varying degrees, many languages over the years: BASIC, Pascal, FORTRAN, C, C#, Python, F#, lisp, haskell and Javascript to name a few. `rust` takes a long time to get aquantied with because of the unfamiliar concepts of how to manage memory really effectively (with `C` and `C++` you can get going leaving memory, and thus security, issues in your wake) I had a head start with the static typing and functional aspects owing to the fact that I had learnt `ml` langagues earlier. Learning `rust` is comparable to learning a functional language (`F#`, `lisp`) for the first time as the concepts are not like mainstream programming langagues with their reliance on procedures and classes. If you've only used `REPL` languages like `Python` you are in for a shock when you try a compiled strongly-typed language like `rust`.
@@ -69,6 +69,4 @@ I don't consider `rust` difficult to learn but it does take much, much longer to
 
 ## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://docs.rs/toml/latest/toml/
-<!-- markdownlint-enable MD034 -->
+* [toml crate](https://docs.rs/toml/latest/toml/)

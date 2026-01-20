@@ -1,6 +1,12 @@
 ---
 date: "2023-04-14"
-title: "Neovim-Lua"
+title: "Neovim Lua"
+tags:
+  - editor
+  - neovim
+  - lua
+  - programming
+  - tools
 ---
 <!-- markdownlint-disable MD025 -->
 # Neovim Lua
@@ -275,7 +281,7 @@ rm -rf ./.config/nvim
 ```
 
 * [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
-* [Why Neovim is the best code editor / IDE for developers](https://console.dev/articles/neovim-best-code-editor-ide-for-developers/)
+* [Why Neovim is the best code editor / IDE for developers](https://web.archive.org/web/20240102131848/https://console.dev/articles/neovim-best-code-editor-ide-for-developers)
 * [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug)
 * [GitHub - hrsh7th/nvim-cmp: A completion plugin for neovim coded in Lua.](https://github.com/hrsh7th/nvim-cmp)
 * [How to Configure Neovim to make it Amazing -- complete tutorial](https://youtu.be/J9yqSdvAKXY)
@@ -583,7 +589,7 @@ Other useful links
 
 * [Learning Lua - resources](http://lua-users.org/wiki/LearningLua)
 * [Programming in Lua : 1](http://www.lua.org/pil/1.html)
-* [Lua for Programmers Part 1: Language Essentials](https://ebens.me/post/lua-for-programmers-part-1/)
+* [Lua for Programmers Part 1: Language Essentials](https://web.archive.org/web/20241121230629/https://ebens.me/post/lua-for-programmers-part-1/)
 * [Learn Lua in Y Minutes](https://learnxinyminutes.com/docs/lua/)
 * [Lua Unofficial FAQ (uFAQ)](https://www.luafaq.org)
 * [Learn To Code Space Invaders – learn lua by programming](https://bytesnbits.co.uk/space-invaders-coding-course-introduction/)

@@ -1,4 +1,12 @@
 ---
+date: "2022-07-17"
+title: "Pi as iPad Development Machine"
+tags:
+  - raspberry-pi
+  - ipad
+  - development
+  - vscode
+  - usb-gadget
 ---
 
 <!-- markdownlint-disable MD025 -->
@@ -159,7 +167,7 @@ Might need virtual, pseudo and temporary filesystems too
 ## USB Gadget and RaspAP (full setup of an access point)
 
 [Raspberry Pi iPad Pro Setup Simplified - YouTube](https://youtu.be/3UPaI4Hp66Y)
-[Raspberry Pi iPad Pro Setup Simplified](https://techcraft.co/videos/2022/5/raspberry-pi-ipad-pro-setup-simplified/)
+[Raspberry Pi iPad Pro Setup Simplified](https://web.archive.org/web/20240613221810/https://techcraft.co/videos/2022/5/raspberry-pi-ipad-pro-setup-simplified/)
 [Pi4 USB-C Gadget – Ben’s Place](https://www.hardill.me.uk/wordpress/2019/11/02/pi4-usb-c-gadget/)
 [Raspberry Pi 4 USB Gadget · GitHub](https://gist.github.com/ianfinch/08288379b3575f360b64dee62a9f453f)
 [RaspAP — Simple wireless router setup for Debian-based devices](https://raspap.com)
@@ -198,7 +206,7 @@ sudo apt install -y hostapd
 
 ## Code-Server
 
-[VSCode on iPad Pro - Full Setup Guide with Raspberry Pi](https://techcraft.co/videos/2022/2/vscode-on-ipad-pro-full-setup-guide-with-raspberry-pi/)
+[VSCode on iPad Pro - Full Setup Guide with Raspberry Pi](https://web.archive.org/web/20250205142503/https://techcraft.co/videos/2022/2/vscode-on-ipad-pro-full-setup-guide-with-raspberry-pi/)
 [code-server - debian dependencies](https://coder.com/docs/code-server/latest/npm#nodejs-version)
 
 ```bash
@@ -283,4 +291,4 @@ sed -i \
 <!-- markdownlint-disable MD034 -->
 <!-- markdownlint-enable MD034 -->
 
-* [VSCode on iPad Pro - Full Setup Guide with Raspberry Pi](https://techcraft.co/videos/2022/2/vscode-on-ipad-pro-full-setup-guide-with-raspberry-pi/)
+* [VSCode on iPad Pro - Full Setup Guide with Raspberry Pi](https://web.archive.org/web/20250205142503/https://techcraft.co/videos/2022/2/vscode-on-ipad-pro-full-setup-guide-with-raspberry-pi/)

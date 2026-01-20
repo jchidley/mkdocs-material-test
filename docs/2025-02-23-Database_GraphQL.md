@@ -1,15 +1,16 @@
 ---
 date: "2025-02-23"
-title: "Database_GraphQL"
+title: "Database and GraphQL"
 tags:
   - database
   - postgresql
   - graphql
   - rust
   - docker
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
-# Template
+# Database and GraphQL
 <!-- markdownlint-enable MD025 -->
 
 ## Introduction
@@ -35,9 +36,7 @@ For getting data from websites, it seems as if we have REST, GraphQL and gRPC, w
 - [octocrab - Rust](https://docs.rs/octocrab/latest/octocrab/index.html)
 - [octocrab/examples/graphql_issues.rs at main · XAMPPRocky/octocrab](https://github.com/XAMPPRocky/octocrab/blob/main/examples/graphql_issues.rs)
 - [Forming calls with GraphQL - GitHub Docs](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql)
-- [graphql - Search](https://www.bing.com/search?pglt=163&q=graphql&cvid=9220428e9c88482f8147ab316eff528d&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAuGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEEUYPDIGCAcQRRg9MgYICBBFGDzSAQgyMDI4ajBqMagCALACAA&FORM=ANNTA1&PC=U531)
 - [Thinking in Graphs | GraphQL](https://graphql.org/learn/thinking-in-graphs/)
-- [graphql and rust - Search](https://www.bing.com/search?pglt=163&q=graphql+and+rust&cvid=4033d1c1c0aa4bf898f20d985a852132&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBBFGDzSAQgzMjgxajBqMagCALACAA&FORM=ANNTA1&PC=U531)
 - [Quickstart - Juniper Book](https://graphql-rust.github.io/juniper/quickstart.html)
 - [How to create a GraphQL server in Rust - LogRocket Blog](https://blog.logrocket.com/how-to-create-a-graphql-server-in-rust/)
 - [How To Build Powerful GraphQL Servers With Rust - ExpertBeacon](https://expertbeacon.com/how-to-build-powerful-graphql-servers-with-rust/)
@@ -202,10 +201,4 @@ These mappings and configurations will help you work effectively with PostgreSQL
 - [allan2/dotenvy: A well-maintained fork of the dotenv crate](https://github.com/allan2/dotenvy)
 - [Choosing a Rust Database Crate in 2023: Diesel, SQLx, or Tokio-Postgres?](https://rust-trends.com/posts/database-crates-diesel-sqlx-tokio-postgress/)
 - [Interacting with databases in Rust using Diesel vs. SQLx - LogRocket Blog](https://blog.logrocket.com/interacting-databases-rust-diesel-vs-sqlx/)
-
-## Links
-
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
 

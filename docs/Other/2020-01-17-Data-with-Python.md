@@ -1,6 +1,11 @@
 ﻿---
 date: "2020-01-17"
 title: "Data With Python"
+tags:
+  - python
+  - pandas
+  - sql
+  - data
 ---
 
 <!-- markdownlint-disable MD025 -->
@@ -20,5 +25,5 @@ title: "Data With Python"
 * [Core tools for working with streams - including StringIO](https://docs.python.org/3/library/io.html)
 * [SQLAlchemy and SQLite](https://docs.sqlalchemy.org/en/13/dialects/sqlite.html)
 * [SQLcipher can be used](https://www.zetetic.net/sqlcipher/)
-* [pathlib: The easy way to deal with file paths on Windows, Mac and Linux](https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f)
-* [SQLAlchemey for faster queries](https://pythondata.com/quick-tip-sqlalchemy-for-mysql-and-pandas/)
+* [pathlib: The easy way to deal with file paths on Windows, Mac and Linux](https://web.archive.org/web/20250215183934/https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f)
+* [SQLAlchemy for faster queries](https://web.archive.org/web/20210125173018/https://pythondata.com/quick-tip-sqlalchemy-for-mysql-and-pandas/)

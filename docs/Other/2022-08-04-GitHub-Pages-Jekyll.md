@@ -1,7 +1,15 @@
 ---
+date: "2022-08-04"
+title: "GitHub Pages and Jekyll"
+tags:
+  - github
+  - jekyll
+  - markdown
+  - blogging
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
-# GitHub Pages & Jekyll
+# GitHub Pages and Jekyll
 <!-- markdownlint-enable MD025 -->
 
 ## GitHub Pages
@@ -60,7 +68,7 @@ Jekyll is used by GitHub to publish and manage the website.
 
 It turns out that spell checking any kind of code is problematic. The only tool on an iPad that will do this automatically is the keyboard (this is often annoying as it'll autocorrect words it doesn't recognise, like names or technical terms).
 
-The only tool that I've found that might do this is [CSpell](https://cspell.org). For more information see this [blog entry](https://tjaddison.com/blog/2021/02/spell-checking-your-markdown-blog-posts-with-cspell/) and more information about a [Visual Studio Code version](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+The only tool that I've found that might do this is [CSpell](https://cspell.org). For more information see this [blog entry](https://tjaddison.com/blog/2021/02/spell-checking-your-markdown-blog-posts-with-cspell/) and more information about the [Visual Studio Code extension on GitHub](https://github.com/streetsidesoftware/vscode-spell-checker)
 
 Yet another argument for a separate linux box, like a Raspberry Pi, in addition to iPad.
 

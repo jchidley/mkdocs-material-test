@@ -1,6 +1,11 @@
 ---
 date: "2024-03-24"
-title: "House-Electrics"
+title: "House Electrics"
+tags:
+  - home-maintenance
+  - electrical
+  - solar
+  - battery
 ---
 <!-- markdownlint-disable MD025 -->
 # House Electrics
@@ -45,7 +50,7 @@ twinwall for smoothness
 
 ## Consumer Units
 
-[](https://alertelectrical.com/electrical-equipment/circuit-protection/verso-circuit-protection/verso-main-switch-spd-consumer-unit.html)
+[Verso Main Switch SPD Consumer Unit](https://alertelectrical.com/electrical-equipment/circuit-protection/verso-circuit-protection/verso-main-switch-spd-consumer-unit.html)
 
 ## Solar
 
@@ -107,7 +112,7 @@ Lots of useful stuff about Fox ESS H1 [Fox ESS H1-5.0-E ~33KW Peugeot E208](http
 Need overgloves to prevent puncturing
 
 [Gloves - Insulated, Under & Over](https://www.tester.co.uk/high-voltage-utility-and-rail/high-voltage-personal-protection/gloves-insulated-under-and-over)
-[https://alertelectrmimcal.com/electrical-equipment/circuit-protection/verso-circuit-protection/verso-main-switch-spd-consumer-unit.html](https://www.thesafetysupplycompany.co.uk/p/726925/polyco-class-0-electricians-yellow-gloves-360mm-bm-re0360.html?vid=66685149&msclkid=60b2e61264cc10e3f676807924ced683&utm_source=bing&utm_medium=cpc&utm_campaign=UPP_SSC_UK_PMAX_TRO_YF12_905627624-9974-46b8-a23b-1306920a47b0&utm_term=2328971786554768&utm_content=Upp_SSC_4)
+[Polyco Class 0 Electricians Gloves](https://www.thesafetysupplycompany.co.uk/p/726925/polyco-class-0-electricians-yellow-gloves-360mm-bm-re0360.html)
 
 ## Testing
 
@@ -144,7 +149,7 @@ Need overgloves to prevent puncturing
 wifi:
   output_power: 8.5dB```
 
-[MottramLabs.com CT Clamps](https://www.mottramlabs.com/ct_products.html)
+[MottramLabs.com CT Clamps](https://web.archive.org/web/20250313132223/https://www.mottramlabs.com/ct_products.html)
 
 [ESP32 ADC – Read Analog Input in Arduino IDE](https://deepbluembedded.com/esp32-adc-tutorial-read-analog-voltage-arduino/)
 
@@ -183,7 +188,7 @@ Solar Forecasing [solcast](https://www.solcast.com)
 25mm2 5 core 50m for the garage - 1 for earth, 2 for supply, 2 for pv
 [6945X BS5467 SWA PVC XLPE ARMOURED CABLE 5 CORE 25MM² HARMONISED](https://www.superlecdirect.com/6945x-25mm-5core-bs5467-xlpe-swa-pvc-cable-harmonised-black/)
 
-[WALL MOUNT ENCLOSURES](https://shop.ipenclosures.co.uk/electrical/wall-mount-enclosures) or [](https://www.cef.co.uk/catalogue/categories/enclosures-grp-enclosures)
+[WALL MOUNT ENCLOSURES](https://shop.ipenclosures.co.uk/electrical/wall-mount-enclosures) or [CEF GRP Enclosures](https://www.cef.co.uk/catalogue/categories/enclosures-grp-enclosures)
 
 [Renusol - Instructions and data / Downloads](https://www.renusol.com/en/instructions-data/)
 
@@ -238,7 +243,7 @@ A study on how flow temperature affects performance, usage and comfort [Money Sa
 * [A Year of Solar Energy](https://protonsforbreakfast.wordpress.com/2021/11/08/a-year-of-solar-energy/)
 * [Battery Day: First Results](https://protonsforbreakfast.wordpress.com/2021/03/20/battery-day-first-results/)
 
-[How I powered my house and charged two EVs for a whole year for just 1p per kWh](https://www.youtube.com/watch?v=FtBymAxbDxE) my copy of his [Solar for Download]()
+[How I powered my house and charged two EVs for a whole year for just 1p per kWh](https://www.youtube.com/watch?v=FtBymAxbDxE)
 
 "Tim & Kat's Green Walk" start exporting from May to September.
 
@@ -248,7 +253,7 @@ His consumption for heating vs my consumption varies from 4.4 times in the colde
 
 * The model below adjusted for, among other things, battery capacity [Is it greener if I boost my heat pump during off-peak periods? - And save me money as well?](https://www.youtube.com/watch?v=VF199lkvLR8) my version of one of his spreadsheets [Toy heat loss model - with carbon calculation - Intelligent Octopus Go](https://docs.google.com/spreadsheets/d/1GXQVRraW6MLNI4XUgzXziClv8v48lvvI2rZy-CWBdH4/edit#gid=0)
 * A bunch of tests with different strategies: constant temp over 24 hours, on at 6am off at 8:30pm, differnt thermal mass, different temperatures, etc [Should I boost my heat pump during off-peak periods? - Will it save me money?](https://www.youtube.com/watch?v=q1tYCenxb2M) my version of his spreadsheet [Toy heat loss model](https://docs.google.com/spreadsheets/d/148dpzOAPj85e3bKR9K7Ak_65njncRvpae83C2sNuLZE/edit#gid=0)
-* [Solar stats update - August 2023 - bang on par](https://www.youtube.com/watch?v=Q0RC9BxhWVY) with spreadsheet explanation, [](https://www.youtube.com/watch?v=MdpQci4vTLU)
+* [Solar stats update - August 2023 - bang on par](https://www.youtube.com/watch?v=Q0RC9BxhWVY) with spreadsheet explanation, [Find Out How Much Solar Power Your Home Can Generate](https://www.youtube.com/watch?v=MdpQci4vTLU)
 * [Octopus data analysis guide - with template spreadsheet](https://www.youtube.com/watch?v=5FwjccO2bZc) my version of his spreadsheet [Octopus data template](https://docs.google.com/spreadsheets/d/1FRpulLrDzEuG3mxYhOdgbuOUvPuvpSx6rV-iNGRK_sI/edit#gid=1245866957)
 * [Cosy Octopus vs Go - now with added solar](https://www.youtube.com/watch?v=iLFrykG49Uk) my version of his spreadsheet [Cosy Octopus vs. Go with Solar](https://docs.google.com/spreadsheets/d/1Pan30Q3qsxFmITSgM4eMG9NsONbTelZ9OrJiJgxmBCg/edit#gid=1218111026)
 * [Should we switch to Cosy Octopus? - Or stick with Octopus Go?]() my version of his spreadsheet [Cosy Octopus vs. Go](https://docs.google.com/spreadsheets/d/1fSvcIw6vPFW88ZhfMqN7Uf_KgDCZ3vz7Yi5vqGWvJYE/edit#gid=1218111026)
@@ -281,8 +286,4 @@ Sanitary accommodation: 6 (set to 6)
 
 [Simply Silent DX100BS - 4"/100mm Square Axial Extract Fan Standard](https://www.xpelair.co.uk/product/simply-silent-dx100bs-4100mm-square-axial-extract-fan-standard)
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->

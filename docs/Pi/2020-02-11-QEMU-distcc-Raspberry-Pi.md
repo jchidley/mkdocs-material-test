@@ -1,6 +1,12 @@
 ---
 date: "2020-02-11"
 title: "QEMU distcc Raspberry Pi"
+tags:
+  - raspberry-pi
+  - qemu
+  - emulation
+  - cross-compilation
+  - linux
 ---
 <!-- 2020-02-11-QEMU-Raspberry-Pi.md -->
 
@@ -21,11 +27,11 @@ title: "QEMU distcc Raspberry Pi"
 
 * [QEMU Documentation/Platforms/ARM](https://wiki.qemu.org/Documentation/Platforms/ARM#Generic_ARM_system_emulation_with_the_virt_machine)
 * [Virtual 32 bit QEMU](https://translatedcode.wordpress.com/2016/11/03/installing-debian-on-qemus-32-bit-arm-virt-board/)
-* [Installing Debian on QEMU’s 64-bit ARM “virt” board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/* )
+* [Installing Debian on QEMU’s 64-bit ARM “virt” board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)
 * [Debian on QEMU’s Raspberry Pi 3 model - flaky](https://translatedcode.wordpress.com/2018/04/25/debian-on-qemus-raspberry-pi-3-model/)
 * [Raspbian “stretch” for Raspberry Pi 3 on QEMU - February 2019](https://github.com/wimvanderbauwhede/limited-systems/wiki/Raspbian-%22stretch%22-for-Raspberry-Pi-3-on-QEMU)
 * [Windows for Raspberry Pi 2 on QEMU HOWTO - June 2018 but older](https://github.com/0xabu/qemu/wiki)
-* [Run a virtualized image of Raspberry Pi in QEMU - April 2018](https://tkrel.com/7390)
+* [Run a virtualized image of Raspberry Pi in QEMU - April 2018](https://web.archive.org/web/20201205213426/https://tkrel.com/7390)
 * [Emulate Raspberry PI with QEMU - April 2018](http://blog.hellonico.info/iot/arm_on_qemu/)
 * [How to emulate Ubuntu Core for Raspberry Pi 3 using QEMU? - March 2018](https://stackoverflow.com/questions/49134948/how-to-emulate-ubuntu-core-for-raspberry-pi-3-using-qemu)
 * [How to emulate the Raspberry Pi 2 on QEMU?- March 2015](https://stackoverflow.com/questions/28880833/how-to-emulate-the-raspberry-pi-2-on-qemu)
@@ -191,11 +197,11 @@ Answer here is to use the `virt` emulation
 * [Using QEMU to emulate a Raspberry Pi](https://blog.agchapman.com/using-qemu-to-emulate-a-raspberry-pi/)
 * [QEMU Documentation/Platforms/ARM](https://wiki.qemu.org/Documentation/Platforms/ARM#Generic_ARM_system_emulation_with_the_virt_machine)
 * [Virtual 32 bit QEMU](https://translatedcode.wordpress.com/2016/11/03/installing-debian-on-qemus-32-bit-arm-virt-board/)
-* [Installing Debian on QEMU’s 64-bit ARM "virt" board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/* )
+* [Installing Debian on QEMU’s 64-bit ARM "virt" board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)
 * [Debian on QEMU’s Raspberry Pi 3 model - flaky](https://translatedcode.wordpress.com/2018/04/25/debian-on-qemus-raspberry-pi-3-model/)
 * [Raspbian "stretch" for Raspberry Pi 3 on QEMU - February 2019](https://github.com/wimvanderbauwhede/limited-systems/wiki/Raspbian-%22stretch%22-for-Raspberry-Pi-3-on-QEMU)
 * [Windows for Raspberry Pi 2 on QEMU HOWTO - June 2018 but older](https://github.com/0xabu/qemu/wiki)
-* [Run a virtualized image of Raspberry Pi in QEMU - April 2018](https://tkrel.com/7390)
+* [Run a virtualized image of Raspberry Pi in QEMU - April 2018](https://web.archive.org/web/20201205213426/https://tkrel.com/7390)
 * [Emulate Raspberry PI with QEMU - April 2018](http://blog.hellonico.info/iot/arm_on_qemu/)
 * [How to emulate Ubuntu Core for Raspberry Pi 3 using QEMU? - March 2018](https://stackoverflow.com/questions/49134948/how-to-emulate-ubuntu-core-for-raspberry-pi-3-using-qemu)
 * [How to emulate the Raspberry Pi 2 on QEMU?- March 2015](https://stackoverflow.com/questions/28880833/how-to-emulate-the-raspberry-pi-2-on-qemu)
@@ -221,7 +227,7 @@ make -j4
 ```
 
 [Building QEMU 5.0 on Raspbian | www.chrisrcook.com](https://www.chrisrcook.com/projects/building-qemu-5-0-on-raspbian/)
-[Running Alpine Linux in QEMU - Yuankun's Blog](https://yuankun.me/posts/running-alpine-linux-in-qemu/)
+[Running Alpine Linux in QEMU - Yuankun's Blog](https://web.archive.org/web/20230214101836/https://yuankun.me/posts/running-alpine-linux-in-qemu/)
 [Hosts/Linux - QEMU](https://wiki.qemu.org/Hosts/Linux)
 [QEMU - Alpine Linux](https://wiki.alpinelinux.org/wiki/QEMU#Using_Xorg_inside_QEMU)
 
@@ -287,7 +293,7 @@ proc                                            /proc                           
 * [Developing using QEMU](http://www.landley.net/aboriginal/presentation.html)
 * [booting a fresh linux kernel on qemu](https://ops.tips/notes/booting-linux-on-qemu/)
 * [How to Build A Custom Linux Kernel For Qemu](https://mgalgs.github.io/2015/05/16/how-to-build-a-custom-linux-kernel-for-qemu-2015-edition.html)
-* [Fast linux kernel testing with qemu](http://ncmiller.github.io/2016/05/14/linux-and-qemu.html)
+* [Fast linux kernel testing with qemu](https://web.archive.org/web/20200210092931/http://ncmiller.github.io/2016/05/14/linux-and-qemu.html)
 * [Use “ and not ‘ on Qemu on Windows](https://github.com/dhruvvyas90/qemu-rpi-kernel/issues/71)
 * [Hello world for bare metal ARM using QEMU](https://balau82.wordpress.com/2010/02/28/hello-world-for-bare-metal-arm-using-qemu/)
 

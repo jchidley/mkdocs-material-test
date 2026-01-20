@@ -1,6 +1,10 @@
 ---
 date: "2024-08-17"
-title: "Phase-Locked-Loop-PLL"
+title: "Phase-Locked Loop (PLL)"
+tags:
+  - electronics
+  - dsp
+  - signals
 ---
 
 <!-- markdownlint-disable MD025 -->
@@ -22,9 +26,4 @@ title: "Phase-Locked-Loop-PLL"
 [Phase Detector: digital, linear, mixer . .](https://www.electronics-notes.com/articles/radio/pll-phase-locked-loop/phase-detector-digital-analogue-mixer.php)
 [Simple and efficient algorithm to detect frequency and phase of a sine signal](https://dsp.stackexchange.com/questions/19057/simple-and-efficient-algorithm-to-detect-frequency-and-phase-of-a-sine-signal/19060#19060)
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)

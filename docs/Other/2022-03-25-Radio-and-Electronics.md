@@ -1,6 +1,11 @@
 ---
 date: "2022-03-25"
 title: "Radio and Electronics"
+tags:
+  - electronics
+  - radio
+  - simulation
+  - qspice
 ---
 <!-- markdownlint-disable MD025 -->
 # Radio stuf

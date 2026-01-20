@@ -1,6 +1,10 @@
 ---
 date: "2017-05-08"
-title: Git Epiphany
+title: "Git Epiphany"
+tags:
+  - git
+  - version-control
+  - learning
 ---
 <!-- markdownlint-disable MD025 -->
 # Git Epiphany
@@ -153,7 +157,7 @@ I love the pictures in [A Visual Git
 Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 
 I especially like *The Tangled Working Copy Problem* in [The Thing About
-Git](https://2ndscale.com/rtomayko/2008/the-thing-about-git)
+Git](https://web.archive.org/web/20240812162447/http://2ndscale.com/rtomayko/2008/the-thing-about-git)
 
 [Getting
 Started](https://www.atlassian.com/git/tutorials/setting-up-a-repository) is an

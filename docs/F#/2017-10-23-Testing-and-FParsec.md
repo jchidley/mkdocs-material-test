@@ -1,6 +1,10 @@
 ﻿---
 date: "2017-10-23"
 title: "Testing and FParsec"
+tags:
+  - fsharp
+  - testing
+  - parsing
 ---
 
 # Testing and FParsec
@@ -44,7 +48,7 @@ Then wrote my first test like this:
 
 The very next test showed me that I had to handle expected failures.  Once again a couple of bloggers to the rescue:
 
-First up, [Björn Rochel](http://www.bjoernrochel.de/about/)'s [one liner](http://www.bjoernrochel.de/2010/04/19/testing-f-code-with-xunit-net-on-net-4-0/):
+First up, [Björn Rochel](https://web.archive.org/web/20170311194434/http://bjoernrochel.de/about/)'s [one liner](https://web.archive.org/web/20170311194434/http://bjoernrochel.de/2010/04/19/testing-f-code-with-xunit-net-on-net-4-0/):
 
 ```fsharp
     [<Fact>]
@@ -72,12 +76,12 @@ Now my tests all work as I would like.  Kind of professional, in my view.
 * [FParsec](http://www.quanttec.com/fparsec/) 
 * [FParsec Tutorial](http://www.quanttec.com/fparsec/tutorial.html)
 * [Phil's practical and easy to understand example using turtles - turtles is a very computer science thing](http://trelford.com/blog/post/FParsec.aspx)
-* [Fog Creek's interesting introduction to FParsec from people who use it in production](https://blog.fogcreek.com/fparsec/)
+* [Fog Creek's interesting introduction to FParsec from people who use it in production](https://web.archive.org/web/20230724140152/http://blog.fogcreek.com/fparsec/)
 * [Scott's entry on parsing theory](https://fsharpforfunandprofit.com/posts/understanding-parser-combinators/)
 
 ## More Links
 * [FsCheck](https://fscheck.github.io/FsCheck/)
-* [xUnit](https://xunit.github.io/) 
+* [xUnit](https://xunit.net/) 
 
 ## Parsec Links
 * [Parsec Wiki](https://wiki.haskell.org/Parsec)

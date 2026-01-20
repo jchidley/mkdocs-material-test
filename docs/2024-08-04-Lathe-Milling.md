@@ -1,6 +1,10 @@
 ---
 date: "2024-08-04"
-title: "Lathe-Milling"
+title: "Lathe and Milling"
+tags:
+  - workshop
+  - machining
+  - lathe
 ---
 <!-- markdownlint-disable MD025 -->
 # Lathe-Milling
@@ -67,9 +71,4 @@ Massive selection [Cromwell](https://www.cromwell.co.uk/basket)
 
 UK Supplier of DRO [Machine-DRO](https://www.machine-dro.co.uk/digital-readouts-display-and-encoders/linear-encoders/all-linear-encoders/m-dro-ehm-series-mini-head-with-160mm-6-1-4-inch-reading-length-magnetic-tape-encoder)
 
-## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
-* [Example](https://example.com)

@@ -1,6 +1,10 @@
 ---
 date: "2023-04-08"
 title: "Julia Drawing"
+tags:
+  - julia
+  - cad
+  - graphics
 ---
 <!-- markdownlint-disable MD025 -->
 # Drawing with Julia 
@@ -28,8 +32,5 @@ Just output the geo files to the correct format with the right extensino.
 
 ## Links
 
-<!-- markdownlint-disable MD034 -->
-* https://example.com
-<!-- markdownlint-enable MD034 -->
 * [Novice Guide](https://dev.opencascade.org/doc/overview/html/samples__novice_guide.html)
 * [GMSH Tutorial/information](https://bthierry.pages.math.cnrs.fr/tutorial/gmsh/)

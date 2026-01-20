@@ -1,6 +1,13 @@
 ---
 date: "2021-06-06"
 title: "Python Apple"
+tags:
+  - python
+  - macos
+  - apple
+  - pyenv
+  - conda
+llm_assisted: true
 ---
 <!-- markdownlint-disable MD025 -->
 # Python Apple
@@ -16,9 +23,9 @@ Use `pyenv` to setup python separately from the system's python and create virtu
 
 Use conda (Mamba) separately from venv. Conda is a generalised package manager, venv is for python only.
 
-[A Guide to Python’s Virtual Environments](https://towardsdatascience.com/virtual-environments-104c62d48c54)
+[A Guide to Python's Virtual Environments](https://towardsdatascience.com/virtual-environments-104c62d48c54)
 [The definitive guide to Python virtual environments with conda](https://en.whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda)
-[The Definitive Guide to Conda Environments](https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533)
+[The Definitive Guide to Conda Environments](https://web.archive.org/web/2023/https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533)
 
 ### Conda (Mamba)
 
@@ -30,7 +37,7 @@ use Mambaforge download the latest from https://github.com/conda-forge/miniforge
 
 ### Python venv
 
-[venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html)
+[venv - Creation of virtual environments](https://docs.python.org/3/library/venv.html)
 
 `python -m venv venv` inside each python project for a full isolated environment
 
@@ -44,8 +51,8 @@ don't forget that files need to be called `test_*.py` or `*_test.py`
 
 * [Manage Jupyter Notebook and JupyterLab with Systemd - Parametric Thoughts](https://janakiev.com/blog/jupyter-systemd/)
 
-* [Python Programming And Numerical Methods: A Guide For Engineers And Scientists — Python Numerical Methods](https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html)
-* [Try/Except — Python Numerical Methods](https://pythonnumericalmethods.berkeley.edu/notebooks/chapter10.03-Try-Except.html)
+* [Python Programming And Numerical Methods: A Guide For Engineers And Scientists - Python Numerical Methods](https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html)
+* [Try/Except - Python Numerical Methods](https://pythonnumericalmethods.berkeley.edu/notebooks/chapter10.03-Try-Except.html)
 * [Study Guide: Intro to Computing with Finite Difference Methods](http://hplgit.github.io/INF5620/doc/pub/lecture_decay-1.html#5620:about)
 * [StrictYAML - HitchDev](https://hitchdev.com/strictyaml/)
 * [Build a YAML document from scratch in code - HitchDev](https://hitchdev.com/strictyaml/using/alpha/howto/build-yaml-document/)
@@ -56,39 +63,39 @@ don't forget that files need to be called `test_*.py` or `*_test.py`
 
 All of this predates Python 3.4 when singledispatch-functools first appeared
 
-8.21. Implementing the Visitor Pattern
-8.22. Implementing the Visitor Pattern Without Recursion
-9.24. Parsing and Analyzing Python Source
+8.21. Implementing the Visitor Pattern
+8.22. Implementing the Visitor Pattern Without Recursion
+9.24. Parsing and Analyzing Python Source
 
 * [Arpeggio/__init__.py at master · textX/Arpeggio · GitHub](https://github.com/textX/Arpeggio/blob/master/arpeggio/__init__.py)
 * [Semantic analysis - Arpeggio](http://textx.github.io/Arpeggio/stable/semantics/)
 
-* [WHY YOU DON’T NEED DESIGN PATTERNS IN PYTHON?](https://ep2017.europython.eu/media/conference/slides/why-you-dont-need-design-patterns-in-python.pdf)
+* [WHY YOU DON'T NEED DESIGN PATTERNS IN PYTHON?](https://ep2017.europython.eu/media/conference/slides/why-you-dont-need-design-patterns-in-python.pdf)
 * [Function overloading with singledispatch-functools - GeeksforGeeks](https://www.geeksforgeeks.org/function-overloading-with-singledispatch-functools/)
-* [functools — Higher-order functions and operations on callable objects — Python 3.9.5 documentation](https://docs.python.org/3/library/functools.html)
-* [Built-in Functions — Python 3.9.5 documentation](https://docs.python.org/3/library/functions.html#staticmethod)
-* [Glossary — Python 3.9.5 documentation](https://docs.python.org/3/glossary.html)
-* [PEP 614 — Relaxing Grammar Restrictions On Decorators | Python.org](https://www.python.org/dev/peps/pep-0614/)
-* [PEP 3119 — Introducing Abstract Base Classes | Python.org](https://www.python.org/dev/peps/pep-3119/)
-* [3. Data model — Python 3.9.5 documentation](https://docs.python.org/3/reference/datamodel.html#emulating-callable-objects)
+* [functools - Higher-order functions and operations on callable objects - Python 3.9.5 documentation](https://docs.python.org/3/library/functools.html)
+* [Built-in Functions - Python 3.9.5 documentation](https://docs.python.org/3/library/functions.html#staticmethod)
+* [Glossary - Python 3.9.5 documentation](https://docs.python.org/3/glossary.html)
+* [PEP 614 - Relaxing Grammar Restrictions On Decorators | Python.org](https://www.python.org/dev/peps/pep-0614/)
+* [PEP 3119 - Introducing Abstract Base Classes | Python.org](https://www.python.org/dev/peps/pep-3119/)
+* [3. Data model - Python 3.9.5 documentation](https://docs.python.org/3/reference/datamodel.html#emulating-callable-objects)
 * [How can I use functools.singledispatch with instance methods? | Newbedev](https://newbedev.com/how-can-i-use-functools-singledispatch-with-instance-methods)
-* [Generic Functions with Python’s Singledispatch | Red’s Digressions](https://rednafi.github.io/digressions/python/2020/04/05/python-singledispatch.html)
-* [2.1. What is Data? — Python: From None to Machine Learning](https://python.astrotech.io/machine-learning/introduction/data.html)
-* [PEP 443 — Single-dispatch generic functions | Python.org](https://www.python.org/dev/peps/pep-0443/)
-* [PEP 318 — Decorators for Functions and Methods | Python.org](https://www.python.org/dev/peps/pep-0318/)
+* [Generic Functions with Python's Singledispatch | Red's Digressions](https://web.archive.org/web/2023/https://rednafi.github.io/digressions/python/2020/04/05/python-singledispatch.html)
+* [2.1. What is Data? - Python: From None to Machine Learning](https://python.astrotech.io/machine-learning/introduction/data.html)
+* [PEP 443 - Single-dispatch generic functions | Python.org](https://www.python.org/dev/peps/pep-0443/)
+* [PEP 318 - Decorators for Functions and Methods | Python.org](https://www.python.org/dev/peps/pep-0318/)
 * [Python Advanced: Easy Introduction into Decorators and Decoration](https://www.python-course.eu/python3_decorators.php)
-* [Primer on Python Decorators – Real Python](https://realpython.com/primer-on-python-decorators/)
+* [Primer on Python Decorators - Real Python](https://realpython.com/primer-on-python-decorators/)
 * [Python Class Method Decorator @classmethod](https://www.tutorialsteacher.com/python/classmethod-decorator)
 
 * [mypy - Optional Static Typing for Python](http://mypy-lang.org)
-* [PyPy: Faster Python With Minimal Effort – Real Python](https://realpython.com/pypy-faster-python/)
+* [PyPy: Faster Python With Minimal Effort - Real Python](https://realpython.com/pypy-faster-python/)
 * [PyPy](https://www.pypy.org)
 
 ## Links
 
 ### iPad
 
-* [Using an iPad for Data Science in 2021!](https://towardsdatascience.com/using-an-ipad-for-data-science-in-2021-d6a973dd27ab)
+* [Using an iPad for Data Science in 2021!](https://web.archive.org/web/2023/https://towardsdatascience.com/using-an-ipad-for-data-science-in-2021-d6a973dd27ab)
 * [My top Python IDEs for iPad](https://blog.devgenius.io/my-top-python-ides-for-ipad-3f777023155c)
 * [Jupyter for iOS | Juno](https://juno.sh)
 * [Carnets - Jupyter](https://holzschu.github.io/Carnets_Jupyter/)
@@ -114,7 +121,7 @@ All of this predates Python 3.4 when singledispatch-functools first appeared
 * [How to manage multiple Python versions and virtual environments](https://www.freecodecamp.org/news/manage-multiple-python-versions-and-virtual-environments-venv-pyenv-pyvenv-a29fb00c296f/)
 * [Python settings reference](https://code.visualstudio.com/docs/python/settings-reference#_general-settings)
 * [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings)
-* [Using Python Virtual Environment in VSCode](https://techinscribed.com/python-virtual-environment-in-vscode/)
+* [Using Python Virtual Environment in VSCode](https://web.archive.org/web/2023/https://techinscribed.com/python-virtual-environment-in-vscode/)
 
 <!-- markdownlint-disable MD034 -->
 
