@@ -18,6 +18,7 @@ const blogs = [
   { name: 'Jeremy Howard', url: 'fast.ai', tier: 1 },
   { name: 'Hamel Husain', url: 'hamel.dev', tier: 1 },
   { name: 'Julia Evans', url: 'jvns.ca', tier: 1 },
+  { name: 'Peter Steinberger', url: 'steipete.me', tier: 1 },
   // Tier 2
   { name: 'Chip Huyen', url: 'huyenchip.com', tier: 2 },
   { name: 'Eugene Yan', url: 'eugeneyan.com', tier: 2 },

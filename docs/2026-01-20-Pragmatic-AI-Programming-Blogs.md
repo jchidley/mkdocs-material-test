@@ -17,13 +17,14 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 
 ## Tier 1: Highly Recommended
 
-| Person | Blog | Major Projects | Last Updated |
-|--------|------|----------------|--------------|
-| **Sebastian Raschka** | [sebastianraschka.com](https://sebastianraschka.com/blog/) / [Ahead of AI](https://magazine.sebastianraschka.com/) | LLMs-from-scratch (83k ⭐), litgpt, ML books | Dec 2025 |
-| **Andrej Karpathy** | [karpathy.ai](https://karpathy.ai/) / [bearblog](https://karpathy.bearblog.dev/) | nanoGPT, minGPT, Tesla Autopilot, Zero to Hero | Dec 2025 |
-| **Jeremy Howard** | [jeremy.fast.ai](https://jeremy.fast.ai/) / [fast.ai](https://www.fast.ai/) | fast.ai, fastai library (25k ⭐), ULMFiT | Jul 2025 |
-| **Hamel Husain** | [hamel.dev](https://hamel.dev/) | CodeSearchNet (used by OpenAI), nbdev, fastpages | Jan 2026 |
-| **Julia Evans** | [jvns.ca](https://jvns.ca/) | Wizard Zines, rbspy | Jan 2026 |
+| Person | Blog | Social | Major Projects | Last Updated |
+|--------|------|--------|----------------|--------------|
+| **Sebastian Raschka** | [sebastianraschka.com](https://sebastianraschka.com/blog/) / [Ahead of AI](https://magazine.sebastianraschka.com/) | [@rasbt](https://x.com/rasbt) | LLMs-from-scratch (83k ⭐), litgpt, ML books | Dec 2025 |
+| **Andrej Karpathy** | [karpathy.ai](https://karpathy.ai/) / [bearblog](https://karpathy.bearblog.dev/) | [@karpathy](https://x.com/karpathy) | nanoGPT, minGPT, Tesla Autopilot, Zero to Hero | Dec 2025 |
+| **Jeremy Howard** | [jeremy.fast.ai](https://jeremy.fast.ai/) / [fast.ai](https://www.fast.ai/) | [@jeremyphoward](https://x.com/jeremyphoward) | fast.ai, fastai library (25k ⭐), ULMFiT | Jul 2025 |
+| **Hamel Husain** | [hamel.dev](https://hamel.dev/) | [@HamelHusain](https://x.com/HamelHusain) | CodeSearchNet (used by OpenAI), nbdev, fastpages | Jan 2026 |
+| **Julia Evans** | [jvns.ca](https://jvns.ca/) | [@b0rk](https://x.com/b0rk) | Wizard Zines, rbspy | Jan 2026 |
+| **Peter Steinberger** | [steipete.me](https://steipete.me/) | [@steipete](https://x.com/steipete) | PSPDFKit, Poltergeist, AI dev workflows | Dec 2025 |
 
 ### Why They Fit
 
@@ -32,6 +33,7 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 - **Jeremy Howard**: "Making neural nets uncool again" - pragmatism over complexity.
 - **Hamel Husain**: Writes posts like "Fuck You, Show Me The Prompt" - extremely practical, no BS.
 - **Julia Evans**: Master of explaining hard things simply. Zines are delightful. Not AI-focused but similar pragmatic style.
+- **Peter Steinberger**: iOS veteran turned AI-native developer. Writes candidly about AI-assisted workflows ("Just Talk To It", "Shipping at Inference-Speed"). Ships constantly.
 
 ## Tier 2: Excellent, Slightly More Specialized
 
@@ -62,11 +64,11 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 
 ## Original Inspirations
 
-| Person | Blog | Major Projects | Last Updated |
-|--------|------|----------------|--------------|
-| **Simon Willison** | [simonwillison.net](https://simonwillison.net/) | Django (co-creator), Datasette, llm CLI | Dec 2025 |
-| **Mario Zechner** | [mariozechner.at](https://mariozechner.at/) | libGDX, basis universal | Active |
-| **Armin Ronacher** | [lucumr.pocoo.org](https://lucumr.pocoo.org/) | Flask, Jinja2, Click, Rye | Jul 2025 |
+| Person | Blog | Social | Major Projects | Last Updated |
+|--------|------|--------|----------------|--------------|
+| **Simon Willison** | [simonwillison.net](https://simonwillison.net/) | [@simonw](https://x.com/simonw) | Django (co-creator), Datasette, llm CLI | Dec 2025 |
+| **Mario Zechner** | [mariozechner.at](https://mariozechner.at/) | [@badaborium](https://x.com/badlogicgames) | libGDX, basis universal | Active |
+| **Armin Ronacher** | [lucumr.pocoo.org](https://lucumr.pocoo.org/) | [@maborium](https://x.com/mitsuhiko) | Flask, Jinja2, Click, Rye | Jul 2025 |
 
 ## Legendary: Pure Builder
 
@@ -101,6 +103,7 @@ Tier 1:
 - https://www.fast.ai/
 - https://hamel.dev/
 - https://jvns.ca/
+- https://steipete.me/
 
 Tier 2:
 - https://huyenchip.com/blog/
