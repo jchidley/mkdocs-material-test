@@ -21,14 +21,14 @@ tags:
 * [Native emulation of Rpi2/3 using Qemu's Raspi2/3 machine](https://github.com/dhruvvyas90/qemu-rpi-kernel/tree/master/native-emulation) Recent specific instructions for a Raspberry Pi
 * [Emulating raspberry pi 4 with qemu - Stack Overflow](https://stackoverflow.com/questions/67045438/emulating-raspberry-pi-4-with-qemu/67056324#67056324)
 * [Raspberry Pi on QEMU](https://azeria-labs.com/emulate-raspberry-pi-with-qemu/) older but still helpful instructions, especially about mounting partitions
-* [How to mount one partition from an image file that contains multiple partitions on Linux?](https://stackoverflow.com/questions/1419489/how-to-mount-one-partition-from-an-image-file-that-contains-multiple-partitions) 
+* [How to mount one partition from an image file that contains multiple partitions on Linux?](https://stackoverflow.com/questions/1419489/how-to-mount-one-partition-from-an-image-file-that-contains-multiple-partitions)
 * [How to use loop devices](https://blog.sleeplessbeastie.eu/2017/07/03/how-to-use-loop-devices/) useful examples of how to use loop devices
 * [Developing for non-x86 targets using QEMU](https://landley.net/aboriginal/presentation.html) for extra qemu options in addition to the `qemu` package also needed `qemu-arch-extra` on Arch Linux
 
 * [QEMU Documentation/Platforms/ARM](https://wiki.qemu.org/Documentation/Platforms/ARM#Generic_ARM_system_emulation_with_the_virt_machine)
 * [Virtual 32 bit QEMU](https://translatedcode.wordpress.com/2016/11/03/installing-debian-on-qemus-32-bit-arm-virt-board/)
-* [Installing Debian on QEMU’s 64-bit ARM "virt" board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)
-* [Debian on QEMU’s Raspberry Pi 3 model - flaky](https://translatedcode.wordpress.com/2018/04/25/debian-on-qemus-raspberry-pi-3-model/)
+* [Installing Debian on QEMU's 64-bit ARM "virt" board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)
+* [Debian on QEMU's Raspberry Pi 3 model - flaky](https://translatedcode.wordpress.com/2018/04/25/debian-on-qemus-raspberry-pi-3-model/)
 * [Raspbian "stretch" for Raspberry Pi 3 on QEMU - February 2019](https://github.com/wimvanderbauwhede/limited-systems/wiki/Raspbian-%22stretch%22-for-Raspberry-Pi-3-on-QEMU)
 * [Windows for Raspberry Pi 2 on QEMU HOWTO - June 2018 but older](https://github.com/0xabu/qemu/wiki)
 * [Run a virtualized image of Raspberry Pi in QEMU - April 2018](https://web.archive.org/web/20201205213426/https://tkrel.com/7390)
@@ -50,7 +50,7 @@ to work out the correct options to setup a loop device.  This showed that the fi
 [How to use loop devices](https://sleeplessbeastie.eu/2017/07/03/how-to-use-loop-devices/)
 
 ```bash
-losetup -f —show -P —offset $((8192 * 512)) —sizelimit $((524288 * 512)) ../Downloads/2020-08-20-raspios-buster-armhf-lite.img
+losetup -f -show -P -offset $((8192 * 512)) -sizelimit $((524288 * 512)) ../Downloads/2020-08-20-raspios-buster-armhf-lite.img
 mount /dev/loop0 /mnt/rpi # or the appropriate loop device
 ```
 
@@ -194,18 +194,6 @@ Answer here is to use the `virt` emulation
 * [RPI3 QEMU - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?f=72&t=195565&sid=030b9410f3f3172af333d2eea90a2646) more information and extra patches
 * [Raspberry Pi 4 and QEMU (x86/x64) - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?t=246886) running emu on the pi and emulating x86/x64.  Note that we I compiled from source and cross compiling
 * [Run another OS on your RPi3 as a virtualized QEMU guest under KVM (64-bit) - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?t=224057)
-* [Using QEMU to emulate a Raspberry Pi](https://blog.agchapman.com/using-qemu-to-emulate-a-raspberry-pi/)
-* [QEMU Documentation/Platforms/ARM](https://wiki.qemu.org/Documentation/Platforms/ARM#Generic_ARM_system_emulation_with_the_virt_machine)
-* [Virtual 32 bit QEMU](https://translatedcode.wordpress.com/2016/11/03/installing-debian-on-qemus-32-bit-arm-virt-board/)
-* [Installing Debian on QEMU’s 64-bit ARM "virt" board](https://translatedcode.wordpress.com/2017/07/24/installing-debian-on-qemus-64-bit-arm-virt-board/)
-* [Debian on QEMU’s Raspberry Pi 3 model - flaky](https://translatedcode.wordpress.com/2018/04/25/debian-on-qemus-raspberry-pi-3-model/)
-* [Raspbian "stretch" for Raspberry Pi 3 on QEMU - February 2019](https://github.com/wimvanderbauwhede/limited-systems/wiki/Raspbian-%22stretch%22-for-Raspberry-Pi-3-on-QEMU)
-* [Windows for Raspberry Pi 2 on QEMU HOWTO - June 2018 but older](https://github.com/0xabu/qemu/wiki)
-* [Run a virtualized image of Raspberry Pi in QEMU - April 2018](https://web.archive.org/web/20201205213426/https://tkrel.com/7390)
-* [Emulate Raspberry PI with QEMU - April 2018](http://blog.hellonico.info/iot/arm_on_qemu/)
-* [How to emulate Ubuntu Core for Raspberry Pi 3 using QEMU? - March 2018](https://stackoverflow.com/questions/49134948/how-to-emulate-ubuntu-core-for-raspberry-pi-3-using-qemu)
-* [How to emulate the Raspberry Pi 2 on QEMU?- March 2015](https://stackoverflow.com/questions/28880833/how-to-emulate-the-raspberry-pi-2-on-qemu)
-* [Emulate Rapberry Pi 2 in QEMU - November 2015](https://blog.3mdeb.com/2015/2015-12-30-emulate-rapberry-pi-2-in-qemu/)
 
 ### Compiling Qemu
 
@@ -266,7 +254,7 @@ qemu-system-aarch64 \
     -no-reboot \
     -nographic
 ```
- 
+
 My /etc/fstab on the Raspbian image is:
 ```text
 /dev/mmcblk0p1                                  /boot                           vfat    defaults                0       2
@@ -294,7 +282,7 @@ proc                                            /proc                           
 * [booting a fresh linux kernel on qemu](https://ops.tips/notes/booting-linux-on-qemu/)
 * [How to Build A Custom Linux Kernel For Qemu](https://mgalgs.github.io/2015/05/16/how-to-build-a-custom-linux-kernel-for-qemu-2015-edition.html)
 * [Fast linux kernel testing with qemu](https://web.archive.org/web/20200210092931/http://ncmiller.github.io/2016/05/14/linux-and-qemu.html)
-* [Use " and not ‘ on Qemu on Windows](https://github.com/dhruvvyas90/qemu-rpi-kernel/issues/71)
+* [Use " and not ' on Qemu on Windows](https://github.com/dhruvvyas90/qemu-rpi-kernel/issues/71)
 * [Hello world for bare metal ARM using QEMU](https://balau82.wordpress.com/2010/02/28/hello-world-for-bare-metal-arm-using-qemu/)
 
 * [Pi Linux From Scratch - PiLFS - QEMU](https://intestinate.com/pilfs/beyond.html#qemuuser)

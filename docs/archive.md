@@ -7,16 +7,10 @@ description: Chronological archive of all content
 
 This page provides a chronological listing of all content in the digital garden, organized by year and month.
 
-## 2099
-
-### December
-- [Template](Other/2022-10-07-cadquery.md)
-- [Template](2099-12-23-Template.md)
-- [Template](Other/2099-12-23-Template.md)
-
 ## 2026
 
 ### January
+- [Documentation Review - Diátaxis Analysis](reviews/2026-01-20-Documentation-Review.md) - documentation, review, diataxis, meta
 - [Pragmatic AI & Programming Blogs](2026-01-20-Pragmatic-AI-Programming-Blogs.md) - ai, programming, blogs, resources
 - [Review: Building A Raspberry Pi Home Router](reviews/2026-01-19-Pi-Router-Review.md) - meta, review
 - [Documentation Style and Improvement Plan](style.md) - meta, documentation, writing

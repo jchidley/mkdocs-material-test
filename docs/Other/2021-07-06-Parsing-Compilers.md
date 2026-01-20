@@ -10,6 +10,9 @@ tags:
 # Parsing Compilers
 <!-- markdownlint-enable MD025 -->
 
+!!! info "Related Articles"
+    For front-end parsing libraries (Rust, Julia), Lisp/Scheme implementations, back-ends (6502, QBE), and emulation resources, see [Writing A Programming Language](../2023-09-04-Writing-A-Programming-Language.md).
+
 [mold - a new linker](https://github.com/rui314/mold) [mold - a modern linker](https://youtu.be/hAt3kCalE0Y?si=71Ezpd2wGznau_IH)
 
 Faster programs:

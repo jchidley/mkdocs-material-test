@@ -9,8 +9,13 @@ tags:
   - testing
 ---
 <!-- markdownlint-disable MD025 -->
-# rust Embedded
+# Rust Embedded
 <!-- markdownlint-enable MD025 -->
+
+!!! info "Related Documentation"
+    - [Pi Pico](2023-11-05-Pi-Pico.md) — MicroPython, PIO programming, simulators, and Pico-specific resources
+    - [Testing](2025-03-01-Testing.md) — General testing concepts and property-based testing
+    - [Rust Beginnings](rust/2023-03-16-Rust-Beginnings.md) — Installation and getting started with Rust
 
 ## Update from 30/12/24
 
@@ -358,8 +363,5 @@ If you'd prefer to avoid `arduino-cli` then [PlatformIO Core CLI](https://docs.p
 
 [pio-rs](https://github.com/rp-rs/pio-rs) note: "you can call pio::assembler::new() and construct a pio program using the 'builder pattern' - effectively you are compiling a pio program at run-time on the rp2040 itself!"
 
-Note that embassy includes it's own Pico specific HALs, etc
-
-[pio-rs](https://github.com/rp-rs/pio-rs)
-
+Note that embassy includes it's own Pico specific HALs, etc.
 

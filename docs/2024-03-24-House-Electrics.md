@@ -16,7 +16,6 @@ tags:
 
 [RS PRO 5A Inline Fuse Holder for 5x20mm Fuse, 250V](https://uk.rs-online.com/web/p/fuse-holders/2846487)
 [ElectricalOM - Ideal Software Tool for Domestic, Commercial and Industrial Low Voltage Electrical Design to BS7671](https://electricalom.com/site/free.php)
-[FoxESS - Modbus](https://github.com/nathanmarlor/foxess_modbus)
 Buy "Fox H1-6.0 Hybrid Inverter 6kW" from [TradeSparky](https://www.tradesparky.com/solarsparky/battery-storage/fox-ess/hybrid/fox-h1-60-hybrid-inverter-6kw)
 [This repo contains a bit of everything BYD register, scripts, logs, wiring etc](https://gitlab.com/pelle8/inverter_resources)
 This software enables EV battery packs to be used for stationary storage [Battery-Emulator](https://github.com/dalathegreat/Battery-Emulator)
@@ -79,7 +78,8 @@ I beleive that there is now less availabe, following firmware updates, than ther
 
 ## Leaf Battery
 
-[Battery-Emulator](https://github.com/dalathegreat/Battery-Emulator)
+See [Battery-Emulator](#update-12824) above for EV battery pack integration.
+
 [Raspberry Pi version of Battery-Emulator](https://gitlab.com/pelle8/inverter_resources)
 
 Moving heavyweight items
@@ -102,7 +102,8 @@ Lots of useful stuff about Fox ESS H1 [Fox ESS H1-5.0-E ~33KW Peugeot E208](http
 
 ## Fox ESS
 
-[FoxESS - Modbus](https://github.com/nathanmarlor/foxess_modbus)
+See [FoxESS inverter integration](#solar) in the Solar section above for Modbus details.
+
 [FoxESS V1 BMS protocol](https://foxesscommunity.com/viewtopic.php?t=164)
 [Solax/FoxESS V1 Hybrid/Fit/AC Can Bus Protocol](https://github.com/rand12345/solax_can_bus)
 [Rust no_std CHAdeMO crate](https://github.com/rand12345/chademo-rs)

@@ -10,6 +10,9 @@ tags:
 # Writing A Programming Language
 <!-- markdownlint-enable MD025 -->
 
+!!! info "Related Articles"
+    For compiler theory, textbooks, compiler tools (Flex, Bison, re2c), and general compiler information, see [Parsing and Compilers](Other/2021-07-06-Parsing-Compilers.md).
+
 [The idea behind single-header file libraries](https://github.com/nothings/stb)
 
 ## Introduction

@@ -298,6 +298,70 @@ Track issues discovered during review:
 
 ---
 
+## Phase 9: Automated Syntax Testing ✅
+
+**253 code blocks tested** with automated linters — **100% pass rate**
+
+### Test Results
+
+| Language | Blocks | Pass Rate | Tool |
+|----------|--------|-----------|------|
+| bash | 220 | 100% | shellcheck -S error |
+| sh | 7 | 100% | shellcheck -S error |
+| lua | 3 | 100% | selene (parse errors only) |
+| python | 5 | 100% | ast.parse() |
+| rust | 8 | 100% | rustfmt --check |
+| toml | 2 | 100% | taplo check |
+| yaml | 8 | 100% | PyYAML safe_load |
+
+### Fixes Applied During Testing
+
+| File | Issue | Fix |
+|------|-------|-----|
+| `2023-04-14-Neovim-Lua.md` | `$@` not quoted in bash function | → `"$@"` |
+
+### Testing Notes
+
+- **Bash/sh blocks**: Shebang (`#!/bin/bash`) added automatically for snippets
+- **Lua blocks**: Only parse errors fail; `vim` undefined variable is expected (Neovim runtime)
+- **Python blocks**: Syntax-only (imports/runtime not tested)
+- **PowerShell**: Not included in automated testing (requires Windows PSScriptAnalyzer)
+
+---
+
+## Phase 10: Execution Testing ✅
+
+**Actual compilation and execution** of code blocks that can be safely run.
+
+### Rust Execution Results
+
+| File | Block | Result | Notes |
+|------|-------|--------|-------|
+| `2024-05-05-Rust-General.md` | 8 | ✅ Compiles & runs | Years struct example |
+| `2024-05-05-Rust-General.md` | 9 | ✅ 1 test passes | `maskify()` with unit tests |
+| `2024-05-05-Rust-General.md` | 11 | ✅ Compiles & runs | String/bytes conversion |
+| `rust/2023-03-16-Rust-Beginnings.md` | 6 | ✅ Compiles & runs | Type name printing |
+
+**4/4 runnable Rust blocks pass** (4 blocks skipped: embedded/no_std code requiring cross-compilation)
+
+### Skipped Blocks (Require Special Environment)
+
+| Category | Count | Reason |
+|----------|-------|--------|
+| Embedded Rust | 3 | Requires `#![no_std]` target toolchain |
+| Code Snippets | 1 | Part of larger impl, needs context |
+| Python with deps | 4 | Requires FastAPI, CadQuery, MicroPython |
+| Julia | 17 | Julia not installed |
+| Shell commands | 227 | System modification, hardware-specific |
+
+### What Was Tested
+
+- **Rust**: Full compilation with `rustc`, execution, and unit test runs
+- **Python**: Syntax validation via `ast.parse()` (deps not installed)
+- **Bash/Shell**: Syntax via shellcheck (execution would modify system)
+
+---
+
 ## Completed Work
 
 ### Phase 8 Complete (2026-01-20)

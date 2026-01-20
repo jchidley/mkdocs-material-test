@@ -189,14 +189,11 @@ These mappings and configurations will help you work effectively with PostgreSQL
 ## Links
 
 - [PostgreSQL: Tutorials & Other Resources](https://www.postgresql.org/docs/online-resources/)
-- [PostgreSQL SELECT](https://neon.tech/postgresql/postgresql-tutorial/postgresql-select)
-- [PostgreSQL Primer for Busy People · Zaiste Programming](https://zaiste.net/posts/postgresql-primer-for-busy-people/)
 - [dhamaniasad/awesome-postgres: A curated list of awesome PostgreSQL software, libraries, tools and resources, inspired by awesome-mysql](https://github.com/dhamaniasad/awesome-postgres)
 - [postgres - Rust](https://docs.rs/postgres/latest/postgres/index.html)
 - [PostgreSQL database with Rust: basic how to - TMS Developer Blog](https://tms-dev-blog.com/postgresql-database-with-rust-how-to/)
 - [How to create a backend API with Rust and Postgres - LogRocket Blog](https://blog.logrocket.com/create-backend-api-with-rust-postgres/)
 - [Getting Started with Diesel](https://diesel.rs/guides/getting-started)
-- [launchbadge/sqlx: 🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.](https://github.com/launchbadge/sqlx/tree/main)
 - [sqlx/sqlx-cli/README.md at main · launchbadge/sqlx](https://github.com/launchbadge/sqlx/blob/main/sqlx-cli/README.md#enable-building-in-offline-mode-with-query)
 - [allan2/dotenvy: A well-maintained fork of the dotenv crate](https://github.com/allan2/dotenvy)
 - [Choosing a Rust Database Crate in 2023: Diesel, SQLx, or Tokio-Postgres?](https://rust-trends.com/posts/database-crates-diesel-sqlx-tokio-postgress/)

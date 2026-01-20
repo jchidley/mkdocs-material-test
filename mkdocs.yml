@@ -42,7 +42,6 @@ nav:
   - Tags: tags.md
   - Blog:
     - Pi Pico Documentation: 2023-11-05-Pi-Pico.md
-    - Template: 2099-12-23-Template.md
   - Programming:
     - Rust: 
       - Overview: rust/index.md
@@ -132,6 +131,7 @@ nav:
     - Style Guide: style.md
     - Reviews:
       - Tracker: reviews/review-tracker.md
+      - Documentation Review: reviews/2026-01-20-Documentation-Review.md
       - Pi Router Review: reviews/2026-01-19-Pi-Router-Review.md
       - Pi Router Companions: reviews/2026-01-19-Pi-Router-Companions-Review.md
       - Alpine Linux: reviews/2026-01-19-Alpine-Linux-Review.md
@@ -171,7 +171,6 @@ nav:
       - Shell: Other/2023-09-26-awk-sed-bash.md
       - Picocomputer: 2023-09-09-Picocomputer.md
       - Programming Languages: 2023-09-04-Writing-A-Programming-Language.md
-    - Template: Other/2099-12-23-Template.md
 
 markdown_extensions:
   # Table of contents

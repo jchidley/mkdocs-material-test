@@ -22,7 +22,8 @@ This document consolidates various links and resources that don't fit into speci
 
 ## AI and Machine Learning Services
 
-* [OpenAI](https://openai.com)
+For OpenAI and other AI resources, see [AI Coding](2025-02-08-AI-Coding.md).
+
 * [Midjourney Documentation and User Guide](https://docs.midjourney.com)
 * [Stability AI](https://stability.ai)
 * [TLA+ Video Course - how to build correct computer systems](https://lamport.azurewebsites.net/video/videos.html)
@@ -41,14 +42,14 @@ This document consolidates various links and resources that don't fit into speci
 
 ### Heat Pumps and Heating
 
+For more heat pump resources, see [Plumbing](2024-04-14-Plumbing.md).
+
 * [Vaillant Arotherm Plus Heat Pump VRC720 SensoCOMFORT Settings](https://www.youtube.com/watch?v=IOu73_HYJ3A)
 * [Heat Pumps Cycling (switching on and off)](https://www.youtube.com/watch?v=0oszaqP0TI4)
 * [Introduction to Open Source heat pump monitoring](https://www.youtube.com/watch?v=eyO5ZG8WfBY)
 * [Heat Geek's Guide to Understanding Heat Loss Calculations](https://www.heatgeek.com/heat-losses/)
-* [Heat Pump Information](https://heatpumps.co.uk/)
 * [Retrofitting Domestic Heat Pumps – methods and lessons from Ireland](https://carbon.coop/carbon-co-op-webinar-programme/#retrofitting-heat-pumps)
 * [A mid terrace heat pump example (COP: 3.92)](https://www.youtube.com/watch?v=m2-_x0XZUSM)
-* [Energy Saving Tips – John Cantor Heat Pumps](https://heatpumps.co.uk/heat-pump-resources/energy-saving-tips/)
 
 ### Waste Water Heat Recovery
 
@@ -119,8 +120,9 @@ This document consolidates various links and resources that don't fit into speci
 
 ### Navigation and Equipment
 
+For Skyfield astronomy library, see [Python General Resources](2025-01-23-Python-General-Resources.md#astronomy).
+
 * [Stellarium Astronomy Software](https://stellarium.org)
-* [Skyfield — documentation](https://rhodesmill.org/skyfield/)
 * [Travels in the Sahara - Navigation Equipment -](http://www.geoffrey-kolbe.com/C-Nav/instruments.htm)
 * [David Burch Navigation Blog](https://davidburchnavigation.blogspot.com)
 * [Starpath School of Navigation Title Page](https://www.starpath.com)
@@ -209,9 +211,10 @@ This document consolidates various links and resources that don't fit into speci
 
 ### Statistics and Data
 
+For Apache Arrow, see [Rust Data](2024-05-05-Rust-Data.md).
+
 * [Introductory Statistics](https://stats.libretexts.org/Bookshelves/Introductory_Statistics)
 * [How to Calculate & Plot a CDF in Python](https://www.statology.org/cdf-python/)
-* [Apache Arrow](https://arrow.apache.org)
 * [Data types in Arrow and R](https://blog.djnavarro.net/posts/2022-03-04_data-types-in-arrow-and-r/)
 
 ### Shell and Command Line
@@ -230,12 +233,9 @@ This document consolidates various links and resources that don't fit into speci
 
 ## CAD and Graphics
 
-* [CadQuery is an intuitive, easy-to-use Python module for building parametric 3D CAD models](https://github.com/CadQuery/cadquery)
-* [CadQuery GUI editor based on PyQT supports Linux, Windows and Mac.](https://github.com/CadQuery/CQ-editor)
-* [This repository contains utility classes and functions to extend the features and capabilities of the CadQuery python library](https://github.com/michaelgale/cq-kit)
-* [View CadQuery objects in JupyterLab or in a standalone viewer for any IDE](https://github.com/bernhard-42/jupyter-cadquery)
+For CadQuery resources (cadquery, cq-kit, jupyter-cadquery, CQ-editor), see [CadQuery](Other/2022-10-07-cadquery.md).
+
 * [Learn Autodesk Fusion 360 in 30 Days for Complete Beginners!](https://www.youtube.com/playlist?list=PLrZ2zKOtC_-C4rWfapgngoe9o2-ng8ZBr)
-* [GitHub - bernhard-42/jupyter-cadquery: An extension to render cadquery objects in JupyterLab via pythreejs](https://github.com/bernhard-42/jupyter-cadquery)
 
 ## Electronics Projects
 
@@ -259,7 +259,8 @@ This document consolidates various links and resources that don't fit into speci
 
 ## Books and Educational Resources
 
-* [Green Tea Press – Free books by Allen B. Downey](https://greenteapress.com/wp/)
+For Green Tea Press (Think DSP, etc.), see [Signals and DSP](Other/2020-04-21-Signals.md).
+
 * [Browse Standard Ebooks - Standard Ebooks: Free and liberated ebooks, carefully produced for the true book lover.](https://standardebooks.org/ebooks)
 * [LET'S BUILD A COMPILER!](https://compilers.iecc.com/crenshaw/tutor2.txt)
 

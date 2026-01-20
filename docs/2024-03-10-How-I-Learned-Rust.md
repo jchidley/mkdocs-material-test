@@ -65,7 +65,11 @@ I don't consider `rust` difficult to learn but it does take much, much longer to
 
 [Fornjot is an early-stage CAD kernel](https://github.com/hannobraun/fornjot)
 
-[Rust Beginnings](/docs/rust/2023-03-16-Rust-Beginnings.md) needs to be moved from here, and deleted in beginning rust
+!!! info "Related Rust Documentation"
+    - [Rust Beginnings](rust/2023-03-16-Rust-Beginnings.md) — Installation, learning resources, IDE setup, and Python integration
+    - [Rust General](2024-05-05-Rust-General.md) — Packages, workspaces, error handling, Unicode, and advanced topics
+    - [Rust Embedded](2024-05-05-Rust-Embedded.md) — Embassy, HALs, testing embedded code, and microcontroller development
+    - [Rust Data](2024-05-05-Rust-Data.md) — Data processing resources
 
 ## Links
 

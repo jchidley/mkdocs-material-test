@@ -235,7 +235,7 @@ function nvims() {
   elif [[ $config == "default" ]]; then
     config=""
   fi
-  NVIM_APPNAME=$config nvim -S $@
+  NVIM_APPNAME=$config nvim -S "$@"
 }
 
 bindkey -s ^a "nvims\n"

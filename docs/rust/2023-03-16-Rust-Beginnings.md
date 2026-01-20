@@ -11,6 +11,11 @@ tags:
 # Rust Beginnings
 <!-- markdownlint-enable MD025 -->
 
+!!! info "Related Rust Documentation"
+    - [How I Learned Rust](../2024-03-10-How-I-Learned-Rust.md) — Learning journey, workflow setup, and getting started guide
+    - [Rust General](../2024-05-05-Rust-General.md) — Packages, workspaces, error handling, Unicode, and advanced topics
+    - [Rust Embedded](../2024-05-05-Rust-Embedded.md) — Embassy, HALs, testing embedded code, and microcontroller development
+
 ## Introduction
 
 ### Easy
@@ -176,7 +181,7 @@ To find out what your type, defined in your libraries not `main.rs`, implements:
 
 See `mal - make a lisp`, `(An ((Even Better) Lisp) Interpreter (in Python))` and `chibicc` in these links:
 
-see [Parsing-Compilers](/docs/Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](/docs/2023-09-04-Writing-A-Programming-Language.md)
+see [Parsing and Compilers](../Other/2021-07-06-Parsing-Compilers.md) and [Writing a Programming Language](../2023-09-04-Writing-A-Programming-Language.md)
 
 Rust specific links:
 
@@ -245,7 +250,6 @@ def sum_as_string(a: int, b: int) -> str: ...
 ## Rust
 
 * [Rust Programming Language](https://www.rust-lang.org)
-* [A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)
 * [Frustrated? It's not you, it's Rust](https://fasterthanli.me/articles/frustrated-its-not-you-its-rust)
 * [How to Mix Rust and Python in Your Project](https://web.archive.org/web/20250313022951/https://medium.com/@MatthieuL49/a-mixed-rust-python-project-24491e2af424)
 * [GitHub - PyO3/pyo3: Rust bindings for the Python interpreter](https://github.com/PyO3/pyo3)
