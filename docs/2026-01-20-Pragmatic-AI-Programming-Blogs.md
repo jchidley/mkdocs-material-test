@@ -25,7 +25,13 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 | **Sebastian Raschka** | [Sebastian Raschka's blog fe...](https://sebastianraschka.com/blog/) / [Ahead of AI](https://magazine.sebastianraschka.com/) | [@rasbt](https://x.com/rasbt) | LLMs-from-scratch (83k ⭐), litgpt, ML books | Dec 2025 |
 | **Andrej Karpathy** | [Andrej Karpathy's personal ...](https://karpathy.ai/) / [bearblog](https://karpathy.bearblog.dev/) | [@karpathy](https://x.com/karpathy) | nanoGPT, minGPT, Tesla Autopilot, Zero to Hero | Dec 2025 |
 | **Hamel Husain** | [Hamel Husain's blog focuses](https://hamel.dev/) | [@HamelHusain](https://x.com/HamelHusain) | CodeSearchNet (used by OpenAI), nbdev, fastpages | Jan 2026 |
-| **Julia Evans** | [Julia Evans' personal blog](https://jvns.ca/) | [@b0rk](https://x.com/b0rk) | Wizard Zines, rbspy | Jan 2026 |
+| **Julia Evans** | [jvns.ca](https://jvns.ca/) | [@b0rk](https://x.com/b0rk) | Wizard Zines, rbspy | Jan 2026 |
+| **Dan Luu** | [danluu.com](https://danluu.com/) | [@danluu](https://x.com/danluu) | Systems analysis, myth-busting | Oct 2024 |
+| **Rachel Kroll** | [rachelbythebay.com](https://rachelbythebay.com/) | — | Sysadmin war stories, debugging | Active |
+| **Xe Iaso** | [xeiaso.net](https://xeiaso.net/) | [@xeiaso](https://bsky.app/profile/xeiaso.net) | 400+ articles, NixOS, Go, DevRel | Jan 2026 |
+| **Filippo Valsorda** | [words.filippo.io](https://words.filippo.io/) | [@filosottile](https://x.com/filosottile) | Go crypto stdlib maintainer | Active |
+| **Lexi Mattick** | [cpu.land](https://cpu.land/) | [@kognise](https://x.com/kognise) | "Putting the You in CPU" | Jul 2023 |
+| **Hillel Wayne** | [hillelwayne.com](https://www.hillelwayne.com/) | [@hillelogram](https://x.com/hillelogram) | Formal methods, TLA+, testing | Active |
 | **Peter Steinberger** | [Personal blog of Peter](https://steipete.me/) | [@steipete](https://x.com/steipete) | PSPDFKit, Poltergeist, AI dev workflows | Dec 2025 |
 | **Geoffrey Huntley** | [Geoffrey Huntley's personal...](https://ghuntley.com/) | [@GeoffreyHuntley](https://x.com/GeoffreyHuntley) | AI coding agents, context engineering | Jan 2026 |
 | **Amos Wenger** | [Personal tech blog by](https://fasterthanli.me/) | [@fasterthanlime](https://x.com/fasterthanlime) | Rust deep dives, systems programming | Active |
@@ -39,6 +45,12 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 - **Andrej Karpathy**: Legendary for making complex concepts accessible. Practical, hands-on.
 - **Hamel Husain**: Writes posts like "Fuck You, Show Me The Prompt" - extremely practical, no BS.
 - **Julia Evans**: Master of explaining hard things simply. Zines are delightful. Not AI-focused but similar pragmatic style.
+- **Dan Luu**: Data-driven myth-busting. "Files are hard", "Normalization of deviance". Deep systems analysis with receipts.
+- **Rachel Kroll**: Veteran sysadmin (Google, Facebook). War stories and debugging tales from the trenches.
+- **Xe Iaso**: 400+ articles on NixOS, Go, systems. Playful yet deep. "Weaponizing hyperfocus."
+- **Filippo Valsorda**: Maintains Go's crypto stdlib. Makes cryptography accessible without dumbing it down.
+- **Lexi Mattick**: "Putting the You in CPU" - Julia-Evans-style visual explainer of how programs actually run.
+- **Hillel Wayne**: Makes formal methods practical. TLA+, Alloy, testing. "The Business Case for Formal Methods."
 - **Peter Steinberger**: iOS veteran turned AI-native developer. Writes candidly about AI-assisted workflows ("Just Talk To It", "Shipping at Inference-Speed"). Ships constantly.
 - **Geoffrey Huntley**: Builds commercial AI coding agents. Writes definitive guides on context engineering, MCP servers, secure code generation. No-BS practitioner perspective.
 - **Amos Wenger**: Long-form, exploratory Rust content. "An excuse to teach Rust" through deep dives into how things actually work. Also does video.
@@ -109,6 +121,12 @@ Tier 1:
 - https://karpathy.ai/
 - https://hamel.dev/
 - https://jvns.ca/
+- https://danluu.com/
+- https://rachelbythebay.com/
+- https://xeiaso.net/
+- https://words.filippo.io/
+- https://cpu.land/
+- https://hillelwayne.com/
 - https://steipete.me/
 - https://ghuntley.com/
 - https://fasterthanli.me/
