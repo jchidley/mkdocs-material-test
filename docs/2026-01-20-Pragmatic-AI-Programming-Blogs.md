@@ -19,17 +19,16 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 
 | Person | Blog | Social | Major Projects | Last Updated |
 |--------|------|--------|----------------|--------------|
-| **Simon Willison** | [simonwillison.net](https://simonwillison.net/) | [@simonw](https://x.com/simonw) | Django (co-creator), Datasette, llm CLI | Dec 2025 |
-| **Mario Zechner** | [mariozechner.at](https://mariozechner.at/) | [@badlogicgames](https://x.com/badlogicgames) | libGDX, basis universal | Active |
-| **Armin Ronacher** | [lucumr.pocoo.org](https://lucumr.pocoo.org/) | [@mitsuhiko](https://x.com/mitsuhiko) | Flask, Jinja2, Click, Rye | Jul 2025 |
-| **Sebastian Raschka** | [sebastianraschka.com](https://sebastianraschka.com/blog/) / [Ahead of AI](https://magazine.sebastianraschka.com/) | [@rasbt](https://x.com/rasbt) | LLMs-from-scratch (83k ⭐), litgpt, ML books | Dec 2025 |
-| **Andrej Karpathy** | [karpathy.ai](https://karpathy.ai/) / [bearblog](https://karpathy.bearblog.dev/) | [@karpathy](https://x.com/karpathy) | nanoGPT, minGPT, Tesla Autopilot, Zero to Hero | Dec 2025 |
-| **Jeremy Howard** | [jeremy.fast.ai](https://jeremy.fast.ai/) / [fast.ai](https://www.fast.ai/) | [@jeremyphoward](https://x.com/jeremyphoward) | fast.ai, fastai library (25k ⭐), ULMFiT | Jul 2025 |
-| **Hamel Husain** | [hamel.dev](https://hamel.dev/) | [@HamelHusain](https://x.com/HamelHusain) | CodeSearchNet (used by OpenAI), nbdev, fastpages | Jan 2026 |
-| **Julia Evans** | [jvns.ca](https://jvns.ca/) | [@b0rk](https://x.com/b0rk) | Wizard Zines, rbspy | Jan 2026 |
-| **Peter Steinberger** | [steipete.me](https://steipete.me/) | [@steipete](https://x.com/steipete) | PSPDFKit, Poltergeist, AI dev workflows | Dec 2025 |
-| **Geoffrey Huntley** | [ghuntley.com](https://ghuntley.com/) | [@GeoffreyHuntley](https://x.com/GeoffreyHuntley) | AI coding agents, context engineering | Jan 2026 |
-| **Amos Wenger** | [fasterthanli.me](https://fasterthanli.me/) | [@fasterthanlime](https://x.com/fasterthanlime) | Rust deep dives, systems programming | Active |
+| **Simon Willison** | [Simon Willison's blog discu...](https://simonwillison.net/) | [@simonw](https://x.com/simonw) | Django (co-creator), Datasette, llm CLI | Dec 2025 |
+| **Mario Zechner** | [Personal website of Mario](https://mariozechner.at/) | [@badlogicgames](https://x.com/badlogicgames) | libGDX, basis universal | Active |
+| **Armin Ronacher** | [Armin Ronacher's technical ...](https://lucumr.pocoo.org/) | [@mitsuhiko](https://x.com/mitsuhiko) | Flask, Jinja2, Click, Rye | Jul 2025 |
+| **Sebastian Raschka** | [Sebastian Raschka's blog fe...](https://sebastianraschka.com/blog/) / [Ahead of AI](https://magazine.sebastianraschka.com/) | [@rasbt](https://x.com/rasbt) | LLMs-from-scratch (83k ⭐), litgpt, ML books | Dec 2025 |
+| **Andrej Karpathy** | [Andrej Karpathy's personal ...](https://karpathy.ai/) / [bearblog](https://karpathy.bearblog.dev/) | [@karpathy](https://x.com/karpathy) | nanoGPT, minGPT, Tesla Autopilot, Zero to Hero | Dec 2025 |
+| **Hamel Husain** | [Hamel Husain's blog focuses](https://hamel.dev/) | [@HamelHusain](https://x.com/HamelHusain) | CodeSearchNet (used by OpenAI), nbdev, fastpages | Jan 2026 |
+| **Julia Evans** | [Julia Evans' personal blog](https://jvns.ca/) | [@b0rk](https://x.com/b0rk) | Wizard Zines, rbspy | Jan 2026 |
+| **Peter Steinberger** | [Personal blog of Peter](https://steipete.me/) | [@steipete](https://x.com/steipete) | PSPDFKit, Poltergeist, AI dev workflows | Dec 2025 |
+| **Geoffrey Huntley** | [Geoffrey Huntley's personal...](https://ghuntley.com/) | [@GeoffreyHuntley](https://x.com/GeoffreyHuntley) | AI coding agents, context engineering | Jan 2026 |
+| **Amos Wenger** | [Personal tech blog by](https://fasterthanli.me/) | [@fasterthanlime](https://x.com/fasterthanlime) | Rust deep dives, systems programming | Active |
 
 ### Why They Fit
 
@@ -38,7 +37,6 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 - **Armin Ronacher**: Flask, Jinja2, Click, Rye creator. Writes thoughtfully about language design and developer experience.
 - **Sebastian Raschka**: Deep technical explainers with code. No hype, just "here's how it actually works."
 - **Andrej Karpathy**: Legendary for making complex concepts accessible. Practical, hands-on.
-- **Jeremy Howard**: "Making neural nets uncool again" - pragmatism over complexity.
 - **Hamel Husain**: Writes posts like "Fuck You, Show Me The Prompt" - extremely practical, no BS.
 - **Julia Evans**: Master of explaining hard things simply. Zines are delightful. Not AI-focused but similar pragmatic style.
 - **Peter Steinberger**: iOS veteran turned AI-native developer. Writes candidly about AI-assisted workflows ("Just Talk To It", "Shipping at Inference-Speed"). Ships constantly.
@@ -49,11 +47,11 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 
 | Person | Blog | Focus | Last Updated |
 |--------|------|-------|--------------|
-| **Chip Huyen** | [huyenchip.com](https://huyenchip.com/blog/) | ML systems design, MLOps | Active |
-| **Eugene Yan** | [eugeneyan.com](https://eugeneyan.com/) | RecSys, LLM patterns, applied ML | Nov 2025 |
-| **Vicki Boykis** | [vickiboykis.com](https://vickiboykis.com/) | ML infra, embeddings, production ML | Dec 2025 |
-| **Lilian Weng** | [lilianweng.github.io](https://lilianweng.github.io/) | ML/AI surveys | May 2025 |
-| **Jay Alammar** | [jalammar.github.io](https://jalammar.github.io/) | Visual ML explanations | Active |
+| **Chip Huyen** | [Chip Huyen's blog features](https://huyenchip.com/blog/) | ML systems design, MLOps | Active |
+| **Eugene Yan** | [Eugene Yan](https://eugeneyan.com/) | RecSys, LLM patterns, applied ML | Nov 2025 |
+| **Vicki Boykis** | [Vicki Boykis's tech blog](https://vickiboykis.com/) | ML infra, embeddings, production ML | Dec 2025 |
+| **Lilian Weng** | [Lil'Log is a technical](https://lilianweng.github.io/) | ML/AI surveys | May 2025 |
+| **Jay Alammar** | [Jay Alammar's blog focuses](https://jalammar.github.io/) | Visual ML explanations | Active |
 
 ### Why They Fit
 
@@ -68,17 +66,21 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 | Person | Blog | Focus | Last Updated |
 |--------|------|-------|--------------|
 | **Arvind Narayanan & Sayash Kapoor** | [aisnakeoil.com](https://www.aisnakeoil.com/) | AI hype skepticism | May 2025 |
-| **swyx (Shawn Wang)** | [swyx.io](https://www.swyx.io/) / [Latent Space](https://www.latent.space/) | AI Engineer movement | Active |
-| **Mitchell Hashimoto** | [mitchellh.com](https://mitchellh.com/) | Pragmatic engineering | Aug 2025 |
+| **swyx (Shawn Wang)** | [Shawn Wang (swyx) is](https://www.swyx.io/) / [Latent Space](https://www.latent.space/) | AI Engineer movement | Active |
+| **Mitchell Hashimoto** | [Personal homepage of Mitchell](https://mitchellh.com/) | Pragmatic engineering | Aug 2025 |
 | **Rachel Thomas** | [rachel.fast.ai](https://rachel.fast.ai/) | AI ethics | Active |
 
-## Legendary: Pure Builder
+## Builders First, Writers Second
 
-| Person | Site | Major Projects | Last Updated |
-|--------|------|----------------|--------------|
-| **Fabrice Bellard** | [bellard.org](https://bellard.org/) | QEMU, FFmpeg, TinyCC, QuickJS, JSLinux, TinyEMU, TSAC, ts_zip | Jan 2026 |
+These people are known primarily for the software they've built. Their writing exists but isn't regular blogging—it's documentation, courses, or occasional essays about their work.
 
-Fabrice Bellard is in a category of his own. Not a blogger—his site is a sparse list of projects. But every project is foundational infrastructure that millions depend on. Recent work includes **ts_zip** and **TSAC** (using LLMs for compression), **Micro QuickJS** (JS for microcontrollers), and **TextSynth** (LLM inference server). The defining trait: solving impossibly hard problems with minimal code, often solo.
+| Person | Site | Social | Major Projects |
+|--------|------|--------|----------------|
+| **Fabrice Bellard** | [bellard.org](https://bellard.org/) | — | QEMU, FFmpeg, TinyCC, QuickJS, JSLinux, TSAC, ts_zip |
+| **Jeremy Howard** | [jeremy.fast.ai](https://jeremy.fast.ai/) / [Answer.AI](https://www.answer.ai/) | [@jeremyphoward](https://x.com/jeremyphoward) | fast.ai, fastai library (25k ⭐), ULMFiT, nbdev |
+
+- **Fabrice Bellard**: Solves impossibly hard problems with minimal code, often solo. Every project is foundational infrastructure. Recent: ts_zip and TSAC (LLM-based compression), TextSynth (LLM inference).
+- **Jeremy Howard**: "Making neural nets uncool again." Created ULMFiT (foundation for modern LLMs), fastai, nbdev. Teaches via courses (course.fast.ai) rather than blog posts. Now running Answer.AI.
 
 ## Key Characteristics They Share
 
@@ -105,7 +107,6 @@ Tier 1:
 - https://lucumr.pocoo.org/
 - https://sebastianraschka.com/blog/
 - https://karpathy.ai/
-- https://www.fast.ai/
 - https://hamel.dev/
 - https://jvns.ca/
 - https://steipete.me/
@@ -125,8 +126,10 @@ Tier 3:
 - https://mitchellh.com/
 - https://rachel.fast.ai/
 
-Legendary:
+Builders First:
 - https://bellard.org/
+- https://jeremy.fast.ai/
+- https://www.answer.ai/
 
 Format as a markdown table with columns: Blog, Latest Post Title, Date
 ```

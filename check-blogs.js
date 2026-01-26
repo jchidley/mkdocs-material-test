@@ -18,7 +18,7 @@ const blogs = [
   { name: 'Armin Ronacher', url: 'lucumr.pocoo.org', tier: 1 },
   { name: 'Sebastian Raschka', url: 'sebastianraschka.com/blog', tier: 1 },
   { name: 'Andrej Karpathy', url: 'karpathy.ai', tier: 1 },
-  { name: 'Jeremy Howard', url: 'fast.ai', tier: 1 },
+  { name: 'Jeremy Howard', url: 'answer.ai', tier: -1 },
   { name: 'Hamel Husain', url: 'hamel.dev', tier: 1 },
   { name: 'Julia Evans', url: 'jvns.ca', tier: 1 },
   { name: 'Peter Steinberger', url: 'steipete.me', tier: 1 },
@@ -72,7 +72,7 @@ async function main() {
   console.log(`# Blog Update Check - ${date}\n`);
   
   const tiers = {
-    '-1': '## Legendary: Pure Builder',
+    '-1': '## Builders First, Writers Second',
     1: '## Tier 1: Highly Recommended',
     2: '## Tier 2: Excellent',
     3: '## Tier 3: Worth Following'
