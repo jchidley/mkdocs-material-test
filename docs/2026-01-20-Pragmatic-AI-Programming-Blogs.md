@@ -59,14 +59,20 @@ Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https
 
 | Person | Blog | Focus | Last Updated |
 |--------|------|-------|--------------|
-| **Chip Huyen** | [Chip Huyen's blog features](https://huyenchip.com/blog/) | ML systems design, MLOps | Active |
+| **Ethan Mollick** | [One Useful Thing](https://www.oneusefulthing.org/) | LLM-shaped problems, jagged frontier, AI for knowledge workers | Active |
+| **Addy Osmani** | [Elevate](https://addyo.substack.com/) | Context engineering, LLM coding workflows, agentic development | Active |
+| **Cameron R. Wolfe** | [Deep Learning Focus](https://cameronrwolfe.substack.com/) | AI from first principles, always free | Active |
+| **Chip Huyen** | [Chip Huyen's blog](https://huyenchip.com/blog/) | ML systems design, MLOps | Active |
 | **Eugene Yan** | [Eugene Yan](https://eugeneyan.com/) | RecSys, LLM patterns, applied ML | Nov 2025 |
 | **Vicki Boykis** | [Vicki Boykis's tech blog](https://vickiboykis.com/) | ML infra, embeddings, production ML | Dec 2025 |
-| **Lilian Weng** | [Lil'Log is a technical](https://lilianweng.github.io/) | ML/AI surveys | May 2025 |
-| **Jay Alammar** | [Jay Alammar's blog focuses](https://jalammar.github.io/) | Visual ML explanations | Active |
+| **Lilian Weng** | [Lil'Log](https://lilianweng.github.io/) | ML/AI surveys | May 2025 |
+| **Jay Alammar** | [Jay Alammar's blog](https://jalammar.github.io/) | Visual ML explanations | Active |
 
 ### Why They Fit
 
+- **Ethan Mollick**: Wharton professor. Every post explores what is/isn't LLM-shaped. Coined "jagged frontier". Free, research-backed, no hype.
+- **Addy Osmani**: Google engineer. Free Substack, 600K readers. "Can't believe this is free" energy.
+- **Cameron R. Wolfe**: PhD-level clarity, beginner-friendly writing. "AI Agents from First Principles" is essential reading.
 - **Chip Huyen**: Author of "Designing ML Systems". Production-focused.
 - **Eugene Yan**: Amazon Principal Scientist. "Patterns for LLM-based Systems" is essential reading.
 - **Vicki Boykis**: Now at Mozilla.ai. Writes about the boring-but-critical stuff.
@@ -132,6 +138,9 @@ Tier 1:
 - https://fasterthanli.me/
 
 Tier 2:
+- https://www.oneusefulthing.org/
+- https://addyo.substack.com/
+- https://cameronrwolfe.substack.com/
 - https://huyenchip.com/blog/
 - https://eugeneyan.com/writing/
 - https://vickiboykis.com/
@@ -161,7 +170,7 @@ Save and run `check-blogs.sh` from the same directory:
 # Check latest posts from pragmatic AI/programming blogs
 # Requires: brave-search skill configured
 
-SKILL_DIR="$HOME/.codex/skills/brave-search"
+SKILL_DIR="$HOME/.pi/agent/skills/brave-search"
 
 blogs=(
     "sebastianraschka.com blog"
@@ -169,6 +178,9 @@ blogs=(
     "fast.ai blog"
     "hamel.dev blog"
     "jvns.ca"
+    "oneusefulthing.org"
+    "addyo.substack.com"
+    "cameronrwolfe.substack.com"
     "huyenchip.com blog"
     "eugeneyan.com writing"
     "vickiboykis.com"
