@@ -126,15 +126,16 @@ nav:
       - Roof Replacement: 2024-03-17-Asbestos-Roof-Replacement.md
   - AI and Data:
     - One Year with LLM Agents: 2026-02-10-One-Year-With-LLM-Coding-Agents.md
-    - AI Coding: 2025-02-08-AI-Coding.md
-    - Pragmatic AI Blogs: 2026-01-20-Pragmatic-AI-Programming-Blogs.md
+    - AI Coding Toolkit: 2026-02-10-AI-Coding-Toolkit.md
+    - AI Coding — Early 2025: 2025-02-08-AI-Coding.md
+    - Pragmatic Technical Writers: 2026-01-20-Pragmatic-Technical-Writers.md
     - Database and GraphQL: 2025-02-23-Database_GraphQL.md
     - Testing: 2025-03-01-Testing.md
     - DaVinci Resolve: 2025-03-27-DaVinci-Resolve.md
     - Web Info: 2025-04-21-Web-Site-Information-and-Manipulation.md
   - Meta:
     - Style Guide: style.md
-    - Claude: 2025-05-22-Claude.md
+
     - Reviews:
       - Tracker: reviews/review-tracker.md
       - Code Review Checklist: reviews/code-review-checklist.md

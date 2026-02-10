@@ -121,9 +121,9 @@ My browser tabs from February 2025 were all tutorials. My tabs from January 2026
 
 ## See Also
 
-- [AI Coding](2025-02-08-AI-Coding.md) — my original AI tools survey from early 2025
-- [Claude](2025-05-22-Claude.md) — Claude-specific notes
-- [Pragmatic AI & Programming Blogs](2026-01-20-Pragmatic-AI-Programming-Blogs.md) — curated list of no-hype AI bloggers
+- [AI Coding Toolkit](2026-02-10-AI-Coding-Toolkit.md) — current tools and resources
+- [AI Coding — Early 2025](2025-02-08-AI-Coding.md) — my original learning notes
+- [Pragmatic Technical Writers](2026-01-20-Pragmatic-Technical-Writers.md) — curated list of no-hype bloggers
 - [How I Learned Rust](2024-03-10-How-I-Learned-Rust.md) — the Monte Carlo simulation that started it all
 - [Simon Willison: Here's how I use LLMs to help me write code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 - [Mario Zechner: What I learned building an opinionated and minimal coding agent](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/)

@@ -1,17 +1,16 @@
 ---
 date: "2026-01-20"
-title: "Pragmatic AI & Programming Blogs"
+title: "Pragmatic Technical Writers"
 tags:
-  - ai
   - programming
   - blogs
   - resources
-  - llm
+  - ai
 ---
 
-# Pragmatic AI & Programming Blogs
+# Pragmatic Technical Writers
 
-A curated list of bloggers who write about AI and programming with a pragmatic, no-hype approach. They favour simple, obvious solutions and have each shipped major well-regarded projects.
+A curated list of technical writers who favour simple, obvious solutions and have each shipped major well-regarded projects. Some write about AI, many don't — the common thread is pragmatism and real-world experience.
 
 Inspired by: [Simon Willison](https://simonwillison.net/), [Mario Zechner](https://mariozechner.at/), [Armin Ronacher](https://lucumr.pocoo.org/)
 

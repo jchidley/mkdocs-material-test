@@ -12,6 +12,14 @@ tags:
 # rust General
 <!-- markdownlint-enable MD025 -->
 
+## AI & LLM Libraries
+
+- [async-openai](https://github.com/64bit/async-openai) — Rust client for the OpenAI API
+- [rust-bert](https://github.com/guillaume-be/rust-bert) — Rust-native NLP models, port of HuggingFace Transformers
+- [Swiftide](https://swiftide.rs/) — Rust library for building LLM applications (ingest, transform, index, query)
+- [langchain-rust](https://github.com/Abraxas-365/langchain-rust) — Rust implementation of LangChain
+- [spider](https://docs.rs/spider/latest/spider/index.html) — Rust web crawler
+
 ## Additions From 18/1/25
 
 [Crates](https://blessed.rs/crates#section-common-subsection-general) "an unofficial guide to the rust ecosystem"

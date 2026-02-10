@@ -20,7 +20,7 @@ This page provides a chronological listing of all content in the digital garden,
 - [Documentation Style and Improvement Plan](style.md) - meta, documentation, writing
 - [Documentation Review - Diátaxis Analysis](reviews/2026-01-20-Documentation-Review.md) - documentation, review, diataxis
 - [Link Curation System Review](reviews/2026-01-20-Link-Curation-System-Review.md) - workflow, automation, links
-- [Pragmatic AI & Programming Blogs](2026-01-20-Pragmatic-AI-Programming-Blogs.md) - ai, programming, blogs
+- [Pragmatic Technical Writers](2026-01-20-Pragmatic-Technical-Writers.md) - programming, blogs, resources
 - [Code Review Checklist](reviews/code-review-checklist.md) - meta, review, code-quality
 - [Code Review Tracker](reviews/code-review-tracker.md) - meta, review, code-quality
 - [Curated Links - January 2026](2026-01-21-Curated-Links---January-2026.md) - links, resources, llm-generated
@@ -43,7 +43,7 @@ This page provides a chronological listing of all content in the digital garden,
 - [Web Site Information and Manipulation](2025-04-21-Web-Site-Information-and-Manipulation.md) - web, tools, markdown
 
 ### May
-- [Claude](2025-05-22-Claude.md) - ai, claude, anthropic
+
 
 ## 2024
 
