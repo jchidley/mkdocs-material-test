@@ -30,6 +30,10 @@ theme:
       default: material/tag-outline
     
 site_name: Jack's Digital Garden
+
+# 404.md is intentionally excluded from nav - it's served automatically by the web server
+not_in_nav: |
+  /404.md
 site_url: https://jchidley.github.io/mkdocs-material-test/
 
 # Repository
@@ -121,6 +125,7 @@ nav:
       - House Electrics: 2024-03-24-House-Electrics.md
       - Roof Replacement: 2024-03-17-Asbestos-Roof-Replacement.md
   - AI and Data:
+    - One Year with LLM Agents: 2026-02-10-One-Year-With-LLM-Coding-Agents.md
     - AI Coding: 2025-02-08-AI-Coding.md
     - Pragmatic AI Blogs: 2026-01-20-Pragmatic-AI-Programming-Blogs.md
     - Database and GraphQL: 2025-02-23-Database_GraphQL.md
@@ -129,8 +134,12 @@ nav:
     - Web Info: 2025-04-21-Web-Site-Information-and-Manipulation.md
   - Meta:
     - Style Guide: style.md
+    - Claude: 2025-05-22-Claude.md
     - Reviews:
       - Tracker: reviews/review-tracker.md
+      - Code Review Checklist: reviews/code-review-checklist.md
+      - Code Review Tracker: reviews/code-review-tracker.md
+      - Link Curation System: reviews/2026-01-20-Link-Curation-System-Review.md
       - Documentation Review: reviews/2026-01-20-Documentation-Review.md
       - Pi Router Review: reviews/2026-01-19-Pi-Router-Review.md
       - Pi Router Companions: reviews/2026-01-19-Pi-Router-Companions-Review.md
@@ -151,8 +160,8 @@ nav:
       - SQLite: Other/2020-01-23-SQLite-Stuff.md
       - URL Collection: Other/2020-02-09-URL-Dump.md
       - Links: 
-        - 2020-11-18: Other/2020-11-18-Links.md
         - Miscellaneous: 2025-01-23-Miscellaneous-Links.md
+        - Curated Links (LLM): 2026-01-21-Curated-Links---January-2026.md
       - FPGA: Other/2020-03-12-FPGA-and-Amaranth-HDL.md
       - Signals: Other/2020-04-21-Signals.md
       - 3D Printing:
@@ -217,11 +226,11 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags:
-      tags_file: tags.md
+  - tags
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
+      enable_git_follow: false
   - minify:
       minify_html: true
       minify_js: true

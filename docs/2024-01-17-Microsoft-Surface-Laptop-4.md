@@ -212,12 +212,12 @@ Screen resolution: 2496 x 1664
 
 ## WinPE Extra Tools
 
-* [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/)
-* [NotePad++](https://notepad-plus-plus.org/downloads/)
-* [Neovim](https://github.com/neovim/neovim/releases/)
-* [Explorer++](https://explorerplusplus.com/)
-* [Adding DaRT to ConfigMgr Boot Images – And starting it earlier than early](https://www.deploymentresearch.com/adding-dart-to-configmgr-boot-images-and-starting-it-earlier-than-early/)
-* [How to run Microsoft Network Monitor in WinPE](https://www.deploymentresearch.com/how-to-run-microsoft-network-monitor-in-winpe/)
+* [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/) — Sysinternals is a Microsoft-hosted collection of advanced system utilities created by Mark Russinovich for managing, troubleshooting, and diagnosin...
+* [NotePad++](https://notepad-plus-plus.org/downloads/) — The Notepad++ downloads page provides access to the free source code editor for Windows, offering various versions of the popular text editor known...
+* [Neovim](https://github.com/neovim/neovim/releases/) — GitHub releases page for Neovim showing the latest stable release (v0.11.5) and nightly development builds (v0.12.0-dev), with installation instruc...
+* [Explorer++](https://explorerplusplus.com/) — Explorer++ is a lightweight, fast file manager for Windows, offered as a free download in both 32-bit and 64-bit versions.
+* [Adding DaRT to ConfigMgr Boot Images – And starting it earlier than early](https://www.deploymentresearch.com/adding-dart-to-configmgr-boot-images-and-starting-it-earlier-than-early/) — A technical guide for integrating Microsoft Diagnostics and Recovery Toolset (DaRT) into ConfigMgr boot images, enabling remote access to WinPE ear...
+* [How to run Microsoft Network Monitor in WinPE](https://www.deploymentresearch.com/how-to-run-microsoft-network-monitor-in-winpe/) — A technical guide explaining how to install and run Microsoft Network Monitor in Windows PE (WinPE) for debugging OS deployment issues, including P...
 
 To [add PowerShell](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-adding-powershell-support-to-windows-pe?view=windows-11),
 start the "Deployment and Imaging Tools Environment" as an administrator and run these commands:
@@ -284,11 +284,11 @@ rem FFU
 DISM.exe /capture-ffu /imagefile=e:\windows.ffu /capturedrive=\\.\PhysicalDrive0 /name:disk0 /description:"Windows FFU"
 ```
 
-* [Capture and apply Windows, system, and recovery partitions](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions?view=windows-11)
+* [Capture and apply Windows, system, and recovery partitions](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/capture-and-apply-windows-system-and-recovery-partitions?view=windows-11) — Microsoft documentation explaining how to capture and apply Windows system, recovery, and data partitions when deploying Windows using WIM format, ...
 * [Image Deployment Sample scripts](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oem-deployment-of-windows-desktop-editions-sample-scripts?preserve-view=true&view=windows-10#-createpartitions-uefitxt)
-* [diskpart](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart)
-* [Capture and apply Windows Full Flash Update (FFU) images](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu?view=windows-11)
-* [How to convert install.esd to install.wim](https://www.youtube.com/watch?v=u44hggPLu7w)
+* [diskpart](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart) — Microsoft documentation for diskpart, a Windows command-line utility for managing computer drives including disks, partitions, volumes, and virtual...
+* [Capture and apply Windows Full Flash Update (FFU) images](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/deploy-windows-using-full-flash-update--ffu?view=windows-11) — Microsoft documentation explaining how to capture and deploy Windows Full Flash Update (FFU) images, a sector-based imaging format that enables fas...
+* [How to convert install.esd to install.wim](https://www.youtube.com/watch?v=u44hggPLu7w) — A tutorial video explaining how to convert Windows installation files from ESD (Electronic Software Download) format to WIM (Windows Imaging) forma...
 
 ```PowerShell
 # Admin
@@ -413,13 +413,13 @@ Previously: If you try to install the *Professional* version of windows and the 
 
 ### Chezmoi and dotfiles
 
-* [Chezmoi](https://www.chezmoi.io/)
-* [chezmoi - Dotfiles Manager across multiple machines | Tom Payne (the creator of it)](https://www.youtube.com/watch?v=JrCMCdvoMAw)
+* [Chezmoi](https://www.chezmoi.io/) — chezmoi is a cross-platform dotfiles manager that helps synchronize personal configuration files across multiple machines with features like templa...
+* [chezmoi - Dotfiles Manager across multiple machines | Tom Payne (the creator of it)](https://www.youtube.com/watch?v=JrCMCdvoMAw) — A presentation introducing chezmoi, a cross-platform dotfile manager written in Go that helps users sync personal configuration files across multip...
 * [Solving the Dotfiles Problem (And Learning Bash)](https://www.youtube.com/watch?v=mSXOYhfDFYo) is very well explained
-* [Chezmoi and Ansible](https://www.youtube.com/watch?v=-RkANM9FfTM)
+* [Chezmoi and Ansible](https://www.youtube.com/watch?v=-RkANM9FfTM) — A YouTube video about setting up and managing dotfiles, which are configuration files for customizing development environments and command-line tools.
 * [Easily moving Linux installs](https://www.youtube.com/watch?v=x6063EuxfEA)
-* [chezmoi: Organize your dotfiles across multiple computers | Let's Code](https://www.youtube.com/watch?v=L_Y3s0PS_Cg)
-* [Using Chezmoi to Automate dotfiles / Config Files (+ my bashrc)](https://www.youtube.com/watch?v=id5UKYuX4-A&list=WL)
+* [chezmoi: Organize your dotfiles across multiple computers | Let's Code](https://www.youtube.com/watch?v=L_Y3s0PS_Cg) — A Let's Code video tutorial about chezmoi, a tool for managing and synchronizing dotfiles (configuration files) across multiple computers.
+* [Using Chezmoi to Automate dotfiles / Config Files (+ my bashrc)](https://www.youtube.com/watch?v=id5UKYuX4-A&list=WL) — This is a YouTube page with minimal content - only showing standard YouTube footer links (About, Press, Copyright, Terms, Privacy, etc.) without an...
 * [Dotfiles! Here's how I organize them](https://www.youtube.com/watch?v=5oXy6ktYs7I&t=449s)
 
 ## Fixing problems
@@ -440,10 +440,10 @@ rem sfc /scannow from windows recovery
 sfc /scannow /offbootdir={drive}\ /offwindir={drive}\windows
 ```
 
-* [How To Make Microsoft Edge Better](https://www.youtube.com/watch?v=VgBsrvSSPyc)
-* [Windows 11 Fixer](https://github.com/99natmar99/Windows-11-Fixer)
-* [The Ultimate Windows Utility](https://christitus.com/windows-tool/)
-* [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/)
+* [How To Make Microsoft Edge Better](https://www.youtube.com/watch?v=VgBsrvSSPyc) — This appears to be a YouTube video page that failed to load actual content, showing only the standard YouTube footer with navigation links like Abo...
+* [Windows 11 Fixer](https://github.com/99natmar99/Windows-11-Fixer) — Windows 11 Fixer is a GUI tool for customizing Windows 11, allowing users to modify taskbar appearance, context menus, privacy/security settings, u...
+* [The Ultimate Windows Utility](https://christitus.com/windows-tool/) — Chris Titus Tech's Windows Utility is a PowerShell-based tool for debloating Windows, installing/updating apps via WinGet, applying performance twe...
+* [Sysinternals](https://learn.microsoft.com/en-us/sysinternals/) — Sysinternals is a Microsoft-hosted collection of advanced system utilities created by Mark Russinovich for managing, troubleshooting, and diagnosin...
 
 ## Links
 
@@ -451,12 +451,12 @@ Checkout surface backup
 
 * [Download drivers and firmware for Surface](https://support.microsoft.com/en-us/surface/download-drivers-and-firmware-for-surface-09bb2e09-2a4b-cb69-0951-078a7739e120#bkmk_update-manually)
 * [Where to look for your BitLocker recovery key](https://support.microsoft.com/en-us/windows/where-to-look-for-your-bitlocker-recovery-key-fd2b3501-a4b9-61e9-f5e6-2a545ad77b3e)
-* [Surface Recovery Image Download](https://support.microsoft.com/en-gb/surface-recovery-image)
-* [Creating and using a USB recovery drive for Surface](https://support.microsoft.com/en-us/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)
-* [Restore or reset Surface for Windows](https://support.microsoft.com/en-us/surface/restore-or-reset-surface-for-windows-e1fd649a-6396-a7de-2e87-7ba3b45e0fb1)
-* [Linux running on the Microsoft Surface devices. Follow the instructions below to install the latest kernel.](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup)
+* [Surface Recovery Image Download](https://support.microsoft.com/en-gb/surface-recovery-image) — Microsoft's official support page for downloading Surface device recovery images, which allow users to restore their Surface devices to factory con...
+* [Creating and using a USB recovery drive for Surface](https://support.microsoft.com/en-us/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07) — Microsoft support article explaining how to create and use a USB recovery drive to restore Surface devices to factory state when Windows won't star...
+* [Restore or reset Surface for Windows](https://support.microsoft.com/en-us/surface/restore-or-reset-surface-for-windows-e1fd649a-6396-a7de-2e87-7ba3b45e0fb1) — Microsoft Support guide explaining how to restore or reset Surface devices running Windows, including troubleshooting options for when the device i...
+* [Linux running on the Microsoft Surface devices. Follow the instructions below to install the latest kernel.](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup) — A comprehensive guide for installing Linux on Microsoft Surface devices, covering prerequisites, bootable USB creation, dual-boot setup, secure boo...
 
-* [Install Windows the Arch Linux Way](https://christitus.com/install-windows-the-arch-linux-way/)
-* [Reagentc Windows Recovery Partition](https://christitus.com/reagentc-windows-recovery-partition/)
-* [Chris Titus Tech Utility](https://www.youtube.com/watch?v=XQAIYCT4f8Q) `iwr -useb https://christitus.com/win | iex`
-* [Windows 11 Perfect Install](https://christitus.com/windows-11-perfect-install/)
+* [Install Windows the Arch Linux Way](https://christitus.com/install-windows-the-arch-linux-way/) — A guide for installing Windows purely through command line using DISM, covering disk partitioning, OS deployment, and bypassing the Out of Box Expe...
+* [Reagentc Windows Recovery Partition](https://christitus.com/reagentc-windows-recovery-partition/) — A technical guide explaining how to set up and use Windows ReAgentC to create and configure a recovery partition, including DISKPART commands, trou...
+* [Chris Titus Tech Utility](https://www.youtube.com/watch?v=XQAIYCT4f8Q) `iwr -useb https://christitus.com/win | iex` — A YouTube video titled 'The Best Windows Utility' - the page content only shows YouTube's standard footer/navigation without any description of the...
+* [Windows 11 Perfect Install](https://christitus.com/windows-11-perfect-install/) — A guide for creating a clean Windows 11 installation by selecting 'English World' during setup to prevent bloatware, changing the region post-insta...

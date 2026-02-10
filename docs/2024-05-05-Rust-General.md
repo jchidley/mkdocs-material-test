@@ -14,7 +14,7 @@ tags:
 
 ## Additions From 18/1/25
 
-[Blessed.rs](https://blessed.rs/crates#section-common-subsection-general) "an unofficial guide to the rust ecosystem"
+[Crates](https://blessed.rs/crates#section-common-subsection-general) "an unofficial guide to the rust ecosystem"
 
 [RustyLine](https://github.com/kkawakam/rustyline) is a "Readline implementation in Rust that is based on Antirez' Linenoise" see [Similar projects](https://github.com/kkawakam/rustyline?tab=readme-ov-file#similar-projects) for other readline.
 [noline](https://github.com/rustne-kretser/noline/tree/master) "is an IO-agnostic #[no_std] line editor providing robust line editing for any system. The core functiunality is IO-free, so it can be adapted to any system be it embedded, async, async embedded, WASM or IPoAC (IP over Avian Carriers)."
@@ -48,16 +48,16 @@ With a layout like this
 
 ```
 workspace root
-├── Cargo.toml (workspace)
-├── my_app (executable)
-|   └── Cargo.toml
-├── common_lib (lib, via submodule)
-|   └── Cargo.toml
-└── bigger_lib_repo (workspace, via submodule)
-    ├── Cargo.toml  (workspace)
-    ├── common_lib (lib, via submodule)
-    |   └── Cargo.toml
-    └── bigger_lib (lib, not a submodule)
+‚îú‚îÄ‚îÄ Cargo.toml (workspace)
+‚îú‚îÄ‚îÄ my_app (executable)
+|   ‚îî‚îÄ‚îÄ Cargo.toml
+‚îú‚îÄ‚îÄ common_lib (lib, via submodule)
+|   ‚îî‚îÄ‚îÄ Cargo.toml
+‚îî‚îÄ‚îÄ bigger_lib_repo (workspace, via submodule)
+    ‚îú‚îÄ‚îÄ Cargo.toml  (workspace)
+    ‚îú‚îÄ‚îÄ common_lib (lib, via submodule)
+    |   ‚îî‚îÄ‚îÄ Cargo.toml
+    ‚îî‚îÄ‚îÄ bigger_lib (lib, not a submodule)
 ```
 
 With content looking like this
@@ -144,24 +144,24 @@ Building with types [The Typestate Pattern in Rust](https://cliffle.com/blog/rus
 
 [Effective Rust](https://www.lurklurk.org/effective-rust/title-page.html)
 
-[Parse, don’t validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/), [Designing with types: Making illegal states unrepresentable](https://fsharpforfunandprofit.com/posts/designing-with-types-making-illegal-states-unrepresentable/) and [Make illegal states unrepresentable](https://blog.janestreet.com/effective-ml-revisited/)
+[Parse, don‚Äôt validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/), [Designing with types: Making illegal states unrepresentable](https://fsharpforfunandprofit.com/posts/designing-with-types-making-illegal-states-unrepresentable/) and [Make illegal states unrepresentable](https://blog.janestreet.com/effective-ml-revisited/)
 
 [Moo-ving Data Efficiently: Exploring the Rust Cow](https://www.thealphadev.com/2024/01/moo-ving-data-efficiently-exploring.html)
-[6 things you can do with the Cow 🐄 in Rust 🦀](https://dev.to/kgrech/6-things-you-can-do-with-the-cow-in-rust-4l55)
+[6 things you can do with the Cow üêÑ in Rust ü¶Ä](https://dev.to/kgrech/6-things-you-can-do-with-the-cow-in-rust-4l55)
 [Using Cow in Rust for efficient memory utilization](https://blog.logrocket.com/using-cow-rust-efficient-memory-utilization/)
 
 [You Should Really Know These Traits in Rust](https://www.youtube.com/watch?v=tWa19Td87gw)
 
 ## Error Handling
 
-* For a general introduction to error handling see [the book](https://doc.rust-lang.org/book/ch09-00-error-handling.html), see also the helpful [Rust container cheat sheet](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit#slide=id.p) for memory layouts.
-* Details about the various `Result` error handling functions, including how to convert to and from various `Result` and `Error` combinations see [Rust Error Handling Cheatsheet - Result handling functions](https://gist.github.com/e-t-u/70f25d4566468adc43a4df43667cedb6)
-* For a detailed look at how Rust does io error handling see [Study of std::io::Error](https://matklad.github.io/2020/10/15/study-of-std-io-error.html), [Error Handling in a Correctness-Critical Rust Project](https://sled.rs/errors.html) and [library/std/src/io/error.rs](https://github.com/rust-lang/rust/blob/master/library/std/src/io/error.rs) with [library/std/src/io/error/repr_unpacked.rs](https://github.com/rust-lang/rust/blob/master/library/std/src/io/error/repr_unpacked.rs)
-* How Jeremy Chone does his [Rust Error Handling - Best Practices](https://www.youtube.com/watch?v=j-VQCYP7wyw)
+* For a general introduction to error handling see [the book](https://doc.rust-lang.org/book/ch09-00-error-handling.html), see also the helpful [Rust container cheat sheet](https://docs.google.com/presentation/d/1q-c7UAyrUlM-eZyTo1pd8SZ0qwA_wYxmPZVOQkoDmH4/edit#slide=id.p) for memory layouts. — This is a chapter introduction from The Rust Programming Language book explaining Rust's error handling philosophy, which distinguishes between rec...
+* Details about the various `Result` error handling functions, including how to convert to and from various `Result` and `Error` combinations see [Rust Error Handling Cheatsheet - Result handling functions](https://gist.github.com/e-t-u/70f25d4566468adc43a4df43667cedb6) — A comprehensive cheatsheet documenting Rust's 21 Result error handling functions, organized by their behavior on Ok and Err variants, with examples...
+* For a detailed look at how Rust does io error handling see [Study of std::io::Error](https://matklad.github.io/2020/10/15/study-of-std-io-error.html), [Error Handling in a Correctness-Critical Rust Project](https://sled.rs/errors.html) and [library/std/src/io/error.rs](https://github.com/rust-lang/rust/blob/master/library/std/src/io/error.rs) with [library/std/src/io/error/repr_unpacked.rs](https://github.com/rust-lang/rust/blob/master/library/std/src/io/error/repr_unpacked.rs) — A detailed technical analysis of Rust's std::io::Error implementation, examining how it balances encapsulation with inspectability through a three-...
+* How Jeremy Chone does his [Rust Error Handling - Best Practices](https://www.youtube.com/watch?v=j-VQCYP7wyw) — A tutorial on Rust error handling best practices, distinguishing between loose error handling for test code (using Box<dyn Error>) and strict, stru...
 
 ### dyn Error
 
-The `dyn` keyword here is for [Dynamic dispatch](https://en.wikipedia.org/wiki/Dynamic_dispatch) which "is the process of selecting which implementation of a polymorphic operation (method or function) to call at run time". Normally in rust we're trying to make everything static because it's quick and can be checked at compile time. In the case of errors, especially ones that are not going to be handled by the program itself, the runtime costs seem unimportant to me. [Using Trait Objects That Allow for Values of Different Types](https://doc.rust-lang.org/book/ch17-02-trait-objects.html) and see [Rust Powered Polymorphism ⚡️ With Traits](https://www.youtube.com/watch?v=CHRNj5oubwci)
+The `dyn` keyword here is for [Dynamic dispatch](https://en.wikipedia.org/wiki/Dynamic_dispatch) which "is the process of selecting which implementation of a polymorphic operation (method or function) to call at run time". Normally in rust we're trying to make everything static because it's quick and can be checked at compile time. In the case of errors, especially ones that are not going to be handled by the program itself, the runtime costs seem unimportant to me. [Using Trait Objects That Allow for Values of Different Types](https://doc.rust-lang.org/book/ch17-02-trait-objects.html) and see [Rust Powered Polymorphism ‚ö°Ô∏è With Traits](https://www.youtube.com/watch?v=CHRNj5oubwci)
 
 see [this explanation from Jeremy](https://youtu.be/j-VQCYP7wyw?si=35WmDNFLqlOnjf0p&t=840)
 
@@ -203,7 +203,7 @@ Also [A Simpler Way to See Results](https://www.youtube.com/watch?v=s5S2Ed5T-dc)
 
 Insight into error handling [Nom's error is referencing data owned by the calling function](https://github.com/rust-bakery/nom/issues/1706#issuecomment-2578820853)
 
-How [hash.dev](https://hash.dev/) people were handing errors and why they wrote a blog describing their problems and [announcing](https://hash.dev/blog/announcing-error-stack) [error-stack](https://docs.rs/error-stack/latest/error_stack/). See also Let's Get Rusty's video: [Simple error handling in Rust](https://www.youtube.com/watch?v=g6WUHcyjsfc)
+How [HASH.dev](https://hash.dev/) people were handing errors and why they wrote a blog describing their problems and [announcing](https://hash.dev/blog/announcing-error-stack) [error-stack](https://docs.rs/error-stack/latest/error_stack/). See also Let's Get Rusty's video: [Simple error handling in Rust](https://www.youtube.com/watch?v=g6WUHcyjsfc)
 
 ## Benchmarking and Performance
 
@@ -233,9 +233,9 @@ Are there better ways to do the same thing see [String concatenations benchmarks
 ### Some specific benchmarking tools
 
 * [hyperfine](https://github.com/sharkdp/hyperfine) is a command-line benchmarking tool.
-* [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) is a statistics-driven micro-benchmarking tool. The most used benchmarking tool for rust - a haskell port. First released in 2017, most popular tool.
+* [Criterion.rs](https://bheisler.github.io/criterion.rs/book/criterion_rs.html) is a statistics-driven micro-benchmarking tool. The most used benchmarking tool for rust - a haskell port. First released in 2017, most popular tool. — Criterion.rs is a statistics-driven micro-benchmarking library for Rust, ported from Haskell's Criterion, that automatically detects performance re...
 * [Iai-Callgrind](https://github.com/iai-callgrind/iai-callgrind) is a benchmarking framework/harness which uses Valgrind's Callgrind and other Valgrind tools like DHAT, Massif, ... to provide extremely accurate and consistent measurements of Rust code, making it perfectly suited to run in environments like a CI. Iai-Callgrind is integrated in Bencher.
-* [Divan](https://nikolaivazquez.com/blog/divan/) is a Rust framework for quick comfy benchmarking. First released in 2023, #2 to Criterion on Lib.rs.
+* [Divan](https://nikolaivazquez.com/blog/divan/) is a Rust framework for quick comfy benchmarking. First released in 2023, #2 to Criterion on Lib.rs. — Divan is a Rust benchmarking framework that offers a simpler API than Criterion while providing features like allocation profiling, generic paramet...
 
 For detailed profiling see [My Current Pick of Rust Performance Optimization Tools](https://www.worthe-it.co.za/blog/2021-06-19-rust-performance-optimization-tools.html)
 
@@ -282,7 +282,7 @@ But [Is it considered a bad practice to implement Deref for newtypes?](https://s
 
 ## Introduction
 
-* currently [This Week in Rust](https://this-week-in-rust.org/blog/2014/06/14/this-week-in-rust-52/)
+* currently [This Week in Rust](https://this-week-in-rust.org/blog/2014/06/14/this-week-in-rust-52/) — This Week in Rust issue 52 covers major breaking changes including the removal of ~[T] syntax and @-syntax (ending 'sigil tyranny'), new RFCs like ...
 [The Rustacean Station Podcast](https://rustacean-station.org/)
 [idiomatic-rust](https://github.com/mre/idiomatic-rust)
 [Idiomatic Rust: Resources And Learning Material](https://corrode.dev/idiomatic-rust/)
@@ -379,9 +379,9 @@ mod tests {
 
 For some examples of how this can handled see the source code of [oh heck, a case conversion library](https://github.com/withoutboats/heck/tree/master) and the archived, and mostly ascii based, [Inflector](https://github.com/whatisinternet/Inflector/tree/master)
 
-Rust uses ut8 encoding for strings, etc, chars are u32 which is the size of [Unicode Scalar Value](https://unicode.org/glossary/#unicode_scalar_value). This isn't the same as a [Code point: Any value in the Unicode codespace.](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-3/#G22700). For some languages characters can be made up of several code points. [Unicode® Standard Annex #29](https://www.unicode.org/reports/tr29/) 
+Rust uses ut8 encoding for strings, etc, chars are u32 which is the size of [Unicode Scalar Value](https://unicode.org/glossary/#unicode_scalar_value). This isn't the same as a [Code point: Any value in the Unicode codespace.](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-3/#G22700). For some languages characters can be made up of several code points. [Unicode¬Æ Standard Annex #29](https://www.unicode.org/reports/tr29/) 
 
-"A single Unicode code point is often, but not always the same as a basic unit of a writing system for a language, or what a typical user might think of as a “character”. There are many cases where such a basic unit is made up of multiple Unicode code points. To avoid ambiguity with the term character as defined for encoding purposes, it can be useful to speak of a user-perceived character. For example, “G” + grave-accent is a user-perceived character: users think of it as a single character, yet is actually represented by two Unicode code points." [Unicode® Standard Annex #29](https://www.unicode.org/reports/tr29/) 
+"A single Unicode code point is often, but not always the same as a basic unit of a writing system for a language, or what a typical user might think of as a ‚Äúcharacter‚Äù. There are many cases where such a basic unit is made up of multiple Unicode code points. To avoid ambiguity with the term character as defined for encoding purposes, it can be useful to speak of a user-perceived character. For example, ‚ÄúG‚Äù + grave-accent is a user-perceived character: users think of it as a single character, yet is actually represented by two Unicode code points." [Unicode¬Æ Standard Annex #29](https://www.unicode.org/reports/tr29/) 
 
 Rust is going to try pretty hard to make sure that these are valid conversions. Strings convert to u8 (bytes) in very specific ways. Ways that include variable multi-byte encoding.
 
@@ -490,5 +490,4 @@ String::from_utf8_lossy
 Unicode support modules for Rust. [unicode-rs](https://unicode-rs.github.io/) this includes [unicode-normalization](https://unicode-rs.github.io/unicode-normalization/unicode_normalization/index.html), [unicode-segmentation](https://unicode-rs.github.io/unicode-segmentation/unicode_segmentation/index.html), [unicode-width](https://unicode-rs.github.io/unicode-width/unicode_width/index.html) and [unicode-xid](https://unicode-rs.github.io/unicode-xid/unicode_xid/index.html)
 
 use ripgrep to search a downloaded copy of the [Unicode Character Database](https://www.unicode.org/ucd/), the [latest was 16](https://www.unicode.org/versions/Unicode16.0.0/) at the time of writing. There's a zip file of the complete database [UCD.zip](https://www.unicode.org/Public/UCD/latest/ucd/) or an XML version [ucd.all.flat.zip](https://www.unicode.org/Public/UCD/latest/ucdxml/) that should be extracted to use [ripgrep](https://github.com/BurntSushi/ripgrep) on.
-
 

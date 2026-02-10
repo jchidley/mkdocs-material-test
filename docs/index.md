@@ -4,10 +4,10 @@ This is a personal knowledge base containing notes, guides, and resources across
 
 ## Recent Additions
 
+- [One Year with LLM Coding Agents](2026-02-10-One-Year-With-LLM-Coding-Agents.md) - From 10 browser tabs to 6,000 agent sessions
+- [Pragmatic AI & Programming Blogs](2026-01-20-Pragmatic-AI-Programming-Blogs.md) - Curated list of no-hype AI bloggers
+- [Curated Links - January 2026](2026-01-21-Curated-Links---January-2026.md) - AI coding, CLI tools, energy monitoring
 - [DaVinci Resolve](2025-03-27-DaVinci-Resolve.md) - Working with DaVinci Resolve video editor
-- [Testing](2025-03-01-Testing.md) - Software testing concepts and tools
-- [Database and GraphQL](2025-02-23-Database_GraphQL.md) - Database systems and GraphQL APIs
-- [AI Coding](2025-02-08-AI-Coding.md) - Using AI for coding assistance
 
 ## Main Topics
 

@@ -371,7 +371,7 @@ For [probe-rs](https://probe.rs/docs/getting-started/probe-setup/#linux%3A-udev-
 Linux: udev rules
 By default, the debug probes are only accessible by users with root privileges on Linux based systems. It is recommend to use appropriate udev rules to allow users without root privileges access to the debug probes as well.
 
-Download the rules file and place it in /etc/udev/rules.d.
+Download the rules file and place it in /etc/udev/rules.d.[^1]
 Run udevadm control --reload to ensure the new rules are used.
 Run udevadm trigger to ensure the new rules are applied to already added devices.
 If you're still unable to access the debug probes after following these steps, try adding your user to the plugdev group.

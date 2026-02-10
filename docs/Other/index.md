@@ -37,18 +37,13 @@ This section contains a diverse collection of documentation and guides on miscel
 
 ### Miscellaneous
 - [URL Dump](2020-02-09-URL-Dump.md) - Collection of useful URLs.
-- [Links](2020-03-02-Links.md) - Assorted useful links.
 - [Screen](2020-11-13-Screen.md) - Using the Screen terminal multiplexer.
-- [Links](2020-11-18-Links.md) - Additional useful links.
 - [Raku](2020-12-08-Raku.md) - Notes on the Raku programming language.
 - [Audio](2021-02-06-Audio.md) - Audio processing and equipment.
-- [Link Dump iPad Transfer](2021-03-24-Link-Dump-iPad-Transfer.md) - Links transferred from iPad.
 - [GitHub Pages Jekyll](2022-08-04-GitHub-Pages-Jekyll.md) - Setting up GitHub Pages with Jekyll.
 - [cadquery](2022-10-07-cadquery.md) - Working with CADQuery.
-- [Links](2023-10-23-Links.md) - More useful links.
 
 ### Templates and Reference
-- [Template](2099-12-23-Template.md) - Template for new documentation files.
 - awk.cheat.sheet.txt - Quick reference for AWK commands.
 - project-words.txt - Project-specific vocabulary and terminology.
 - sed.stream.editor.cheat.sheet.txt - Quick reference for SED commands.

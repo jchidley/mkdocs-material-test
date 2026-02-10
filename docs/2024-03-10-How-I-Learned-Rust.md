@@ -73,4 +73,4 @@ I don't consider `rust` difficult to learn but it does take much, much longer to
 
 ## Links
 
-* [toml crate](https://docs.rs/toml/latest/toml/)
+* [toml crate](https://docs.rs/toml/latest/toml/) — Documentation for the toml Rust crate, a serde-compatible library for parsing and serializing TOML configuration files, commonly used by Cargo and ...

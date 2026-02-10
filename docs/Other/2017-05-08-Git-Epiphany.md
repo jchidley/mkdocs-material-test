@@ -150,7 +150,7 @@ everyday documentation](https://git-scm.com/docs/everyday)
 When I read [Think Like (a) Git](http://think-like-a-git.net/) I no longer felt
 like an idiot
 
-[Git for Ages 4 and Up - Video](Git%20for%20Ages%204%20and%20Up%20-%20Video) is
+[Git for Ages 4 and Up - Video](https://www.youtube.com/watch?v=1ffBJ4sVUb4) is
 git illustrated with a physical model
 
 I love the pictures in [A Visual Git

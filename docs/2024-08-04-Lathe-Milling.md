@@ -27,7 +27,7 @@ Lead screw upgrade [Example for Warco Mini Lathe Threading Kits](https://www.war
 
 ## DRO
 
-* TouchDRO is the first of its kind tablet-based digital readout. [Touch DRO](https://www.touchdro.com/)
+* TouchDRO is the first of its kind tablet-based digital readout. [Touch DRO](https://www.touchdro.com/) — TouchDRO is a digital readout system that pairs Android tablets with scale adapters to add modern touchscreen measurement capabilities to manual mi...
 * Get sensors from here, you want the 5 micron ones "M-DRO EH-05" [Machine DRO - M-DRO - Magnetic](https://www.machine-dro.co.uk/digital-readouts-display-and-encoders/linear-encoders/m-dro-magnetic) see [Technical Information](https://www.machine-dro.co.uk/media/downloads/dro-eh-05-encoder_techincal.pdf)
 
 ## Levelling
@@ -40,22 +40,22 @@ Lead screw upgrade [Example for Warco Mini Lathe Threading Kits](https://www.war
 [Clough42 Lathe Electronic Leadscrew Controller](https://github.com/clough42/electronic-leadscrew)
 [Wiring Everything Together](https://github.com/clough42/electronic-leadscrew/wiki/Wiring-Everything-Together)
 
-* Another version, explains why not Clough42 [Arduino based Electronic leadscrew - First threads](https://www.youtube.com/watch?v=dRzuYhGitEk) and [Electronic Leadscrew v2 - for mini lathes](https://www.youtube.com/watch?v=g6xE1vrWuu8)
-* [STM32 - Electronic Leadscrew](https://github.com/hobbymachinist/els?tab=readme-ov-file)
-* both of the above a variations of, or inspired by, [Clough42 Lathe Electronic Leadscrew Controller](https://github.com/clough42/electronic-leadscrew) which is mostly a turn key system.
-* [Didge - A Digital Gearbox](https://github.com/prototypicall/Didge)
+* Another version, explains why not Clough42 [Arduino based Electronic leadscrew - First threads](https://www.youtube.com/watch?v=dRzuYhGitEk) and [Electronic Leadscrew v2 - for mini lathes](https://www.youtube.com/watch?v=g6xE1vrWuu8) — A DIY electronics project building an electronic lead screw for a lathe using an Arduino Nano, where the creator explains their encoder and pulley ...
+* [STM32 - Electronic Leadscrew](https://github.com/hobbymachinist/els?tab=readme-ov-file) — An open-source STM32-based electronic leadscrew controller for metal lathes, providing features like threading, turning cycles, taper cutting, DRO ...
+* both of the above a variations of, or inspired by, [Clough42 Lathe Electronic Leadscrew Controller](https://github.com/clough42/electronic-leadscrew) which is mostly a turn key system. — An open-source firmware project for replacing traditional change gears on metalworking lathes with an electronically-controlled stepper motor syste...
+* [Didge - A Digital Gearbox](https://github.com/prototypicall/Didge) — Didge is an open-source digital gearbox system implemented on a low-cost 32-bit microcontroller that replaces physical gearboxes (like those in met...
 
 Explanation of quadrature encoding, using the rotary encoder. [Clough42 Electronic Leadscrew | First test . . . problems](https://youtu.be/V4CPL6_BdHg?si=xoUsfi2afbnLun07&t=1799)
 
 ### Toolpost fixtures, drill, etc
 
-* Still being used now [NewTool Post Drill Modification Use On Mini Lathe & Myford Plus New Vice](https://www.youtube.com/watch?v=1mr3I_8HnJQ) based on this one [Home Made Toolpost Dremel Type Drill Myford/Mini Lathe Micro Milling](https://www.youtube.com/watch?v=K4DHkNykers)
+* Still being used now [NewTool Post Drill Modification Use On Mini Lathe & Myford Plus New Vice](https://www.youtube.com/watch?v=1mr3I_8HnJQ) based on this one [Home Made Toolpost Dremel Type Drill Myford/Mini Lathe Micro Milling](https://www.youtube.com/watch?v=K4DHkNykers) — This is a YouTube page that failed to load actual video content, showing only the site's standard footer navigation links (About, Press, Copyright,...
 note the use of a plate [HOW TO REGRIND SPOT & CENTER DRILLS PERFECTLY ON THE CHINESE MINI LATHE](https://www.youtube.com/watch?v=B7EnZH2elKU)
 
-* [ER40 Collet Chuck Toolpost For Power Feed Drilling & Slitting Saw Work](https://www.youtube.com/watch?v=9Qvj3LxEFHQ) manufacture of
-* with tapered roller bearings [ER20 Collet Chuck Lathe Toolpost Drill With Tapered Roller Bearings](https://www.youtube.com/watch?v=DpY762kcQrs) updated with [ER20 Lathe Toolpost Drill & Mill Fixture. A Power Drill Milling Hack](https://www.youtube.com/watch?v=1K_vH1ssqds&t=19s)
+* [ER40 Collet Chuck Toolpost For Power Feed Drilling & Slitting Saw Work](https://www.youtube.com/watch?v=9Qvj3LxEFHQ) manufacture of — This is a YouTube page that failed to load meaningful content, showing only the site's standard footer navigation links (About, Press, Copyright, C...
+* with tapered roller bearings [ER20 Collet Chuck Lathe Toolpost Drill With Tapered Roller Bearings](https://www.youtube.com/watch?v=DpY762kcQrs) updated with [ER20 Lathe Toolpost Drill & Mill Fixture. A Power Drill Milling Hack](https://www.youtube.com/watch?v=1K_vH1ssqds&t=19s) — A machining video demonstrating the construction of an ER20 collet chuck lathe toolpost drill using tapered roller bearings, including details on b...
 * [Preset Tools For Toolpost Drills & Tailstock Myford & Mini Lathe.](https://youtu.be/qvZnvwqdKxI?si=GAAaFlpervIYnUpN)
-* [My Toolpost Fixture Alignment Locking Screw Upgrade.](https://www.youtube.com/watch?v=YzoeSKEz4gM)
+* [My Toolpost Fixture Alignment Locking Screw Upgrade.](https://www.youtube.com/watch?v=YzoeSKEz4gM) — A YouTube video about upgrading the alignment locking screw on a toolpost fixture, which is a machining/metalworking improvement for lathe tool hol...
 
 ### Boring Head
 
@@ -70,5 +70,4 @@ Good selection [RDG Tools](https://www.rdgtools.co.uk/index.html)
 Massive selection [Cromwell](https://www.cromwell.co.uk/basket)
 
 UK Supplier of DRO [Machine-DRO](https://www.machine-dro.co.uk/digital-readouts-display-and-encoders/linear-encoders/all-linear-encoders/m-dro-ehm-series-mini-head-with-160mm-6-1-4-inch-reading-length-magnetic-tape-encoder)
-
 

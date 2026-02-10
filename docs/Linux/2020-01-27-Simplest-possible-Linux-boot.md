@@ -68,7 +68,7 @@ gzip blah.img # gzip image
 * [Standard Linux directories](https://youtu.be/Sk9TatW9ino?t=4837)
 * [Start of discussion about `init`](https://youtu.be/Sk9TatW9ino?t=5047)
 * [PID 1 and `init`, why it's special](https://youtu.be/Sk9TatW9ino?t=5155)
-* ["oneit" Rob]((https://youtu.be/Sk9TatW9ino?t=5308)) [oneit](https://github.com/landley/toybox/blob/master/toys/other/oneit.c)
+* ["oneit" Rob](https://youtu.be/Sk9TatW9ino?t=5308) [oneit](https://github.com/landley/toybox/blob/master/toys/other/oneit.c)
 * [devtmpfs and devpts](https://youtu.be/Sk9TatW9ino?t=5415) to populate the `/dev` directory with the devices and `/dev/pts` with pseudo terminals  (don't need udev or systemd as the kernel does it)
 * [more stuff about consoles, contolling ttys, signals and `oneit`](https://youtu.be/Sk9TatW9ino?t=5555)
 * [QEMU and inputting environmental variables from the its command line](https://youtu.be/Sk9TatW9ino?t=5700)

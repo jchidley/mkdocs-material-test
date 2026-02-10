@@ -13,7 +13,7 @@ tags:
 
 ## Introduction
 
-This document focuses specifically on Python testing frameworks and fake data generation. For a broader collection of Python resources including data visualization, web frameworks, and scientific computing, see [Python General Resources](/docs/2025-01-23-Python-General-Resources.md).
+This document focuses specifically on Python testing frameworks and fake data generation. For a broader collection of Python resources including data visualization, web frameworks, and scientific computing, see [Python General Resources](../2025-01-23-Python-General-Resources.md).
 
 ## Testing
 

@@ -215,7 +215,7 @@ systemctl start nftables
 
 and bingo!  A fully functioning Internet router.
 
-I implemented a simple ["firewall"](2020-01-07-Traffic-Manager-Not-Firewall).
+I implemented a simple ["firewall"](../Linux/2020-01-07-Traffic-Manager-Not-Firewall.md).
 
 ## Serving IP Addresses
 
@@ -269,7 +269,7 @@ systemctl status dhcpd4@ethusb0.service # will also display the allocated addres
 
 ## The End of the Beginning
 
-This is enough to replace the original [pretty-good-for-a-consumer-grade](https://www.asus.com/Networking/RTN66U/) which has been repurposed as a [WAP](https://en.wikipedia.org/wiki/Wireless_access_point).  To exercise more control over the home network requires [implementing a DNS server](2020-01-08-DNS-Setup-For-DIY-Home-Router).
+This is enough to replace the original [pretty-good-for-a-consumer-grade](https://www.asus.com/Networking/RTN66U/) which has been repurposed as a [WAP](https://en.wikipedia.org/wiki/Wireless_access_point).  To exercise more control over the home network requires [implementing a DNS server](../Linux/2020-01-08-DNS-Setup-For-DIY-Home-Router.md).
 
 ## Troubleshooting
 

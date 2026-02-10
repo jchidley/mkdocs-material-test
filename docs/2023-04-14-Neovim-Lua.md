@@ -79,7 +79,7 @@ normal = { family = "SauceCodePro Nerd Font", style = "Regular" }
 
 ## Vim, Neovim and Related
 
-* [unicode.vim](https://github.com/chrisbra/unicode.vim)
+* [unicode.vim](https://github.com/chrisbra/unicode.vim) — A Vim plugin that simplifies working with Unicode characters and digraphs by providing completion functions, character identification commands, and...
 * [Your problem with Vim is that you don't grok vi](https://stackoverflow.com/a/1220118/3617057)
 
 Probably the most important command
@@ -200,8 +200,8 @@ EOF
 * [Building Neovim](https://github.com/neovim/neovim/wiki/Building-Neovim)
 * [Neovim from Scratch playlist - YouTube](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
 * [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim#file-explorer)
-* [julia-vim](https://github.com/JuliaEditorSupport/julia-vim/blob/master/INSTALL.md)
-* [LunarVimConfig for Julia](https://github.com/davibarreira/LunarVimConfig)
+* [julia-vim](https://github.com/JuliaEditorSupport/julia-vim/blob/master/INSTALL.md) — Installation documentation for julia-vim, a Vim plugin that provides Julia programming language support for the Vim editor.
+* [LunarVimConfig for Julia](https://github.com/davibarreira/LunarVimConfig) — A GitHub repository containing LunarVim configuration files optimized for Julia development, with a tutorial on setting up Neovim as a Julia IDE in...
 
 ```vim
 :lua print(vim.api.nvim_eval("tabpagewinnr(tabpagenr())"))
@@ -217,7 +217,7 @@ git clone the target nvim into a subdirectory of .config
 need the latest (9+) version of nvim
 
 * [A Basic Stable IDE config for Neovim](https://github.com/LunarVim/nvim-basic-ide)
-* [Neovim Config Switcher - Gist](https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b)
+* [Neovim Config Switcher - Gist](https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b) — A zsh configuration gist that provides shell aliases and an fzf-based selector function to easily switch between multiple Neovim configuration dist...
 and [Neovim Config Switcher - YouTube](https://youtu.be/LkHjJlSgKZY)
 
 ```bash
@@ -252,21 +252,21 @@ in one instance, can be used interactively. Then
 nvim --server ~/.cache/nvim/server.pipe --remote-expr "winnr()"
 ```
 
-* [Example init.lua etc](https://github.com/cpow/cpow-dotfiles)
-* [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
-* [Running command line tasks in Neovim](https://www.jackfranklin.co.uk/blog/executing-tasks-in-neovim/)
+* [Example init.lua etc](https://github.com/cpow/cpow-dotfiles) — A personal dotfiles repository containing Neovim configuration (Lua-based with lazy.nvim) and tmux settings, with 342 stars indicating it's a popul...
+* [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/) — A comprehensive tutorial for Neovim beginners on creating a Lua-based configuration file (init.lua), covering editor settings, keybindings, plugin ...
+* [Running command line tasks in Neovim](https://www.jackfranklin.co.uk/blog/executing-tasks-in-neovim/) — A tutorial on configuring Neovim to run command-line tasks (like tests or builds) in a persistent terminal split, using the Neoterm plugin and cust...
 
 * [Tmux Cheat Sheet & Quick Reference](https://tmuxcheatsheet.com)
 
 * [Vim Cheat Sheet](https://vim.rtorr.com)
 * [Home - Neovim](https://neovim.io)
 * [AstroNvim is an aesthetic and feature-rich neovim](https://astronvim.com/#-features)
-* [GitHub - neoclide/coc.nvim: Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers.](https://github.com/neoclide/coc.nvim)
-* [GitHub - dense-analysis/ale: Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support](https://github.com/dense-analysis/ale)
-* [Vim As an IDE for Python 2021](https://medium.com/nerd-for-tech/vim-as-an-ide-for-python-2021-f922da6d2cfe)
-* [Vim for Python in 2020 | Vim From Scratch](https://www.vimfromscratch.com/articles/vim-for-python)
-* [Vim - Full Stack Python](https://www.fullstackpython.com/vim.html)
-* [VIM and Python – A Match Made in Heaven – Real Python](https://realpython.com/vim-and-python-a-match-made-in-heaven/)
+* [GitHub - neoclide/coc.nvim: Nodejs extension host for vim & neovim, load extensions like VSCode and host language servers.](https://github.com/neoclide/coc.nvim) — coc.nvim is a Node.js-based extension host for Vim and Neovim that brings VSCode-like IDE features including language server support, making the ed...
+* [GitHub - dense-analysis/ale: Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support](https://github.com/dense-analysis/ale) — ALE (Asynchronous Lint Engine) is a Vim/Neovim plugin that provides real-time syntax checking, linting, and Language Server Protocol (LSP) support ...
+* [Vim As an IDE for Python 2021](https://medium.com/nerd-for-tech/vim-as-an-ide-for-python-2021-f922da6d2cfe) — A guide to configuring Vim/NeoVim as a Python IDE, covering essential plugins for file navigation, linting (Syntastic, ALE), code completion (jedi-...
+* [Vim for Python in 2020 | Vim From Scratch](https://www.vimfromscratch.com/articles/vim-for-python) — A comprehensive guide to setting up Vim/Neovim for Python development in 2020, covering essential plugins for syntax highlighting (semshi), linting...
+* [Vim - Full Stack Python](https://www.fullstackpython.com/vim.html) — A comprehensive guide to using Vim as a Python development environment, covering configuration via .vimrc files, the editor's keyboard-centric phil...
+* [VIM and Python – A Match Made in Heaven – Real Python](https://realpython.com/vim-and-python-a-match-made-in-heaven/) — A comprehensive tutorial on configuring VIM as a Python development environment, covering installation, version verification, and setting up extens...
 * [learnbyexample - vim](https://learnbyexample.github.io/tips/#vim)
 * [Home - code-server Docs](https://coder.com/docs/code-server/latest)
 
@@ -280,10 +280,10 @@ rm -rf ~/.local/share/nvim
 rm -rf ./.config/nvim
 ```
 
-* [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/)
+* [Build your first Neovim configuration in lua](https://vonheikemen.github.io/devlog/tools/build-your-first-lua-config-for-neovim/) — A comprehensive tutorial for Neovim beginners on creating a Lua-based configuration file (init.lua), covering editor settings, keybindings, plugin ...
 * [Why Neovim is the best code editor / IDE for developers](https://web.archive.org/web/20240102131848/https://console.dev/articles/neovim-best-code-editor-ide-for-developers)
-* [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug)
-* [GitHub - hrsh7th/nvim-cmp: A completion plugin for neovim coded in Lua.](https://github.com/hrsh7th/nvim-cmp)
+* [GitHub - junegunn/vim-plug: Minimalist Vim Plugin Manager](https://github.com/junegunn/vim-plug) — vim-plug is a minimalist Vim/Neovim plugin manager that offers easy setup (single file, no dependencies), fast parallel installation, on-demand loa...
+* [GitHub - hrsh7th/nvim-cmp: A completion plugin for neovim coded in Lua.](https://github.com/hrsh7th/nvim-cmp) — nvim-cmp is a popular autocompletion engine plugin for Neovim written in Lua, supporting LSP completions, multiple snippet engines, and customizabl...
 * [How to Configure Neovim to make it Amazing -- complete tutorial](https://youtu.be/J9yqSdvAKXY)
 with the [Github files here](https://github.com/cpow/cpow-dotfiles)
 * [neovim configuration](https://youtu.be/J9yqSdvAKXY)
@@ -569,16 +569,16 @@ As recommended on the Fugative Github.
 
 Other useful links
 
-* [Git workflow using Neovim's Fugitive, Telescope & Git-Signs](https://www.youtube.com/watch?v=IyBAuDPzdFY)
-* [Resolve Git Merge Conflicts with Neovim and Fugitive!](https://www.youtube.com/watch?v=vpwJ7fqD1CE)
-* [Vim Plugin: Fugitive](https://www.youtube.com/watch?v=uUrKrYCAl1Y)
-* [Two keys -= to transform your Git workflow #vim-fugitive](https://www.youtube.com/watch?v=vtFXMni91Q4)
-* [Git rebase --interactive | Vim Fugitive](https://www.youtube.com/watch?v=6hude7CtBKg)
+* [Git workflow using Neovim's Fugitive, Telescope & Git-Signs](https://www.youtube.com/watch?v=IyBAuDPzdFY) — A tutorial video demonstrating an optimized Git workflow in Neovim using the Fugitive plugin, Telescope fuzzy finder, and Git-Signs for visual diff...
+* [Resolve Git Merge Conflicts with Neovim and Fugitive!](https://www.youtube.com/watch?v=vpwJ7fqD1CE) — A tutorial video demonstrating how to resolve Git merge conflicts using Neovim editor with the Fugitive plugin.
+* [Vim Plugin: Fugitive](https://www.youtube.com/watch?v=uUrKrYCAl1Y) — A YouTube video about Fugitive, a Vim plugin that provides Git integration within the Vim text editor.
+* [Two keys -= to transform your Git workflow #vim-fugitive](https://www.youtube.com/watch?v=vtFXMni91Q4) — A tutorial video about vim-fugitive, a Vim plugin that integrates Git functionality, specifically highlighting two keyboard shortcuts that can impr...
+* [Git rebase --interactive | Vim Fugitive](https://www.youtube.com/watch?v=6hude7CtBKg) — A YouTube video tutorial demonstrating how to use Git's interactive rebase feature with the Vim Fugitive plugin for version control workflow.
 
 ## LaTeX
 
 * [Compiling LaTeX Documents in a Vim-Based Workflow](https://www.ejmastnak.com/tutorials/vim-latex/compilation/)
-* [VimTeX](https://github.com/lervag/vimtex)
+* [VimTeX](https://github.com/lervag/vimtex) — VimTeX is a modern Vim and Neovim filetype and syntax plugin for LaTeX files, providing features like compilation, syntax highlighting, and documen...
 
 ## Lua Plugin
 
@@ -590,8 +590,8 @@ Other useful links
 
 * [Learning Lua - resources](http://lua-users.org/wiki/LearningLua)
 * [Programming in Lua : 1](http://www.lua.org/pil/1.html)
-* [Lua for Programmers Part 1: Language Essentials](https://web.archive.org/web/20241121230629/https://ebens.me/post/lua-for-programmers-part-1/)
-* [Learn Lua in Y Minutes](https://learnxinyminutes.com/docs/lua/)
+* [Lua for Programmers Part 1: Language Essentials](https://web.archive.org/web/20241121230629/https://ebens.me/post/lua-for-programmers-part-1/) — The page returns a 404 Not Found error - the original Lua programming tutorial content is no longer available at this archived URL.
+* [Learn Lua in Y Minutes](https://learnxinyminutes.com/docs/lua/) — A comprehensive quick-reference tutorial for learning the Lua programming language, covering variables, flow control, functions, tables, metatables...
 * [Lua Unofficial FAQ (uFAQ)](https://www.luafaq.org)
-* [Learn To Code Space Invaders – learn lua by programming](https://bytesnbits.co.uk/space-invaders-coding-course-introduction/)
-* [External Editor for TIC-80](https://github.com/nesbox/TIC-80/wiki/External-Editor)
+* [Learn To Code Space Invaders – learn lua by programming](https://bytesnbits.co.uk/space-invaders-coding-course-introduction/) — A beginner-friendly coding course that teaches programming fundamentals by building a Space Invaders game using TIC-80, covering topics like variab...
+* [External Editor for TIC-80](https://github.com/nesbox/TIC-80/wiki/External-Editor) — Documentation for TIC-80's external editor feature, explaining how to save games as Lua files for editing in external text editors (VS Code, Sublim...

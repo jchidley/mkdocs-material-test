@@ -15,8 +15,7 @@ llm_assisted: true
 
 # Introduction
 
-* md-url-extractor .\2023-03-16-Links-iPad.md [tonydub/md-url-extractor: A tool for extracting, cleaning, and exporting URLs from Markdown files.](https://github.com/tonydub/md-url-extractor)
-* echo "https://jchidley.github.io" | twars-url2md --stdin  --verbose [twardoch/twars-url2md: Rust tool to fetch multiple URLs and save them into Markdown files](https://github.com/twardoch/twars-url2md)
+* md-url-extractor .\2023-03-16-Links-iPad.md [tonydub/md-url-extractor: A tool for extracting, cleaning, and exporting URLs from Markdown files.](https://github.com/tonydub/md-url-extractor) — md-url-extractor is a Rust CLI tool that extracts URLs from Markdown files, cleans them by removing tracking parameters and normalizing YouTube lin...
+* echo "https://jchidley.github.io" | twars-url2md --stdin  --verbose [twardoch/twars-url2md: Rust tool to fetch multiple URLs and save them into Markdown files](https://github.com/twardoch/twars-url2md) — twars-url2md is a Rust command-line tool that fetches multiple URLs concurrently and converts them to Markdown files, available on crates.io with M...
 * monolith https://jchidley.github.io/blog -o %title%.%timestamp%.html [Y2Z/monolith: ⬛️ CLI tool and library for saving complete web pages as a single HTML file](https://github.com/y2z/monolith)
-
 

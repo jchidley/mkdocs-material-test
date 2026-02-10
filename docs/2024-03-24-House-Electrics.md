@@ -236,13 +236,13 @@ www.valksolarsystems.co.uk
 A study on how flow temperature affects performance, usage and comfort [Money Saving Boiler Challenge: Supporting evidence October 2022](https://www.nesta.org.uk/report/money-saving-boiler-challenge-supporting-evidence-october-2022/)
 
 * [Michael de Podesta](https://www.youtube.com/channel/UCM7WZNOGsKBVBqZ850I9xnw/videos) has intersting videos, spreasheets, etc.
-* [Solar PV: Review of 2023](https://protonsforbreakfast.wordpress.com/2023/12/30/solar-pv-review-of-2023/)
-* [The Economics of Home Solar PV](https://protonsforbreakfast.wordpress.com/2023/04/30/the-economics-of-home-solar-pv/) £10k invested returns 7.5%, assumes a smaller battery.
+* [Solar PV: Review of 2023](https://protonsforbreakfast.wordpress.com/2023/12/30/solar-pv-review-of-2023/) — A detailed technical review of a home solar PV system's 2023 performance, analyzing Tesla Powerwall battery efficiency, capacity degradation over t...
+* [The Economics of Home Solar PV](https://protonsforbreakfast.wordpress.com/2023/04/30/the-economics-of-home-solar-pv/) £10k invested returns 7.5%, assumes a smaller battery. — Analysis of home solar PV economics in the UK, showing a £10,000 system (panels + battery) yields ~7.5% annual return through electricity savings, ...
 * [Perfect Solar Days](https://protonsforbreakfast.wordpress.com/2023/04/08/perfect-solar-days/)
-* [New Solar Panels](https://protonsforbreakfast.wordpress.com/2022/10/27/new-solar-panels/)
-* [First Winter with a Heat Pump](https://protonsforbreakfast.wordpress.com/2022/04/27/first-winter-with-a-heat-pump/)
-* [A Year of Solar Energy](https://protonsforbreakfast.wordpress.com/2021/11/08/a-year-of-solar-energy/)
-* [Battery Day: First Results](https://protonsforbreakfast.wordpress.com/2021/03/20/battery-day-first-results/)
+* [New Solar Panels](https://protonsforbreakfast.wordpress.com/2022/10/27/new-solar-panels/) — The author documents their home solar panel expansion, adding 8 new panels to their existing 12-panel system to increase annual generation from ~3,...
+* [First Winter with a Heat Pump](https://protonsforbreakfast.wordpress.com/2022/04/27/first-winter-with-a-heat-pump/) — A homeowner documents their first winter using a heat pump system, detailing how they optimized electricity usage by combining solar PV, a Tesla Po...
+* [A Year of Solar Energy](https://protonsforbreakfast.wordpress.com/2021/11/08/a-year-of-solar-energy/) — A detailed one-year analysis of a residential solar PV installation in the UK, documenting that 12 panels generated ~3500 kWh (close to household c...
+* [Battery Day: First Results](https://protonsforbreakfast.wordpress.com/2021/03/20/battery-day-first-results/) — The author documents their first day with a Tesla Powerwall 2 home battery system, explaining how it integrates with their solar panels and grid po...
 
 [How I powered my house and charged two EVs for a whole year for just 1p per kWh](https://www.youtube.com/watch?v=FtBymAxbDxE)
 
@@ -252,17 +252,17 @@ Get monthy summaries from the Met Office's Blog - [January's weather](https://bl
 
 His consumption for heating vs my consumption varies from 4.4 times in the colder months to 6.1 times in the warmer months (5 times since he started heating overnight, like I do).
 
-* The model below adjusted for, among other things, battery capacity [Is it greener if I boost my heat pump during off-peak periods? - And save me money as well?](https://www.youtube.com/watch?v=VF199lkvLR8) my version of one of his spreadsheets [Toy heat loss model - with carbon calculation - Intelligent Octopus Go](https://docs.google.com/spreadsheets/d/1GXQVRraW6MLNI4XUgzXziClv8v48lvvI2rZy-CWBdH4/edit#gid=0)
-* A bunch of tests with different strategies: constant temp over 24 hours, on at 6am off at 8:30pm, differnt thermal mass, different temperatures, etc [Should I boost my heat pump during off-peak periods? - Will it save me money?](https://www.youtube.com/watch?v=q1tYCenxb2M) my version of his spreadsheet [Toy heat loss model](https://docs.google.com/spreadsheets/d/148dpzOAPj85e3bKR9K7Ak_65njncRvpae83C2sNuLZE/edit#gid=0)
+* The model below adjusted for, among other things, battery capacity [Is it greener if I boost my heat pump during off-peak periods? - And save me money as well?](https://www.youtube.com/watch?v=VF199lkvLR8) my version of one of his spreadsheets [Toy heat loss model - with carbon calculation - Intelligent Octopus Go](https://docs.google.com/spreadsheets/d/1GXQVRraW6MLNI4XUgzXziClv8v48lvvI2rZy-CWBdH4/edit#gid=0) — A video exploring whether running a heat pump during off-peak electricity periods is more environmentally friendly and cost-effective.
+* A bunch of tests with different strategies: constant temp over 24 hours, on at 6am off at 8:30pm, differnt thermal mass, different temperatures, etc [Should I boost my heat pump during off-peak periods? - Will it save me money?](https://www.youtube.com/watch?v=q1tYCenxb2M) my version of his spreadsheet [Toy heat loss model](https://docs.google.com/spreadsheets/d/148dpzOAPj85e3bKR9K7Ak_65njncRvpae83C2sNuLZE/edit#gid=0) — A video exploring whether running a heat pump during off-peak electricity pricing periods can result in cost savings for homeowners.
 * [Solar stats update - August 2023 - bang on par](https://www.youtube.com/watch?v=Q0RC9BxhWVY) with spreadsheet explanation, [Find Out How Much Solar Power Your Home Can Generate](https://www.youtube.com/watch?v=MdpQci4vTLU)
-* [Octopus data analysis guide - with template spreadsheet](https://www.youtube.com/watch?v=5FwjccO2bZc) my version of his spreadsheet [Octopus data template](https://docs.google.com/spreadsheets/d/1FRpulLrDzEuG3mxYhOdgbuOUvPuvpSx6rV-iNGRK_sI/edit#gid=1245866957)
-* [Cosy Octopus vs Go - now with added solar](https://www.youtube.com/watch?v=iLFrykG49Uk) my version of his spreadsheet [Cosy Octopus vs. Go with Solar](https://docs.google.com/spreadsheets/d/1Pan30Q3qsxFmITSgM4eMG9NsONbTelZ9OrJiJgxmBCg/edit#gid=1218111026)
+* [Octopus data analysis guide - with template spreadsheet](https://www.youtube.com/watch?v=5FwjccO2bZc) my version of his spreadsheet [Octopus data template](https://docs.google.com/spreadsheets/d/1FRpulLrDzEuG3mxYhOdgbuOUvPuvpSx6rV-iNGRK_sI/edit#gid=1245866957) — A video guide explaining how to analyze Octopus Energy data using a template spreadsheet, likely for tracking energy consumption and costs.
+* [Cosy Octopus vs Go - now with added solar](https://www.youtube.com/watch?v=iLFrykG49Uk) my version of his spreadsheet [Cosy Octopus vs. Go with Solar](https://docs.google.com/spreadsheets/d/1Pan30Q3qsxFmITSgM4eMG9NsONbTelZ9OrJiJgxmBCg/edit#gid=1218111026) — A YouTuber compares UK energy tariffs (Octopus Go vs Cozy Octopus vs Standard) using a spreadsheet that now incorporates solar panel generation est...
 * [Should we switch to Cosy Octopus? - Or stick with Octopus Go?]() my version of his spreadsheet [Cosy Octopus vs. Go](https://docs.google.com/spreadsheets/d/1fSvcIw6vPFW88ZhfMqN7Uf_KgDCZ3vz7Yi5vqGWvJYE/edit#gid=1218111026)
-* [Should I get a second home storage battery? It's spreadsheet time!](https://www.youtube.com/watch?v=g0KbYqfCq1w&t=151s) my version of his spreadsheet [HEAT Spreadsheet](https://docs.google.com/spreadsheets/d/1ZX26vzBf5LpmmwctOOHzbW7d0wgV5adpqv4-_bvucmM/edit#gid=0)
+* [Should I get a second home storage battery? It's spreadsheet time!](https://www.youtube.com/watch?v=g0KbYqfCq1w&t=151s) my version of his spreadsheet [HEAT Spreadsheet](https://docs.google.com/spreadsheets/d/1ZX26vzBf5LpmmwctOOHzbW7d0wgV5adpqv4-_bvucmM/edit#gid=0) — The provided content is just YouTube's generic footer/navigation links with no actual video content or description visible - only standard site lin...
 
 ### Tesla
 
-* [Tesla releases API for solar, Powerwall systems, EV chargers](https://www.pv-magazine.com/2024/01/08/tesla-releases-api-for-solar-powerwall-systems-ev-chargers/)
+* [Tesla releases API for solar, Powerwall systems, EV chargers](https://www.pv-magazine.com/2024/01/08/tesla-releases-api-for-solar-powerwall-systems-ev-chargers/) — Tesla released a public API enabling third-party developers to interact with its solar systems, Powerwall battery storage, and EV chargers, expandi...
 * [Tesla API - Energy Endpoints](https://developer.tesla.com/docs/fleet-api#charging_sessions-only-for-business-fleet-owners)
 * [Tesla Powerwall 2 - Local Gateway API documentation](https://github.com/ vloschiavo/powerwall2)
 [AgileBattery](https://github.com/halfrubbish/AgileBattery) and [AgileBattery: Tesla Powerwall and Octopus Energy Agile integration](https://www.reddit.com/r/OctopusEnergy/comments/16z2zee/agilebattery_tesla_powerwall_and_octopus_energy/)
@@ -286,5 +286,3 @@ Sanitary accommodation: 6 (set to 6)
 ### Simple Fans
 
 [Simply Silent DX100BS - 4"/100mm Square Axial Extract Fan Standard](https://www.xpelair.co.uk/product/simply-silent-dx100bs-4100mm-square-axial-extract-fan-standard)
-
-

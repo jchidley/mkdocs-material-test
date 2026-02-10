@@ -153,7 +153,9 @@ This page provides a chronological listing of all content in the digital garden,
                     if isinstance(tags, list) and tags:
                         description = f" - {', '.join(tags[:3])}"  # Show first 3 tags
                 
-                archive_content += f"- [{title}]({path}){description}\n"
+                # URL encode special characters like # in paths
+                encoded_path = path.replace('#', '%23')
+                archive_content += f"- [{title}]({encoded_path}){description}\n"
             
             archive_content += "\n"
     
@@ -164,10 +166,12 @@ This page provides a chronological listing of all content in the digital garden,
             if file_data['filename'] not in ['2099-12-23-Template.md']:  # Skip template
                 title = file_data['title']
                 path = file_data['path']
+                # URL encode special characters like # in paths
+                encoded_path = path.replace('#', '%23')
                 description = ""
                 if 'description' in file_data['frontmatter']:
                     description = f" - {file_data['frontmatter']['description']}"
-                archive_content += f"- [{title}]({path}){description}\n"
+                archive_content += f"- [{title}]({encoded_path}){description}\n"
     
     # Write the new archive.md
     archive_path = os.path.join(docs_dir, 'archive.md')

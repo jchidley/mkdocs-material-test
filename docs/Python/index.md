@@ -14,7 +14,7 @@ This section covers Python programming language topics, particularly focusing on
 ## Contents
 
 - [Python Fake Data and Testing](2023-03-16-Python-Fake-Data-and-Testing.md) - Techniques for generating fake data for Python testing scenarios.
-- [Python Links](2023-03-16-Python-Links.md) - Comprehensive collection of useful Python libraries, tools, and resources.
+- [Python General Resources](../2025-01-23-Python-General-Resources.md) - Comprehensive collection of useful Python libraries, tools, and resources.
 
 ## Topics Covered
 

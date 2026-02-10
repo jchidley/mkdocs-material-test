@@ -43,21 +43,21 @@ To measure very low voltages or currents [CurrentRanger](https://lowpowerlab.com
 
 see also [Pi Pico](2023-11-05-Pi-Pico.md)
 
-* [Embassy is a project to make async/await a first-class option for embedded development.](https://embassy.dev/book/)
+* [Embassy is a project to make async/await a first-class option for embedded development.](https://embassy.dev/book/) — Embassy is a Rust project that brings async/await programming to embedded development, providing an executor, hardware abstraction layers for vario...
 * [Embedded Rust & Embassy: GPIO Button Controlled Blinking](https://dev.to/theembeddedrustacean/embedded-rust-embassy-gpio-button-controlled-blinking-3ee6)
 
-* [Writing an OS in Rust ](https://os.phil-opp.com/)
-* [Discover the world of microcontrollers through Rust!](https://docs.rust-embedded.org/discovery/microbit/index.html)
-* [MicroBit Schematic](https://github.com/microbit-foundation/microbit-v2-hardware/blob/main/V2.00/MicroBit_V2.0.0_S_schematic.PDF)
-* [Embedded Rust documentation](https://docs.rust-embedded.org/)
+* [Writing an OS in Rust ](https://os.phil-opp.com/) — A comprehensive tutorial series by Philipp Oppermann that teaches readers how to build an operating system from scratch using Rust, covering topics...
+* [Discover the world of microcontrollers through Rust!](https://docs.rust-embedded.org/discovery/microbit/index.html) — An introductory hands-on course teaching embedded systems and microcontroller programming using Rust instead of C/C++, covering topics like periphe...
+* [MicroBit Schematic](https://github.com/microbit-foundation/microbit-v2-hardware/blob/main/V2.00/MicroBit_V2.0.0_S_schematic.PDF) — This is a GitHub repository page hosting the official hardware schematic PDF for the BBC micro:bit V2.0.0, an educational microcontroller board use...
+* [Embedded Rust documentation](https://docs.rust-embedded.org/) — The official Embedded Rust documentation hub providing a curated bookshelf of learning resources, from beginner microcontroller tutorials (Discover...
 
 * [Get-PnpDevice = Returns information about PnP devices.](https://learn.microsoft.com/en-us/powershell/module/pnpdevice/get-pnpdevice?view=windowsserver2022-ps)
 
-* [The Drogue IoT project aims to bring together data and users in an Internet of Things world.](https://github.com/drogue-iot)
-* [Embedded development](https://lib.rs/embedded?sort=popular)
-* [rust-mqtt](https://lib.rs/crates/rust-mqtt)
+* [The Drogue IoT project aims to bring together data and users in an Internet of Things world.](https://github.com/drogue-iot) — Drogue IoT is an open-source project providing cloud connectivity (Drogue Cloud) and embedded device tools (Drogue Device) for building IoT applica...
+* [Embedded development](https://lib.rs/embedded?sort=popular) — Lib.rs page listing popular Rust crates for embedded development, featuring libraries for hardware abstraction layers (HAL), no_std compatibility, ...
+* [rust-mqtt](https://lib.rs/crates/rust-mqtt) — rust-mqtt is an async MQTT client library for Rust designed primarily for no_std embedded environments, supporting MQTT 5.0 with features like QoS ...
 
-* [Introduction to Rust programming on bare metal hardware by Mike Kefeder - Rust Zürisee March 2023](https://www.youtube.com/watch?v=KECu_piSM5s)
+* [Introduction to Rust programming on bare metal hardware by Mike Kefeder - Rust Zürisee March 2023](https://www.youtube.com/watch?v=KECu_piSM5s) — A presentation by Mike Kefeder at Rust Zürisee (March 2023) introducing Rust programming for bare metal hardware development.
 * [The Embedded Rust ESP Development Ecosystem](https://dev.to/apollolabsbin/embedded-rust-the-esp-development-ecosystem-5478)
 (Embedded Developer)[https://blog.mark-stevens.co.uk/]
 
@@ -65,8 +65,8 @@ see also [Pi Pico](2023-11-05-Pi-Pico.md)
 
 There appear to be at least 2 completely different HALs/APIs/ecosystems for supporting Raspberry Pi Picos. 
 
-* [Embassy RP HAL implements both blocking and async APIs for many peripherals](https://github.com/embassy-rs/embassy/tree/main/embassy-rp)
-* [Rust support for the "Raspberry Silicon" family of microcontrollers](https://github.com/rp-rs/rp-hal)
+* [Embassy RP HAL implements both blocking and async APIs for many peripherals](https://github.com/embassy-rs/embassy/tree/main/embassy-rp) — Embassy-rp is a Rust embedded async runtime and HAL (Hardware Abstraction Layer) for the Raspberry Pi RP2040/RP2350 microcontrollers, part of the l...
+* [Rust support for the "Raspberry Silicon" family of microcontrollers](https://github.com/rp-rs/rp-hal) — rp-hal is a Rust Hardware Abstraction Layer (HAL) providing high-level drivers for programming Raspberry Pi RP2040 and RP235x microcontrollers, wit...
 
 These are not compatible, see [Embassy-RP and RP2040-hal Compatibility?](https://github.com/embassy-rs/embassy/issues/3180) and [Embassy-RP and RP2040-hal Compatibility?](https://github.com/rp-rs/rp-hal/issues/816)
 
@@ -329,9 +329,9 @@ use std::{format, print, println, vec};
 
 ## From C to Rust
 
-* [C2Rust](https://github.com/immunant/c2rust?tab=readme-ov-file)
-* [Citrus: Convert C to Rust](https://gitlab.com/citrus-rs/citrus)
-* [Lessons learned porting C++ to rust](https://www.youtube.com/watch?v=kcMAiTg5j1w)
+* [C2Rust](https://github.com/immunant/c2rust?tab=readme-ov-file) — C2Rust is a tool that migrates C code to Rust, providing transpilation capabilities to convert existing C codebases into Rust while preserving func...
+* [Citrus: Convert C to Rust](https://gitlab.com/citrus-rs/citrus) — Citrus is a syntax-oriented C to Rust transpiler that serves as a lighter alternative to c2rust.com for converting C code to Rust.
+* [Lessons learned porting C++ to rust](https://www.youtube.com/watch?v=kcMAiTg5j1w) — A YouTube video discussing lessons learned from porting the WOFF2 font format, likely covering technical challenges and insights from converting or...
 
 ### c2rust
 
@@ -353,9 +353,9 @@ If you'd prefer to avoid `arduino-cli` then [PlatformIO Core CLI](https://docs.p
 
 ### Pi Pico
 
-* [Raspberry Pi Pico Lecture 14: Introducing PIO](https://www.youtube.com/watch?v=BVdaw56Ln8s&list=PLDqMkB5cbBA5oDg8VXM110GKc-CmvUqEZ&index=14)
-* [Raspberry Pico: Programming with PIO State Machines](https://dev.to/admantium/raspberry-pico-programming-with-pio-state-machines-1gbg)
-* [A Practical Look at PIO on the Raspberry Pi Pico](https://dev.to/blues/a-practical-look-at-pio-on-the-raspberry-pi-pico-50j8)
+* [Raspberry Pi Pico Lecture 14: Introducing PIO](https://www.youtube.com/watch?v=BVdaw56Ln8s&list=PLDqMkB5cbBA5oDg8VXM110GKc-CmvUqEZ&index=14) — A lecture video introducing PIO (Programmable I/O) on the Raspberry Pi Pico microcontroller, part of an educational series on Pico development.
+* [Raspberry Pico: Programming with PIO State Machines](https://dev.to/admantium/raspberry-pico-programming-with-pio-state-machines-1gbg) — A tutorial explaining the Raspberry Pi Pico's PIO (Programmable Input/Output) subsystem, which provides 4 independent state machines for handling p...
+* [A Practical Look at PIO on the Raspberry Pi Pico](https://dev.to/blues/a-practical-look-at-pio-on-the-raspberry-pi-pico-50j8) — This article explains Programmable I/O (PIO) on the Raspberry Pi Pico, a feature that allows creating custom hardware interfaces using dedicated st...
 
 ### rust
 
@@ -364,4 +364,3 @@ If you'd prefer to avoid `arduino-cli` then [PlatformIO Core CLI](https://docs.p
 [pio-rs](https://github.com/rp-rs/pio-rs) note: "you can call pio::assembler::new() and construct a pio program using the 'builder pattern' - effectively you are compiling a pio program at run-time on the rp2040 itself!"
 
 Note that embassy includes it's own Pico specific HALs, etc.
-
